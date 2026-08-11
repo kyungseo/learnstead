@@ -5,20 +5,20 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 
 ## 지금 시작할 가이드
 
-[![Learnstead Local LLM 가이드. Qwen, Gemma, DeepSeek가 화살표를 따라 노트북 안의 Llama와 대화 아이콘으로 이동하는 삽화](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/)
+[![Learnstead Local LLM 가이드. Qwen, Gemma, DeepSeek가 화살표를 따라 노트북 안의 Llama와 대화 아이콘으로 이동하는 삽화](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md)
 
 ### 내 장비에서 LLM 직접 실행하기
 
 로컬 LLM이 무엇인지부터 내 장비에 맞는 모델과 실행 도구를 고르는 법, 첫 응답과 GPU 사용을 확인하는 절차까지
 초급자의 눈높이에서 설명합니다.
 
-**[가이드 시작하기 →](guides/local-llm/)**
+**[가이드 시작하기 →](guides/local-llm/README.md)**
 
 ## 학습 자료
 
 | 유형 | 제목 | 대상 | 상태 |
 | --- | --- | --- | --- |
-| 가이드 | [내 장비에서 LLM 직접 실행하기](guides/local-llm/) | 로컬 LLM을 처음 접하는 사람부터 직접 환경을 구성하려는 사용자 | 공개 |
+| 가이드 | [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) | 로컬 LLM을 처음 접하는 사람부터 직접 환경을 구성하려는 사용자 | 공개 |
 
 ## 세 가지 콘텐츠 유형
 
