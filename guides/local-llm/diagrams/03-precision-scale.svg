@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>눈금 비유 — 몇 칸짜리 자로 재는가</title>
+  <desc>같은 값 0.4823을 FP16, INT8, INT4로 저장할 때 눈금 수가 줄어들며 반올림 오차가 커진다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-line:#534AB7;  --api-ink:#3C3489;
+      --warn-line:#B97F24; --warn-ink:#7A4E0D; --warn-fill:#FDF3E3;
+      --band:#F4F8FC; }
+  </style>
+  <rect x="0" y="0" width="680" height="300" fill="var(--bg)"/>
+
+  <text x="24" y="34" font-size="13.5" font-weight="700" fill="var(--ink)" dominant-baseline="central">실제 값 0.4823 을 저장할 때</text>
+
+  <!-- FP16: 촘촘한 눈금 (2px 간격) -->
+  <g>
+    <text x="24" y="72" font-size="13" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">FP16 (2 byte)</text>
+    <line x1="160" y1="72" x2="560" y2="72" stroke="var(--edge-line)" stroke-width="1.4"/>
+    <g stroke="var(--edge-line)" stroke-width="0.8" opacity="0.85">
+      <line x1="160" y1="66" x2="160" y2="78"/><line x1="168" y1="67" x2="168" y2="77"/><line x1="176" y1="67" x2="176" y2="77"/><line x1="184" y1="67" x2="184" y2="77"/><line x1="192" y1="67" x2="192" y2="77"/><line x1="200" y1="67" x2="200" y2="77"/><line x1="208" y1="67" x2="208" y2="77"/><line x1="216" y1="67" x2="216" y2="77"/><line x1="224" y1="67" x2="224" y2="77"/><line x1="232" y1="67" x2="232" y2="77"/><line x1="240" y1="67" x2="240" y2="77"/><line x1="248" y1="67" x2="248" y2="77"/><line x1="256" y1="67" x2="256" y2="77"/><line x1="264" y1="67" x2="264" y2="77"/><line x1="272" y1="67" x2="272" y2="77"/><line x1="280" y1="67" x2="280" y2="77"/><line x1="288" y1="67" x2="288" y2="77"/><line x1="296" y1="67" x2="296" y2="77"/><line x1="304" y1="67" x2="304" y2="77"/><line x1="312" y1="67" x2="312" y2="77"/><line x1="320" y1="67" x2="320" y2="77"/><line x1="328" y1="67" x2="328" y2="77"/><line x1="336" y1="67" x2="336" y2="77"/><line x1="344" y1="67" x2="344" y2="77"/><line x1="352" y1="67" x2="352" y2="77"/><line x1="360" y1="67" x2="360" y2="77"/><line x1="368" y1="67" x2="368" y2="77"/><line x1="376" y1="67" x2="376" y2="77"/><line x1="384" y1="67" x2="384" y2="77"/><line x1="392" y1="67" x2="392" y2="77"/><line x1="400" y1="67" x2="400" y2="77"/><line x1="408" y1="67" x2="408" y2="77"/><line x1="416" y1="67" x2="416" y2="77"/><line x1="424" y1="67" x2="424" y2="77"/><line x1="432" y1="67" x2="432" y2="77"/><line x1="440" y1="67" x2="440" y2="77"/><line x1="448" y1="67" x2="448" y2="77"/><line x1="456" y1="67" x2="456" y2="77"/><line x1="464" y1="67" x2="464" y2="77"/><line x1="472" y1="67" x2="472" y2="77"/><line x1="480" y1="67" x2="480" y2="77"/><line x1="488" y1="67" x2="488" y2="77"/><line x1="496" y1="67" x2="496" y2="77"/><line x1="504" y1="67" x2="504" y2="77"/><line x1="512" y1="67" x2="512" y2="77"/><line x1="520" y1="67" x2="520" y2="77"/><line x1="528" y1="67" x2="528" y2="77"/><line x1="536" y1="67" x2="536" y2="77"/><line x1="544" y1="67" x2="544" y2="77"/><line x1="552" y1="67" x2="552" y2="77"/><line x1="560" y1="66" x2="560" y2="78"/>
+    </g>
+    <text x="576" y="64" font-size="11.5" fill="var(--muted)" dominant-baseline="central">65,536 눈금</text>
+    <text x="576" y="80" font-size="12" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">→ 0.4823</text>
+  </g>
+
+  <!-- INT8: 성긴 눈금 (25px 간격) -->
+  <g>
+    <text x="24" y="132" font-size="13" font-weight="700" fill="var(--api-ink)" dominant-baseline="central">INT8 (1 byte)</text>
+    <line x1="160" y1="132" x2="560" y2="132" stroke="var(--api-line)" stroke-width="1.4"/>
+    <g stroke="var(--api-line)" stroke-width="1">
+      <line x1="160" y1="126" x2="160" y2="138"/><line x1="185" y1="127" x2="185" y2="137"/><line x1="210" y1="127" x2="210" y2="137"/><line x1="235" y1="127" x2="235" y2="137"/><line x1="260" y1="127" x2="260" y2="137"/><line x1="285" y1="127" x2="285" y2="137"/><line x1="310" y1="127" x2="310" y2="137"/><line x1="335" y1="127" x2="335" y2="137"/><line x1="360" y1="127" x2="360" y2="137"/><line x1="385" y1="127" x2="385" y2="137"/><line x1="410" y1="127" x2="410" y2="137"/><line x1="435" y1="127" x2="435" y2="137"/><line x1="460" y1="127" x2="460" y2="137"/><line x1="485" y1="127" x2="485" y2="137"/><line x1="510" y1="127" x2="510" y2="137"/><line x1="535" y1="127" x2="535" y2="137"/><line x1="560" y1="126" x2="560" y2="138"/>
+    </g>
+    <text x="576" y="124" font-size="11.5" fill="var(--muted)" dominant-baseline="central">256 눈금</text>
+    <text x="576" y="140" font-size="12" font-weight="700" fill="var(--api-ink)" dominant-baseline="central">→ 0.4824</text>
+  </g>
+
+  <!-- INT4: 매우 성긴 눈금 (80px) + 밀려나는 표시 -->
+  <g>
+    <text x="24" y="196" font-size="13" font-weight="700" fill="var(--warn-ink)" dominant-baseline="central">INT4 (0.5 byte)</text>
+    <line x1="160" y1="196" x2="560" y2="196" stroke="var(--warn-line)" stroke-width="1.4"/>
+    <g stroke="var(--warn-line)" stroke-width="1.2">
+      <line x1="160" y1="189" x2="160" y2="203"/><line x1="240" y1="190" x2="240" y2="202"/><line x1="320" y1="190" x2="320" y2="202"/><line x1="400" y1="190" x2="400" y2="202"/><line x1="480" y1="190" x2="480" y2="202"/><line x1="560" y1="189" x2="560" y2="203"/>
+    </g>
+    <!-- 실제 값 위치 점과 가까운 눈금으로 밀림 -->
+    <circle cx="352" cy="196" r="4" fill="var(--warn-ink)"/>
+    <text x="352" y="178" font-size="11" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">실제 값</text>
+    <text x="320" y="216" font-size="11" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">가장 가까운 눈금으로</text>
+    <text x="320" y="230" font-size="11" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">밀려난다 = 양자화 오차</text>
+    <text x="576" y="188" font-size="11.5" fill="var(--muted)" dominant-baseline="central">16 눈금</text>
+    <text x="576" y="204" font-size="12" font-weight="700" fill="var(--warn-ink)" dominant-baseline="central">→ 0.4667</text>
+  </g>
+
+  <rect x="24" y="252" width="632" height="34" rx="10" fill="var(--warn-fill)" stroke="var(--warn-line)" stroke-width="1"/>
+  <text x="340" y="269" font-size="12" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">실제 포맷은 블록별 배율(scale)로 눈금 간격을 조정해 이 그림보다 오차가 훨씬 작다 (본문 참조)</text>
+</svg>

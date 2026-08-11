@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 232" width="680" height="232" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>토큰 — 모델이 세는 단위</title>
+  <desc>같은 입력 문장도 모델의 토크나이저에 따라 서로 다른 수와 경계의 토큰 묶음으로 나뉜다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#44546a" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="232" fill="var(--bg)"/>
+
+  <!-- 입력 텍스트 -->
+  <rect x="140" y="24" width="400" height="52" rx="10" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+  <text x="340" y="43" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">입력 텍스트</text>
+  <text x="340" y="61" font-size="14" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">"AI 거버넌스 플랫폼을 구축한다"</text>
+
+  <!-- 화살표 -->
+  <line x1="340" y1="84" x2="340" y2="124" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="356" y="104" font-size="12" fill="var(--muted)" dominant-baseline="central">토크나이저가 자른다</text>
+
+  <g>
+    <rect x="92" y="140" width="136" height="44" rx="8" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <rect x="236" y="140" width="136" height="44" rx="8" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <rect x="380" y="140" width="208" height="44" rx="8" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="160" y="162" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">token 묶음</text>
+    <text x="304" y="162" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">token 묶음</text>
+    <text x="484" y="162" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">… tokenizer마다 다름</text>
+  </g>
+  <text x="588" y="204" font-size="12.5" font-weight="700" fill="var(--ink)" text-anchor="end" dominant-baseline="central">정확한 수는 model tokenizer로 확인</text>
+</svg>

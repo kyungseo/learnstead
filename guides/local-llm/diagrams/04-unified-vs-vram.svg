@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="680" height="340" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>전용 VRAM vs 통합메모리</title>
+  <desc>전용 VRAM과 통합메모리의 배치 차이. 둘 다 OS와 runtime 여유를 포함해 실제 사용 가능 memory를 측정한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --warn-ink:#7A4E0D;  --band:#F4F8FC; }
+  </style>
+  <defs>
+    <marker id="ah2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="10" markerHeight="10"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7A4E0D" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="340" fill="var(--bg)"/>
+
+  <!-- 전용 VRAM 패널 -->
+  <rect x="24" y="24" width="304" height="240" rx="14" fill="var(--band)" stroke="var(--hair)" stroke-width="1"/>
+  <text x="42" y="48" font-size="14" font-weight="700" fill="var(--ink)" dominant-baseline="central">전용 VRAM (NVIDIA 등)</text>
+  <rect x="46" y="70" width="110" height="86" rx="10" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+  <text x="101" y="103" font-size="12.5" font-weight="700" fill="var(--data-ink)" text-anchor="middle" dominant-baseline="central">시스템 RAM</text>
+  <text x="101" y="124" font-size="12" fill="var(--data-ink)" text-anchor="middle" dominant-baseline="central">64 GB</text>
+  <line x1="164" y1="113" x2="188" y2="113" stroke="#7A4E0D" stroke-width="2" marker-end="url(#ah2)"/>
+  <line x1="188" y1="100" x2="164" y2="100" stroke="#7A4E0D" stroke-width="2" marker-end="url(#ah2)"/>
+  <text x="176" y="84" font-size="10.5" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">PCIe</text>
+  <text x="176" y="136" font-size="10.5" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">(이동 비용)</text>
+  <rect x="196" y="70" width="110" height="86" rx="10" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+  <text x="251" y="103" font-size="12.5" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">GPU + VRAM</text>
+  <text x="251" y="124" font-size="12" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">24 GB</text>
+  <text x="176" y="184" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">VRAM 안에 둘수록 data 이동이 적다</text>
+  <text x="176" y="204" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">RAM offloading은 가능할 수 있으나</text>
+  <text x="176" y="224" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">처리량과 latency를 다시 측정한다</text>
+
+  <!-- 통합메모리 패널 -->
+  <rect x="352" y="24" width="304" height="240" rx="14" fill="var(--band)" stroke="var(--hair)" stroke-width="1"/>
+  <text x="370" y="48" font-size="14" font-weight="700" fill="var(--ink)" dominant-baseline="central">통합메모리 (Apple Silicon 등)</text>
+  <rect x="374" y="70" width="260" height="86" rx="10" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+  <text x="504" y="99" font-size="12.5" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">통합메모리 24 GB</text>
+  <text x="504" y="121" font-size="12" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">CPU와 GPU가 같은 메모리를 공유</text>
+  <text x="504" y="141" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">별도 VRAM copy 경계를 줄이는 구조</text>
+  <text x="504" y="184" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">OS·application·runtime과 함께 사용</text>
+  <text x="504" y="204" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">model 가용량은 memory pressure로 확인</text>
+
+  <!-- 하단 요약 -->
+  <rect x="24" y="284" width="632" height="36" rx="10" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+  <text x="340" y="302" font-size="12.5" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">용량·대역폭·runtime 지원·workload를 같은 조건에서 비교한다</text>
+</svg>

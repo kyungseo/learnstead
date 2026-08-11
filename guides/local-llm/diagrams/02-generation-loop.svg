@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>생성 — 한 번에 한 토큰씩, 자기 출력을 다시 먹는다</title>
+  <desc>prefill 단계는 프롬프트 전체를 한꺼번에 처리하고, decode 단계는 토큰 하나를 만들어 입력 끝에 붙이는 일을 반복한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --band:#F4F8FC; }
+    .tk{ fill:var(--api-fill); stroke:var(--api-line); stroke-width:1 }
+    .tk-t{ font-size:11px; font-weight:700; fill:var(--api-ink); text-anchor:middle }
+    .new{ fill:var(--k8s-fill); stroke:var(--k8s-line); stroke-width:1.5 }
+    .new-t{ font-size:11px; font-weight:700; fill:var(--k8s-ink); text-anchor:middle }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#44546a" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="400" fill="var(--bg)"/>
+
+  <!-- ① prefill -->
+  <rect x="24" y="24" width="632" height="96" rx="14" fill="var(--band)" stroke="var(--hair)" stroke-width="1"/>
+  <text x="42" y="48" font-size="14" font-weight="700" fill="var(--ink)" dominant-baseline="central">① prefill — 프롬프트 전체를 한꺼번에 처리</text>
+  <g>
+    <rect class="tk" x="42"  y="66" width="52" height="36" rx="7"/><text class="tk-t" x="68"  y="84" dominant-baseline="central">AI</text>
+    <rect class="tk" x="100" y="66" width="52" height="36" rx="7"/><text class="tk-t" x="126" y="84" dominant-baseline="central">거버</text>
+    <rect class="tk" x="158" y="66" width="52" height="36" rx="7"/><text class="tk-t" x="184" y="84" dominant-baseline="central">넌스</text>
+    <rect class="tk" x="216" y="66" width="52" height="36" rx="7"/><text class="tk-t" x="242" y="84" dominant-baseline="central">란</text>
+    <rect class="tk" x="274" y="66" width="52" height="36" rx="7"/><text class="tk-t" x="300" y="84" dominant-baseline="central">?</text>
+  </g>
+  <line x1="338" y1="84" x2="430" y2="84" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <rect x="448" y="66" width="190" height="36" rx="7" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+  <text x="543" y="84" font-size="12.5" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">내부 상태 계산 (한 번)</text>
+
+  <!-- ② decode -->
+  <rect x="24" y="140" width="632" height="212" rx="14" fill="var(--band)" stroke="var(--hair)" stroke-width="1"/>
+  <text x="42" y="164" font-size="14" font-weight="700" fill="var(--ink)" dominant-baseline="central">② decode — 한 토큰 만들고, 입력 끝에 붙이고, 반복</text>
+
+  <!-- 스텝 1: 5토큰 → [조직] -->
+  <g>
+    <rect class="tk" x="42"  y="184" width="44" height="32" rx="6"/><text class="tk-t" x="64"  y="200" dominant-baseline="central">AI</text>
+    <rect class="tk" x="90"  y="184" width="44" height="32" rx="6"/><text class="tk-t" x="112" y="200" dominant-baseline="central">거버</text>
+    <rect class="tk" x="138" y="184" width="44" height="32" rx="6"/><text class="tk-t" x="160" y="200" dominant-baseline="central">넌스</text>
+    <rect class="tk" x="186" y="184" width="44" height="32" rx="6"/><text class="tk-t" x="208" y="200" dominant-baseline="central">란</text>
+    <rect class="tk" x="234" y="184" width="44" height="32" rx="6"/><text class="tk-t" x="256" y="200" dominant-baseline="central">?</text>
+    <line x1="286" y1="200" x2="350" y2="200" stroke="#44546a" stroke-width="2" marker-end="url(#ah)"/>
+    <rect class="new" x="368" y="184" width="52" height="32" rx="6"/><text class="new-t" x="394" y="200" dominant-baseline="central">조직</text>
+  </g>
+
+  <!-- 스텝 2: 6토큰 → [이] -->
+  <g>
+    <rect class="tk" x="42"  y="226" width="44" height="32" rx="6"/><text class="tk-t" x="64"  y="242" dominant-baseline="central">AI</text>
+    <rect class="tk" x="90"  y="226" width="44" height="32" rx="6"/><text class="tk-t" x="112" y="242" dominant-baseline="central">거버</text>
+    <rect class="tk" x="138" y="226" width="44" height="32" rx="6"/><text class="tk-t" x="160" y="242" dominant-baseline="central">넌스</text>
+    <rect class="tk" x="186" y="226" width="44" height="32" rx="6"/><text class="tk-t" x="208" y="242" dominant-baseline="central">란</text>
+    <rect class="tk" x="234" y="226" width="44" height="32" rx="6"/><text class="tk-t" x="256" y="242" dominant-baseline="central">?</text>
+    <rect class="tk" x="282" y="226" width="52" height="32" rx="6"/><text class="tk-t" x="308" y="242" dominant-baseline="central">조직</text>
+    <line x1="342" y1="242" x2="398" y2="242" stroke="#44546a" stroke-width="2" marker-end="url(#ah)"/>
+    <rect class="new" x="416" y="226" width="44" height="32" rx="6"/><text class="new-t" x="438" y="242" dominant-baseline="central">이</text>
+  </g>
+
+  <!-- 스텝 3: 7토큰 → [AI] -->
+  <g>
+    <rect class="tk" x="42"  y="268" width="44" height="32" rx="6"/><text class="tk-t" x="64"  y="284" dominant-baseline="central">AI</text>
+    <rect class="tk" x="90"  y="268" width="44" height="32" rx="6"/><text class="tk-t" x="112" y="284" dominant-baseline="central">거버</text>
+    <rect class="tk" x="138" y="268" width="44" height="32" rx="6"/><text class="tk-t" x="160" y="284" dominant-baseline="central">넌스</text>
+    <rect class="tk" x="186" y="268" width="44" height="32" rx="6"/><text class="tk-t" x="208" y="284" dominant-baseline="central">란</text>
+    <rect class="tk" x="234" y="268" width="44" height="32" rx="6"/><text class="tk-t" x="256" y="284" dominant-baseline="central">?</text>
+    <rect class="tk" x="282" y="268" width="52" height="32" rx="6"/><text class="tk-t" x="308" y="284" dominant-baseline="central">조직</text>
+    <rect class="tk" x="338" y="268" width="44" height="32" rx="6"/><text class="tk-t" x="360" y="284" dominant-baseline="central">이</text>
+    <line x1="390" y1="284" x2="446" y2="284" stroke="#44546a" stroke-width="2" marker-end="url(#ah)"/>
+    <rect class="new" x="464" y="268" width="44" height="32" rx="6"/><text class="new-t" x="486" y="284" dominant-baseline="central">AI</text>
+  </g>
+
+  <text x="42" y="322" font-size="12" fill="var(--muted)" dominant-baseline="central">⋮  끝 신호가 나올 때까지 반복</text>
+  <text x="42" y="340" font-size="12" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">↑ 입력이 매 스텝 한 토큰씩 길어진다 — 초록 토큰이 방금 만든 출력</text>
+
+  <!-- 하단 캡션 -->
+  <text x="340" y="378" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">이 그림 하나에서 TTFT · TPS · KV 캐시 · 컨텍스트 비용이 전부 파생된다</text>
+</svg>

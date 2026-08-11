@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 220" width="680" height="220" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>오프로딩의 실체 — 어디에 두느냐가 속도를 정한다</title>
+  <desc>가중치가 VRAM을 벗어나면 data 이동 비용이 커질 수 있으므로 배치별 실제 처리량을 비교한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --warn-fill:#FDF3E3; --warn-line:#B97F24; --warn-ink:#7A4E0D;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453; }
+  </style>
+  <rect x="0" y="0" width="680" height="220" fill="var(--bg)"/>
+
+  <!-- 속도 바: 길수록 빠름 -->
+  <g>
+    <rect x="24" y="24" width="632" height="48" rx="10" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="42" y="42" font-size="13" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">전부 VRAM</text>
+    <text x="42" y="61" font-size="11.5" fill="var(--muted)" dominant-baseline="central">가중치 전체가 GPU 메모리에 상주</text>
+    <rect x="360" y="38" width="240" height="20" rx="6" fill="var(--k8s-line)"/>
+    <text x="612" y="48" font-size="12" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">빠름</text>
+  </g>
+  <g>
+    <rect x="24" y="84" width="632" height="48" rx="10" fill="var(--warn-fill)" stroke="var(--warn-line)" stroke-width="1"/>
+    <text x="42" y="102" font-size="13" font-weight="700" fill="var(--warn-ink)" dominant-baseline="central">일부 RAM 오프로딩</text>
+    <text x="42" y="121" font-size="11.5" fill="var(--muted)" dominant-baseline="central">PCIe 왕복 비용 증가 — 실제 처리량으로 비교</text>
+    <rect x="360" y="98" width="80" height="20" rx="6" fill="var(--warn-line)"/>
+  </g>
+  <g>
+    <rect x="24" y="144" width="632" height="48" rx="10" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+    <text x="42" y="162" font-size="13" font-weight="700" fill="var(--data-ink)" dominant-baseline="central">전부 RAM (CPU)</text>
+    <text x="42" y="181" font-size="11.5" fill="var(--muted)" dominant-baseline="central">GPU를 쓰지 못하는 상태</text>
+    <rect x="360" y="158" width="26" height="20" rx="6" fill="var(--data-line)"/>
+    <text x="398" y="168" font-size="12" font-weight="700" fill="var(--data-ink)" dominant-baseline="central">CPU 경로</text>
+  </g>
+
+  <text x="24" y="208" font-size="11.5" fill="var(--muted)" dominant-baseline="central">막대 길이 = 상대적 토큰 생성 속도의 감각 (실측 아님)</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>양자화 선택에서 구분할 세 가지</title>
+  <desc>파일 container, 양자화 방법, runtime과 hardware가 지원하는 수치 형식을 구분해서 확인한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041; }
+  </style>
+  <rect x="0" y="0" width="680" height="400" fill="var(--bg)"/>
+
+  <!-- 파일 포맷 -->
+  <g>
+    <rect x="24" y="24" width="632" height="108" rx="12" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="42" y="46" font-size="14" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">파일 포맷 (컨테이너) — "무엇에 담는가"</text>
+    <rect x="42" y="62" width="296" height="54" rx="9" fill="#FFFFFF" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="190" y="82" font-size="13" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">GGUF</text>
+    <text x="190" y="101" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">가중치+토크나이저+메타데이터 단일 파일</text>
+    <rect x="346" y="62" width="292" height="54" rx="9" fill="#FFFFFF" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="492" y="82" font-size="13" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">safetensors</text>
+    <text x="492" y="101" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">HF 표준 — 디렉터리 단위 배포</text>
+  </g>
+
+  <!-- 알고리즘 -->
+  <g>
+    <rect x="24" y="148" width="632" height="108" rx="12" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="42" y="170" font-size="14" font-weight="700" fill="var(--api-ink)" dominant-baseline="central">양자화 방법 — "어떻게 줄이는가" · 배포 container는 별도 확인</text>
+    <rect x="42" y="186" width="192" height="54" rx="9" fill="#FFFFFF" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="138" y="206" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">GPTQ</text>
+    <text x="138" y="225" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">레이어별 오차 최소화</text>
+    <rect x="244" y="186" width="192" height="54" rx="9" fill="#FFFFFF" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="340" y="206" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">AWQ</text>
+    <text x="340" y="225" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">중요 가중치 보존</text>
+    <rect x="446" y="186" width="192" height="54" rx="9" fill="#FFFFFF" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="542" y="206" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">EXL2</text>
+    <text x="542" y="225" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">가변 비트폭</text>
+  </g>
+
+  <!-- 하드웨어 네이티브 -->
+  <g>
+    <rect x="24" y="272" width="632" height="108" rx="12" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="42" y="294" font-size="14" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">runtime·hardware 지원 — "어디서 효율적으로 계산되는가"</text>
+    <rect x="42" y="310" width="192" height="54" rx="9" fill="#FFFFFF" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="138" y="330" font-size="13" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">FP8</text>
+    <text x="138" y="349" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">H100 · Blackwell</text>
+    <rect x="244" y="310" width="192" height="54" rx="9" fill="#FFFFFF" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="340" y="330" font-size="13" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">FP4 계열 (NVFP4·MXFP4)</text>
+    <text x="340" y="349" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">native checkpoint와 변환본 구분</text>
+    <rect x="446" y="310" width="192" height="54" rx="9" fill="#FFFFFF" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="542" y="330" font-size="13" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">MLX 4/8bit</text>
+    <text x="542" y="349" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">Apple Silicon용 runtime</text>
+  </g>
+</svg>

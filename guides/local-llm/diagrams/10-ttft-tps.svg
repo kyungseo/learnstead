@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" width="680" height="260" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>성능 측정의 두 숫자 — TTFT와 TPS</title>
+  <desc>첫 token까지의 TTFT와 이후 token 생성 속도 TPS를 나눠 측정하고, 각 지표에 영향을 주는 요인을 확인한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#44546a" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="260" fill="var(--bg)"/>
+
+  <rect x="24" y="96" width="150" height="52" rx="12" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+  <text x="99" y="122" font-size="13.5" font-weight="700" fill="var(--data-ink)" text-anchor="middle" dominant-baseline="central">사용자 입력</text>
+
+  <!-- 분기 -->
+  <path d="M182 122 Q232 122 250 78 Q258 58 282 52" fill="none" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <path d="M182 122 Q232 122 250 166 Q258 186 282 192" fill="none" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+
+  <!-- TTFT -->
+  <g>
+    <rect x="300" y="24" width="356" height="88" rx="12" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="318" y="46" font-size="13.5" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">① TTFT — 첫 글자가 나오기까지</text>
+    <text x="318" y="70" font-size="12" fill="var(--edge-ink)" dominant-baseline="central">prefill + load·queue·network가 포함될 수 있음</text>
+    <text x="318" y="92" font-size="11.5" fill="var(--muted)" dominant-baseline="central">입력 token 수와 server 상태를 함께 기록</text>
+  </g>
+
+  <!-- TPS -->
+  <g>
+    <rect x="300" y="148" width="356" height="88" rx="12" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="318" y="170" font-size="13.5" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">② TPS — 그 뒤의 생성 속도</text>
+    <text x="318" y="194" font-size="12" fill="var(--k8s-ink)" dominant-baseline="central">토큰을 하나씩 만드는 속도 (decode)</text>
+    <text x="318" y="216" font-size="11.5" fill="var(--muted)" dominant-baseline="central">model·bandwidth·offloading·runtime이 모두 영향</text>
+  </g>
+</svg>

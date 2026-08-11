@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>dense vs MoE — 메모리와 연산의 비대칭</title>
+  <desc>dense 모델은 토큰마다 전체 파라미터를 통과하고, MoE는 전체를 메모리에 올리되 토큰마다 일부 전문가만 계산한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --band:#F4F8FC; }
+    .ex{ fill:#FFFFFF; stroke:var(--api-line); stroke-width:1 }
+    .ex-on{ fill:var(--k8s-fill); stroke:var(--k8s-line); stroke-width:1.6 }
+  </style>
+  <rect x="0" y="0" width="680" height="360" fill="var(--bg)"/>
+
+  <!-- dense 패널 -->
+  <rect x="24" y="24" width="304" height="252" rx="14" fill="var(--band)" stroke="var(--hair)" stroke-width="1"/>
+  <text x="42" y="48" font-size="14" font-weight="700" fill="var(--ink)" dominant-baseline="central">dense (예: 27B)</text>
+  <rect x="46" y="70" width="260" height="120" rx="10" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+  <text x="176" y="118" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">토큰 하나를 만들 때마다</text>
+  <text x="176" y="140" font-size="13" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">27B 파라미터 전부를 통과</text>
+  <text x="176" y="216" font-size="12.5" fill="var(--data-ink)" text-anchor="middle" dominant-baseline="central">메모리 27B분 · 연산 27B분</text>
+  <text x="176" y="240" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">둘이 같다 — 직관대로</text>
+
+  <!-- MoE 패널 -->
+  <rect x="352" y="24" width="304" height="252" rx="14" fill="var(--band)" stroke="var(--hair)" stroke-width="1"/>
+  <text x="370" y="48" font-size="14" font-weight="700" fill="var(--ink)" dominant-baseline="central">MoE (예: 35B total / 3B active)</text>
+  <!-- 전문가 격자 4x2: start=374, w=64, gap=4 → 374+3*68+64=642 ≤ 656-14 -->
+  <g>
+    <rect class="ex-on" x="374" y="70"  width="64" height="42" rx="8"/>
+    <rect class="ex" x="442" y="70"  width="64" height="42" rx="8"/>
+    <rect class="ex" x="510" y="70"  width="64" height="42" rx="8"/>
+    <rect class="ex" x="578" y="70"  width="64" height="42" rx="8"/>
+    <rect class="ex" x="374" y="118" width="64" height="42" rx="8"/>
+    <rect class="ex" x="442" y="118" width="64" height="42" rx="8"/>
+    <rect class="ex-on" x="510" y="118" width="64" height="42" rx="8"/>
+    <rect class="ex" x="578" y="118" width="64" height="42" rx="8"/>
+    <text x="406" y="91"  font-size="11" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">전문가</text>
+    <text x="542" y="139" font-size="11" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">전문가</text>
+  </g>
+  <text x="508" y="180" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">토큰마다 일부(3B분)만 골라 쓴다 — 초록 칸</text>
+  <text x="508" y="198" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">어느 전문가가 뽑힐지 몰라 35B 전부 상주</text>
+  <text x="508" y="222" font-size="12.5" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">메모리 35B분 · 연산 3B분</text>
+  <text x="508" y="244" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">← 여기가 비대칭</text>
+
+  <!-- 하단 요약 -->
+  <rect x="24" y="296" width="632" height="40" rx="10" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+  <text x="340" y="316" font-size="12.5" font-weight="700" fill="var(--k8s-ink)" text-anchor="middle" dominant-baseline="central">메모리는 total weight 기준 · 연산량은 active parameter 외 runtime·hardware도 영향</text>
+</svg>

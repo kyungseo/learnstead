@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" width="680" height="480" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>무엇이 무엇을 감싸는가 — 툴 스택의 실제 구조</title>
+  <desc>사용자에서 프런트엔드, OpenAI 호환 API, 경험층과 서빙 시스템, 그 아래 엔진과 GPU로 이어지는 계층 구조.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453; }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#44546a" stroke-width="2" stroke-linecap="round"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="480" fill="var(--bg)"/>
+
+  <!-- 사용자 -->
+  <rect x="270" y="20" width="140" height="40" rx="20" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+  <text x="340" y="40" font-size="13" font-weight="700" fill="var(--data-ink)" text-anchor="middle" dominant-baseline="central">사용자</text>
+
+  <line x1="340" y1="62" x2="340" y2="84" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+
+  <!-- 프런트엔드 (선택) -->
+  <rect x="140" y="94" width="400" height="52" rx="10" fill="#FFFFFF" stroke="var(--data-line)" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="340" y="112" font-size="13" font-weight="700" fill="var(--data-ink)" text-anchor="middle" dominant-baseline="central">프런트엔드 (선택) — "ChatGPT 같은 화면"</text>
+  <text x="340" y="132" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">Open WebUI · LibreChat 등 — 아래 API 위에 얹는 웹 UI</text>
+
+  <line x1="340" y1="148" x2="340" y2="170" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <text x="356" y="159" font-size="11.5" fill="var(--muted)" dominant-baseline="central">OpenAI-style HTTP API — 지원 범위는 runtime별 확인 (§4)</text>
+
+  <!-- 경험층 / 서빙 -->
+  <g>
+    <rect x="24" y="180" width="304" height="128" rx="12" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="42" y="202" font-size="13.5" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">경험층</text>
+    <text x="42" y="224" font-size="12.5" fill="var(--edge-ink)" dominant-baseline="central">Ollama · LM Studio</text>
+    <text x="42" y="246" font-size="11.5" fill="var(--muted)" dominant-baseline="central">모델 다운로드·관리 · 단순 실행·대화</text>
+    <text x="42" y="264" font-size="11.5" fill="var(--muted)" dominant-baseline="central">local 사용 편의에 초점</text>
+    <text x="42" y="288" font-size="11" fill="var(--muted)" dominant-baseline="central">↓ 내부적으로 엔진을 호출</text>
+  </g>
+  <g>
+    <rect x="352" y="180" width="304" height="128" rx="12" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="370" y="202" font-size="13.5" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">서빙 시스템</text>
+    <text x="370" y="224" font-size="12.5" fill="var(--k8s-ink)" dominant-baseline="central">vLLM · SGLang · TGI</text>
+    <text x="370" y="246" font-size="11.5" fill="var(--muted)" dominant-baseline="central">연속 배칭 · PagedAttention (KV 관리)</text>
+    <text x="370" y="264" font-size="11.5" fill="var(--muted)" dominant-baseline="central">다중 요청 최적화</text>
+    <text x="370" y="288" font-size="11" fill="var(--muted)" dominant-baseline="central">↓ backend·kernel 지원은 runtime별 상이</text>
+  </g>
+
+  <line x1="176" y1="310" x2="176" y2="334" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+  <line x1="504" y1="310" x2="504" y2="334" stroke="#44546a" stroke-width="2.5" marker-end="url(#ah)"/>
+
+  <!-- 엔진 / GPU -->
+  <g>
+    <rect x="24" y="344" width="304" height="104" rx="12" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="42" y="366" font-size="13.5" font-weight="700" fill="var(--api-ink)" dominant-baseline="central">엔진</text>
+    <text x="42" y="390" font-size="12.5" fill="var(--api-ink)" dominant-baseline="central">llama.cpp (GGUF · 범용)</text>
+    <text x="42" y="412" font-size="12.5" fill="var(--api-ink)" dominant-baseline="central">MLX (Apple 전용)</text>
+    <text x="42" y="434" font-size="11.5" fill="var(--muted)" dominant-baseline="central">행렬 곱 수행 — CPU/Metal/CUDA</text>
+  </g>
+  <g>
+    <rect x="352" y="344" width="304" height="104" rx="12" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+    <text x="370" y="366" font-size="13.5" font-weight="700" fill="var(--data-ink)" dominant-baseline="central">hardware backend</text>
+    <text x="370" y="390" font-size="12.5" fill="var(--data-ink)" dominant-baseline="central">CUDA · ROCm · CPU 등</text>
+    <text x="370" y="412" font-size="11.5" fill="var(--muted)" dominant-baseline="central">위 runtime이 지원 backend와</text>
+    <text x="370" y="430" font-size="11.5" fill="var(--muted)" dominant-baseline="central">kernel을 선택해 계산한다</text>
+  </g>
+</svg>

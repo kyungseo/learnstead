@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 216" width="680" height="216" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>컨텍스트 창은 예산이다</title>
+  <desc>8,192 토큰 창을 시스템 프롬프트, 붙여넣은 문서, 대화 기록, 생성 여지가 나눠 쓴다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453;
+      --warn-fill:#FDF3E3; --warn-line:#B97F24; --warn-ink:#7A4E0D; }
+  </style>
+  <rect x="0" y="0" width="680" height="216" fill="var(--bg)"/>
+
+  <text x="24" y="34" font-size="13.5" font-weight="700" fill="var(--ink)" dominant-baseline="central">컨텍스트 창 = 8,192 토큰인 경우</text>
+
+  <!-- 전체 창 괄호 -->
+  <line x1="24" y1="56" x2="656" y2="56" stroke="var(--hair)" stroke-width="1.5"/>
+  <line x1="24" y1="50" x2="24" y2="62" stroke="var(--hair)" stroke-width="1.5"/>
+  <line x1="656" y1="50" x2="656" y2="62" stroke="var(--hair)" stroke-width="1.5"/>
+  <text x="340" y="46" font-size="11.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">8,192 토큰</text>
+
+  <!-- 스택 바: 총폭 632. 비율(200/5000/2000/992 → 8192): 15 / 386 / 154 / 77 -->
+  <g>
+    <rect x="24"  y="72" width="16"  height="56" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+    <rect x="40"  y="72" width="386" height="56" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+    <rect x="426" y="72" width="154" height="56" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <rect x="580" y="72" width="76"  height="56" fill="var(--warn-fill)" stroke="var(--warn-line)" stroke-width="1.6"/>
+    <text x="233" y="93"  font-size="12.5" font-weight="700" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">붙여넣은 문서</text>
+    <text x="233" y="112" font-size="11.5" fill="var(--edge-ink)" text-anchor="middle" dominant-baseline="central">~5,000</text>
+    <text x="503" y="93"  font-size="12.5" font-weight="700" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">대화 기록</text>
+    <text x="503" y="112" font-size="11.5" fill="var(--api-ink)" text-anchor="middle" dominant-baseline="central">~2,000</text>
+    <text x="618" y="93"  font-size="12.5" font-weight="700" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">생성 여지</text>
+    <text x="618" y="112" font-size="11.5" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">~992</text>
+  </g>
+  <!-- 시스템 프롬프트 레이블 (칸이 좁아 밖으로) -->
+  <line x1="32" y1="132" x2="32" y2="150" stroke="var(--data-line)" stroke-width="1"/>
+  <text x="24" y="162" font-size="11.5" fill="var(--data-ink)" dominant-baseline="central">시스템 프롬프트 ~200</text>
+
+  <text x="618" y="152" font-size="12" font-weight="700" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">↑</text>
+  <text x="645" y="172" font-size="12" fill="var(--warn-ink)" text-anchor="end" dominant-baseline="central">문서를 크게 붙일수록 여기가 먼저 말라붙는다</text>
+
+  <text x="24" y="198" font-size="12" fill="var(--muted)" dominant-baseline="central">입력과 출력이 같은 창을 나눠 쓴다 — 출력 여지를 따로 남긴다</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 520" width="680" height="520" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>local LLM용 hardware 경로 다섯 가지</title>
+  <desc>통합메모리, 소비자용 GPU, workstation GPU, data center GPU와 다른 runtime 경로의 판단 기준.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --warn-fill:#FDF3E3; --warn-line:#B97F24; --warn-ink:#7A4E0D;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453; }
+  </style>
+  <rect x="0" y="0" width="680" height="520" fill="var(--bg)"/>
+
+  <!-- A -->
+  <g>
+    <rect x="24" y="24" width="632" height="88" rx="12" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="42" y="46" font-size="14" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">통합메모리 — Apple Silicon · Ryzen AI Max 등</text>
+    <text x="42" y="70" font-size="12" fill="var(--edge-ink)" dominant-baseline="central">CPU·GPU가 같은 memory를 공유 · OS와 다른 application 몫을 함께 계산</text>
+    <text x="42" y="92" font-size="12" fill="var(--muted)" dominant-baseline="central">확인: memory 상한 · bandwidth · 지원 runtime · 실제 memory pressure</text>
+  </g>
+  <!-- B -->
+  <g>
+    <rect x="24" y="124" width="632" height="88" rx="12" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="42" y="146" font-size="14" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">소비자용 GPU — GeForce RTX 등</text>
+    <text x="42" y="170" font-size="12" fill="var(--k8s-ink)" dominant-baseline="central">전용 VRAM · CUDA runtime 선택 폭 · desktop에서 시작하기 쉬운 경로</text>
+    <text x="42" y="192" font-size="12" fill="var(--muted)" dominant-baseline="central">확인: VRAM · 전력·냉각 · 카드 간 연결 · model의 kernel 지원</text>
+  </g>
+  <!-- C -->
+  <g>
+    <rect x="24" y="224" width="632" height="88" rx="12" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="42" y="246" font-size="14" font-weight="700" fill="var(--api-ink)" dominant-baseline="central">workstation GPU — RTX PRO 등</text>
+    <text x="42" y="270" font-size="12" fill="var(--api-ink)" dominant-baseline="central">소비자용보다 큰 VRAM option · 제품별 ECC·폼팩터·전력 조건</text>
+    <text x="42" y="292" font-size="12" fill="var(--muted)" dominant-baseline="central">확인: 실제 model 예산 · 가격 · chassis와 power supply</text>
+  </g>
+  <!-- D -->
+  <g>
+    <rect x="24" y="324" width="632" height="88" rx="12" fill="var(--warn-fill)" stroke="var(--warn-line)" stroke-width="1"/>
+    <text x="42" y="346" font-size="14" font-weight="700" fill="var(--warn-ink)" dominant-baseline="central">data center GPU — H100 · H200 · B200 등</text>
+    <text x="42" y="370" font-size="12" fill="var(--warn-ink)" dominant-baseline="central">HBM과 server interconnect · 저정밀도 kernel · multi-GPU 운영 선택지</text>
+    <text x="42" y="392" font-size="12" fill="var(--muted)" dominant-baseline="central">확인: cloud·구매 총비용 · topology · 운영 인력 · 목표 동시성</text>
+  </g>
+  <!-- E -->
+  <g>
+    <rect x="24" y="424" width="632" height="72" rx="12" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+    <text x="42" y="446" font-size="14" font-weight="700" fill="var(--data-ink)" dominant-baseline="central">다른 경로 — discrete AMD · Intel · CPU</text>
+    <text x="42" y="470" font-size="12" fill="var(--muted)" dominant-baseline="central">ROCm · oneAPI · CPU backend — model·OS·runtime 지원표를 먼저 확인</text>
+  </g>
+</svg>

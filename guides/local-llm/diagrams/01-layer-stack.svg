@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 470" width="680" height="470" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>로컬 실행의 3+1 계층</title>
+  <desc>사용자 도구, 추론 runtime, 모델 가중치가 로컬 실행을 이루고, 동시 요청 운영에는 별도 serving 기능을 검토한다.</desc>
+  <style>
+    svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
+      --edge-fill:#E8F1FB; --edge-line:#1F6FB2; --edge-ink:#124267;
+      --api-fill:#ECEBFB;  --api-line:#534AB7;  --api-ink:#3C3489;
+      --k8s-fill:#E7F5EF;  --k8s-line:#0F7A5F;  --k8s-ink:#085041;
+      --data-fill:#F1F1EE; --data-line:#7A8398; --data-ink:#3F4453; }
+  </style>
+  <rect x="0" y="0" width="680" height="470" fill="var(--bg)"/>
+
+  <!-- ③ 경험층 -->
+  <g>
+    <rect x="24" y="24" width="632" height="84" rx="12" fill="var(--edge-fill)" stroke="var(--edge-line)" stroke-width="1"/>
+    <text x="42" y="46" font-size="15" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">③ 경험층 (Experience) — 사용자가 만지는 층</text>
+    <text x="42" y="68" font-size="13" fill="var(--edge-ink)" dominant-baseline="central">Ollama · LM Studio · Jan · GPT4All</text>
+    <text x="42" y="88" font-size="12" fill="var(--muted)" dominant-baseline="central">"모델 받기 · 실행 · 대화 UI"를 한 덩어리로 묶는다. 내부적으로 ②를 호출</text>
+  </g>
+
+  <!-- ② 엔진 -->
+  <g>
+    <rect x="24" y="122" width="632" height="84" rx="12" fill="var(--api-fill)" stroke="var(--api-line)" stroke-width="1"/>
+    <text x="42" y="144" font-size="15" font-weight="700" fill="var(--api-ink)" dominant-baseline="central">② 추론 엔진 (Engine) — 속도와 지원 하드웨어가 결정되는 곳</text>
+    <text x="42" y="166" font-size="13" fill="var(--api-ink)" dominant-baseline="central">llama.cpp (범용 · CPU/Metal/CUDA) · MLX (Apple 전용)</text>
+    <text x="42" y="186" font-size="12" fill="var(--muted)" dominant-baseline="central">실제로 행렬 곱을 수행해 토큰을 만들어 내는 코드</text>
+  </g>
+
+  <!-- ① 가중치 -->
+  <g>
+    <rect x="24" y="220" width="632" height="84" rx="12" fill="var(--data-fill)" stroke="var(--data-line)" stroke-width="1"/>
+    <text x="42" y="242" font-size="15" font-weight="700" fill="var(--data-ink)" dominant-baseline="central">① 모델 가중치 파일 (Weights) — 배포 아티팩트</text>
+    <text x="42" y="264" font-size="13" fill="var(--data-ink)" dominant-baseline="central">.gguf / safetensors — 수 GB ~ 수백 GB</text>
+    <text x="42" y="284" font-size="12" fill="var(--muted)" dominant-baseline="central">이것 자체는 실행되지 않는다 — ②가 읽어 들여야 동작한다</text>
+  </g>
+
+  <!-- 구분선 -->
+  <g>
+    <line x1="24" y1="333" x2="180" y2="333" stroke="var(--hair)" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <line x1="500" y1="333" x2="656" y2="333" stroke="var(--hair)" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="340" y="333" font-size="12.5" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">▲ 여기까지 1인 로컬 실행 · ▼ 여기부터 다중 사용자 서빙</text>
+  </g>
+
+  <!-- ④ 서빙 -->
+  <g>
+    <rect x="24" y="362" width="632" height="84" rx="12" fill="var(--k8s-fill)" stroke="var(--k8s-line)" stroke-width="1"/>
+    <text x="42" y="384" font-size="15" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">④ 서빙 시스템 (Serving) — 동시 요청 운영에 초점</text>
+    <text x="42" y="406" font-size="13" fill="var(--k8s-ink)" dominant-baseline="central">vLLM · SGLang · TGI · TensorRT-LLM</text>
+    <text x="42" y="426" font-size="12" fill="var(--muted)" dominant-baseline="central">동시 요청 배칭 · KV 캐시 관리 · 처리량 최적화 — 필요성과 복잡도를 함께 비교</text>
+  </g>
+</svg>
