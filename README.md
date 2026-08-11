@@ -3,6 +3,11 @@
 Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도록 정리한 학습 자료 모음입니다.
 짧게 읽는 글보다 오래 참고할 수 있는 설명, 따라 할 수 있는 절차, 검증 기록을 한곳에 둡니다.
 
+> **이름에 담긴 뜻**
+>
+> **Learnstead = learn + homestead.** 배운 내용을 직접 실행하고 검증하며 차곡차곡 쌓아 가는 작은 배움의
+> 터전이라는 뜻입니다. 각 자료는 핵심 개념, 따라 할 수 있는 절차, 검증 기록을 함께 제공합니다.
+
 ## 지금 시작할 가이드
 
 [![Learnstead Local LLM 가이드. Qwen, Gemma, DeepSeek가 화살표를 따라 노트북 안의 Llama와 대화 아이콘으로 이동하는 삽화](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md)
