@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 350" width="680" height="350" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>runtime별 호환 범위</title>
+  <desc>비교한 runtime은 공식 문서에서 기본 채팅·임베딩·스트리밍 경로를 설명한다. 구조화 출력·tool calling·context 설정·인증의 세부 방식은 서로 다르다.</desc>
+
+  <rect x="0" y="0" width="680" height="350" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">&quot;호환&quot;은 기본 경로까지 — 가장자리는 runtime마다 다르다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">○ = 공식 문서가 지원을 설명 · 세부 동작은 모델·버전에 따라 다름</text>
+  <rect x="152.0" y="70" width="120.0" height="28" rx="9" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="212.0" y="84.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">Ollama</text>
+  <rect x="280.0" y="70" width="120.0" height="28" rx="9" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="340.0" y="84.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">llama-server</text>
+  <rect x="408.0" y="70" width="120.0" height="28" rx="9" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="468.0" y="84.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">vLLM</text>
+  <rect x="536.0" y="70" width="120.0" height="28" rx="9" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="596.0" y="84.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">LM Studio</text>
+  <rect x="24" y="106" width="128" height="30" rx="6" data-fill-role="compute-fill" fill="#ECF4F1" />
+  <text x="34" y="121" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">chat · embeddings</text>
+  <rect x="152.0" y="106" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="212.0" y="121" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="280.0" y="106" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="340.0" y="121" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="408.0" y="106" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="468.0" y="121" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="536.0" y="106" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="596.0" y="121" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="24" y="142" width="128" height="30" rx="6" data-fill-role="compute-fill" fill="#ECF4F1" />
+  <text x="34" y="157" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">스트리밍</text>
+  <rect x="152.0" y="142" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="212.0" y="157" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="280.0" y="142" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="340.0" y="157" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="408.0" y="142" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="468.0" y="157" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="536.0" y="142" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="596.0" y="157" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="24" y="178" width="128" height="30" rx="6" data-fill-role="edge-fill" fill="#EAF0F6" />
+  <text x="34" y="193" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">구조화 출력</text>
+  <rect x="152.0" y="178" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="212.0" y="193" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="280.0" y="178" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340.0" y="193" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○ grammar</text>
+  <rect x="408.0" y="178" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="468.0" y="193" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="536.0" y="178" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="596.0" y="193" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="24" y="214" width="128" height="30" rx="6" data-fill-role="edge-fill" fill="#EAF0F6" />
+  <text x="34" y="229" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">tool calling</text>
+  <rect x="152.0" y="214" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="212.0" y="229" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○ 모델 지원 시</text>
+  <rect x="280.0" y="214" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340.0" y="229" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○ 템플릿 의존</text>
+  <rect x="408.0" y="214" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="468.0" y="229" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○ 파서 설정</text>
+  <rect x="536.0" y="214" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="596.0" y="229" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">○</text>
+  <rect x="24" y="250" width="128" height="30" rx="6" data-fill-role="warning-fill" fill="#FAF3E6" />
+  <text x="34" y="265" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">context 설정</text>
+  <rect x="152.0" y="250" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="212.0" y="265" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">API · env · Modelfile</text>
+  <rect x="280.0" y="250" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="340.0" y="265" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">-c 시작 옵션</text>
+  <rect x="408.0" y="250" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="468.0" y="265" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">--max-model-len</text>
+  <rect x="536.0" y="250" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="596.0" y="265" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">GUI</text>
+  <rect x="24" y="286" width="128" height="30" rx="6" data-fill-role="warning-fill" fill="#FAF3E6" />
+  <text x="34" y="301" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">인증</text>
+  <rect x="152.0" y="286" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="212.0" y="301" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">없음 (프록시)</text>
+  <rect x="280.0" y="286" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="340.0" y="301" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">--api-key</text>
+  <rect x="408.0" y="286" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="468.0" y="301" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">--api-key</text>
+  <rect x="536.0" y="286" width="120.0" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="596.0" y="301" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">설정 토큰</text>
+  <text x="340.0" y="334" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">○는 공식 문서의 지원 표기 · 모델·version·option 조합은 전환 전에 직접 검증</text>
+</svg>

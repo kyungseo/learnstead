@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img" style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>Call, Shape, Guard로 완성하는 Local LLM 앱</title>
+  <desc>내 프로그램이 전체 대화 기록으로 runtime을 호출하고, 응답 형태를 고정한 뒤 도구 권한과 실행 상한으로 결과를 통제하는 세 단계.</desc>
+  <defs><marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect width="680" height="300" fill="#fff"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" fill="#2E6DA4"/>
+  <text x="36" y="24" font-size="18" font-weight="700" fill="#252B35" dominant-baseline="central">응답을 받는 데서 멈추지 않는다</text>
+  <text x="36" y="46" font-size="11.5" fill="#636A75" dominant-baseline="central">호출 경로 → 출력 계약 → 실행 경계 순서로 한 겹씩 더한다</text>
+  <g>
+    <rect x="24" y="82" width="188" height="150" rx="12" fill="#EAF0F6" stroke="#2E6DA4"/>
+    <circle cx="52" cy="108" r="15" fill="#2E6DA4"/><text x="52" y="108" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#fff">1</text>
+    <text x="76" y="108" dominant-baseline="central" font-size="16" font-weight="700" fill="#193C5A">Call</text>
+    <text x="42" y="143" font-size="12" font-weight="700" fill="#252B35">앱 → runtime → 모델</text>
+    <text x="42" y="166" font-size="11" fill="#636A75">messages를 매번 전송</text>
+    <text x="42" y="186" font-size="11" fill="#636A75">finish_reason·usage 확인</text>
+    <text x="42" y="210" font-size="10" fill="#2E6DA4">상태는 앱이 보관</text>
+  </g>
+  <g>
+    <rect x="246" y="82" width="188" height="150" rx="12" fill="#EFEEF6" stroke="#5B54A8"/>
+    <circle cx="274" cy="108" r="15" fill="#5B54A8"/><text x="274" y="108" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#fff">2</text>
+    <text x="298" y="108" dominant-baseline="central" font-size="16" font-weight="700" fill="#322E5C">Shape</text>
+    <text x="264" y="143" font-size="12" font-weight="700" fill="#252B35">문자열 → 출력 계약</text>
+    <text x="264" y="166" font-size="11" fill="#636A75">JSON schema로 형태 제한</text>
+    <text x="264" y="186" font-size="11" fill="#636A75">파싱 뒤 값·범위 검증</text>
+    <text x="264" y="210" font-size="10" fill="#5B54A8">형식과 내용은 별개</text>
+  </g>
+  <g>
+    <rect x="468" y="82" width="188" height="150" rx="12" fill="#ECF4F1" stroke="#3F8F72"/>
+    <circle cx="496" cy="108" r="15" fill="#3F8F72"/><text x="496" y="108" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#fff">3</text>
+    <text x="520" y="108" dominant-baseline="central" font-size="16" font-weight="700" fill="#234F3F">Guard</text>
+    <text x="486" y="143" font-size="12" font-weight="700" fill="#252B35">도구 요청 → 검증 → 실행</text>
+    <text x="486" y="166" font-size="11" fill="#636A75">읽기 전용·경로·인자 제한</text>
+    <text x="486" y="186" font-size="11" fill="#636A75">호출 횟수·시간 상한</text>
+    <text x="486" y="210" font-size="10" fill="#3F8F72">프롬프트는 경계가 아님</text>
+  </g>
+  <path d="M216 157 L238 157" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M438 157 L460 157" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="102" y="256" width="476" height="26" rx="13" fill="#FFF4D8" stroke="#C98A1B"/>
+  <text x="340" y="269" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="700" fill="#704D0F">HTTP 200은 시작점 · 사용할 수 있는 출력과 안전한 실행이 완료 조건</text>
+</svg>

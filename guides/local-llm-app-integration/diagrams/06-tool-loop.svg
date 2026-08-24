@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="680" height="340" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>tool calling 왕복</title>
+  <desc>내 코드가 도구 명세와 질문을 보내면 모델이 tool_calls로 함수 이름과 인자를 요청하고, 내 코드가 검증·실행해 tool 메시지로 결과를 돌려주며, 모델이 그것을 읽고 최종 답을 내거나 다시 도구를 요청하는 루프. 모델은 실행하지 않는다.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="340" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">모델은 요청만, 실행은 내 코드 — tool calling 왕복</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">메뉴판(tools)을 보여 주면 모델이 &quot;이거 주세요&quot;(tool_calls) · 주방은 내 코드</text>
+  <rect x="24" y="70" width="280" height="250" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">내 코드</text>
+  <rect x="376" y="70" width="280" height="250" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="392" y="88" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">모델</text>
+  <rect x="40" y="104" width="248" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="164" y="124" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">① tools 명세 + 질문 전송</text>
+  <rect x="40" y="170" width="248" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="164" y="190" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">③ 인자 검증 → 함수 실행 → 결과</text>
+  <rect x="40" y="236" width="248" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="164" y="256" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">⑥ 답 출력 (상한 도달 시 중단·보고)</text>
+  <rect x="392" y="104" width="248" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="516" y="124" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">② tool_calls: {name, arguments}</text>
+  <rect x="392" y="170" width="248" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="516" y="190" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">④ tool 메시지 읽고 판단</text>
+  <rect x="392" y="236" width="248" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="516" y="256" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">⑤ 최종 답 — 또는 다시 ②</text>
+  <path d="M290 118 L388 118" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <text x="340" y="106" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">요청</text>
+  <path d="M388 140 H316 V180 H298" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linejoin="round" marker-end="url(#ah-api-line-2)"/>
+  <text x="322" y="160" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">도구 요청</text>
+  <path d="M290 190 L388 190" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <text x="340" y="204" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">tool 메시지</text>
+  <path d="M516 212 L516 230" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M388 256 L290 256" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="340" y="270" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">답</text>
+  <text x="516" y="296" font-size="9.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">도구가 더 필요하면 ⑤ 대신 다시 ② — 상한까지 반복</text>
+</svg>

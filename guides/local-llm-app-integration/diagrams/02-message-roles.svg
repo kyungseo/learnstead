@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 280" width="680" height="280" role="img" style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>messages의 네 가지 역할</title><desc>system, user, assistant, tool 메시지가 각자 규칙, 요청, 이전 답, 실행 결과를 맡으며 순서대로 한 요청의 대화 기록을 이룬다.</desc>
+  <rect width="680" height="280" fill="#fff"/><rect x="24" y="13" width="3" height="22" rx="1.5" fill="#2E6DA4"/>
+  <text x="36" y="24" font-size="18" font-weight="700" fill="#252B35" dominant-baseline="central">role은 말의 출처와 용도를 붙이는 표지다</text><text x="36" y="46" font-size="11.5" fill="#636A75" dominant-baseline="central">배열의 순서가 대화 기록 · 앱이 보관해 다음 요청에 다시 보낸다</text>
+  <g>
+    <rect x="24" y="82" width="146" height="124" rx="11" fill="#EAF0F6" stroke="#2E6DA4"/><text x="42" y="108" font-size="14" font-weight="700" fill="#193C5A">system</text><text x="42" y="135" font-size="11" fill="#252B35">규칙·역할·출력 조건</text><text x="42" y="159" font-size="10" fill="#636A75">앱이 구성</text><text x="42" y="181" font-size="10" fill="#636A75">별도로 보존</text>
+    <rect x="186" y="82" width="146" height="124" rx="11" fill="#FFF4D8" stroke="#C98A1B"/><text x="204" y="108" font-size="14" font-weight="700" fill="#704D0F">user</text><text x="204" y="135" font-size="11" fill="#252B35">사용자 요청</text><text x="204" y="159" font-size="10" fill="#636A75">또는 앱이 만든 입력</text><text x="204" y="181" font-size="10" fill="#636A75">신뢰하지 않는 데이터</text>
+    <rect x="348" y="82" width="146" height="124" rx="11" fill="#EFEEF6" stroke="#5B54A8"/><text x="366" y="108" font-size="14" font-weight="700" fill="#322E5C">assistant</text><text x="366" y="135" font-size="11" fill="#252B35">모델의 이전 답</text><text x="366" y="159" font-size="10" fill="#636A75">tool_calls도 포함</text><text x="366" y="181" font-size="10" fill="#636A75">앱이 기록에 추가</text>
+    <rect x="510" y="82" width="146" height="124" rx="11" fill="#ECF4F1" stroke="#3F8F72"/><text x="528" y="108" font-size="14" font-weight="700" fill="#234F3F">tool</text><text x="528" y="135" font-size="11" fill="#252B35">도구 실행 결과</text><text x="528" y="159" font-size="10" fill="#636A75">tool_call_id로 짝</text><text x="528" y="181" font-size="10" fill="#636A75">결과도 불신 데이터</text>
+  </g>
+  <path d="M44 238 H636" stroke="#2E6DA4" stroke-width="2"/><g fill="#2E6DA4"><circle cx="97" cy="238" r="5"/><circle cx="259" cy="238" r="5"/><circle cx="421" cy="238" r="5"/><circle cx="583" cy="238" r="5"/></g>
+  <text x="340" y="263" text-anchor="middle" font-size="11" font-weight="700" fill="#252B35">요청마다 필요한 기록 전체를 messages 배열로 보낸다</text>
+</svg>

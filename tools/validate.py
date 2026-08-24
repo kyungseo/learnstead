@@ -12,7 +12,7 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REQUIRED = (
+ROOT_REQUIRED = (
     "README.md",
     "LICENSE",
     "CHANGELOG.md",
@@ -20,18 +20,17 @@ REQUIRED = (
     "docs/AUTHORING.md",
     "docs/VALIDATION.md",
     "docs/VISUALS.md",
-    "guides/local-llm/README.md",
-    "guides/local-llm/CHANGELOG.md",
-    "guides/local-llm/SOURCES.md",
-    "guides/local-llm/VALIDATION.md",
 )
+ITEM_REQUIRED = ("README.md", "CHANGELOG.md", "SOURCES.md", "VALIDATION.md")
+CONTENT_ROOTS = ("guides", "tutorials", "labs")
 FORBIDDEN_FILES = ("AGENTS.md", "CLAUDE.md", "CONTRIBUTING.md")
 FORBIDDEN_TEXT = {
-    "machine-local path": re.compile(r"/Users/"),
     "private engagement path": re.compile(r"engagements/", re.IGNORECASE),
     "legacy verification label": re.compile(r"\[검증\s+\d{4}-\d{2}\]"),
     "internal tracking identifier": re.compile(r"\b(?:FEAT|PATCH|HOTFIX|CHORE)-\d{8}-\d{3}\b|\bDR-\d{3,4}\b"),
 }
+MACHINE_LOCAL_PATH = re.compile(r"/Users/([^/\s\"'`]+)")
+APPROVED_PATH_PLACEHOLDERS = {"내이름", "사용자이름", "USERNAME", "<username>", "{username}"}
 LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 DRAFT_PATTERNS = (
     re.compile(r"(?m)^## 미공개\s*$"),
@@ -46,9 +45,17 @@ def text_files() -> list[Path]:
 
 
 def validate_required(errors: list[str]) -> None:
-    for relative in REQUIRED:
+    for relative in ROOT_REQUIRED:
         if not (ROOT / relative).is_file():
             errors.append(f"필수 파일 없음: {relative}")
+    for content_root in CONTENT_ROOTS:
+        base = ROOT / content_root
+        if not base.is_dir():
+            continue
+        for item in sorted(path for path in base.iterdir() if path.is_dir() and not path.name.startswith(".")):
+            for required in ITEM_REQUIRED:
+                if not (item / required).is_file():
+                    errors.append(f"자료 필수 파일 없음: {(item / required).relative_to(ROOT)}")
     for relative in FORBIDDEN_FILES:
         if (ROOT / relative).exists():
             errors.append(f"초기 공개 surface에 두지 않는 파일: {relative}")
@@ -61,10 +68,18 @@ def validate_text(errors: list[str], public: bool) -> None:
         for line_number, line in enumerate(content.splitlines(), 1):
             if line != line.rstrip():
                 errors.append(f"후행 공백: {relative}:{line_number}")
+            if relative != Path("tools/validate.py"):
+                for match in MACHINE_LOCAL_PATH.finditer(line):
+                    if match.group(1) not in APPROVED_PATH_PLACEHOLDERS:
+                        errors.append(
+                            f"공개 경계 위반(machine-local path): {relative}:{line_number} "
+                            f"(/Users/{match.group(1)})"
+                        )
         if relative != Path("tools/validate.py"):
             for label, pattern in FORBIDDEN_TEXT.items():
-                if pattern.search(content):
-                    errors.append(f"공개 경계 위반({label}): {relative}")
+                for line_number, line in enumerate(content.splitlines(), 1):
+                    if pattern.search(line):
+                        errors.append(f"공개 경계 위반({label}): {relative}:{line_number}")
         if public and any(pattern.search(content) for pattern in DRAFT_PATTERNS):
             errors.append(f"공개 전 제거할 상태 표기: {relative}")
 

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>tool calling · workflow · agent</title>
+  <desc>왼쪽 tool calling은 한 번의 왕복, 가운데 workflow는 내 코드가 정한 고정 순서의 단계들, 오른쪽 agent는 모델이 매 단계 다음 도구를 고르는 선택으로, 제어 흐름의 소유자가 코드에서 모델로 옮겨 가는 스펙트럼.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">누가 제어 흐름을 쥐는가 — 코드에서 모델로</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">순서를 아는 일은 workflow로 · agent는 &quot;다음에 뭘 할지 모르는&quot; 일에만</text>
+  <rect x="24" y="70" width="200" height="34" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="124.0" y="87.0" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">tool calling</text>
+  <text x="124.0" y="122" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">한 번의 왕복</text>
+  <rect x="38" y="140" width="64" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="70.0" y="155.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">질문</text>
+  <rect x="146" y="140" width="64" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="178.0" y="155.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">도구</text>
+  <path d="M112 149 L136 149" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <path d="M136 161 L112 161" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <text x="124.0" y="250.0" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">질문 → 도구 1회 → 답</text>
+  <rect x="240" y="70" width="200" height="34" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340.0" y="87.0" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">workflow</text>
+  <text x="340.0" y="122" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">내 코드가 순서 고정</text>
+  <rect x="254" y="140" width="50" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="279.0" y="155.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">읽기</text>
+  <path d="M308 151 L312 155 L308 159" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="316" y="140" width="50" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="341.0" y="155.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요약</text>
+  <path d="M370 151 L374 155 L370 159" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="378" y="140" width="50" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="403.0" y="155.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">분류</text>
+  <text x="340.0" y="242.75" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">읽기 → 요약 → 분류 → 저장</text>
+  <text x="340.0" y="257.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">각 단계가 모델 호출</text>
+  <rect x="456" y="70" width="200" height="34" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="556.0" y="87.0" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">agent</text>
+  <text x="556.0" y="122" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">모델이 다음 행동 결정</text>
+  <rect x="521" y="140" width="70" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="556.0" y="155.0" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">모델</text>
+  <path d="M556 170 V176 M494 176 H618" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M494 176 V190" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M556 176 V190" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M618 176 V190" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="469" y="200" width="50" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="494.0" y="213.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">search</text>
+  <rect x="531" y="200" width="50" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="556.0" y="213.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">read</text>
+  <rect x="593" y="200" width="50" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="618.0" y="213.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">calc</text>
+  <text x="556.0" y="242.75" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">search? read? calculate?</text>
+  <text x="556.0" y="257.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">상한·경계 필수</text>
+  <path d="M60 290 L620 290" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <text x="340" y="304" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">예측 가능성 ↓ · 필요한 보호 ↑</text>
+</svg>

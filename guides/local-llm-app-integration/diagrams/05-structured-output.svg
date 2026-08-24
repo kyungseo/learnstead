@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>부탁 vs 강제 — 구조화 출력</title>
+  <desc>프롬프트로만 JSON을 요청했을 때 파싱이 실패하는 경로와, 스키마로 출력을 제한한 뒤 파싱과 내용 검증까지 거치는 경로의 비교.</desc>
+  <defs><marker id="ah-compute-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-danger-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">형식은 부탁이 아니라 강제한다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">response_format=json_schema → runtime이 문법에 맞는 토큰만 허용 · 내용 검증은 여전히 내 코드</text>
+  <rect x="24" y="70" width="304" height="200" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">프롬프트만 — &quot;JSON으로만 답해&quot;</text>
+  <rect x="40" y="104" width="272" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="176.0" y="122.0" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">모델이 확률적으로 토큰 선택</text>
+  <rect x="40" y="158" width="272" height="46" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="176.0" y="173.0" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">```json {…} ``` 설명: 위와 같이…</text>
+  <text x="176.0" y="187.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">코드 펜스 · 설명문 · 필드 누락</text>
+  <rect x="40" y="222" width="272" height="34" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="176.0" y="239.0" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">json.loads 실패 (가끔)</text>
+  <path d="M176 142 L176 154" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.5" marker-end="url(#ah-danger-line-1_5)"/>
+  <path d="M176 206 L176 218" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.5" marker-end="url(#ah-danger-line-1_5)"/>
+  <rect x="352" y="70" width="304" height="200" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">스키마 강제 — response_format</text>
+  <rect x="368" y="104" width="272" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="504.0" y="122.0" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">허용 토큰만 남긴 채 선택 (grammar)</text>
+  <rect x="368" y="158" width="272" height="46" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="504.0" y="173.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">{&quot;title&quot;: &quot;…&quot;, &quot;when&quot;: &quot;…&quot;, …}</text>
+  <text x="504.0" y="187.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">파싱 가능성 향상</text>
+  <rect x="368" y="222" width="272" height="34" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="504.0" y="239.0" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">내용 검증: 필수 필드 · 범위 · 원문 대조</text>
+  <path d="M504 142 L504 154" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <path d="M504 206 L504 218" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <text x="340.0" y="298" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">형식 보장 ≠ 내용 보장 — 원문에 없는 값을 채워 넣는 것은 스키마가 막지 못한다</text>
+</svg>
