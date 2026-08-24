@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" width="680" height="430" role="img" style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>Local LLM 호출 진단 흐름</title><desc>호출 이상을 예외 여부로 먼저 나누고 연결, 4xx, 잘림, 형식, 규칙, 사실 오류별 다음 조치로 이어지는 진단 순서.</desc>
+  <defs><marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#2E6DA4" stroke-width="2"/></marker></defs>
+  <rect width="680" height="430" fill="#fff"/><rect x="24" y="13" width="3" height="22" rx="1.5" fill="#2E6DA4"/>
+  <text x="36" y="24" font-size="18" font-weight="700" fill="#252B35" dominant-baseline="central">이상한 답은 예외와 내용 오류를 먼저 나눈다</text><text x="36" y="46" font-size="11.5" fill="#636A75" dominant-baseline="central">재시도는 연결·일시 오류에만 · HTTP 200 뒤에도 판정은 계속</text>
+  <rect x="232" y="70" width="216" height="44" rx="22" fill="#EAF0F6" stroke="#2E6DA4"/><text x="340" y="92" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#193C5A">호출이 실패하거나 이상하다</text>
+  <path d="M340 116 V137" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="264" y="143" width="152" height="42" rx="10" fill="#FFF4D8" stroke="#C98A1B"/><text x="340" y="164" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#704D0F">예외가 났는가?</text>
+  <path d="M260 164 H120 V205" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="172" y="154" font-size="10" fill="#636A75">연결·timeout</text>
+  <path d="M420 164 H560 V205" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="480" y="154" font-size="10" fill="#636A75">4xx</text>
+  <path d="M340 187 V226" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="350" y="210" font-size="10" fill="#636A75">아니오</text>
+  <rect x="34" y="211" width="172" height="66" rx="10" fill="#FCEBEC" stroke="#B04A5A"/><text x="120" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7A2734">runtime 상태 확인</text><text x="120" y="257" text-anchor="middle" font-size="10" fill="#636A75">지수 backoff · 상한 3회</text>
+  <rect x="474" y="211" width="172" height="66" rx="10" fill="#FCEBEC" stroke="#B04A5A"/><text x="560" y="232" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7A2734">요청을 고친다</text><text x="560" y="251" text-anchor="middle" font-size="10" fill="#636A75">404 모델 · 400 입력/context</text><text x="560" y="266" text-anchor="middle" font-size="10" fill="#636A75">401 키·프록시</text>
+  <rect x="264" y="232" width="152" height="46" rx="10" fill="#EFEEF6" stroke="#5B54A8"/><text x="340" y="255" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#322E5C">finish_reason?</text>
+  <path d="M264 255 H218 V320" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="224" y="292" font-size="10" fill="#636A75">length</text>
+  <path d="M416 255 H462 V320" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="435" y="292" font-size="10" fill="#636A75">stop</text>
+  <rect x="128" y="326" width="180" height="60" rx="10" fill="#FFF4D8" stroke="#C98A1B"/><text x="218" y="350" text-anchor="middle" font-size="11.5" font-weight="700" fill="#704D0F">잘린 응답</text><text x="218" y="371" text-anchor="middle" font-size="10" fill="#636A75">예산 조정 · 이어쓰기</text>
+  <rect x="372" y="326" width="180" height="60" rx="10" fill="#ECF4F1" stroke="#3F8F72"/><text x="462" y="350" text-anchor="middle" font-size="11.5" font-weight="700" fill="#234F3F">내용 판정</text><text x="462" y="371" text-anchor="middle" font-size="10" fill="#636A75">형식 · 규칙 · 사실 대조</text>
+  <rect x="112" y="400" width="456" height="22" rx="11" fill="#F7F8FA" stroke="#D7DAE0"/><text x="340" y="411" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#252B35">형식은 schema · 규칙은 context/프롬프트 · 사실은 근거·도구 결과와 비교</text>
+</svg>

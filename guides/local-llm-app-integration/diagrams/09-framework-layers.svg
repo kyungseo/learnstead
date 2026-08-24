@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>직접 SDK 위에 얹히는 프레임워크 층</title>
+  <desc>직접 SDK 위에 프레임워크 층이 얹히는 구조를 언어별(Python·Java·JS)로 나열하고, 각 층이 무엇을 추가하는지(커넥터·체인·메모리·도구·추적) 보여 주는 계층 그림.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">프레임워크는 부품을 주고 투명성을 가져간다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">챗 하나 + 도구 몇 개는 SDK로 충분 · 체인 3단↑·부품 교체 잦음·팀 표준이면 프레임워크</text>
+  <rect x="24" y="70" width="200" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="124.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">Python</text>
+  <rect x="24" y="108" width="200" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="124.0" y="119.25" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">프레임워크</text>
+  <text x="124.0" y="132.75" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">LangChain · LlamaIndex · Haystack</text>
+  <rect x="24" y="168" width="200" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="124.0" y="179.25" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">직접 SDK / HTTP</text>
+  <text x="124.0" y="192.75" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">openai SDK</text>
+  <rect x="24" y="228" width="200" height="28" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="124.0" y="242.0" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">runtime (/v1)</text>
+  <path d="M124.0 148 L124.0 164" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <path d="M124.0 208 L124.0 224" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="240" y="70" width="200" height="30" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">Java</text>
+  <rect x="240" y="108" width="200" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="119.25" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">프레임워크</text>
+  <text x="340.0" y="132.75" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Spring AI · LangChain4j</text>
+  <rect x="240" y="168" width="200" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="179.25" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">직접 SDK / HTTP</text>
+  <text x="340.0" y="192.75" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">java.net.http / OpenAI Java SDK</text>
+  <rect x="240" y="228" width="200" height="28" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="340.0" y="242.0" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">runtime (/v1)</text>
+  <path d="M340.0 148 L340.0 164" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M340.0 208 L340.0 224" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="456" y="70" width="200" height="30" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="556.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">JS / TS</text>
+  <rect x="456" y="108" width="200" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="556.0" y="119.25" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">프레임워크</text>
+  <text x="556.0" y="132.75" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Vercel AI SDK · LangChain.js</text>
+  <rect x="456" y="168" width="200" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="556.0" y="179.25" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">직접 SDK / HTTP</text>
+  <text x="556.0" y="192.75" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">openai 패키지</text>
+  <rect x="456" y="228" width="200" height="28" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="556.0" y="242.0" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">runtime (/v1)</text>
+  <path d="M556.0 148 L556.0 164" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <path d="M556.0 208 L556.0 224" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <rect x="24" y="262" width="632" height="30" rx="8" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="340" y="277" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">주는 것: 커넥터 · 체인 실행 · 메모리 · 도구/agent · 추적  |  숨기는 것: 기본 프롬프트 · 기본 파라미터 · 기록 전략</text>
+  <text x="340.0" y="308" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">프레임워크를 써도 02의 요청·응답 JSON을 읽을 수 있어야 한다</text>
+</svg>

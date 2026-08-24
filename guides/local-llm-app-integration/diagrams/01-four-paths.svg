@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>연결 방식 네 가지</title>
+  <desc>직접 SDK, 프레임워크, 게이트웨이 경유, in-process 바인딩 네 연결 방식을 코드와 모델 사이 층의 수로 비교한다. 처음엔 직접 SDK가 맞고, 프레임워크는 체인이 깊어질 때, 게이트웨이는 여러 앱·모델일 때, 바인딩은 HTTP 없는 배포에 쓴다.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">연결 방식 네 가지 — 코드와 모델 사이에 몇 층을 둘 것인가</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">처음엔 ① 직접 SDK · 이 가이드의 본문</text>
+  <rect x="24" y="70" width="146" height="30" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="97.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">① 직접 SDK</text>
+  <rect x="24" y="112" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="97.0" y="128" font-size="11" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">내 코드</text>
+  <path d="M97.0 146 L97.0 154" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <rect x="24" y="156" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="97.0" y="172" font-size="11" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">openai SDK</text>
+  <path d="M97.0 190 L97.0 198" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
+  <rect x="24" y="200" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="97.0" y="216" font-size="11" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">runtime</text>
+  <text x="97.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처음 · 대부분의 앱</text>
+  <rect x="186" y="70" width="146" height="30" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="259.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">② 프레임워크</text>
+  <rect x="186" y="112" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="259.0" y="128" font-size="11" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">내 코드</text>
+  <path d="M259.0 146 L259.0 154" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="186" y="156" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="259.0" y="172" font-size="11" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">LangChain · Spring AI</text>
+  <path d="M259.0 190 L259.0 198" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="186" y="200" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="259.0" y="216" font-size="11" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">runtime</text>
+  <text x="259.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">체인 3단↑ · 부품 교체 잦음</text>
+  <rect x="348" y="70" width="146" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="421.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">③ 게이트웨이</text>
+  <rect x="348" y="112" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="421.0" y="128" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">내 코드</text>
+  <path d="M421.0 146 L421.0 154" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="348" y="156" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="421.0" y="172" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">게이트웨이(인증·라우팅)</text>
+  <path d="M421.0 190 L421.0 198" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="348" y="200" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="421.0" y="216" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">runtime A · B · 외부</text>
+  <text x="421.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">여러 앱 · 여러 모델</text>
+  <rect x="510" y="70" width="146" height="30" rx="9" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="583.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">④ in-process</text>
+  <rect x="510" y="112" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="583.0" y="128" font-size="11" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">내 코드 + 라이브러리</text>
+  <path d="M583.0 146 L583.0 154" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="510" y="156" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="583.0" y="172" font-size="11" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">(HTTP 없음)</text>
+  <path d="M583.0 190 L583.0 198" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="510" y="200" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="583.0" y="216" font-size="11" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">모델 파일</text>
+  <text x="583.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">데스크톱 · 오프라인 배포</text>
+  <text x="340.0" y="312" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">층이 늘수록 부품은 늘고 투명성은 준다 — 오류는 결국 02의 요청·응답 JSON으로 드러난다</text>
+</svg>

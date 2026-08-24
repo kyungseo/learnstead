@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>연결의 해부 — 요청이 지나가는 네 층</title>
+  <desc>내 프로그램이 SDK를 통해 HTTP 요청을 만들고, runtime이 받아 모델에 전달하며, 생성된 토큰이 응답 JSON으로 돌아오는 네 층의 경로. 내 프로그램과 runtime 사이는 HTTP다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">연결 = HTTP로 JSON을 보내고 받는 일</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">HTTP와 JSON이 공통 경계 · runtime 전환 때 주소·모델·키·지원 기능을 확인</text>
+  <rect x="24" y="96" width="140" height="78" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="94.0" y="119.5" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">내 프로그램</text>
+  <text x="94.0" y="134.0" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">메시지 구성 · 기록</text>
+  <text x="94.0" y="148.5" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">출력 해석 · 오류 처리</text>
+  <path d="M166 122 L186 122" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <path d="M186 148 L166 148" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="188" y="96" width="140" height="78" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="258.0" y="119.5" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">SDK / HTTP</text>
+  <text x="258.0" y="134.0" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">base_url · model</text>
+  <text x="258.0" y="148.5" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">요청 JSON 직렬화</text>
+  <path d="M330 122 L350 122" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <path d="M350 148 L330 148" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="352" y="96" width="140" height="78" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="422.0" y="119.5" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">runtime</text>
+  <text x="422.0" y="134.0" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Ollama · vLLM · …</text>
+  <text x="422.0" y="148.5" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">모델 적재 · 토큰 생성</text>
+  <path d="M494 122 L514 122" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <path d="M514 148 L494 148" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="516" y="96" width="140" height="78" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="586.0" y="119.5" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">모델</text>
+  <text x="586.0" y="134.0" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">가중치</text>
+  <text x="586.0" y="148.5" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">다음 토큰 예측</text>
+  <text x="176" y="84" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">POST /v1/chat/completions {model, messages}</text>
+  <text x="176" y="188" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">{choices[0].message.content, usage, finish_reason}</text>
+  <rect x="24" y="214" width="632" height="48" rx="10" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="340" y="230" font-size="11" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">내 프로그램 ↔ runtime 사이가 HTTP  →  언어 무관 · runtime 교체 가능 · 로컬에서 개발하고 운영에서 다른 백엔드로</text>
+  <text x="340" y="248" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">runtime은 이전 요청을 기억하지 않는다(stateless) — 대화 기록은 내 프로그램이 들고 매번 보낸다</text>
+  <text x="340.0" y="284" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">날씨 API를 부르듯 주소와 JSON만 알면 된다 — 다른 점은 느리고, 길고(스트리밍), 매번 조금 다르다는 것</text>
+</svg>

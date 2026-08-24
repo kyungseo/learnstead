@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 250" width="680" height="250" role="img" style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>Local LLM 앱의 최소 구성</title><desc>Python 앱, OpenAI SDK, localhost HTTP endpoint, Ollama, 모델이 한 줄로 연결된다. runtime을 바꿀 때는 호환 기능을 다시 확인한다.</desc>
+  <defs><marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#2E6DA4" stroke-width="2"/></marker></defs>
+  <rect width="680" height="250" fill="#fff"/><rect x="24" y="13" width="3" height="22" rx="1.5" fill="#2E6DA4"/>
+  <text x="36" y="24" font-size="18" font-weight="700" fill="#252B35" dominant-baseline="central">처음에는 다섯 조각이면 충분하다</text><text x="36" y="46" font-size="11.5" fill="#636A75" dominant-baseline="central">외부 패키지는 SDK 하나 · 연결 경계는 HTTP 하나</text>
+  <g>
+    <rect x="24" y="91" width="108" height="64" rx="10" fill="#ECF4F1" stroke="#3F8F72"/><text x="78" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#234F3F">Python 3.10+</text><text x="78" y="136" text-anchor="middle" font-size="11" fill="#636A75">내 프로그램</text>
+    <rect x="158" y="91" width="108" height="64" rx="10" fill="#fff" stroke="#3F8F72"/><text x="212" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#234F3F">openai SDK</text><text x="212" y="136" text-anchor="middle" font-size="11" fill="#636A75">JSON 직렬화</text>
+    <rect x="292" y="91" width="108" height="64" rx="10" fill="#EAF0F6" stroke="#2E6DA4"/><text x="346" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#193C5A">localhost</text><text x="346" y="132" text-anchor="middle" font-size="11" fill="#636A75">11434/v1</text>
+    <rect x="426" y="91" width="108" height="64" rx="10" fill="#EFEEF6" stroke="#5B54A8"/><text x="480" y="116" text-anchor="middle" font-size="11" font-weight="700" fill="#322E5C">Ollama</text><text x="480" y="136" text-anchor="middle" font-size="11" fill="#636A75">runtime</text>
+    <rect x="560" y="91" width="96" height="64" rx="10" fill="#FFF4D8" stroke="#C98A1B"/><text x="608" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#704D0F">모델</text><text x="608" y="132" text-anchor="middle" font-size="11" fill="#636A75">4B부터 실습</text>
+  </g>
+  <g stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"><path d="M136 123 L150 123"/><path d="M270 123 L284 123"/><path d="M404 123 L418 123"/><path d="M538 123 L552 123"/></g>
+  <rect x="112" y="187" width="456" height="38" rx="10" fill="#F7F8FA" stroke="#D7DAE0"/>
+  <text x="340" y="202" text-anchor="middle" font-size="11" font-weight="700" fill="#252B35">runtime 교체: 주소 · model · key를 설정으로 분리</text><text x="340" y="217" text-anchor="middle" font-size="10" fill="#636A75">구조화 출력 · tool calling · context · 인증은 전환 테스트</text>
+</svg>

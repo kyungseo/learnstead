@@ -8,22 +8,34 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 > **Learnstead = learn + homestead.** 배운 내용을 직접 실행하고 검증하며 차곡차곡 쌓아 가는 작은 배움의
 > 터전이라는 뜻입니다. 각 자료는 핵심 개념, 따라 할 수 있는 절차, 검증 기록을 함께 제공합니다.
 
-## 지금 시작할 가이드
+## Local LLM 학습 경로
 
-[![Learnstead Local LLM 가이드. Qwen, Gemma, DeepSeek가 화살표를 따라 노트북 안의 Llama와 대화 아이콘으로 이동하는 삽화](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md)
+두 가이드는 앞뒤가 이어집니다. 먼저 내 장비에서 모델을 실행하고, 다음 가이드에서 그 모델을 프로그램에 연결해
+출력 형태와 도구 권한을 다룹니다.
 
-### 내 장비에서 LLM 직접 실행하기
+### 1. 내 장비에서 LLM 직접 실행하기
 
-로컬 LLM이 무엇인지부터 내 장비에 맞는 모델과 실행 도구를 고르는 법, 첫 응답과 GPU 사용을 확인하는 절차까지
-초급자의 눈높이에서 설명합니다.
+[![Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가 화면 속 Llama와 대화 아이콘으로 이어지는 Learnstead Local LLM 가이드 삽화](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md)
+
+Local LLM의 개념과 모델·runtime 선택부터 Ollama 설치, 첫 응답과 GPU 적재 확인까지 이어집니다.
 
 **[가이드 시작하기 →](guides/local-llm/README.md)**
+
+### 2. Local LLM을 내 프로그램에 연결하기
+
+[![노트북의 코드가 JSON을 거쳐 로컬 LLM으로 전달되고, 구조화된 체크리스트와 안전 방패를 가진 도구 실행으로 나뉘는 손그림](guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp)](guides/local-llm-app-integration/README.md)
+
+Python 네 줄의 첫 호출에서 시작해 대화 상태, 구조화 출력, tool calling, 읽기 전용 agent와 prompt injection 경계까지
+직접 만들고 판정합니다.
+
+**[다음 가이드 시작하기 →](guides/local-llm-app-integration/README.md)**
 
 ## 학습 자료
 
 | 유형 | 제목 | 대상 | 상태 |
 | --- | --- | --- | --- |
 | 가이드 | [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) | 로컬 LLM을 처음 접하는 사람부터 직접 환경을 구성하려는 사용자 | 공개 |
+| 가이드 | [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) | 로컬 모델을 코드에서 호출하고 출력·도구 경계를 설계하려는 개발자 | 공개 |
 
 ## 세 가지 콘텐츠 유형
 

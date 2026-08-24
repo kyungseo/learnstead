@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>대화 기록은 내 프로그램의 것</title>
+  <desc>대화 기록을 내 프로그램이 리스트로 들고 매 요청에 보내며, 길어지면 오래된 턴을 자르거나 요약으로 압축해 창 안에 맞추는 세 가지 전략. system 메시지는 항상 맨 앞에 다시 붙인다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">runtime은 기억하지 않는다 — 기록·자르기·요약은 내 책임</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">어느 전략이든 system 은 항상 맨 앞에 다시 붙인다</text>
+  <rect x="24" y="70" width="276" height="110" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">내 프로그램</text>
+  <rect x="40" y="104" width="244" height="28" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="48" y="118" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">history = [u1, a1, u2, a2, …]</text>
+  <rect x="40" y="140" width="244" height="28" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="48" y="154" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">messages = [system] + history[-N:]</text>
+  <rect x="380" y="70" width="276" height="110" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="396" y="88" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">runtime</text>
+  <rect x="396" y="104" width="244" height="64" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="518" y="128.5" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청을 받고 답을 만든다</text>
+  <text x="518" y="143.5" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">이전 요청? 모른다</text>
+  <path d="M304 118 L372 118" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="340" y="104" font-size="9.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">매번 전부</text>
+  <path d="M376 154 L308 154" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <text x="340" y="168" font-size="9.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답 → 기록에 추가</text>
+  <rect x="24" y="206" width="200" height="56" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="124.0" y="225.75" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">고정 창 자르기</text>
+  <text x="124.0" y="240.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">최근 N개만 · 가장 단순</text>
+  <rect x="240" y="206" width="200" height="56" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340.0" y="225.75" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">토큰 예산 자르기</text>
+  <text x="340.0" y="240.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">usage.prompt_tokens 보며 제거</text>
+  <rect x="456" y="206" width="200" height="56" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="556.0" y="225.75" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">요약 압축</text>
+  <text x="556.0" y="240.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">오래된 턴을 요약 메시지로 교체</text>
+  <text x="340.0" y="300" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">여러 세션을 넘기는 기억은 DB에 저장하고 검색해 넣는다 — RAG 가이드와 같은 원리</text>
+</svg>

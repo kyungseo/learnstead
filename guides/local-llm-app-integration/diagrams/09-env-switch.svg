@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>로컬에서 개발하고 운영에서 다른 백엔드로</title>
+  <desc>앱이 base_url·model·key를 설정으로 분리해 로컬 Ollama, 사내 vLLM 서버, 게이트웨이를 향한다. 전환 때는 구조화 출력과 tool calling도 다시 검증한다.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">전환점은 설정으로, 차이는 테스트로 관리한다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">base_url · model · key 를 코드 밖으로 — 백엔드가 둘 이상이면 게이트웨이</text>
+  <rect x="24" y="100" width="150" height="70" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="99.0" y="118.5" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">내 앱 코드</text>
+  <text x="99.0" y="134.0" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">openai SDK</text>
+  <text x="99.0" y="149.5" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">base_url = 설정값</text>
+  <rect x="240" y="74" width="240" height="52" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="360.0" y="92.0" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">개발</text>
+  <text x="360.0" y="106.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">localhost:11434/v1 · gemma3:4b</text>
+  <rect x="240" y="144" width="240" height="52" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="360.0" y="162.0" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">스테이징</text>
+  <text x="360.0" y="176.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">vllm.internal:8000/v1 · 서빙 모델</text>
+  <rect x="240" y="214" width="240" height="52" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="360.0" y="232.0" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">운영</text>
+  <text x="360.0" y="246.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">게이트웨이/v1 · 라우팅 별칭</text>
+  <path d="M176 135 H204 M204 100 V240" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M204 100 H230" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <path d="M204 170 H230" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <path d="M204 240 H230" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="520" y="130" width="136" height="100" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="588.0" y="158.0" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">게이트웨이</text>
+  <text x="588.0" y="172.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">인증 · 라우팅</text>
+  <text x="588.0" y="186.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">키 관리 · 로그</text>
+  <text x="588.0" y="200.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">비용 집계</text>
+  <path d="M482 240 H496 V220 H510" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#ah-api-line-1_5)"/>
+  <text x="340.0" y="282" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">전환 전후를 같은 골든셋으로 비교 · 가장자리 기능(구조화 출력·tool)이 새 백엔드에서도 같은지 확인</text>
+</svg>

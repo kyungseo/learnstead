@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>요청과 응답 JSON 해부</title>
+  <desc>요청 JSON의 model·messages·파라미터와 응답 JSON의 choices·message·finish_reason·usage를 대응시킨 해부도. messages는 매 요청에 전부 보내고, 답은 choices[0].message.content에, 잘림 여부는 finish_reason에 있다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="360" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">요청의 핵심은 model·messages, 응답의 핵심은 content·finish_reason</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">SDK가 숨기는 JSON을 한 번은 눈으로 본다</text>
+  <rect x="24" y="70" width="304" height="262" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">요청 (POST /v1/chat/completions)</text>
+  <rect x="40" y="104" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="114" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">model</text>
+  <text x="48" y="127" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">runtime에 올라 있는 식별자</text>
+  <text x="304" y="119" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="end" dominant-baseline="central">&quot;gemma3:4b&quot;</text>
+  <rect x="40" y="141" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="151" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">messages</text>
+  <text x="48" y="164" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">대화 전체 — 매번 전부</text>
+  <text x="304" y="156" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="end" dominant-baseline="central">[{role, content}, …]</text>
+  <rect x="40" y="178" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="188" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">temperature</text>
+  <text x="48" y="201" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">무작위성</text>
+  <text x="304" y="193" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="end" dominant-baseline="central">0.3</text>
+  <rect x="40" y="215" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="225" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">max_tokens</text>
+  <text x="48" y="238" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">생성 상한</text>
+  <text x="304" y="230" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="end" dominant-baseline="central">512</text>
+  <rect x="40" y="252" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="262" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">stream</text>
+  <text x="48" y="275" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">토큰 단위 전송</text>
+  <text x="304" y="267" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="end" dominant-baseline="central">true</text>
+  <rect x="40" y="289" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="299" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">response_format · tools</text>
+  <text x="48" y="312" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">구조화 출력 · 도구 (05·06)</text>
+  <text x="304" y="304" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="end" dominant-baseline="central">…</text>
+  <rect x="352" y="70" width="304" height="262" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">응답</text>
+  <rect x="368" y="104" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="376" y="114" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">choices[0].message.content</text>
+  <text x="376" y="127" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">답 본문 → 화면 · 기록에 추가</text>
+  <rect x="368" y="141" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="376" y="151" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">choices[0].message.tool_calls</text>
+  <text x="376" y="164" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">도구 호출 요청 (있으면 실행)</text>
+  <rect x="368" y="178" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="376" y="188" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">choices[0].finish_reason</text>
+  <text x="376" y="201" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">stop / length(잘림!) / tool_calls</text>
+  <rect x="368" y="215" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="376" y="225" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">usage.prompt_tokens</text>
+  <text x="376" y="238" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">입력 토큰 — context 예산 감시</text>
+  <rect x="368" y="252" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="376" y="262" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">usage.completion_tokens</text>
+  <text x="376" y="275" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">생성 토큰 — 속도·비용</text>
+  <rect x="368" y="289" width="272" height="30" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="376" y="299" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">(stream) choices[0].delta.content</text>
+  <text x="376" y="312" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">조각 — 이어 붙인다</text>
+  <path d="M330 200 L348 200" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="340.0" y="346" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">finish_reason 을 확인하지 않는 것이 초보 앱의 가장 흔한 누락 — 잘린 답을 완전한 답으로 다룬다</text>
+</svg>
