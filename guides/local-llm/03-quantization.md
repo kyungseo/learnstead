@@ -11,7 +11,7 @@
 | 무엇으로 돌리나 | 무엇을 받나 |
 | --- | --- |
 | Ollama | model library에서 hardware와 version에 맞는 tag를 고르고 `ollama show`로 format·quantization 확인 |
-| LM Studio · llama.cpp | **GGUF `Q4_K_M`**를 첫 후보로 삼고 memory·quality를 실제 task로 확인 |
+| LM Studio · llama.cpp | **GGUF `Q4_K_M`를** 첫 후보로 삼고 memory·quality를 실제 task로 확인 |
 | mlx-lm을 직접 쓰는 Mac | **MLX-compatible 4bit**를 첫 후보로 삼고 model card의 conversion·license 확인 |
 | vLLM 등 GPU serving | vLLM의 current support matrix에 있는 original/BF16·FP8·AWQ·compressed-tensors checkpoint 중 hardware와 kernel에 맞는 것 |
 
@@ -47,7 +47,7 @@ image처럼 눈으로 바로 비교하기 어려우며, task·language·prompt�
 값의 분포에 맞춰 조정한다 — 위 그림보다 실제 오차가 훨씬 작다. `[해석]`
 
 > 🔧 **한 단계 더 — 캘리브레이션 데이터가 품질을 가른다.**
-> AWQ·GPTQ·imatrix 계열은 "어느 가중치가 중요한가"를 **샘플 텍스트(캘리브레이션 데이터)**로 측정해
+> AWQ·GPTQ·imatrix 계열은 "어느 가중치가 중요한가"를 **샘플 텍스트(캘리브레이션 데이터)로** 측정해
 > 그쪽 정밀도를 지킵니다. 같은 알고리즘이라도 calibration data와 구현이 다르면 결과가 달라질 수 있습니다.
 > 한국어가 핵심 workload라면 영어 benchmark만 보지 말고 실제 한국어 prompt set으로 원본 또는 더 높은 bit
 > checkpoint와 비교합니다. `[해석]`
@@ -70,7 +70,7 @@ image처럼 눈으로 바로 비교하기 어려우며, task·language·prompt�
 `[자료 확인 · 2026-08-10]`
 
 **핵심 정리:** GGUF는 **포맷**이고 GPTQ·AWQ는 **알고리즘**이다. `[자료 확인 · 2026-08-10]`
-"GGUF vs AWQ"라는 비교는 엄밀히는 층위가 어긋나 있지만, 실무에서는 **"llama.cpp 계열로 갈 것인가, GPU 서빙으로 갈 것인가"**의 갈림길을 뜻하므로 그렇게 읽으면 된다. `[해석]`
+"GGUF vs AWQ"라는 비교는 엄밀히는 층위가 어긋나 있지만, 실무에서는 **"llama.cpp 계열로 갈 것인가, GPU 서빙으로 갈 것인가"라는 선택**을 뜻하므로 그렇게 읽으면 된다. `[해석]`
 
 ---
 
