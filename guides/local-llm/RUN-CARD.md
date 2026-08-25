@@ -1,6 +1,6 @@
 # 내 Local LLM 실행 카드
 
-model을 실행했다는 사실만이 아니라 **장비에 맞았는지(Fit), 어떻게 실행했는지(Run), 무엇으로 확인했는지(Prove)**를
+model을 실행했다는 사실만이 아니라 **장비에 맞았는지(Fit), 어떻게 실행했는지(Run), 무엇으로 확인했는지(Prove)를**
 한 장에 남기는 기록 양식입니다. 새 model이나 runtime을 시험할 때 아래 template을 복사해 사용하세요.
 
 ← [가이드 README](README.md) · 다음 → [01 오리엔테이션](01-orientation.md)
