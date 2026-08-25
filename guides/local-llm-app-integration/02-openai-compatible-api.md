@@ -19,7 +19,7 @@ runtime마다 무엇이 다른지 알 수 있습니다. 이 문서는 `curl`로 
   `/v1/responses`도 지원하지만 범위가 서로 다릅니다. `[문서 확인 · 2026-08-24]`
 - 요청의 핵심은 `model`과 `messages`(역할이 붙은 메시지 배열)이고, 응답의 핵심은 `choices[0].message.content`입니다. `[원리]`
 - 역할은 `system`(규칙) · `user`(사용자) · `assistant`(모델의 이전 답) · `tool`(도구 실행 결과) 네 가지입니다. `[원리]`
-- "호환"은 **기본 경로**에 한합니다. 가장자리(구조화 출력·tool·context 설정)는 runtime별 차이표(§4)를 봅니다. `[해석]`
+- "호환"은 **기본적인 요청·응답 형식**이 같다는 뜻입니다. 구조화 출력·tool calling·context 설정 같은 세부 부가 기능은 runtime별 차이표(§4)에서 확인합니다. `[해석]`
 
 ## 1. 직접 보내 보기
 
@@ -81,8 +81,9 @@ curl -s http://localhost:11434/v1/chat/completions \
 
 ![system은 규칙, user는 요청, assistant는 이전 답, tool은 실행 결과를 맡으며 네 역할이 순서대로 대화 기록을 이루는 그림](diagrams/02-message-roles.svg)
 
-`[원리]` `assistant` 메시지를 내 프로그램이 **조작해서** 넣을 수도 있습니다(예: 답의 시작을 강제). 모델은 기록이 "진짜"인지
-확인할 방법이 없습니다 — 이것이 few-shot 예시의 원리이자, 기록 변조의 원리입니다.
+`few-shot`은 원하는 입력과 출력의 예시 몇 개를 대화 기록에 넣어 모델이 그 형식을 따라 하게 하는 방법입니다. 내 프로그램은
+`assistant` 메시지를 예시로 직접 넣을 수 있으며, 모델은 그 메시지가 실제 대화에서 나온 것인지 확인할 수 없습니다. 같은 특성
+때문에 예시를 제공할 수도 있고, 대화 기록을 변조할 수도 있습니다. `[원리]`
 
 ## 3. 응답 필드 읽기
 
@@ -102,7 +103,7 @@ curl -s http://localhost:11434/v1/chat/completions \
 `choices[0].delta.content`에 토큰 몇 개를 담고, 마지막에 `finish_reason`이 채워집니다. SDK는 이를 이터레이터로 감싸 줍니다(03 실습).
 `[문서 확인 · 2026-08-23]`
 
-## 4. runtime별 차이 — 가장자리 기능
+## 4. runtime별 차이 — 세부 부가 기능
 
 ![비교한 runtime의 공식 문서가 기본 채팅·임베딩·스트리밍 지원을 설명하고, 구조화 출력·tool calling·context 설정·인증은 지원 조건과 방법이 다름을 보여 주는 표](diagrams/02-runtime-endpoints.svg)
 
@@ -127,7 +128,7 @@ curl -s http://localhost:11434/v1/chat/completions \
 
 ## 5. 다른 언어에서도 같은 일
 
-요청 JSON이 같으므로 언어는 문제가 아닙니다. 최소 형태만 둡니다. `[문서 확인 · 2026-08-23]`
+같은 JSON 구조를 만들 수 있다면 프로그래밍 언어가 달라도 같은 요청을 보낼 수 있습니다. 최소 형태만 둡니다. `[문서 확인 · 2026-08-23]`
 
 **JavaScript / TypeScript (openai 패키지)**
 
@@ -167,7 +168,7 @@ class ChatController {
 }
 ```
 
-`[자료 확인 · 2026-08-23]` — Spring AI·LangChain4j의 API는 버전 간 변화가 커서 위 형태는 감각용입니다. 사용 전 해당 버전 문서를
+`[자료 확인 · 2026-08-23]` — Spring AI·LangChain4j의 API는 버전 간 변화가 커서 위 코드는 구조를 보여 주는 최소 예시입니다. 사용 전 해당 버전 문서를
 확인합니다([09 §1](09-frameworks-and-architecture.md)).
 
 ## 6. 이 문서의 점검표
@@ -175,7 +176,7 @@ class ChatController {
 - [ ] `curl`로 요청·응답 JSON을 한 번 눈으로 봤다
 - [ ] `messages`를 매 요청에 전부 보낸다는 것을 이해했다
 - [ ] `finish_reason`이 `length`일 때 무엇을 할지 정했다
-- [ ] 내 runtime의 가장자리 기능(구조화 출력·tool·context 설정) 방법을 §4에서 찾았다
+- [ ] 내 runtime의 세부 부가 기능(구조화 출력·tool calling·context 설정) 사용 방법을 §4에서 찾았다
 
 ---
 

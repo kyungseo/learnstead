@@ -1,8 +1,8 @@
 # 04 — 파라미터 · context · 대화 상태: 무엇이 무엇을 바꾸는가
 
-호출 한 번에는 10개 남짓의 손잡이가 있습니다. 대부분은 기본값으로 두어도 되지만, 셋은 반드시 이해해야 합니다 —
-**temperature, max_tokens, 그리고 context 창**. 그리고 로컬에서 가장 자주 사람을 속이는 함정 하나, **runtime이 실제로
-적용한 context 창**을 다룹니다.
+모델 호출에는 10개 남짓의 설정 항목이 있습니다. 대부분은 기본값으로 시작해도 되지만,
+**temperature, max_tokens, context 창**은 반드시 이해해야 합니다. 특히 모델이 선언한 상한과 **runtime이 실제로 적용한 context 창**이
+다를 수 있어, 로컬 환경에서 자주 혼동을 일으킵니다.
 
 ← [03 실습: 대화 프로그램](03-lab-chat-program.md) · 다음 → [05 구조화 출력](05-structured-output.md)
 
@@ -69,8 +69,8 @@ OpenAI 호환 요청 본문으로는 바꿀 수 없습니다. 세 가지 경로�
 | 자체 API 요청 옵션 | 요청 단위 | `POST /api/chat` 본문에 `"options": {"num_ctx": 16384}` |
 | Modelfile | 모델 별칭 단위 | `FROM gemma3:4b` + `PARAMETER num_ctx 16384` → `ollama create gemma3-16k -f Modelfile` |
 
-세 번째가 OpenAI SDK 코드를 그대로 두면서 창만 바꾸는 가장 깔끔한 방법입니다(모델 이름만 `gemma3-16k`로). 늘린 만큼 메모리가
-필요하므로 `ollama ps`로 적재 상태를 확인합니다([../local-llm/02](../local-llm/02-model-anatomy.md)의 KV cache 산식).
+세 번째 방법을 사용하면 OpenAI SDK 코드는 유지하고 모델 이름만 `gemma3-16k`로 바꿔 context 창을 조정할 수 있습니다. 창을
+늘린 만큼 메모리가 더 필요하므로 `ollama ps`로 적재 상태를 확인합니다([../local-llm/02](../local-llm/02-model-anatomy.md)의 KV cache 산식).
 
 **★ 확인 판정:** `[미검증]` 창을 늘린 뒤 `ollama ps`의 CONTEXT가 늘어난 값으로 표시되고, 긴 대화에서 시스템 규칙이 유지됩니다.
 
