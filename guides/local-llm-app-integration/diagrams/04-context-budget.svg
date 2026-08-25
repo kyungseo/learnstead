@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
   style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
   <title>적용 context 창으로 입력 예산 계산하기</title>
   <desc>프롬프트와 답변 여지가 runtime이 적용한 context 창 안에 들어가야 한다. 초과 입력의 처리 방식은 runtime과 endpoint에 따라 다르며, 선언 상한과 적용 창은 별개다.</desc>
   <defs><marker id="ah-danger-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker></defs>
-  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">선언 상한이 아니라 적용 창으로 예산을 잡는다</text>
   <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">ollama show = 선언 상한 · ollama ps = 이번 실행의 적용 창</text>
@@ -19,12 +19,13 @@
   <text x="463.0" y="130" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">턴N user</text>
   <rect x="524" y="110" width="116" height="40" rx="6" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" stroke-dasharray="5 4" />
   <text x="582.0" y="130" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답변 여지</text>
-  <path d="M156 190 L156 158" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
-  <text x="168" y="186" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">system은 보존하고 오래된 대화부터 자르거나 요약한다</text>
-  <rect x="24" y="220" width="304" height="56" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
-  <text x="40" y="238" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">선언 상한 (ollama show)</text>
-  <text x="40" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">구조상 처리 가능한 최대 — 예: 131,072</text>
-  <rect x="352" y="220" width="304" height="56" rx="12" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
-  <text x="368" y="238" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">적용 창 (ollama ps CONTEXT)</text>
-  <text x="368" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">이번 실행의 실제 값 — 예: 4,096. 이 값이 기준</text>
+  <path d="M216 212 L216 158" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <rect x="174" y="212" width="372" height="26" rx="7" data-fill-role="danger-fill" fill="#FCECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="234" y="225" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">system은 보존 · 오래된 대화부터 자르거나 요약</text>
+  <rect x="24" y="250" width="304" height="56" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="40" y="268" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">선언 상한 (ollama show)</text>
+  <text x="40" y="288" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">구조상 처리 가능한 최대 — 예: 131,072</text>
+  <rect x="352" y="250" width="304" height="56" rx="12" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="368" y="268" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">적용 창 (ollama ps CONTEXT)</text>
+  <text x="368" y="288" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">이번 실행의 실제 값 — 예: 4,096. 이 값이 기준</text>
 </svg>

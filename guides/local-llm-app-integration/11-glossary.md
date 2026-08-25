@@ -12,7 +12,7 @@
 | 용어 | 뜻 |
 | --- | --- |
 | **runtime** | 모델을 메모리에 올리고 HTTP로 요청을 받는 프로그램 (Ollama, vLLM, llama-server, LM Studio) ([01 §1](01-integration-anatomy.md)) |
-| **OpenAI 호환 API** | OpenAI의 요청·응답 JSON 형식을 흉내 낸 endpoint. 기본 경로(`/v1/chat/completions`, `/v1/embeddings`)는 거의 같고 가장자리는 다름 ([02](02-openai-compatible-api.md)) |
+| **OpenAI 호환 API** | OpenAI의 기본 요청·응답 JSON 형식을 따르는 endpoint. 기본 대화 방식은 비슷하지만 구조화 출력·tool calling·context 설정 같은 부가 기능은 runtime마다 다름 ([02](02-openai-compatible-api.md)) |
 | **`base_url`** | SDK가 요청을 보낼 주소. 백엔드 전환 시 `model`·키·지원 기능과 함께 바꾸고 확인함 ([01 §0](01-integration-anatomy.md)) |
 | **endpoint** | 특정 기능의 URL 경로 (`/v1/chat/completions` 등) ([02 §0](02-openai-compatible-api.md)) |
 | **SDK** | 요청 JSON을 대신 만들어 주는 라이브러리 (`openai` 패키지) ([01 §2](01-integration-anatomy.md)) |
