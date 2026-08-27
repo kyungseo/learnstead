@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>브랜치로 두 시안을 비교하고 하나만 남기기</title>
+  <desc>시간과 작업은 왼쪽에서 오른쪽으로 진행한다. main의 한 커밋에서 try-blue와 try-green 브랜치가 갈라져 각각 커밋을 만들고, 선택한 try-green만 main으로 돌아와 병합된다. try-blue는 병합하지 않고 삭제한다.</desc>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4"/>
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">평행 세계를 만들었다가 하나만 남긴다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">시간과 작업은 왼쪽에서 오른쪽으로 진행</text>
+
+  <line x1="60" y1="180" x2="624" y2="180" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="3"/>
+  <circle cx="84" cy="180" r="8" data-fill-role="compute-line" fill="#3F8F72"/>
+  <text x="84" y="206" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">첫 저장</text>
+  <circle cx="204" cy="180" r="8" data-fill-role="compute-line" fill="#3F8F72"/>
+  <text x="204" y="206" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">푸터 추가</text>
+  <text x="60" y="158" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">main — 항상 돌아가는 상태</text>
+
+  <path d="M204 180 C242 180 270 148 300 120" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2.5"/>
+  <circle cx="300" cy="120" r="8" data-fill-role="edge-line" fill="#2E6DA4"/>
+  <text x="316" y="112" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">시안 A: 파랑</text>
+  <text x="316" y="130" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">마음에 안 들면 병합하지 않고 삭제</text>
+  <text x="214" y="128" font-size="10" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">try-blue</text>
+  <text x="520" y="120" font-size="12.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">✕ 폐기</text>
+
+  <path d="M204 180 C244 180 270 218 300 240 C374 244 430 228 480 180" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2.5"/>
+  <circle cx="300" cy="240" r="8" data-fill-role="api-line" fill="#5B54A8"/>
+  <text x="316" y="248" font-size="11" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">시안 B: 초록</text>
+  <text x="214" y="234" font-size="10" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">try-green</text>
+  <circle cx="480" cy="180" r="9" data-fill-role="api-line" fill="#5B54A8"/>
+  <text x="500" y="158" font-size="10" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">병합(merge)</text>
+  <text x="340" y="282" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">선이 갈라지는 곳 = branch · 다시 만나는 곳 = merge</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 290" width="680" height="290" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>PR — 합치기 전 검토 화면</title>
+  <desc>브랜치에서 작업한 커밋들을 push한 뒤 PR을 만들면 바뀐 파일과 줄을 한 화면에서 검토하고 설명과 댓글을 남긴 다음 병합 버튼으로 main에 합친다. 혼자여도 AI가 만든 변경을 검토하는 데 쓸모가 있다.</desc>
+  <defs><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="290" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">PR = 합쳐 달라는 요청서 겸 검토 화면</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">혼자여도 쓰는 이유 — AI가 만든 변경을 한눈에 검토</text>
+  <rect x="24" y="84" width="116" height="62" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="82.0" y="107.5" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">브랜치에서 작업</text>
+  <text x="82.0" y="120.5" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">git switch -c fix-login</text>
+  <path d="M141 115 L152 115" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="153" y="84" width="116" height="62" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="211.0" y="107.5" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">올리기</text>
+  <text x="211.0" y="120.5" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">git push -u origin ...</text>
+  <path d="M270 115 L281 115" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="282" y="84" width="116" height="62" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="107.5" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">PR 만들기</text>
+  <text x="340.0" y="120.5" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">GitHub에서 버튼 클릭</text>
+  <path d="M399 115 L410 115" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="411" y="84" width="116" height="62" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="469.0" y="107.5" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">검토</text>
+  <text x="469.0" y="120.5" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">바뀐 줄 · 설명 · 댓글</text>
+  <path d="M528 115 L539 115" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="540" y="84" width="116" height="62" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="598.0" y="107.5" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">병합</text>
+  <text x="598.0" y="120.5" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Merge → 브랜치 삭제</text>
+  <rect x="24" y="176" width="632" height="84" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="40" y="194" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">PR 설명에 넣을 세 가지</text>
+  <rect x="40" y="210" width="192" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="52" y="224" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">무엇을 바꿨나</text>
+  <text x="52" y="240" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">바뀐 동작을 한 줄로</text>
+  <rect x="244" y="210" width="192" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="256" y="224" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">왜</text>
+  <text x="256" y="240" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">코드만 봐서는 알 수 없는 이유</text>
+  <rect x="448" y="210" width="192" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="460" y="224" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">확인 방법</text>
+  <text x="460" y="240" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">검토자가 실제로 눌러 볼 순서</text>
+  <text x="340.0" y="274" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">급하면 PR 없이 merge해도 된다 — PR은 의무가 아니라 도구</text>
+</svg>

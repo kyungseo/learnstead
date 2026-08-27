@@ -8,27 +8,24 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 > **Learnstead = learn + homestead.** 배운 내용을 직접 실행하고 검증하며 차곡차곡 쌓아 가는 작은 배움의
 > 터전이라는 뜻입니다. 각 자료는 핵심 개념, 따라 할 수 있는 절차, 검증 기록을 함께 제공합니다.
 
-## Local LLM 학습 경로
+## 가이드 한눈에 보기
 
-두 가이드는 앞뒤가 이어집니다. 먼저 내 장비에서 모델을 실행하고, 다음 가이드에서 그 모델을 프로그램에 연결해
-출력 형태와 도구 권한을 다룹니다.
+| Local LLM 실행 | Local LLM 앱 연결 | AI 코딩을 위한 Git |
+| --- | --- | --- |
+| [![Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가는 Local LLM 가이드](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md) | [![코드가 로컬 LLM으로 전달되고 구조화 출력과 도구 실행으로 나뉘는 앱 연결 가이드](guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp)](guides/local-llm-app-integration/README.md) | [![Git 기록에서 main과 worktree 두 작업 공간을 나누고 검토한 결과로 합치는 Git 가이드](guides/git-for-vibe-coders/assets/git-for-vibe-coders-hero.webp)](guides/git-for-vibe-coders/README.md) |
+| 내 장비에서 모델을 고르고 실행한 뒤 GPU 적재와 첫 응답까지 확인합니다. | 실행한 모델을 프로그램에서 호출하고 대화·답변 형식·도구 사용 범위를 다룹니다. | AI가 만든 변경을 저장·확인·분리·공유하고, branch와 worktree로 여러 작업을 안전하게 나눕니다. |
+| **[1편 시작 →](guides/local-llm/README.md)** | **[2편 시작 →](guides/local-llm-app-integration/README.md)** | **[가이드 시작 →](guides/git-for-vibe-coders/README.md)** |
 
-### 1. 내 장비에서 LLM 직접 실행하기
+## 추천 학습 경로
 
-[![Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가 화면 속 Llama와 대화 아이콘으로 이어지는 Learnstead Local LLM 가이드 삽화](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md)
+### Local LLM — 실행한 모델을 프로그램까지 연결하기
 
-Local LLM의 개념과 모델·runtime 선택부터 Ollama 설치, 첫 응답과 GPU 적재 확인까지 이어집니다.
+1. [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) — 모델·runtime 선택, 설치, 첫 응답, GPU 적재 확인
+2. [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) — 대화 상태, 구조화 출력, tool calling, 읽기 전용 agent
 
-**[가이드 시작하기 →](guides/local-llm/README.md)**
+### AI 코딩 기본기 — 변경의 결정권 유지하기
 
-### 2. Local LLM을 내 프로그램에 연결하기
-
-[![노트북의 코드가 JSON을 거쳐 로컬 LLM으로 전달되고, 구조화된 체크리스트와 안전 방패를 가진 도구 실행으로 나뉘는 손그림](guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp)](guides/local-llm-app-integration/README.md)
-
-Python 네 줄의 첫 호출에서 시작해 대화 상태, 구조화 출력, tool calling, 읽기 전용 agent와 prompt injection 경계까지
-직접 만들고 판정합니다.
-
-**[다음 가이드 시작하기 →](guides/local-llm-app-integration/README.md)**
+1. [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) — commit과 diff부터 branch·worktree·PR·공개 전 점검까지
 
 ## 학습 자료
 
@@ -36,6 +33,7 @@ Python 네 줄의 첫 호출에서 시작해 대화 상태, 구조화 출력, to
 | --- | --- | --- | --- |
 | 가이드 | [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) | 로컬 LLM을 처음 접하는 사람부터 직접 환경을 구성하려는 사용자 | 공개 |
 | 가이드 | [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) | 로컬 모델을 코드에서 호출하고 출력·도구 경계를 설계하려는 개발자 | 공개 |
+| 가이드 | [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) | AI 코딩 도구와 작업하면서 변경을 저장·검토·분리·공유하려는 입문자 | 공개 |
 
 ## 세 가지 콘텐츠 유형
 

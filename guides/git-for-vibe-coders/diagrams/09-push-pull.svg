@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>올리기와 받기의 관계</title>
+  <desc>내 컴퓨터의 로컬 저장소를 remote add로 원격에 연결하고 push로 커밋을 올린다. 다른 컴퓨터는 clone으로 전체 기록을 받아 시작하고, 이후 pull로 최신 변경을 받는다.</desc>
+  <defs><marker id="ah-api-line-2_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-2_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="11.25" markerHeight="11.25" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">한 번 연결하면 그다음은 push 한 줄</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">커밋한 것만 올라간다 — 커밋 안 한 작업은 백업되지 않는다</text>
+  <rect x="24" y="116" width="170" height="80" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="109.0" y="141.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">내 컴퓨터</text>
+  <text x="109.0" y="155.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">로컬 저장소</text>
+  <text x="109.0" y="169.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">커밋 기록</text>
+  <rect x="255" y="116" width="170" height="80" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="141.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">GitHub</text>
+  <text x="340.0" y="155.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">원격 저장소</text>
+  <text x="340.0" y="169.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Private 권장</text>
+  <rect x="486" y="116" width="170" height="80" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="571.0" y="141.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">다른 컴퓨터</text>
+  <text x="571.0" y="155.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">노트북 · 동료</text>
+  <text x="571.0" y="169.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">clone으로 시작</text>
+  <path d="M196 140 L251 140" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2.5" marker-end="url(#ah-compute-line-2_5)"/>
+  <text x="223" y="126" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">push</text>
+  <path d="M251 172 L196 172" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2.5" marker-end="url(#ah-api-line-2_5)"/>
+  <text x="223" y="186" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">pull</text>
+  <path d="M427 140 L482 140" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2.5" marker-end="url(#ah-api-line-2_5)"/>
+  <text x="455" y="126" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">clone / pull</text>
+  <path d="M482 172 L427 172" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2.5" marker-end="url(#ah-edge-line-2_5)"/>
+  <text x="455" y="186" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">push</text>
+  <rect x="24" y="224" width="632" height="52" rx="10" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="40" y="242" font-size="11" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">처음 한 번만:</text>
+  <text x="120" y="242" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">git remote add origin &lt;주소&gt;   →   git push -u origin main</text>
+  <text x="40" y="262" font-size="11" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">이후로는:</text>
+  <text x="120" y="262" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">git push  (올리기)      ·      git pull  (받기 — 작업 시작 전 습관)</text>
+</svg>

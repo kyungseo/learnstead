@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>Git과 호스팅 서비스의 관계</title>
+  <desc>Git은 내 컴퓨터 안에서 도는 도구로 저장소와 기록을 만들고, GitHub 같은 호스팅 서비스는 그 저장소의 복사본을 인터넷에 올려 두어 백업·다른 컴퓨터·다른 사람과의 공유를 가능하게 한다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">Git은 도구, GitHub는 그 도구가 만든 것을 올려 두는 곳</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">GitHub 계정이 없어도 Git은 완전히 동작한다</text>
+  <rect x="24" y="70" width="300" height="178" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">내 컴퓨터 (인터넷 불필요)</text>
+  <rect x="40" y="104" width="268" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="174.0" y="124.0" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">Git — 설치하는 프로그램</text>
+  <rect x="40" y="152" width="268" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="174.0" y="164.0" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">내 저장소 (.git)</text>
+  <text x="174.0" y="178.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">커밋 · 브랜치 · 기록 전부</text>
+  <text x="174" y="216" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">커밋 · 되돌리기 · 브랜치 = 전부 여기서</text>
+  <rect x="356" y="70" width="300" height="178" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="372" y="88" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">인터넷 (선택)</text>
+  <rect x="372" y="104" width="268" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="506.0" y="124.0" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">GitHub · GitLab · Bitbucket</text>
+  <rect x="372" y="152" width="268" height="40" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="506.0" y="164.0" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">원격 저장소</text>
+  <text x="506.0" y="178.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">백업 · 이어하기 · PR</text>
+  <text x="506" y="216" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">여러 컴퓨터 · 여러 사람이 여기로 모인다</text>
+  <path d="M312 160 L366 160" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <text x="339" y="146" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">push</text>
+  <path d="M366 182 L312 182" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="339" y="196" font-size="10" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">pull · clone</text>
+  <text x="340.0" y="280" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">비유: Git = 내 폰의 사진첩 · GitHub = 클라우드 백업. 백업을 안 켜도 사진은 찍힌다</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="680" height="340" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>되돌리기 상황별 판단</title>
+  <desc>add 전 파일 변경을 버리려면 diff를 확인한 뒤 restore를 사용하고, add 후 staging에서만 빼려면 restore --staged를 사용한다. commit한 변경은 revert로 취소 commit을 남길 수 있다. reset --hard는 commit되지 않은 작업을 Git 기록 없이 삭제하므로 위험하다.</desc>
+  <defs><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-warning-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-danger-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="340" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">어디까지 갔는가로 명령이 갈린다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">무엇을 남기고 버릴지 먼저 확인한다</text>
+  <rect x="24" y="76" width="172" height="40" rx="8" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="34" y="96" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">아직 add 안 함</text>
+  <path d="M198 96 L214 96" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" marker-end="url(#ah-warning-line-2)"/>
+  <rect x="220" y="76" width="200" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="230" y="96" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">diff 확인 → restore 파일</text>
+  <rect x="432" y="76" width="172" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="442" y="96" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">그 파일의 미커밋 변경을 버림</text>
+  <text x="636" y="96" font-size="15" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">!</text>
+  <rect x="24" y="124" width="172" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="34" y="144" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">add 했음 (커밋 전)</text>
+  <path d="M198 144 L214 144" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="220" y="124" width="200" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="230" y="144" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">git restore --staged 파일</text>
+  <rect x="432" y="124" width="172" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="442" y="144" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">스테이징에서만 빼기</text>
+  <text x="636" y="144" font-size="15" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">✓</text>
+  <rect x="24" y="172" width="172" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="34" y="192" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">커밋했음 (push 전)</text>
+  <path d="M198 192 L214 192" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="220" y="172" width="200" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="230" y="192" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">git revert 해시</text>
+  <rect x="432" y="172" width="172" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="442" y="192" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">취소하는 새 커밋을 쌓음</text>
+  <text x="636" y="192" font-size="15" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">✓</text>
+  <rect x="24" y="220" width="172" height="40" rx="8" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="34" y="240" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">push까지 했음</text>
+  <path d="M198 240 L214 240" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="220" y="220" width="200" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="230" y="240" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">git revert 해시</text>
+  <rect x="432" y="220" width="172" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="442" y="240" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">공유 기록을 보존하며 취소</text>
+  <text x="636" y="240" font-size="15" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">✓</text>
+  <rect x="24" y="268" width="172" height="40" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="288" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">기록을 지우고 싶음</text>
+  <path d="M198 288 L214 288" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <rect x="220" y="268" width="200" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="230" y="288" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">git reset --hard</text>
+  <rect x="432" y="268" width="172" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="442" y="288" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">커밋 안 된 작업이 영구 삭제됨</text>
+  <text x="636" y="288" font-size="15" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">✕</text>
+  <rect x="24" y="320" width="632" height="0" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="340.0" y="328" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">AI가 reset --hard · push --force · clean -fd 를 제안하면 멈추고 되묻는다 (12 신호등)</text>
+</svg>

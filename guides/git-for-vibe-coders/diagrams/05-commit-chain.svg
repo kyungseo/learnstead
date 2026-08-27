@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>커밋은 스냅샷의 사슬</title>
+  <desc>커밋 하나에는 그 시점의 프로젝트 전체 스냅샷, 메시지, 작성자와 시각, 이전 커밋 연결이 들어 있고 짧은 해시로 식별된다. 커밋들이 사슬로 이어져 역사가 된다.</desc>
+  <defs><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">커밋 = 스냅샷 + 메시지 + 이전 커밋 연결</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">게임의 세이브 포인트 — 언제든 그 지점으로 돌아갈 수 있다</text>
+  <rect x="40" y="96" width="176" height="92" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="52" y="114" font-size="11" font-weight="700" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">8f68cf4</text>
+  <text x="52" y="134" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">첫 저장</text>
+  <text x="52" y="154" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">프로젝트 전체 스냅샷</text>
+  <text x="52" y="172" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">작성자 · 시각</text>
+  <path d="M218 142 L238 142" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="240" y="96" width="176" height="92" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="252" y="114" font-size="11" font-weight="700" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">842a04e</text>
+  <text x="252" y="134" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">로그인 버튼 추가</text>
+  <text x="252" y="154" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">프로젝트 전체 스냅샷</text>
+  <text x="252" y="172" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">작성자 · 시각</text>
+  <path d="M418 142 L438 142" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="440" y="96" width="176" height="92" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="452" y="114" font-size="11" font-weight="700" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">70b9757</text>
+  <text x="452" y="134" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">AI: 배경을 검게</text>
+  <text x="452" y="154" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">프로젝트 전체 스냅샷</text>
+  <text x="452" y="172" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">작성자 · 시각</text>
+  <text x="216" y="202" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">부모 연결</text>
+  <text x="416" y="202" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">부모 연결</text>
+  <text x="528" y="210" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">▲ 최신 (HEAD)</text>
+  <rect x="24" y="224" width="632" height="52" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="242" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">git log --oneline 으로 보는 화면 (위가 최신)</text>
+  <text x="40" y="262" font-size="10.5" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">70b9757 AI: 배경을 검게    /    842a04e 로그인 버튼 추가    /    8f68cf4 첫 저장</text>
+  <text x="340.0" y="288" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">해시 앞 7글자만 알면 그 지점을 지목할 수 있다</text>
+</svg>

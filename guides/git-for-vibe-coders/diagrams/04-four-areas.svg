@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>Git의 네 공간과 명령의 흐름</title>
+  <desc>작업 폴더에서 git add로 스테이징에, git commit으로 로컬 저장소에, git push로 원격 저장소에 이동한다. 반대 방향으로는 clone, pull, restore가 있고 stash는 작업 폴더의 변경을 임시 서랍에 치워 둔다. 앞의 세 공간은 내 컴퓨터 안에 있다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-warning-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="360" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">명령은 전부 &#x27;이 칸에서 저 칸으로&#x27;다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">앞의 세 칸은 내 컴퓨터, 마지막 하나만 인터넷 너머</text>
+  <rect x="24" y="74" width="470" height="176" rx="12" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="36" y="90" font-size="11" font-weight="700" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">내 컴퓨터</text>
+  <rect x="40" y="106" width="130" height="76" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="105.0" y="129.5" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">① 작업 폴더</text>
+  <text x="105.0" y="143.0" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">지금 편집 중인 파일</text>
+  <text x="105.0" y="156.5" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">AI가 방금 고친 것</text>
+  <rect x="194" y="106" width="130" height="76" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="259.0" y="129.5" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">② 스테이징</text>
+  <text x="259.0" y="143.0" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">다음 커밋에 담을 것</text>
+  <text x="259.0" y="156.5" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">골라 놓은 상태</text>
+  <rect x="348" y="106" width="130" height="76" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="413.0" y="129.5" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">③ 로컬 저장소</text>
+  <text x="413.0" y="143.0" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">내 커밋 기록 전부</text>
+  <text x="413.0" y="156.5" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">.git 폴더</text>
+  <rect x="524" y="106" width="132" height="76" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="590.0" y="129.5" font-size="12" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">④ 원격 저장소</text>
+  <text x="590.0" y="143.0" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">GitHub 등</text>
+  <text x="590.0" y="156.5" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">공유 · 백업</text>
+  <path d="M172 130 L190 130" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <text x="181" y="116" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">add</text>
+  <path d="M326 130 L344 130" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="335" y="116" font-size="9.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">commit</text>
+  <path d="M480 130 L520 130" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <text x="500" y="116" font-size="9.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">push</text>
+  <path d="M590 184 L590 232 L105 232 L105 190" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" marker-end="url(#ah-warning-line-2)"/>
+  <text x="348" y="222" font-size="10" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">pull  (원격의 변경을 받아 내 파일에 반영)</text>
+  <path d="M413 184 L413 210 L138 210 L138 190" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ah-compute-line-1_5)"/>
+  <text x="276" y="200" font-size="9.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">restore</text>
+  <rect x="40" y="268" width="200" height="46" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="140.0" y="283.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">임시 서랍 (stash)</text>
+  <text x="140.0" y="297.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">하던 일을 잠깐 치워 둠</text>
+  <path d="M105 254 L105 264" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <text x="150" y="254" font-size="9.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">stash</text>
+  <rect x="268" y="268" width="388" height="46" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="462.0" y="291.0" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">git status — 지금 ①②에 뭐가 있는지 보여 준다 (가장 자주 쓰는 명령)</text>
+  <text x="340.0" y="340" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">clone은 ④를 통째로 받아 ③+①을 한 번에 만드는 명령</text>
+</svg>

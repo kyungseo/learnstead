@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>파일 복사 방식의 한계와 버전 관리</title>
+  <desc>보고서_최종, 보고서_최종_수정, 보고서_진짜최종 같은 복사본이 폴더에 쌓이면 무엇이 최신인지, 둘 사이에 무엇이 달라졌는지, 왜 바꿨는지 알 수 없다. 버전 관리 도구는 같은 파일 하나의 기록을 순서와 메시지가 있는 한 줄로 정리한다.</desc>
+
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">복사본은 곧 무너진다 — 최신도, 차이도, 이유도 모른다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">버전 관리는 파일 하나에 &#x27;기록&#x27;을 붙인다</text>
+  <rect x="24" y="70" width="304" height="200" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">손으로 하는 버전 관리</text>
+  <rect x="40" y="104" width="272" height="26" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="117" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">보고서.docx</text>
+  <rect x="40" y="136" width="272" height="26" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="149" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">보고서_최종.docx</text>
+  <rect x="40" y="168" width="272" height="26" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="181" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">보고서_최종_수정.docx</text>
+  <rect x="40" y="200" width="272" height="26" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="213" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">보고서_진짜최종.docx</text>
+  <rect x="40" y="232" width="272" height="26" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="245" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">보고서_진짜최종(2).docx</text>
+  <text x="176" y="282" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">어느 게 최신? 뭐가 달라졌지? 왜 바꿨지?</text>
+  <rect x="352" y="70" width="304" height="200" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">버전 관리 도구</text>
+  <rect x="368" y="104" width="272" height="26" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="117" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">보고서.docx  (파일은 하나)</text>
+  <rect x="368" y="142" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="154" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">a1b2c3d</text>
+  <text x="438" y="154" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">초안 작성</text>
+  <rect x="368" y="172" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="184" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">e4f5g6h</text>
+  <text x="438" y="184" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">3장 표 추가</text>
+  <rect x="368" y="202" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="214" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">i7j8k9l</text>
+  <text x="438" y="214" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">검토 의견 반영</text>
+  <rect x="368" y="232" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="244" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">m1n2o3p</text>
+  <text x="438" y="244" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">최종 문구 수정</text>
+  <text x="504" y="282" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">순서 · 내용 차이 · 이유가 전부 남는다</text>
+  <text x="340.0" y="306" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">AI와 코딩하면 파일 여러 개가 한 번에 바뀐다 — 손으로는 따라갈 수 없다</text>
+</svg>
