@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>macOS와 Windows의 Git 준비 경로</title>
+  <desc>macOS는 터미널에서 git --version을 실행하면 Xcode 명령줄 도구 설치가 안내되고 기본 셸은 zsh이다. Windows는 Git for Windows를 설치하면 Git Bash가 함께 설치되며 이 가이드의 명령은 Git Bash 기준이다. 양쪽 모두 마지막에 이름과 이메일 두 줄을 설정한다.</desc>
+
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">두 갈래로 시작해 같은 지점에서 만난다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">확인 → 설치 → 이름·이메일 두 줄</text>
+  <rect x="24" y="70" width="304" height="168" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">macOS</text>
+  <rect x="40" y="104" width="272" height="36" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="50" y="116" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">터미널 열기</text>
+  <text x="50" y="130" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Command+Space → &#x27;터미널&#x27;</text>
+  <rect x="40" y="148" width="272" height="36" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="50" y="160" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">git --version</text>
+  <text x="50" y="174" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">설치 안내가 뜨면 &#x27;설치&#x27; 클릭</text>
+  <rect x="40" y="192" width="272" height="36" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="50" y="204" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">기본 셸 = zsh</text>
+  <text x="50" y="218" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">프롬프트가 % 로 시작</text>
+  <rect x="352" y="70" width="304" height="168" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">Windows</text>
+  <rect x="368" y="104" width="272" height="36" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="378" y="116" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">Git for Windows 설치</text>
+  <text x="378" y="130" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">git-scm.com/download/win</text>
+  <rect x="368" y="148" width="272" height="36" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="378" y="160" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">편집기·기본 브랜치 선택</text>
+  <text x="378" y="174" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Notepad · main 권장</text>
+  <rect x="368" y="192" width="272" height="36" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="378" y="204" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">Git Bash 사용</text>
+  <text x="378" y="218" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">폴더 우클릭 → Git Bash Here</text>
+  <rect x="24" y="254" width="632" height="48" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340" y="272" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">공통 마무리 — 딱 두 줄 (한 번만)</text>
+  <text x="340" y="290" font-size="11" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">git config --global user.name &quot;이름&quot;      ·      git config --global user.email &quot;메일&quot;</text>
+  <text x="340.0" y="318" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Windows에서 Git Bash를 쓰면 macOS와 똑같은 명령을 쓰게 된다</text>
+</svg>

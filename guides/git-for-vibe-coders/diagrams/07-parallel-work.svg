@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">worktree로 AI 작업을 분리하고 검토 후 합치는 흐름</title>
+  <desc id="desc">공용 Git 저장소에서 main, add-login, fix-footer branch를 서로 다른 worktree와 AI 세션에 배정하고, 각 결과를 독립적으로 검토한 뒤 확인된 commit만 main에 합친다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M2 2 L11 7 L2 12" fill="none" stroke="#2E6DA4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="900" fill="#F7F7F5" data-fill-role="canvas"/>
+  <text x="72" y="84" fill="#252B35" data-fill-role="ink" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="42" font-weight="700">AI 세션마다 worktree 하나, branch 하나</text>
+  <text x="72" y="128" fill="#636A75" data-fill-role="muted" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">작업은 분리하고, commit은 공유하며, main에 합치는 결정은 한곳에서 한다.</text>
+
+  <g font-family="Pretendard, Apple SD Gothic Neo, sans-serif">
+    <rect x="492" y="180" width="456" height="116" rx="28" fill="#E4EDF3" stroke="#2E6DA4" stroke-width="3" data-fill-role="surface-tint" data-stroke-role="focus"/>
+    <text x="720" y="226" text-anchor="middle" fill="#252B35" data-fill-role="ink" font-size="30" font-weight="700">공용 Git repository</text>
+    <text x="720" y="264" text-anchor="middle" fill="#636A75" data-fill-role="muted" font-size="22">commit · branch · remote 기록 공유</text>
+
+    <rect x="80" y="410" width="360" height="250" rx="30" fill="#FFFFFF" stroke="#3F8F72" stroke-width="3" data-fill-role="surface" data-stroke-role="positive"/>
+    <text x="260" y="460" text-anchor="middle" fill="#252B35" data-fill-role="ink" font-size="29" font-weight="700">원래 worktree</text>
+    <rect x="138" y="496" width="244" height="58" rx="18" fill="#E5F1EC" data-fill-role="surface-tint"/>
+    <text x="260" y="533" text-anchor="middle" fill="#2E6756" data-fill-role="positive" font-size="24" font-weight="700">main</text>
+    <text x="260" y="601" text-anchor="middle" fill="#636A75" data-fill-role="muted" font-size="21">통합·최종 확인 담당</text>
+
+    <rect x="540" y="410" width="360" height="250" rx="30" fill="#FFFFFF" stroke="#B08434" stroke-width="3" data-fill-role="surface" data-stroke-role="warning"/>
+    <text x="720" y="460" text-anchor="middle" fill="#252B35" data-fill-role="ink" font-size="29" font-weight="700">AI 세션 A</text>
+    <rect x="598" y="496" width="244" height="58" rx="18" fill="#F7EFDF" data-fill-role="surface-tint"/>
+    <text x="720" y="533" text-anchor="middle" fill="#8A6725" data-fill-role="warning" font-size="24" font-weight="700">add-login</text>
+    <text x="720" y="601" text-anchor="middle" fill="#636A75" data-fill-role="muted" font-size="21">로그인 범위만 수정·검증</text>
+
+    <rect x="1000" y="410" width="360" height="250" rx="30" fill="#FFFFFF" stroke="#5A55B6" stroke-width="3" data-fill-role="surface" data-stroke-role="edge"/>
+    <text x="1180" y="460" text-anchor="middle" fill="#252B35" data-fill-role="ink" font-size="29" font-weight="700">AI 세션 B</text>
+    <rect x="1058" y="496" width="244" height="58" rx="18" fill="#ECEAF8" data-fill-role="surface-tint"/>
+    <text x="1180" y="533" text-anchor="middle" fill="#5A55B6" data-fill-role="edge" font-size="24" font-weight="700">fix-footer</text>
+    <text x="1180" y="601" text-anchor="middle" fill="#636A75" data-fill-role="muted" font-size="21">footer 범위만 수정·검증</text>
+
+    <rect x="360" y="748" width="720" height="86" rx="24" fill="#E5F1EC" stroke="#3F8F72" stroke-width="2" data-fill-role="surface-tint" data-stroke-role="positive"/>
+    <text x="720" y="783" text-anchor="middle" fill="#252B35" data-fill-role="ink" font-size="25" font-weight="700">검토한 commit만 main에 merge</text>
+    <text x="720" y="815" text-anchor="middle" fill="#636A75" data-fill-role="muted" font-size="20">병렬로 만들었다는 이유만으로 자동 합치지 않는다</text>
+  </g>
+
+  <path d="M620 308 L274 396" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M720 308 V396" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M820 308 L1166 396" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M260 674 L400 734" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M720 674 V734" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M1180 674 L1040 734" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>커밋 메시지의 좋고 나쁨</title>
+  <desc>update, 수정, asdf 같은 메시지로 채워진 기록에서는 어느 지점으로 되돌아갈지 고를 수 없고, 무엇을 어떻게 했는지 적은 메시지로 채워진 기록에서는 원하는 지점을 바로 찾을 수 있다.</desc>
+
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">메시지는 되돌릴 때 읽는 목록이다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">미래의 내가 &#x27;어디로 돌아갈까&#x27;를 고르는 화면</text>
+  <rect x="24" y="70" width="304" height="178" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">이런 기록에서는 고를 수 없다</text>
+  <rect x="40" y="106" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="117" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">a1b2c3d  update</text>
+  <rect x="40" y="133" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="144" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">e4f5g6h  수정</text>
+  <rect x="40" y="160" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="171" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">i7j8k9l  ㅁㄴㅇㄹ</text>
+  <rect x="40" y="187" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="198" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">m1n2o3p  AI가 고침</text>
+  <rect x="40" y="214" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="225" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">q4r5s6t  여러 가지 수정</text>
+  <text x="176" y="232" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">어느 지점으로 돌아가야 하지?</text>
+  <rect x="352" y="70" width="304" height="178" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">이런 기록에서는 바로 찾는다</text>
+  <rect x="368" y="106" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="117" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">a1b2c3d  상품 목록에 정렬 기능 추가</text>
+  <rect x="368" y="133" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="144" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">e4f5g6h  장바구니 수량 0 버그 수정</text>
+  <rect x="368" y="160" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="171" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">i7j8k9l  로그인 버튼을 오른쪽으로</text>
+  <rect x="368" y="187" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="198" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">m1n2o3p  첫 화면 소개 문구 교체</text>
+  <rect x="368" y="214" width="272" height="22" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="225" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">q4r5s6t  안 쓰는 파일 삭제</text>
+  <text x="504" y="232" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">두 번째 줄로 되돌리면 되겠다</text>
+  <text x="340.0" y="282" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">형식: 무엇을 어떻게 했다 · 50자 안쪽 · 한 커밋에 한 가지 일</text>
+</svg>

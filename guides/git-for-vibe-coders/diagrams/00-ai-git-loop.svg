@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <title id="title">AI와 코딩할 때 Git을 사용하는 네 단계</title>
+  <desc id="desc">안전한 상태를 commit으로 저장하고, AI가 만든 diff를 확인하고, branch와 worktree로 작업을 분리한 뒤, 검토한 결과만 원격에 공유하는 흐름이다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M2 2 L11 7 L2 12" fill="none" stroke="#2E6DA4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="760" fill="#F7F7F5" data-fill-role="canvas"/>
+  <text x="72" y="88" fill="#252B35" data-fill-role="ink" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="42" font-weight="700">AI와 코딩할 때 Git을 쓰는 순서</text>
+  <text x="72" y="132" fill="#636A75" data-fill-role="muted" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">저장 → 확인 → 분리 → 공유. 실행은 AI에게 맡겨도 판단의 경계는 남긴다.</text>
+
+  <g font-family="Pretendard, Apple SD Gothic Neo, sans-serif">
+    <rect x="72" y="220" width="280" height="330" rx="30" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="3" data-fill-role="surface" data-stroke-role="focus"/>
+    <circle cx="132" cy="282" r="30" fill="#E4EDF3" data-fill-role="surface-tint"/>
+    <text x="132" y="292" text-anchor="middle" fill="#2E6DA4" data-fill-role="focus" font-size="28" font-weight="700">1</text>
+    <text x="108" y="355" fill="#252B35" data-fill-role="ink" font-size="34" font-weight="700">Save</text>
+    <text x="108" y="407" fill="#636A75" data-fill-role="muted" font-size="25">돌아갈 상태를</text>
+    <text x="108" y="445" fill="#636A75" data-fill-role="muted" font-size="25">commit으로 남긴다</text>
+    <rect x="108" y="478" width="208" height="40" rx="20" fill="#E4EDF3" data-fill-role="surface-tint"/>
+    <text x="212" y="506" text-anchor="middle" fill="#2E6DA4" data-fill-role="focus" font-size="21" font-weight="650">git commit</text>
+
+    <rect x="392" y="220" width="280" height="330" rx="30" fill="#FFFFFF" stroke="#3F8F72" stroke-width="3" data-fill-role="surface" data-stroke-role="positive"/>
+    <circle cx="452" cy="282" r="30" fill="#E5F1EC" data-fill-role="surface-tint"/>
+    <text x="452" y="292" text-anchor="middle" fill="#3F8F72" data-fill-role="positive" font-size="28" font-weight="700">2</text>
+    <text x="428" y="355" fill="#252B35" data-fill-role="ink" font-size="34" font-weight="700">Inspect</text>
+    <text x="428" y="407" fill="#636A75" data-fill-role="muted" font-size="25">AI가 바꾼 파일과</text>
+    <text x="428" y="445" fill="#636A75" data-fill-role="muted" font-size="25">줄을 직접 확인한다</text>
+    <rect x="428" y="478" width="208" height="40" rx="20" fill="#E5F1EC" data-fill-role="surface-tint"/>
+    <text x="532" y="506" text-anchor="middle" fill="#3F8F72" data-fill-role="positive" font-size="21" font-weight="650">status · diff</text>
+
+    <rect x="712" y="220" width="280" height="330" rx="30" fill="#FFFFFF" stroke="#B08434" stroke-width="3" data-fill-role="surface" data-stroke-role="warning"/>
+    <circle cx="772" cy="282" r="30" fill="#F7EFDF" data-fill-role="surface-tint"/>
+    <text x="772" y="292" text-anchor="middle" fill="#B08434" data-fill-role="warning" font-size="28" font-weight="700">3</text>
+    <text x="748" y="355" fill="#252B35" data-fill-role="ink" font-size="34" font-weight="700">Isolate</text>
+    <text x="748" y="407" fill="#636A75" data-fill-role="muted" font-size="25">branch로 갈래를,</text>
+    <text x="748" y="445" fill="#636A75" data-fill-role="muted" font-size="25">worktree로 폴더 분리</text>
+    <rect x="748" y="478" width="208" height="40" rx="20" fill="#F7EFDF" data-fill-role="surface-tint"/>
+    <text x="852" y="506" text-anchor="middle" fill="#8A6725" data-fill-role="warning" font-size="21" font-weight="650">branch · worktree</text>
+
+    <rect x="1032" y="220" width="280" height="330" rx="30" fill="#FFFFFF" stroke="#5A55B6" stroke-width="3" data-fill-role="surface" data-stroke-role="edge"/>
+    <circle cx="1092" cy="282" r="30" fill="#ECEAF8" data-fill-role="surface-tint"/>
+    <text x="1092" y="292" text-anchor="middle" fill="#5A55B6" data-fill-role="edge" font-size="28" font-weight="700">4</text>
+    <text x="1068" y="355" fill="#252B35" data-fill-role="ink" font-size="34" font-weight="700">Share</text>
+    <text x="1068" y="407" fill="#636A75" data-fill-role="muted" font-size="25">검토한 commit만</text>
+    <text x="1068" y="445" fill="#636A75" data-fill-role="muted" font-size="25">PR로 검토·합친다</text>
+    <rect x="1068" y="478" width="208" height="40" rx="20" fill="#ECEAF8" data-fill-role="surface-tint"/>
+    <text x="1172" y="506" text-anchor="middle" fill="#5A55B6" data-fill-role="edge" font-size="21" font-weight="650">push · PR</text>
+  </g>
+
+  <path d="M364 385 H380" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M684 385 H700" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+  <path d="M1004 385 H1020" fill="none" stroke="#2E6DA4" stroke-width="3" marker-end="url(#arrow)" data-stroke-role="focus"/>
+
+  <rect x="192" y="610" width="1056" height="78" rx="24" fill="#E4EDF3" data-fill-role="surface-tint"/>
+  <text x="720" y="660" text-anchor="middle" fill="#252B35" data-fill-role="ink" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="26" font-weight="650">각 단계의 시작은 같은 질문: 지금 상태와 바뀔 범위를 확인했는가?</text>
+</svg>
