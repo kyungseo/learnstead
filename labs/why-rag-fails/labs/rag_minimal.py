@@ -29,6 +29,24 @@ client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")
 
 
 # ---------------------------------------------------------------- (1)(2) 파싱·청킹
+def positive_int(value: str) -> int:
+    """argparse용 1 이상의 정수 검사."""
+    try:
+        number = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("1 이상의 정수를 입력하세요") from exc
+    if number < 1:
+        raise argparse.ArgumentTypeError("1 이상의 정수를 입력하세요")
+    return number
+
+
+def chunk_mode(value: str) -> str:
+    """paragraph 또는 1자 이상인 fixed:N 청킹 형식만 허용한다."""
+    if value == "paragraph" or re.fullmatch(r"fixed:[1-9]\d*", value):
+        return value
+    raise argparse.ArgumentTypeError("paragraph 또는 fixed:N 형식으로 입력하세요 (N은 1 이상)")
+
+
 def load_chunks(mode: str, docs_dir: Path = DOCS_DIR) -> list[dict]:
     """docs/*.md 를 읽어 조각 목록을 만든다. 각 조각은 출처 메타데이터를 가진다."""
     chunks = []
@@ -137,10 +155,10 @@ def answer(question: str, hits: list[dict], rules: bool) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("question", nargs="?")
-    ap.add_argument("--top-k", type=int, default=3)
+    ap.add_argument("--top-k", type=positive_int, default=3, help="검색할 조각 수 (1 이상)")
     ap.add_argument("--threshold", type=float, default=0.0, help="dense 점수 하한 (0이면 끔)")
     ap.add_argument("--search", choices=["dense", "bm25", "hybrid"], default="dense")
-    ap.add_argument("--chunk", default="paragraph", help="paragraph | fixed:N")
+    ap.add_argument("--chunk", type=chunk_mode, default="paragraph", help="paragraph | fixed:N (N은 1 이상)")
     ap.add_argument("--no-rules", action="store_true")
     ap.add_argument("--show", action="store_true")
     ap.add_argument("--docs", default="docs", help="문서 디렉터리 (기본 docs)")

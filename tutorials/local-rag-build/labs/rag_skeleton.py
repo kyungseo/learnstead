@@ -27,6 +27,17 @@ RULES = (
 )
 
 
+def positive_int(value: str) -> int:
+    """argparse용 1 이상의 정수 검사."""
+    try:
+        number = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("1 이상의 정수를 입력하세요") from exc
+    if number < 1:
+        raise argparse.ArgumentTypeError("1 이상의 정수를 입력하세요")
+    return number
+
+
 # ------------------------------------------------ (1)(2) 파싱·청킹: 단락마다 한 조각, 앞에 [파일 › 절] 출처
 def load_chunks() -> list[dict]:
     chunks = []
@@ -81,7 +92,7 @@ def answer(question: str, hits: list[dict]) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("question", nargs="?")
-    ap.add_argument("--top-k", type=int, default=3)
+    ap.add_argument("--top-k", type=positive_int, default=3, help="검색할 조각 수 (1 이상)")
     ap.add_argument("--show", action="store_true")
     args = ap.parse_args()
 

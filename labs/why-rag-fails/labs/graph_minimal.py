@@ -44,6 +44,17 @@ TRIPLE_SCHEMA = {
 }
 
 
+def non_negative_int(value: str) -> int:
+    """argparse용 0 이상의 정수 검사."""
+    try:
+        number = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("0 이상의 정수를 입력하세요") from exc
+    if number < 0:
+        raise argparse.ArgumentTypeError("0 이상의 정수를 입력하세요")
+    return number
+
+
 # ---------------------------------------------------------------- (3') 개체·관계 추출
 def extract_triples(text: str) -> list[dict]:
     """한 단락에서 (주어, 관계, 목적어) 목록을 JSON으로 받는다. 구조화 출력으로 형식을 강제한다."""
@@ -142,7 +153,7 @@ def main():
     ap.add_argument("question", nargs="?")
     ap.add_argument("--build", action="store_true")
     ap.add_argument("--reset", action="store_true")
-    ap.add_argument("--hops", type=int, default=3)
+    ap.add_argument("--hops", type=non_negative_int, default=3, help="탐색 깊이 (0 이상)")
     args = ap.parse_args()
     if args.reset:
         GRAPH_FILE.unlink(missing_ok=True)
