@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>임베딩 공간 — 뜻이 비슷하면 점이 가깝다</title>
+  <desc>문장들이 임베딩 공간의 점으로 놓이고, 뜻이 비슷한 &#x27;연차 이월 규정&#x27;과 &#x27;휴가를 다음 해로 넘길 수 있나요&#x27;는 가까이, &#x27;회의실 예약 방법&#x27;은 멀리 놓인다. 질문 점에서 가장 가까운 점들을 찾는 것이 검색이다.</desc>
+
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">임베딩 — 의미를 좌표로 찍는다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">단어가 달라도 뜻이 같으면 가깝다 · 그림은 1,024차원을 2차원으로 줄인 감각</text>
+  <rect x="24" y="66" width="420" height="224" rx="10" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="34" y="80" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">임베딩 공간 (감각용 2D)</text>
+  <circle cx="120" cy="150" r="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="131" y="150" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">연차 이월 규정</text>
+  <circle cx="150" cy="190" r="7" data-fill-role="api-line" fill="#5B54A8"/>
+  <text x="162" y="190" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">휴가를 다음 해로 넘길 수 있나요?</text>
+  <circle cx="118" cy="226" r="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="129" y="226" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">이월 한도 5일</text>
+  <circle cx="318" cy="120" r="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="329" y="120" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">회의실 예약 방법</text>
+  <circle cx="330" cy="240" r="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="341" y="240" font-size="11" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">비밀번호 90일 변경</text>
+  <circle cx="150" cy="190" r="56" data-fill-role="surface" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="150" y="258" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">질문 점에서 가까운 순서 = 검색 결과</text>
+  <rect x="468" y="66" width="188" height="224" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="484" y="84" font-size="13" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">유사도 읽는 감각</text>
+  <rect x="482" y="106" width="160" height="34" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="117" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">0.8 이상</text>
+  <text x="490" y="131" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">거의 같은 내용</text>
+  <rect x="482" y="148" width="160" height="34" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="159" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">0.6 ~ 0.8</text>
+  <text x="490" y="173" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">같은 주제 · 유용</text>
+  <rect x="482" y="190" width="160" height="34" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="201" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">0.4 ~ 0.6</text>
+  <text x="490" y="215" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">관련 있으나 답 없을 수도</text>
+  <rect x="482" y="232" width="160" height="34" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="243" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">0.4 미만</text>
+  <text x="490" y="257" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">대개 무관</text>
+  <text x="340.0" y="304" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">구간은 모델·도메인마다 다르다 — 내 데이터로 실습 ④에서 직접 잰다</text>
+</svg>

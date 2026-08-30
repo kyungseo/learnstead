@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>닫힌 책 시험 vs 오픈북 시험</title>
+  <desc>모델만 쓰는 것은 기억만으로 답하는 닫힌 책 시험이고, RAG는 질문 시점에 문서 조각을 함께 받아 답하는 오픈북 시험이다. 오픈북이라도 엉뚱한 페이지를 펴 주면 틀린다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">닫힌 책 vs 오픈북 — RAG는 답변 시점에 근거를 건넨다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">어느 페이지를 펴 주는가(검색)가 오픈북 점수를 가른다</text>
+  <rect x="24" y="70" width="304" height="190" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">모델만 (닫힌 책 시험)</text>
+  <rect x="44" y="108" width="120" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="104.0" y="127.25" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">질문</text>
+  <text x="104.0" y="142.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">&quot;연차 이월 기한?&quot;</text>
+  <rect x="208" y="108" width="100" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="258.0" y="127.25" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">LLM</text>
+  <text x="258.0" y="142.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">학습 기억만</text>
+  <path d="M166 136 L200 136" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <rect x="44" y="184" width="264" height="56" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="176.0" y="203.25" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">답: &quot;15일까지 이월됩니다&quot;</text>
+  <text x="176.0" y="218.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">없는 규정을 지어냄 (환각)</text>
+  <path d="M258 166 L258 178" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <rect x="352" y="70" width="304" height="190" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">RAG (오픈북 시험)</text>
+  <rect x="372" y="108" width="84" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="414.0" y="136.0" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">질문</text>
+  <rect x="488" y="108" width="148" height="56" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="562.0" y="127.25" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">검색된 조각</text>
+  <text x="562.0" y="142.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">휴가 규정 › 3. 이월</text>
+  <path d="M458 136 L480 136" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="372" y="184" width="264" height="56" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="504.0" y="203.25" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답: &quot;3월 말까지 최대 5일 [1]&quot;</text>
+  <text x="504.0" y="218.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">근거 번호와 함께</text>
+  <path d="M562 166 L562 178" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <text x="422" y="176" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">LLM + 조각</text>
+  <text x="340.0" y="282" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">오픈북이라도 엉뚱한 페이지(조각)를 펴 주면 틀린다 → 실패 실습</text>
+</svg>

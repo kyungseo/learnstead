@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 350" width="680" height="350" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>RAG · Long Context · Fine-tuning 비교 매트릭스</title>
+  <desc>세 방법을 문서 규모, 갱신 빈도, 출처 추적, 비용 축으로 비교한다. RAG는 규모·갱신·출처에 강하고, Long Context는 문서가 적을 때 단순하며, Fine-tuning은 사실 주입보다 행동 교정에 적합하다.</desc>
+
+  <rect x="0" y="0" width="680" height="350" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">세 방법은 다른 문제를 푼다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">사실은 RAG가, 분량은 context가, 말투는 fine-tuning이 담당한다</text>
+  <rect x="152" y="70" width="152" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="85.0" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">RAG</text>
+  <rect x="328" y="70" width="152" height="30" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="404" y="85.0" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">Long Context</text>
+  <rect x="504" y="70" width="152" height="30" rx="9" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="580" y="85.0" font-size="13" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">Fine-tuning</text>
+  <rect x="24" y="110" width="104" height="36" rx="8" data-fill-role="data-fill" fill="#F4F5F5" />
+  <text x="76" y="128.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">문서 규모</text>
+  <rect x="152" y="110" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="128.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">수만 건도 가능</text>
+  <rect x="328" y="110" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="404" y="128.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">몇 편 이내</text>
+  <rect x="504" y="110" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="580" y="128.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">학습 데이터로 변환</text>
+  <rect x="24" y="152" width="104" height="36" rx="8" data-fill-role="data-fill" fill="#F4F5F5" />
+  <text x="76" y="170.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">문서가 바뀌면</text>
+  <rect x="152" y="152" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="170.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">색인만 갱신</text>
+  <rect x="328" y="152" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="404" y="170.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">즉시 반영</text>
+  <rect x="504" y="152" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="580" y="170.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">재학습 필요</text>
+  <rect x="24" y="194" width="104" height="36" rx="8" data-fill-role="data-fill" fill="#F4F5F5" />
+  <text x="76" y="212.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">출처 추적</text>
+  <rect x="152" y="194" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">조각 단위 가능</text>
+  <rect x="328" y="194" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="404" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">통째로라 약함</text>
+  <rect x="504" y="194" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="580" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">불가</text>
+  <rect x="24" y="236" width="104" height="36" rx="8" data-fill-role="data-fill" fill="#F4F5F5" />
+  <text x="76" y="254.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">모델 변경</text>
+  <rect x="152" y="236" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="254.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">없음</text>
+  <rect x="328" y="236" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="404" y="254.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">없음</text>
+  <rect x="504" y="236" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="580" y="254.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">가중치 변경</text>
+  <rect x="24" y="278" width="104" height="36" rx="8" data-fill-role="data-fill" fill="#F4F5F5" />
+  <text x="76" y="296.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">비용이 드는 곳</text>
+  <rect x="152" y="278" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="296.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">파이프라인 운영</text>
+  <rect x="328" y="278" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="404" y="296.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">매 질문 입력 토큰</text>
+  <rect x="504" y="278" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="580" y="296.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">GPU 학습·데이터 준비</text>
+  <text x="340.0" y="334" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">이 가이드의 본문은 RAG · Long Context는 대안이자 RAG 안의 예산 문제 · Fine-tuning은 범위 밖</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>hybrid 검색 + reranker 파이프라인</title>
+  <desc>질문이 dense 검색과 BM25 검색을 동시에 거쳐 RRF로 합쳐지고, 상위 후보 20~50개가 reranker를 지나 최종 top-k 3~5개로 좁혀진다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">hybrid + reranker — 다른 실패를 보완하는 검색 구성</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">dense와 sparse는 다른 실패를 한다 · reranker는 후보를 다시 읽어 순위를 매긴다</text>
+  <rect x="24" y="124" width="90" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="69.0" y="152.0" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">질문</text>
+  <rect x="164" y="80" width="150" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="239.0" y="99.25" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">dense 검색</text>
+  <text x="239.0" y="114.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">벡터 · 동의어에 강함</text>
+  <rect x="164" y="168" width="150" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="239.0" y="187.25" font-size="13" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">BM25 검색</text>
+  <text x="239.0" y="202.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">단어 일치 · 코드에 강함</text>
+  <path d="M116 148 Q140 148 156 112" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <path d="M116 156 Q140 156 156 192" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <rect x="356" y="124" width="120" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="416.0" y="143.25" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">RRF 융합</text>
+  <text x="416.0" y="158.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">순위 합산 · 후보 30</text>
+  <path d="M316 108 Q336 108 348 140" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <path d="M316 196 Q336 196 348 164" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="506" y="124" width="150" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="581.0" y="143.25" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">reranker</text>
+  <text x="581.0" y="158.75" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">쌍으로 읽어 재정렬</text>
+  <path d="M478 152 L498 152" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <text x="340" y="262" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">비교 순서: 청킹 확인 → hybrid → reranker · 골든셋에서 필요한 단계만 적용</text>
+</svg>

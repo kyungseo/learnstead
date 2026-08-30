@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>GraphRAG 구조 — 색인과 두 가지 검색</title>
+  <desc>색인 시점에 조각에서 개체·관계를 추출해 그래프를 만들고 커뮤니티로 묶어 요약을 생성하며, 질의 시점에 local search는 개체 주변 이웃과 조각을, global search는 커뮤니티 요약을 사용해 답한다.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="360" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">GraphRAG — 비용은 색인에, 두 검색은 다른 질문에</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">local = 개체 주변(multi-hop) · global = 커뮤니티 요약(전체 질문)</text>
+  <rect x="24" y="68" width="632" height="108" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="40" y="86" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">색인 시점 — 조각 수 × LLM 호출</text>
+  <rect x="40" y="104" width="108" height="54" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="94.0" y="122.75" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">조각</text>
+  <text x="94.0" y="137.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">벡터 RAG와 공유</text>
+  <path d="M150 131 L160 131" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="162" y="104" width="108" height="54" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="216.0" y="122.75" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">(a) 추출</text>
+  <text x="216.0" y="137.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">개체·관계·설명</text>
+  <path d="M272 131 L282 131" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="284" y="104" width="108" height="54" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="338.0" y="122.75" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">(b) 그래프</text>
+  <text x="338.0" y="137.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">개체 통합 · 연결</text>
+  <path d="M394 131 L404 131" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="406" y="104" width="108" height="54" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="460.0" y="122.75" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">(c) 커뮤니티</text>
+  <text x="460.0" y="137.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">묶음 찾기</text>
+  <path d="M516 131 L526 131" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="528" y="104" width="108" height="54" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="582.0" y="122.75" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">요약 생성</text>
+  <text x="582.0" y="137.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">묶음마다 LLM</text>
+  <rect x="24" y="200" width="304" height="132" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="40" y="218" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">local search</text>
+  <rect x="40" y="236" width="272" height="34" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="176.0" y="253.0" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">질문의 개체 → 이웃 개체·관계 → 관련 조각</text>
+  <rect x="40" y="282" width="272" height="34" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="176.0" y="299.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">multi-hop · 특정 개체 중심 질문</text>
+  <rect x="352" y="200" width="304" height="132" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="368" y="218" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">global search</text>
+  <rect x="368" y="236" width="272" height="34" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="504.0" y="253.0" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">커뮤니티 요약들 → map-reduce 식 답변</text>
+  <rect x="368" y="282" width="272" height="34" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="504.0" y="299.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">전체 요약 · 집계 질문</text>
+  <path d="M338.0 160 Q220 180 176 196" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M582.0 160 Q540 180 504 196" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ah-api-line-1_5)"/>
+  <text x="340.0" y="346" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">변형(Lazy·Light·Hippo)은 (c)·요약 생성의 비용을 줄이거나 미루는 데서 갈린다 · 이 가이드 실습은 (a)(b)+local까지</text>
+</svg>
