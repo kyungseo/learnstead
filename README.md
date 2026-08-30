@@ -45,14 +45,11 @@ Local LLM을 프로그램에서 호출하는 방식이 먼저 궁금하면 [앱 
 
 ## 학습 자료
 
-| 유형 | 제목 | 대상 | 상태 |
-| --- | --- | --- | --- |
-| 가이드 | [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) | 로컬 LLM을 처음 접하는 사람부터 직접 환경을 구성하려는 사용자 | 공개 |
-| 가이드 | [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) | 로컬 모델을 코드에서 호출하고 출력·도구 경계를 설계하려는 개발자 | 공개 |
-| 가이드 | [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) | AI 코딩 도구와 작업하면서 변경을 저장·검토·분리·공유하려는 입문자 | 공개 |
-| 가이드 | [내 문서와 대화하는 AI 이해하기 — RAG와 Graph](guides/local-rag/README.md) | 내 문서에 답하는 AI의 구조와 GraphRAG 선택 기준을 이해하려는 사용자 | 공개 |
-| 튜토리얼 | [내 문서에 답하는 Local RAG 만들기](tutorials/local-rag-build/README.md) | Ollama와 Python으로 근거를 제시하는 RAG를 직접 만들려는 사용자 | 공개 |
-| 실습 | [RAG는 왜 틀리는가](labs/why-rag-fails/README.md) | RAG 실패를 재현·진단하고 검색 품질을 반복 측정하려는 사용자 | 공개 |
+| 시리즈 | 포함 자료 | 대상 |
+| --- | --- | --- |
+| Local LLM | 가이드 · [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md)<br>가이드 · [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) | 로컬 LLM을 직접 실행하고 프로그램에 연결하려는 사용자 |
+| 내 문서에 답하는 AI | 가이드 · [내 문서와 대화하는 AI 이해하기 — RAG와 Graph](guides/local-rag/README.md)<br>튜토리얼 · [내 문서에 답하는 Local RAG 만들기](tutorials/local-rag-build/README.md)<br>실습 · [RAG는 왜 틀리는가](labs/why-rag-fails/README.md) | RAG의 구조를 이해하고 직접 구축한 뒤 검색 품질을 검증하려는 사용자 |
+| AI 코딩 기본기 | 가이드 · [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) | AI 코딩 도구와 작업하면서 변경을 저장·검토·분리·공유하려는 입문자 |
 
 ## 문서가 지키는 기준
 
