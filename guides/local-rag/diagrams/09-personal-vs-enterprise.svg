@@ -9,29 +9,29 @@
   <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">여러 사용자가 함께 쓰기 전, 권한 필터와 평가 기준을 먼저 확인한다</text>
   <rect x="24" y="70" width="632" height="84" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
   <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">개인 RAG (튜토리얼)</text>
-  <rect x="40" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="75.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">문서 폴더</text>
-  <path d="M111 120 L117 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="118" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="153.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">청킹</text>
-  <path d="M189 120 L195 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="196" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="231.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">임베딩</text>
-  <path d="M267 120 L273 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="274" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="309.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">저장소</text>
-  <path d="M345 120 L351 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="352" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="387.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">검색</text>
-  <path d="M423 120 L429 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="430" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
-  <text x="465.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">프롬프트</text>
-  <path d="M501 120 L507 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="508" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
-  <text x="543.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">로컬 LLM</text>
-  <path d="M579 120 L585 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="586" y="100" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
-  <text x="621.0" y="120.0" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답·근거</text>
+  <rect x="40" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="74" y="120" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">문서 폴더</text>
+  <path d="M109 120 L115 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="116" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="150" y="120" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">청킹</text>
+  <path d="M185 120 L191 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="192" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="226" y="120" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">임베딩</text>
+  <path d="M261 120 L267 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="268" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="302" y="120" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">저장소</text>
+  <path d="M337 120 L343 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="344" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="378" y="120" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">검색</text>
+  <path d="M413 120 L419 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="420" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="454" y="120" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">프롬프트</text>
+  <path d="M489 120 L495 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="496" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="530" y="120" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">로컬 LLM</text>
+  <path d="M565 120 L571 120" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="572" y="100" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="606" y="120" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답·근거</text>
   <rect x="24" y="172" width="632" height="228" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="40" y="190" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">기업 RAG — 같은 가운데 줄 + 위(수집) + 아래(운영) + 질의 경로의 인증·권한·게이트웨이</text>
   <rect x="40" y="206" width="140" height="36" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
@@ -41,29 +41,29 @@
   <rect x="340" y="206" width="140" height="36" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="410.0" y="224.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">삭제 전파 · 재색인</text>
   <text x="500" y="224" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">수집·갱신 (위)</text>
-  <rect x="40" y="258" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="75.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">청킹</text>
-  <path d="M111 278 L117 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="118" y="258" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="153.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">임베딩</text>
-  <path d="M189 278 L195 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="196" y="258" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
-  <text x="231.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">벡터·graph</text>
-  <path d="M267 278 L273 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="274" y="258" width="70" height="40" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
-  <text x="309.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">권한 필터</text>
-  <path d="M345 278 L351 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="352" y="258" width="70" height="40" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
-  <text x="387.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">혼합·정렬</text>
-  <path d="M423 278 L429 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="430" y="258" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
-  <text x="465.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">프롬프트</text>
-  <path d="M501 278 L507 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="508" y="258" width="70" height="40" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
-  <text x="543.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">라우팅</text>
-  <path d="M579 278 L585 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <rect x="586" y="258" width="70" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
-  <text x="621.0" y="278.0" font-size="9.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답·근거</text>
+  <rect x="40" y="258" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="74" y="278" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">청킹</text>
+  <path d="M109 278 L115 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="116" y="258" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="150" y="278" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">임베딩</text>
+  <path d="M185 278 L191 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="192" y="258" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="226" y="278" font-size="9.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">벡터·graph</text>
+  <path d="M261 278 L267 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="268" y="258" width="68" height="40" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="302" y="278" font-size="9.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">권한 필터</text>
+  <path d="M337 278 L343 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="344" y="258" width="68" height="40" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="378" y="278" font-size="9.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">혼합·정렬</text>
+  <path d="M413 278 L419 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="420" y="258" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="454" y="278" font-size="9.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">프롬프트</text>
+  <path d="M489 278 L495 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="496" y="258" width="68" height="40" rx="9" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="530" y="278" font-size="9.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">라우팅</text>
+  <path d="M565 278 L571 278" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="572" y="258" width="68" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="606" y="278" font-size="9.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답·근거</text>
   <text x="40" y="312" font-size="10" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">인증 → 게이트웨이 → 권한 필터는 검색 전에</text>
   <rect x="40" y="330" width="140" height="36" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="110.0" y="348.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">추적 · 골든셋 평가</text>
