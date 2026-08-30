@@ -17,19 +17,25 @@ import argparse
 import json
 from pathlib import Path
 
-from rag_minimal import bm25_rank, dense_rank, embed, load_chunks, rrf
+from rag_minimal import (
+    bm25_rank,
+    chunk_mode,
+    dense_rank,
+    embed,
+    load_chunks,
+    positive_int,
+    rrf,
+)
 
 GOLDEN = Path(__file__).parent / "goldenset.json"
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--top-k", type=int, default=3)
+    ap.add_argument("--top-k", type=positive_int, default=3, help="검색할 조각 수 (1 이상)")
     ap.add_argument("--search", choices=["dense", "bm25", "hybrid"], default="dense")
-    ap.add_argument("--chunk", default="paragraph")
+    ap.add_argument("--chunk", type=chunk_mode, default="paragraph", help="paragraph | fixed:N (N은 1 이상)")
     args = ap.parse_args()
-    if args.top_k < 1:
-        ap.error("--top-k는 1 이상이어야 합니다")
 
     chunks = load_chunks(args.chunk)
     for c, v in zip(chunks, embed([c["text"] for c in chunks])):
