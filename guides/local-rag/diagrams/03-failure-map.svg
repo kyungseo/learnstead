@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>RAG 네 가지 실패 지점 진단 지도</title>
+  <desc>파이프라인 위에 네 실패 지점을 표시한다. 검색 누락과 관련 없는 문서는 검색 단계, 잘못된 조각은 청킹 단계, 근거 없는 답변은 프롬프트·생성 단계의 문제이며 각각 고칠 부품이 다르다.</desc>
+  <defs><marker id="ah-danger-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">&quot;RAG가 틀렸다&quot;는 네 칸 중 어디인지부터 묻는다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">근거 목록에 정답이 있는가 · 답이 근거와 일치하는가 — 두 질문으로 네 칸이 갈린다</text>
+  <rect x="24" y="86" width="104" height="44" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="76.0" y="108.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">청킹</text>
+  <path d="M130 108 L154 108" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="156" y="86" width="104" height="44" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="208.0" y="108.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">검색</text>
+  <path d="M262 108 L286 108" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="288" y="86" width="104" height="44" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="108.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">프롬프트</text>
+  <path d="M394 108 L418 108" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="420" y="86" width="104" height="44" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="472.0" y="108.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">생성</text>
+  <path d="M526 108 L550 108" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="552" y="86" width="104" height="44" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="604.0" y="108.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답 + 근거</text>
+  <rect x="24" y="176" width="150" height="66" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="99.0" y="194.0" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">② 잘못된 조각</text>
+  <text x="99.0" y="208.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">답이 두 조각에 걸쳐 잘림</text>
+  <text x="99.0" y="222.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처방: 경계 수정 · 부모-자식</text>
+  <path d="M76.0 132 L76.0 170" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <rect x="190" y="176" width="220" height="66" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="300.0" y="194.0" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">① 검색 누락 · ③ 관련 없는 문서</text>
+  <text x="300.0" y="208.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">정답 못 찾음 / 무관한 조각 유입</text>
+  <text x="300.0" y="222.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처방: hybrid · 점수 하한</text>
+  <path d="M208.0 132 L208.0 170" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <rect x="426" y="176" width="230" height="66" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="541.0" y="194.0" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">④ 근거 없는 답변</text>
+  <text x="541.0" y="208.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">찾아온 조각과 무관하게 지어냄</text>
+  <text x="541.0" y="222.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처방: 규칙 · temperature · 모델</text>
+  <path d="M472.0 132 L472.0 170" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <text x="24" y="268" font-size="11.5" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">판정표:</text>
+  <text x="80" y="268" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">근거에 정답 없음 → 검색·청킹 실패(①②③)  /  근거에 있는데 답이 다름 → 생성 실패(④)</text>
+  <text x="340.0" y="300" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">모델 교체는 마지막이다 — 먼저 검색 결과(근거 목록)를 본다</text>
+</svg>

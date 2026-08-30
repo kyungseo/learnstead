@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 372" width="680" height="372" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>프롬프트 조립과 context 예산</title>
+  <desc>시스템 규칙, 번호가 붙은 근거 조각들, 사용자 질문이 순서대로 쌓여 하나의 프롬프트가 되고, 생성할 답변 여지까지 포함한 전체가 runtime이 실제로 적용한 context 창 안에 들어가야 한다. 넘친 입력의 처리 방식은 runtime과 endpoint에 따라 다르므로 실제 context와 로그를 확인한다.</desc>
+
+  <rect x="0" y="0" width="680" height="372" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">규칙 → 근거 → 질문, 그리고 답변 여지까지 예산 안에</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">넘친 입력의 처리 방식은 runtime·endpoint마다 다르다 — 실제 context와 로그를 함께 확인한다</text>
+  <rect x="24" y="70" width="420" height="252" rx="12" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" stroke-dasharray="5 4" />
+  <text x="36" y="84" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">context 창 (runtime이 적용한 값, 예: 4,096 토큰)</text>
+  <rect x="40" y="100" width="300" height="30" rx="6" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="115" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">[system] 규칙 3종</text>
+  <text x="352" y="115" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">≈150</text>
+  <rect x="40" y="140" width="300" height="30" rx="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="48" y="155" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">[1] 휴가 규정 › 3. 연차 이월</text>
+  <text x="352" y="155" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">≈400</text>
+  <rect x="40" y="176" width="300" height="30" rx="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="48" y="191" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">[2] 휴가 규정 › 4. 연차 신청</text>
+  <text x="352" y="191" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">≈400</text>
+  <rect x="40" y="212" width="300" height="30" rx="6" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="48" y="227" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">[3] 장비 규정 › 2. 반납</text>
+  <text x="352" y="227" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">≈400</text>
+  <rect x="40" y="248" width="300" height="30" rx="6" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="48" y="263" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">질문: 연차는 며칠까지 이월?</text>
+  <text x="352" y="263" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">≈50</text>
+  <rect x="40" y="286" width="300" height="26" rx="6" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="48" y="299" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">답변 여지 max_tokens (생성될 답)</text>
+  <text x="352" y="299" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">≈500</text>
+  <text x="40" y="338" font-size="11" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">합계 ≈2,800 토큰 → 여유를 두어 4,096 이상 확보 · top-k × 조각 ≤ 창의 절반</text>
+  <rect x="468" y="70" width="188" height="252" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="484" y="88" font-size="13" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">확인 명령</text>
+  <rect x="482" y="104" width="160" height="48" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="118" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">ollama ps</text>
+  <text x="490" y="138" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">CONTEXT = 이번 실행 값</text>
+  <rect x="482" y="164" width="160" height="48" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="178" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">ollama show &lt;model&gt;</text>
+  <text x="490" y="198" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">context length = 선언 상한</text>
+  <rect x="482" y="224" width="160" height="48" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="490" y="238" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">예산 규칙</text>
+  <text x="490" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">top-k×조각 ≤ 창의 절반</text>
+  <text x="340.0" y="358" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">한국어는 같은 글자 수에 토큰이 더 든다 — 숫자는 감각용</text>
+</svg>

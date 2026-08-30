@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 270" width="680" height="270" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>지식 그래프의 구성 요소</title>
+  <desc>노드(개체), 엣지(관계), 속성으로 이루어진 지식 그래프 예시. 김서연이 플랫폼팀의 팀장이고, 박지호가 플랫폼팀 소속이며 검색 고도화 프로젝트의 담당자다. 세 트리플을 이으면 3홉 질문의 경로가 된다.</desc>
+  <defs><marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="270" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">노드 · 엣지 · 속성 — 사실은 (주어, 관계, 목적어)</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">&quot;검색 고도화 프로젝트 담당자가 속한 팀의 팀장은?&quot; = 경로 3홉</text>
+  <circle cx="100" cy="190" r="36" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="100" y="184" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">검색 고도화</text>
+  <text x="100" y="199" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">프로젝트</text>
+  <circle cx="290" cy="190" r="36" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5"/>
+  <text x="290" y="184" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">박지호</text>
+  <text x="290" y="199" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">사람</text>
+  <circle cx="480" cy="190" r="36" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5"/>
+  <text x="480" y="184" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">플랫폼팀</text>
+  <text x="480" y="199" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">팀</text>
+  <circle cx="480" cy="90" r="36" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5"/>
+  <text x="480" y="84" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">김서연</text>
+  <text x="480" y="99" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">사람</text>
+  <path d="M252 190 L144 190" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="195" y="176" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">담당자</text>
+  <path d="M328 190 L436 190" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="385" y="176" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">소속</text>
+  <path d="M480 128 L480 146" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <text x="498" y="140" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">팀장</text>
+  <text x="195" y="206" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">1홉</text>
+  <text x="385" y="206" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">2홉</text>
+  <text x="462" y="140" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">3홉</text>
+  <rect x="560" y="150" width="96" height="76" rx="8" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="568" y="164" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">속성</text>
+  <text x="568" y="182" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">예산: 3억</text>
+  <text x="568" y="198" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">출처: 조직 §1</text>
+  <text x="568" y="214" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">(노드·엣지에 부착)</text>
+  <line x1="560" y1="188" x2="518" y2="188" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="340.0" y="254" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">벡터 검색은 세 문장이 한 조각(또는 top-k 전부)에 있어야 답한다 — 그래프는 문서 경계를 무시하고 경로를 따른다</text>
+</svg>

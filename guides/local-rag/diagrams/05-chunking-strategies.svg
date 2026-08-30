@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>청킹 다섯 전략 — 같은 문서, 다른 경계</title>
+  <desc>고정 길이는 문장 중간을 자르고, 재귀 분할은 절·단락 경계를 따르며, 의미 기반은 주제 전환에서 자르고, 부모-자식은 작은 조각으로 찾아 큰 단위를 넣으며, late chunking은 문서 전체를 임베딩한 뒤 조각으로 나눈다.</desc>
+
+  <rect x="0" y="0" width="680" height="420" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">청킹 — 답이 한 조각에 온전히 들어가게 자른다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">첫 비교안은 재귀 분할(구조 경계) · 다른 전략은 문서 구조와 실패 유형에 따라 비교</text>
+  <rect x="24" y="70" width="130" height="58" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="85" font-size="12" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">고정 길이</text>
+  <text x="34" y="102" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">문장·표 중간에서</text>
+  <text x="34" y="116" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">잘림</text>
+  <rect x="170" y="82" width="90" height="30" rx="4" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <rect x="265" y="82" width="90" height="30" rx="4" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <rect x="360" y="82" width="90" height="30" rx="4" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <rect x="455" y="82" width="90" height="30" rx="4" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <rect x="550" y="82" width="90" height="30" rx="4" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="410" y="97" font-size="10" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">… 95자마다 …</text>
+  <rect x="24" y="136" width="130" height="58" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="34" y="151" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">재귀 분할 (기본)</text>
+  <text x="34" y="168" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">절→단락→문장</text>
+  <text x="34" y="182" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">경계 그대로</text>
+  <rect x="170" y="148" width="86" height="30" rx="4" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <rect x="260" y="148" width="66" height="30" rx="4" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <rect x="330" y="148" width="106" height="30" rx="4" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <rect x="440" y="148" width="56" height="30" rx="4" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <rect x="500" y="148" width="116" height="30" rx="4" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <rect x="24" y="202" width="130" height="58" rx="8" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="34" y="217" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">의미 기반</text>
+  <text x="34" y="234" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">인접 문장 유사도가</text>
+  <text x="34" y="248" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">떨어지는 곳에서</text>
+  <rect x="170" y="214" width="86" height="30" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="260" y="214" width="66" height="30" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="330" y="214" width="106" height="30" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="440" y="214" width="56" height="30" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="500" y="214" width="116" height="30" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="24" y="268" width="130" height="58" rx="8" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="34" y="283" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">부모-자식</text>
+  <text x="34" y="300" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">검색은 작은 조각</text>
+  <text x="34" y="314" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">생성은 절 전체</text>
+  <rect x="170" y="274" width="266" height="42" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" stroke-dasharray="5 4" />
+  <rect x="442" y="274" width="174" height="42" rx="6" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" stroke-dasharray="5 4" />
+  <rect x="176" y="282" width="80" height="26" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="262" y="282" width="80" height="26" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="348" y="282" width="80" height="26" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="448" y="282" width="80" height="26" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="534" y="282" width="76" height="26" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <rect x="24" y="334" width="130" height="58" rx="8" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="34" y="349" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">late chunking</text>
+  <text x="34" y="366" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">문서 전체를 임베딩</text>
+  <text x="34" y="380" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">후 조각으로 분할</text>
+  <rect x="170" y="342" width="446" height="38" rx="6" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="393" y="352" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">문서 전체를 한 번에 임베딩</text>
+  <rect x="178" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <rect x="266" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <rect x="354" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <rect x="442" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <rect x="530" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="340.0" y="404" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">튜토리얼은 단락 분할 · 실패 실습 ②에서 경계가 답을 가르는 장면을 재현한다</text>
+</svg>

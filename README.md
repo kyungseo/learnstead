@@ -16,6 +16,12 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 | 내 장비에서 모델을 고르고 실행한 뒤 GPU 적재와 첫 응답까지 확인합니다. | 실행한 모델을 프로그램에서 호출하고 대화·답변 형식·도구 사용 범위를 다룹니다. | AI가 만든 변경을 저장·확인·분리·공유하고, branch와 worktree로 여러 작업을 안전하게 나눕니다. |
 | **[1편 시작 →](guides/local-llm/README.md)** | **[2편 시작 →](guides/local-llm-app-integration/README.md)** | **[가이드 시작 →](guides/git-for-vibe-coders/README.md)** |
 
+| RAG와 Graph 이해 | Local RAG 만들기 | RAG 실패 실습 |
+| --- | --- | --- |
+| [![내 문서를 검색해 근거와 함께 답하고 관계 그래프로 여러 사실을 잇는 RAG와 Graph 가이드](guides/local-rag/assets/local-rag-guide-hero.webp)](guides/local-rag/README.md) | [![문서 조각을 임베딩하고 검색해 Local LLM이 근거와 함께 답하는 Local RAG 튜토리얼](tutorials/local-rag-build/assets/local-rag-build-hero.webp)](tutorials/local-rag-build/README.md) | [![검색 누락과 근거 없는 답변을 찾아 진단하고 고치는 RAG 실패 실습](labs/why-rag-fails/assets/why-rag-fails-hero.webp)](labs/why-rag-fails/README.md) |
+| RAG의 색인·검색·생성 흐름과 GraphRAG가 필요한 질문을 개념부터 설명합니다. | Ollama와 Python으로 내 문서에 답하는 최소 RAG를 만들고 근거를 판정합니다. | 검색·청킹·생성·그래프의 실패를 재현하고 골든셋 지표로 변경 전후를 비교합니다. |
+| **[가이드 시작 →](guides/local-rag/README.md)** | **[튜토리얼 시작 →](tutorials/local-rag-build/README.md)** | **[실습 시작 →](labs/why-rag-fails/README.md)** |
+
 ## 추천 학습 경로
 
 ### Local LLM — 실행한 모델을 프로그램까지 연결하기
@@ -27,6 +33,16 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 
 1. [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) — commit과 diff부터 branch·worktree·PR·공개 전 점검까지
 
+### 내 문서에 답하는 AI — RAG 이해부터 실패 진단까지
+
+1. [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) — 모델을 준비하고 로컬 실행을 확인합니다
+2. [내 문서와 대화하는 AI 이해하기 — RAG와 Graph](guides/local-rag/README.md) — 색인·검색·생성, 청킹, 근거 제시, GraphRAG 선택 기준을 익힙니다
+3. [내 문서에 답하는 Local RAG 만들기](tutorials/local-rag-build/README.md) — Ollama와 Python으로 최소 RAG를 직접 완성합니다
+4. [RAG는 왜 틀리는가](labs/why-rag-fails/README.md) — 실패를 재현하고 원인을 구분한 뒤 골든셋으로 다시 잽니다
+
+Local LLM을 프로그램에서 호출하는 방식이 먼저 궁금하면 [앱 연결 가이드](guides/local-llm-app-integration/README.md)를 1편 다음에
+읽어도 좋습니다.
+
 ## 학습 자료
 
 | 유형 | 제목 | 대상 | 상태 |
@@ -34,6 +50,9 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 | 가이드 | [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) | 로컬 LLM을 처음 접하는 사람부터 직접 환경을 구성하려는 사용자 | 공개 |
 | 가이드 | [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) | 로컬 모델을 코드에서 호출하고 출력·도구 경계를 설계하려는 개발자 | 공개 |
 | 가이드 | [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) | AI 코딩 도구와 작업하면서 변경을 저장·검토·분리·공유하려는 입문자 | 공개 |
+| 가이드 | [내 문서와 대화하는 AI 이해하기 — RAG와 Graph](guides/local-rag/README.md) | 내 문서에 답하는 AI의 구조와 GraphRAG 선택 기준을 이해하려는 사용자 | 공개 |
+| 튜토리얼 | [내 문서에 답하는 Local RAG 만들기](tutorials/local-rag-build/README.md) | Ollama와 Python으로 근거를 제시하는 RAG를 직접 만들려는 사용자 | 공개 |
+| 실습 | [RAG는 왜 틀리는가](labs/why-rag-fails/README.md) | RAG 실패를 재현·진단하고 검색 품질을 반복 측정하려는 사용자 | 공개 |
 
 ## 문서가 지키는 기준
 
