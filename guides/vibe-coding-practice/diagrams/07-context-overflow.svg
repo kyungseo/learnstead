@@ -35,7 +35,7 @@
   <text x="486" y="211" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청9</text>
   <rect x="540" y="196" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="586" y="211" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청10</text>
-  <line x1="228" y1="186" x2="228" y2="236" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <line x1="236" y1="186" x2="236" y2="236" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2.5" stroke-dasharray="5 4"/>
   <text x="126" y="250" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">요약·제외 가능 — 재확인</text>
   <rect x="24" y="264" width="632" height="40" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="340" y="284" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">대처: 새 대화 + 인수인계 문장 (프로젝트 · 되는 것 · 안 되는 것 · 파일 · 규칙 · 지금 할 일)</text>
