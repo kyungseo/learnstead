@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>코드를 몰라도 하는 다섯 가지 확인</title>
+  <desc>직접 눌러 보기, 일부러 틀리게 하기, 껐다 켜기, 다른 데가 안 깨졌나, 무엇이 바뀌었나 다섯 가지 확인을 순서대로 하면 코드를 읽지 않고도 동작을 판정할 수 있다. 정상 입력만 보면 잘못된 입력에서 생기는 문제를 놓칠 수 있다.</desc>
+
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">&quot;완료했습니다&quot;는 확인이 아니다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">완료 보고와 실제 동작은 직접 대조해야 한다</text>
+  <rect x="24" y="76" width="140" height="38" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="34" y="95" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">① 직접 눌러 보기</text>
+  <rect x="174" y="76" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="184" y="95" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">AI가 알려 준 순서대로</text>
+  <rect x="374" y="76" width="200" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="384" y="95" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">기대한 결과가 나오나</text>
+  <rect x="24" y="122" width="140" height="38" rx="8" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="34" y="141" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">② 일부러 틀리게</text>
+  <rect x="174" y="122" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="184" y="141" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">빈칸·긴 글자·특수문자</text>
+  <rect x="374" y="122" width="200" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="384" y="141" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">조용히 깨지지 않나</text>
+  <rect x="24" y="168" width="140" height="38" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="34" y="187" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">③ 껐다 켜기</text>
+  <rect x="174" y="168" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="184" y="187" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">새로고침 · 재시작</text>
+  <rect x="374" y="168" width="200" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="384" y="187" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">저장이 실제로 되나</text>
+  <rect x="24" y="214" width="140" height="38" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="34" y="233" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">④ 다른 데 확인</text>
+  <rect x="174" y="214" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="184" y="233" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">안 건드린 기능 하나</text>
+  <rect x="374" y="214" width="200" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="384" y="233" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">같이 안 깨졌나</text>
+  <rect x="24" y="260" width="140" height="38" rx="8" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="34" y="279" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">⑤ 뭐가 바뀌었나</text>
+  <rect x="174" y="260" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="184" y="279" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">git status --short</text>
+  <rect x="374" y="260" width="200" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="384" y="279" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">예상 못 한 파일이 있나</text>
+  <text x="340" y="316" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">②가 빠지기 쉽다 — 되는 경우만 보면 잘못된 입력을 놓친다</text>
+</svg>

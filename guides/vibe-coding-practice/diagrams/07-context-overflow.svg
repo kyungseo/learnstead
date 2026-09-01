@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>대화가 길어지면 초기 정보가 압축될 수 있다</title>
+  <desc>대화가 컨텍스트 창에 가까워지면 도구에 따라 초기 설명과 규칙이 요약되거나 일부가 제외될 수 있다. 초기 조건을 놓치는 증상이 보이면 새 대화에 현재 상태와 규칙을 다시 전달한다.</desc>
+
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">대화가 길어지면 초기 정보를 다시 확인한다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">도구에 따라 앞부분이 요약되거나 일부가 제외될 수 있다</text>
+  <rect x="24" y="76" width="632" height="74" rx="10" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="36" y="90" font-size="10" font-weight="700" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">대화 시작 — 창 안에 다 들어감</text>
+  <rect x="40" y="106" width="92" height="30" rx="5" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="86" y="121" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">내 설명</text>
+  <rect x="140" y="106" width="92" height="30" rx="5" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="186" y="121" font-size="10.5" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">규칙</text>
+  <rect x="240" y="106" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="286" y="121" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청1</text>
+  <rect x="340" y="106" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="386" y="121" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">답1</text>
+  <rect x="440" y="106" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="486" y="121" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청2</text>
+  <rect x="540" y="106" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="586" y="121" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">답2</text>
+  <rect x="24" y="166" width="632" height="74" rx="10" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="36" y="180" font-size="10" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">길어진 뒤 — 초기 정보가 압축될 수 있음</text>
+  <rect x="40" y="196" width="92" height="30" rx="5" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="86" y="211" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">내 설명</text>
+  <rect x="140" y="196" width="92" height="30" rx="5" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" stroke-dasharray="5 4" />
+  <text x="186" y="211" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">규칙</text>
+  <rect x="240" y="196" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="286" y="211" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청8</text>
+  <rect x="340" y="196" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="386" y="211" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">답8</text>
+  <rect x="440" y="196" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="486" y="211" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청9</text>
+  <rect x="540" y="196" width="92" height="30" rx="5" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="586" y="211" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">요청10</text>
+  <line x1="228" y1="186" x2="228" y2="236" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <text x="126" y="250" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">요약·제외 가능 — 재확인</text>
+  <rect x="24" y="264" width="632" height="40" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="340" y="284" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">대처: 새 대화 + 인수인계 문장 (프로젝트 · 되는 것 · 안 되는 것 · 파일 · 규칙 · 지금 할 일)</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img"
+  style="font-family:Pretendard,Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <title>웹앱의 세 역할과 개발·배포 플랫폼</title>
+  <desc>사용자 화면인 Frontend에서 업무 규칙을 처리하는 Backend API를 거쳐 데이터를 저장하는 Database로 요청이 흐른다. 개발·배포 플랫폼은 이 세 역할의 준비와 운영을 묶어 제공할 수 있지만 공개 범위와 비용, Secret, 데이터에 대한 책임은 사용자에게 남는다.</desc>
+
+  <defs>
+    <marker id="arrow-edge" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" data-stroke-role="edge-line" stroke="#2E6DA4" fill="none"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-api" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9"
+      markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M2 2 L10 6 L2 10" data-stroke-role="api-line" stroke="#5B54A8" fill="none"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="680" height="360" data-fill-role="canvas" fill="#F7F7F5"/>
+
+  <g data-layout-role="cluster-h1">
+    <rect x="24" y="18" width="3" height="28" rx="1.5" data-fill-role="focus" fill="#2E6DA4"/>
+    <text x="38" y="32" font-size="22" font-weight="700" dominant-baseline="central"
+      data-fill-role="ink" fill="#252B35">화면만 만들어도 앱은 완성되지 않는다</text>
+    <text x="38" y="66" font-size="11" dominant-baseline="central" data-fill-role="muted" fill="#636A75">Frontend · Backend/API · Database의 역할을 알면 AI에게 범위를 더 정확히 지시할 수 있다</text>
+  </g>
+
+  <rect x="24" y="96" width="632" height="154" rx="16" data-fill-role="surface" fill="#FFFFFF"
+    data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1"/>
+
+  <g aria-label="Frontend">
+    <rect x="40" y="120" width="168" height="106" rx="10" data-fill-role="edge-fill" fill="#EAF0F6"
+      data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1"/>
+    <circle cx="72" cy="173" r="21" data-fill-role="icon-tint" fill="#EAF0F6"
+      data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1"/>
+    <rect x="62" y="165" width="20" height="15" rx="2" data-fill-role="surface" fill="#FFFFFF"
+      data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.7"/>
+    <line x1="62" y1="169" x2="82" y2="169" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.7"/>
+    <text x="101" y="158" font-size="14" font-weight="700" dominant-baseline="central"
+      data-fill-role="edge-ink" fill="#193C5A">Frontend</text>
+    <text x="101" y="180" font-size="11" dominant-baseline="central" data-fill-role="muted" fill="#636A75">화면 · 입력</text>
+    <text x="101" y="199" font-size="10" dominant-baseline="central" data-fill-role="muted" fill="#636A75">HTML · CSS · JS</text>
+  </g>
+
+  <g aria-label="Backend API">
+    <rect x="256" y="120" width="168" height="106" rx="10" data-fill-role="api-fill" fill="#EFEEF6"
+      data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1"/>
+    <circle cx="288" cy="173" r="21" data-fill-role="api-fill" fill="#EFEEF6"
+      data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1"/>
+    <rect x="279" y="162" width="18" height="22" rx="2" data-fill-role="surface" fill="#FFFFFF"
+      data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.7"/>
+    <line x1="283" y1="168" x2="293" y2="168" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5"/>
+    <line x1="283" y1="173" x2="293" y2="173" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5"/>
+    <line x1="283" y1="178" x2="293" y2="178" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5"/>
+    <text x="317" y="158" font-size="14" font-weight="700" dominant-baseline="central"
+      data-fill-role="api-ink" fill="#322E5C">Backend / API</text>
+    <text x="317" y="180" font-size="11" dominant-baseline="central" data-fill-role="muted" fill="#636A75">규칙 · 권한 · 처리</text>
+    <text x="317" y="199" font-size="10" dominant-baseline="central" data-fill-role="muted" fill="#636A75">Node · Python · Java</text>
+  </g>
+
+  <g aria-label="Database">
+    <rect x="472" y="120" width="168" height="106" rx="10" data-fill-role="data-fill" fill="#F4F5F5"
+      data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+    <circle cx="504" cy="173" r="21" data-fill-role="surface-tint" fill="#E4EDF3"
+      data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+    <ellipse cx="504" cy="164" rx="10" ry="4" data-fill-role="surface" fill="#FFFFFF"
+      data-stroke-role="data-line" stroke="#636A75" stroke-width="1.7"/>
+    <path d="M494 164 V181 C494 183 498 185 504 185 C510 185 514 183 514 181 V164"
+      data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.7"/>
+    <path d="M494 173 C494 175 498 177 504 177 C510 177 514 175 514 173"
+      data-stroke-role="data-line" stroke="#636A75" fill="none" stroke-width="1.4"/>
+    <text x="533" y="158" font-size="14" font-weight="700" dominant-baseline="central"
+      data-fill-role="data-ink" fill="#363A40">Database</text>
+    <text x="533" y="180" font-size="11" dominant-baseline="central" data-fill-role="muted" fill="#636A75">저장 · 조회</text>
+    <text x="533" y="199" font-size="10" dominant-baseline="central" data-fill-role="muted" fill="#636A75">SQLite · Postgres</text>
+  </g>
+
+  <path d="M216 173 H246" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" fill="none"
+    marker-end="url(#arrow-edge)"/>
+  <path d="M432 173 H462" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" fill="none"
+    marker-end="url(#arrow-api)"/>
+
+  <rect x="24" y="274" width="632" height="62" rx="12" data-fill-role="surface" fill="#FFFFFF"
+    data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1"/>
+  <text x="40" y="292" font-size="12" font-weight="700" dominant-baseline="central"
+    data-fill-role="ink" fill="#252B35">개발·배포 플랫폼은 세 역할의 준비와 운영을 묶어 제공할 수 있다</text>
+  <text x="40" y="316" font-size="11" dominant-baseline="central" data-fill-role="muted" fill="#636A75">그래도 공개 범위 · 비용 · Secret · 데이터 · 코드 소유권은 직접 확인한다</text>
+</svg>

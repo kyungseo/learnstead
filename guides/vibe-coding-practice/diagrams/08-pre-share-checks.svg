@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>공유 전 다섯 가지 점검</title>
+  <desc>Secret, 다른 컴퓨터에서의 동작, 잘못된 입력, 남은 흔적, 라이선스 다섯 가지를 급한 순서로 점검한다. Secret이 공개되면 파일 삭제와 별도로 키 폐기와 재발급이 필요하다.</desc>
+
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">내 컴퓨터에서 되는 것과 남이 써도 되는 것은 다르다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">공개된 키는 삭제만으로 해결되지 않으므로 Secret부터 확인한다</text>
+  <rect x="24" y="76" width="104" height="36" rx="7" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="94" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">① Secret</text>
+  <rect x="138" y="76" width="250" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="148" y="94" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">API 키·비밀번호가 커밋에 없나</text>
+  <rect x="398" y="76" width="148" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="408" y="94" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Secret scan + 직접 검토</text>
+  <text x="602" y="94" font-size="9.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">노출 시 키 교체</text>
+  <rect x="24" y="120" width="104" height="36" rx="7" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="34" y="138" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">② 남의 컴퓨터</text>
+  <rect x="138" y="120" width="250" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="148" y="138" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">절대 경로·설치 목록·환경 설정</text>
+  <rect x="398" y="120" width="148" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="408" y="138" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">README에 실행 방법</text>
+  <text x="602" y="138" font-size="9.5" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">다른 환경 실패</text>
+  <rect x="24" y="164" width="104" height="36" rx="7" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="34" y="182" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">③ 잘못된 입력</text>
+  <rect x="138" y="164" width="250" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="148" y="182" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">빈칸·긴 글자·특수문자·두 번 클릭</text>
+  <rect x="398" y="164" width="148" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="408" y="182" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">직접 눌러 보기</text>
+  <text x="602" y="182" font-size="9.5" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">예상 못 한 입력</text>
+  <rect x="24" y="208" width="104" height="36" rx="7" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="34" y="226" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">④ 남은 흔적</text>
+  <rect x="138" y="208" width="250" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="148" y="226" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">테스트 데이터·디버그 출력·안 쓰는 파일</text>
+  <rect x="398" y="208" width="148" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="408" y="226" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">목록 뽑아 정리</text>
+  <text x="602" y="226" font-size="9.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">정보 유출 위험</text>
+  <rect x="24" y="252" width="104" height="36" rx="7" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="34" y="270" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">⑤ 라이선스</text>
+  <rect x="138" y="252" width="250" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="148" y="270" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">외부 라이브러리 사용 조건</text>
+  <rect x="398" y="252" width="148" height="36" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="408" y="270" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">목록과 조건 확인</text>
+  <text x="602" y="270" font-size="9.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">공개·상업 사용 전</text>
+  <rect x="24" y="300" width="632" height="0" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="340.0" y="310" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">이미 올린 Secret은 지우는 것으로 해결되지 않는다 — 키를 폐기하고 새로 발급받는다</text>
+</svg>
