@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>세 가지 안전망</title>
+  <desc>AI에게 시키기 전 저장 지점을 만들고, 잘 되는 상태에 도달할 때마다 한 줄로 기록하며, Secret을 코드 밖으로 분리해 두면 무엇이 망가져도 돌아갈 곳이 있다.</desc>
+
+  <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">망가져도 돌아갈 곳을 먼저 만든다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">이 가이드의 절반은 저장 지점이 있다는 전제 위에 있다</text>
+  <rect x="24" y="74" width="200" height="130" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="124" y="96" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">① 저장 지점</text>
+  <text x="124" y="124" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">AI에게 시키기 전 커밋</text>
+  <text x="124" y="142" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">잘 될 때마다 커밋</text>
+  <rect x="40" y="166" width="168" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="124" y="179" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">git commit -m &quot;...&quot;</text>
+  <rect x="240" y="74" width="200" height="130" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340" y="96" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">② 되는 상태 기록</text>
+  <text x="340" y="124" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">된 것과 안 되는 것을</text>
+  <text x="340" y="142" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">한 줄씩 적어 둠</text>
+  <rect x="256" y="166" width="168" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340" y="179" font-size="10" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">WORKING.md</text>
+  <rect x="456" y="74" width="200" height="130" rx="10" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="556" y="96" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">③ Secret 분리</text>
+  <text x="556" y="124" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">API 키·비밀번호를</text>
+  <text x="556" y="142" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">코드 밖으로</text>
+  <rect x="472" y="166" width="168" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="556" y="179" font-size="10" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">.gitignore + .env</text>
+  <rect x="24" y="220" width="632" height="52" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="340" y="240" font-size="11" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">확인: git 저장소인가? · 최근 &quot;잘 되던&quot; 커밋이 있나? · .gitignore에 Secret 파일이 있나?</text>
+  <text x="340" y="260" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">셋 다 되면 AI가 뭘 망가뜨려도 돌아갈 곳이 있다</text>
+  <text x="340.0" y="288" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">저장은 잘 될 때 한다 — 망가진 뒤의 저장은 망가진 상태를 저장하는 것</text>
+</svg>

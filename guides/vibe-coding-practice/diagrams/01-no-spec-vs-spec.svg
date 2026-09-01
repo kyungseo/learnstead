@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>기준 없이 시작할 때와 다섯 줄이 있을 때</title>
+  <desc>기준 없이 시작하면 AI가 만든 것을 판정할 수 없어 고쳐 달라는 요청을 반복하게 되고 언제 끝나는지 알 수 없다. 다섯 줄 기준이 있으면 각 요청의 완료를 판정하고 다음 단계로 넘어갈 수 있다.</desc>
+
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">판정 기준이 없으면 완성도 없다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">AI가 결과를 내놓아도 성공 기준은 사람이 정해야 한다</text>
+  <rect x="24" y="70" width="304" height="200" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">기준 없이</text>
+  <rect x="40" y="106" width="272" height="24" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="118" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">AI가 뭔가를 만듦</text>
+  <rect x="40" y="136" width="272" height="24" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="148" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">&quot;음… 이게 아닌데?&quot;</text>
+  <rect x="40" y="166" width="272" height="24" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="178" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">&quot;좀 더 예쁘게 해 줘&quot;</text>
+  <rect x="40" y="196" width="272" height="24" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="208" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">매번 전체가 바뀜</text>
+  <rect x="40" y="226" width="272" height="24" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="50" y="238" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">언제 끝나는지 모름</text>
+  <text x="176" y="284" font-size="12" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">↻ 무한 반복</text>
+  <rect x="352" y="70" width="304" height="200" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">다섯 줄이 있을 때</text>
+  <rect x="368" y="106" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="118" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">1. 누가 쓰나</text>
+  <rect x="368" y="136" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="148" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">2. 무엇을 하나</text>
+  <rect x="368" y="166" width="272" height="24" rx="5" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="178" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">3. 어떤 순서로</text>
+  <rect x="368" y="196" width="272" height="24" rx="5" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="378" y="208" font-size="10.5" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">4. 뭘 보면 성공  ← 판정 기준</text>
+  <rect x="368" y="226" width="272" height="24" rx="5" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="378" y="238" font-size="10.5" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">5. 이번엔 안 함  ← 범위 차단</text>
+  <text x="504" y="284" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">다섯 줄이 채워지면 끝</text>
+  <text x="340.0" y="306" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">&quot;이번엔 안 함&quot;은 요청하지 않은 변경이 늘어나는 것을 막는다</text>
+</svg>

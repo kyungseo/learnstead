@@ -1,0 +1,12 @@
+/* 완료 체크 기능에 맞춰 디자인을 전면 개편했습니다 */
+* { box-sizing: border-box; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; max-width: 640px; margin: 0 auto; padding: 32px; background: #0f172a; color: #e2e8f0; }
+h1 { font-size: 28px; letter-spacing: -0.5px; margin-bottom: 24px; }
+form { display: flex; gap: 12px; }
+input { flex: 1; padding: 12px; font-size: 16px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #e2e8f0; }
+button { padding: 12px 16px; font-size: 16px; border-radius: 8px; border: none; background: #3b82f6; color: white; cursor: pointer; }
+button:hover { background: #2563eb; }
+#message { color: #f87171; min-height: 1.4em; }
+ul { list-style: none; padding: 0; }
+li { display: flex; justify-content: space-between; align-items: center; padding: 12px; margin: 8px 0; background: #1e293b; border-radius: 8px; }
+li span.done { text-decoration: line-through; opacity: 0.5; }

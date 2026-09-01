@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>막힘의 신호와 네 가지 탈출</title>
+  <desc>같은 오류 반복, 고칠수록 나빠짐, AI가 오락가락함, 범위가 계속 커짐이 막힘의 신호이며, 되돌리고 다시·더 작게 쪼개기·새 대화 시작·다른 방법 요구 네 가지를 이 순서로 시도한다.</desc>
+  <defs><marker id="ah-data-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">두 번 실패하면 세 번째는 다르게 한다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">같은 방법을 반복하기보다 되돌리거나 접근을 바꾼다</text>
+  <rect x="24" y="70" width="304" height="152" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">막혔다는 신호</text>
+  <text x="40" y="108" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">· 같은 오류가 두 번 이상</text>
+  <text x="40" y="134" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">· 고칠수록 다른 데가 깨짐</text>
+  <text x="40" y="160" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">· AI가 &quot;이번엔 확실합니다&quot; 반복</text>
+  <text x="40" y="186" font-size="10.5" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">· 바뀌는 파일이 점점 늘어남</text>
+  <text x="176" y="208" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">하나라도 해당하면 →</text>
+  <rect x="352" y="70" width="304" height="152" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">네 가지 탈출 (이 순서로)</text>
+  <rect x="368" y="100" width="272" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="113" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">① 되돌리고 다시</text>
+  <text x="632" y="113" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="end" dominant-baseline="central">되던 지점으로</text>
+  <rect x="368" y="130" width="272" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="143" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">② 더 작게 쪼개기</text>
+  <text x="632" y="143" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="end" dominant-baseline="central">반으로 나눠서</text>
+  <rect x="368" y="160" width="272" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="173" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">③ 새 대화 시작</text>
+  <text x="632" y="173" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="end" dominant-baseline="central">현재 상태만 다시</text>
+  <rect x="368" y="190" width="272" height="26" rx="5" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="378" y="203" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">④ 다른 방법 요구</text>
+  <text x="632" y="203" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="end" dominant-baseline="central">접근 자체를 바꿈</text>
+  <path d="M332 146 L348 146" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
+  <rect x="24" y="238" width="632" height="62" rx="12" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="340" y="258" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">계속 &quot;고쳐 줘&quot;만 반복하면 원인을 좁히기 어렵다</text>
+  <text x="340" y="280" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">매번 조금씩 달라지면서 원래 상태에서 점점 멀어진다</text>
+  <text x="340.0" y="316" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">네 가지를 다 써도 같은 자리면 → 09 멈춰야 할 때</text>
+</svg>

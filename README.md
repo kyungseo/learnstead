@@ -8,13 +8,25 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 > **Learnstead = learn + homestead.** 배운 내용을 직접 실행하고 검증하며 차곡차곡 쌓아 가는 작은 배움의
 > 터전이라는 뜻입니다. 각 자료는 핵심 개념, 따라 할 수 있는 절차, 검증 기록을 함께 제공합니다.
 
-## 가이드 한눈에 보기
+## 학습 자료 한눈에 보기
 
-| Local LLM 실행 | Local LLM 앱 연결 | AI 코딩을 위한 Git |
+### Local LLM — 실행한 모델을 프로그램까지 연결하기
+
+| Local LLM 실행 | Local LLM 앱 연결 |
+| --- | --- |
+| [<img src="guides/local-llm/assets/local-llm-guide-hero.webp" width="320" alt="Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가는 Local LLM 가이드">](guides/local-llm/README.md) | [<img src="guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp" width="320" alt="코드가 로컬 LLM으로 전달되고 구조화 출력과 도구 실행으로 나뉘는 앱 연결 가이드">](guides/local-llm-app-integration/README.md) |
+| 내 장비에서 모델을 고르고 실행한 뒤 GPU 적재와 첫 응답까지 확인합니다. | 실행한 모델을 프로그램에서 호출하고 대화·답변 형식·도구 사용 범위를 다룹니다. |
+| **[1편 시작 →](guides/local-llm/README.md)** | **[2편 시작 →](guides/local-llm-app-integration/README.md)** |
+
+### AI와 코딩하기 — 빠르게 만들되 결정권은 놓치지 않기
+
+| Git으로 변경 관리 | 바이브 코딩 가이드 | 다섯 가지 확인 실습 |
 | --- | --- | --- |
-| [![Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가는 Local LLM 가이드](guides/local-llm/assets/local-llm-guide-hero.webp)](guides/local-llm/README.md) | [![코드가 로컬 LLM으로 전달되고 구조화 출력과 도구 실행으로 나뉘는 앱 연결 가이드](guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp)](guides/local-llm-app-integration/README.md) | [![Git 기록에서 main과 worktree 두 작업 공간을 나누고 검토한 결과로 합치는 Git 가이드](guides/git-for-vibe-coders/assets/git-for-vibe-coders-hero.webp)](guides/git-for-vibe-coders/README.md) |
-| 내 장비에서 모델을 고르고 실행한 뒤 GPU 적재와 첫 응답까지 확인합니다. | 실행한 모델을 프로그램에서 호출하고 대화·답변 형식·도구 사용 범위를 다룹니다. | AI가 만든 변경을 저장·확인·분리·공유하고, branch와 worktree로 여러 작업을 안전하게 나눕니다. |
-| **[1편 시작 →](guides/local-llm/README.md)** | **[2편 시작 →](guides/local-llm-app-integration/README.md)** | **[가이드 시작 →](guides/git-for-vibe-coders/README.md)** |
+| [![Git 기록에서 main과 worktree 두 작업 공간을 나누고 검토한 결과로 합치는 Git 가이드](guides/git-for-vibe-coders/assets/git-for-vibe-coders-hero.webp)](guides/git-for-vibe-coders/README.md) | [![자연어로 설명한 아이디어를 계획·확인·복구를 거쳐 앱으로 만들어 가는 바이브 코딩 가이드](guides/vibe-coding-practice/assets/vibe-coding-practice-hero.webp)](guides/vibe-coding-practice/README.md) | [![겉보기에는 비슷한 앱 세 판을 다섯 가지 확인으로 판정하는 실습](labs/five-checks/assets/five-checks-hero.webp)](labs/five-checks/README.md) |
+| AI가 만든 변경을 저장·확인·분리·공유하고, branch와 worktree로 여러 작업을 안전하게 나눕니다. | 목표와 범위를 정하고 한 번에 하나씩 바꾸며, 확인·복구·공개 전 점검까지 이어 갑니다. | 비슷해 보이는 할 일 앱 세 판을 직접 눌러 보며 숨어 있는 실패를 찾아냅니다. |
+| **[Git부터 시작 →](guides/git-for-vibe-coders/README.md)** | **[가이드 이어 읽기 →](guides/vibe-coding-practice/README.md)** | **[실습으로 확인 →](labs/five-checks/README.md)** |
+
+### 내 문서에 답하는 AI — RAG 이해부터 실패 진단까지
 
 | RAG와 Graph 이해 | Local RAG 만들기 | RAG 실패 실습 |
 | --- | --- | --- |
@@ -29,9 +41,11 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 1. [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) — 모델·runtime 선택, 설치, 첫 응답, GPU 적재 확인
 2. [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) — 대화 상태, 구조화 출력, tool calling, 읽기 전용 agent
 
-### AI 코딩 기본기 — 변경의 결정권 유지하기
+### AI와 코딩하기 — 빠르게 만들되 결정권은 놓치지 않기
 
 1. [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) — commit과 diff부터 branch·worktree·PR·공개 전 점검까지
+2. [AI와 함께 만들기 — 바이브 코딩에서 Agentic Engineering으로](guides/vibe-coding-practice/README.md) — 목표·범위·확인 방법을 정하고, 작은 변경과 복구를 반복하는 작업 습관
+3. [다섯 가지 확인](labs/five-checks/README.md) — 같은 요청을 처리한 것처럼 보이는 세 판을 직접 확인하며 실패를 판정하는 실습
 
 ### 내 문서에 답하는 AI — RAG 이해부터 실패 진단까지
 
@@ -48,8 +62,8 @@ Local LLM을 프로그램에서 호출하는 방식이 먼저 궁금하면 [앱 
 | 시리즈 | 포함 자료 | 대상 |
 | --- | --- | --- |
 | Local LLM | 가이드 · [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md)<br>가이드 · [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) | 로컬 LLM을 직접 실행하고 프로그램에 연결하려는 사용자 |
+| AI와 코딩하기 | 가이드 · [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md)<br>가이드 · [AI와 함께 만들기 — 바이브 코딩에서 Agentic Engineering으로](guides/vibe-coding-practice/README.md)<br>실습 · [다섯 가지 확인](labs/five-checks/README.md) | AI 코딩 도구와 작업하면서 변경을 저장·검토·확인·복구하고 안전하게 공유하려는 입문자 |
 | 내 문서에 답하는 AI | 가이드 · [내 문서와 대화하는 AI 이해하기 — RAG와 Graph](guides/local-rag/README.md)<br>튜토리얼 · [내 문서에 답하는 Local RAG 만들기](tutorials/local-rag-build/README.md)<br>실습 · [RAG는 왜 틀리는가](labs/why-rag-fails/README.md) | RAG의 구조를 이해하고 직접 구축한 뒤 검색 품질을 검증하려는 사용자 |
-| AI 코딩 기본기 | 가이드 · [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) | AI 코딩 도구와 작업하면서 변경을 저장·검토·분리·공유하려는 입문자 |
 
 ## 문서가 지키는 기준
 

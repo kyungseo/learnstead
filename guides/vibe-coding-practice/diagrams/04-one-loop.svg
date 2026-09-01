@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>짧은 바퀴와 긴 바퀴</title>
+  <desc>저장·요청·확인·저장으로 이어지는 짧은 바퀴에서는 직전 요청부터 확인할 수 있다. 여러 변경을 한 번에 시키는 긴 바퀴에서는 문제의 원인을 구분하기 어렵고 되돌릴 때 정상인 변경도 함께 되돌리기 쉽다.</desc>
+  <defs><marker id="ah-danger-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">한 요청 = 한 변화 = 한 확인 = 한 저장</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">여러 변화를 묶으면 확인과 되돌리기의 범위도 함께 커진다</text>
+  <rect x="24" y="70" width="632" height="96" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">짧은 바퀴 (권장)</text>
+  <rect x="44" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="81.0" y="124.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">저장</text>
+  <path d="M119 124 L129 124" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="130" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="167.0" y="124.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">A 요청</text>
+  <path d="M205 124 L215 124" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="216" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="253.0" y="124.0" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">A 확인</text>
+  <path d="M291 124 L301 124" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="302" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="339.0" y="124.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">저장</text>
+  <path d="M377 124 L387 124" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="388" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="425.0" y="124.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">B 요청</text>
+  <path d="M463 124 L473 124" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="474" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="511.0" y="124.0" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">B 확인</text>
+  <path d="M549 124 L559 124" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <rect x="560" y="106" width="74" height="36" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="597.0" y="124.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">저장</text>
+  <text x="340" y="156" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">문제가 생기면 직전 요청부터 확인할 수 있다</text>
+  <rect x="24" y="182" width="632" height="106" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="40" y="200" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">긴 바퀴 (피할 것)</text>
+  <rect x="44" y="220" width="100" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="94.0" y="240.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">저장</text>
+  <rect x="176" y="220" width="280" height="40" rx="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="316.0" y="240.0" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">&quot;A, B, C 만들고 D도 고쳐 줘&quot;</text>
+  <rect x="488" y="220" width="148" height="40" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="562.0" y="240.0" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">뭔가 안 됨 → ???</text>
+  <path d="M146 240 L172 240" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
+  <path d="M458 240 L484 240" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.5" marker-end="url(#ah-danger-line-1_5)"/>
+  <text x="340" y="276" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">A~D 중 원인을 구분하기 어렵고, 되돌리면 넷을 함께 되돌리기 쉽다</text>
+  <text x="340.0" y="306" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">쪼개는 기준: 확인 방법을 따로 쓸 수 있으면 따로 요청한다</text>
+</svg>
