@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 312" width="680" height="312" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>네 칸 — 절차·강제·능력·상시 배경</title>
+  <desc>코딩 에이전트 확장 수단을 네 칸으로 나눈 그림: 절차는 skill, 강제는 hook, 능력은 MCP, 상시 배경은 CLAUDE.md·AGENTS.md. 아래 띠는 이름만 다른 것들: command는 사람만 부르는 skill, rule은 경로 조건이 붙은 skill 또는 지시문, plugin은 묶음, subagent는 격리 실행.</desc>
+  <rect x="0" y="0" width="680" height="312" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">절차 · 강제 · 능력 · 상시 배경 — 네 칸이면 이름에 흔들리지 않는다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">도구마다 이름이 달라도 무엇을 담고 누가 켜는지는 넷 중 하나다</text>
+  <rect x="24" y="74" width="146" height="118" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="97.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">절차</text>
+  <text x="97.0" y="118" font-size="13.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">skill</text>
+  <line x1="40" y1="136" x2="154" y2="136" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1"/>
+  <text x="97.0" y="154" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">모델이 읽고 따르는</text>
+  <text x="97.0" y="172" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">지시문. 필요할 때 로드</text>
+  <rect x="186" y="74" width="146" height="118" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="259.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">강제</text>
+  <text x="259.0" y="118" font-size="13.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">hook</text>
+  <line x1="202" y1="136" x2="316" y2="136" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1"/>
+  <text x="259.0" y="154" font-size="10" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">이벤트에 묶여 무조건</text>
+  <text x="259.0" y="172" font-size="10" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">실행. 모델 판단 없음</text>
+  <rect x="348" y="74" width="146" height="118" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="421.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">능력</text>
+  <text x="421.0" y="118" font-size="13.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">MCP</text>
+  <line x1="364" y1="136" x2="478" y2="136" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1"/>
+  <text x="421.0" y="154" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">외부 프로세스가 주는</text>
+  <text x="421.0" y="172" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">새 tool. 세션 연결 시</text>
+  <rect x="510" y="74" width="146" height="118" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="583.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">상시 배경</text>
+  <text x="583.0" y="118" font-size="13.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">진입 지시문</text>
+  <line x1="526" y1="136" x2="640" y2="136" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1"/>
+  <text x="583.0" y="154" font-size="10" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">CLAUDE.md · AGENTS.md</text>
+  <text x="583.0" y="172" font-size="10" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">항상 로드. 짧게, 라우팅만</text>
+  <rect x="24" y="212" width="632" height="70" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="40" y="230" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">이름만 다른 것들</text>
+  <text x="40" y="251" font-size="10.5" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">command = 사람만 부르는 skill (disable-model-invocation)   ·   rule = 경로 조건이 붙은 skill 또는 지시문</text>
+  <text x="40" y="269" font-size="10.5" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">plugin = skill·command·hook·MCP 설정의 묶음 + 이름 공간   ·   subagent = 격리된 컨텍스트에서 실행</text>
+  <text x="340.0" y="298" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">지시문 → 경로 rule → hook → MCP → skill → 여러 요소를 배포할 때 plugin</text>
+</svg>

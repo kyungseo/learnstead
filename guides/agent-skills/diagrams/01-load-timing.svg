@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 306" width="680" height="306" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>skill의 로드 시점 — 평소엔 한 줄, 필요할 땐 본문</title>
+  <desc>세션 동안 컨텍스트에 들어가는 것을 세 층으로 나눈 그림. 항상 로드되는 진입 지시문(CLAUDE.md·AGENTS.md·GEMINI.md), 항상 있지만 한 줄뿐인 skill 목록(name과 description), 호출될 때만 들어오는 SKILL.md 본문과 부속 파일.</desc>
+  <rect x="0" y="0" width="680" height="306" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">평소엔 한 줄, 필요할 땐 본문 — skill의 로드 시점</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">항상 읽히는 지시문과 달리 skill은 이름·설명만 상주하고 본문은 호출 때 들어온다</text>
+  <rect x="24" y="74" width="120" height="60" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="84" y="104.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">항상 로드</text>
+  <rect x="156" y="74" width="500" height="60" rx="10" data-fill-role="edge-fill" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="172" y="93" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">CLAUDE.md · AGENTS.md · GEMINI.md · 항상 적용 규칙</text>
+  <text x="172" y="115" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">모든 대화에 들어간다 → 짧은 사실·규칙만. 절차를 쌓으면 매 세션이 무거워진다</text>
+  <rect x="24" y="146" width="120" height="60" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="84" y="176.0" font-size="12.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">이름·설명만</text>
+  <rect x="156" y="146" width="500" height="60" rx="10" data-fill-role="data-fill" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="172" y="165" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">skill 목록 = name + description으로 만든 짧은 색인</text>
+  <text x="172" y="187" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">항상 있지만 한 줄. 모델은 이 색인을 보고 &quot;지금 열어 볼 skill&quot;을 고른다</text>
+  <rect x="24" y="218" width="120" height="60" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="84" y="248.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">필요할 때</text>
+  <rect x="156" y="218" width="500" height="60" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="172" y="237" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">SKILL.md 본문 → scripts/ · references/ · assets/</text>
+  <text x="172" y="259" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">사용자가 부르거나 모델이 골랐을 때만. 본문 5,000 토큰·500줄 미만 권장</text>
+  <text x="340.0" y="292" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">progressive disclosure — 이름·설명(항상) → 본문(호출 시) → 부속 파일(본문이 가리킬 때)</text>
+</svg>

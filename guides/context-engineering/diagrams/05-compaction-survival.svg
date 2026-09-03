@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" width="680" height="352" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>압축 후 무엇이 남는가</title>
+  <desc>컨텍스트 압축(compaction) 뒤 각 층의 운명. 루트 지시문·auto memory·계획은 디스크에서 재주입, 경로 규칙과 하위 지시문은 해당 파일을 다시 읽을 때 재로드, 읽은 파일은 최근 5개만 재읽기, skill 본문은 5,000/25,000 토큰 상한 안에서 재주입, 대화로만 준 지시는 남을 수도 안 남을 수도 있다.</desc>
+  <rect x="0" y="0" width="680" height="352" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">압축 뒤에도 남아야 하면 파일에 적는다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">대화로만 준 지시는 요약에 남을지 보장이 없다 (Claude Code 2.1.251 당시 기록)</text>
+  <rect x="24" y="74" width="100" height="52" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="74" y="100.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">재주입</text>
+  <rect x="136" y="74" width="520" height="52" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="152" y="91" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">루트 CLAUDE.md · paths 없는 규칙 · auto memory · plan</text>
+  <text x="152" y="111" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">디스크에서 다시 읽는다 — 세션 중 파일을 고쳐도 반영</text>
+  <rect x="24" y="138" width="100" height="52" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="74" y="164.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">재읽기 시</text>
+  <rect x="136" y="138" width="520" height="52" rx="10" data-fill-role="edge-fill" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="152" y="155" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">paths 규칙 · 하위 CLAUDE.md</text>
+  <text x="152" y="175" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">요약되고, 해당 파일을 다시 읽을 때 되살아난다</text>
+  <rect x="24" y="202" width="100" height="52" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="74" y="228.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">부분</text>
+  <rect x="136" y="202" width="520" height="52" rx="10" data-fill-role="api-fill" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="152" y="219" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">읽은 파일(최근 5개) · skill 본문(5,000 / 합 25,000)</text>
+  <text x="152" y="239" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">큰 파일은 경로만, 오래된 skill부터 탈락</text>
+  <rect x="24" y="266" width="100" height="52" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="74" y="292.0" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">불확실</text>
+  <rect x="136" y="266" width="520" height="52" rx="10" data-fill-role="warning-fill" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="152" y="283" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">대화로만 준 지시 · hook이 넣은 컨텍스트</text>
+  <text x="152" y="303" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">요약과 함께 사라질 수 있다 → 지시문 파일로 옮긴다</text>
+  <text x="340.0" y="338" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">손잡이: /context 확인 · /compact &lt;초점&gt; · /autocompact · /clear · 큰 읽기는 서브에이전트로</text>
+</svg>

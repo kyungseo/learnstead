@@ -1,0 +1,7 @@
+# ~/.codex/config.toml 에 codex mcp add 가 추가하는 형태 (참고용)
+[mcp_servers.notes]
+command = "/절대/경로/venv/bin/python"
+args = ["/절대/경로/워크숍/notes_server.py"]
+
+[mcp_servers.notes.env]
+NOTES_DIR = "/절대/경로/워크숍/notes"
