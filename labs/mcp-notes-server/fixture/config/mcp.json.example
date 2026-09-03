@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "notes": {
+      "type": "stdio",
+      "command": "/절대/경로/venv/bin/python",
+      "args": ["/절대/경로/워크숍/notes_server.py"],
+      "env": { "NOTES_DIR": "/절대/경로/워크숍/notes" }
+    }
+  }
+}

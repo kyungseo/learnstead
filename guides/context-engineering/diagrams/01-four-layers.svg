@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 346" width="680" height="346" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>컨텍스트의 네 출처 — 항상, 조건부, memory, 동적</title>
+  <desc>컨텍스트의 네 출처를 위에서 아래로 배치한 그림. 진입 지시문은 항상 로드되고, 조건부 지시문은 파일 경로·cwd·호출 조건에서, memory는 제품 설정에 따라, 동적 컨텍스트는 작업 중 RAG·MCP·파일 읽기 결과로 들어온다.</desc>
+  <rect x="0" y="0" width="680" height="346" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">정보는 네 곳에서 들어오고, 수명은 서로 다르다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">항상 넣기보다 필요한 시점에 가져오고, 오래 남아야 할 정보는 파일에 둔다</text>
+  <rect x="24" y="74" width="100" height="50" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="74" y="99.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">항상</text>
+  <rect x="136" y="74" width="520" height="50" rx="10" data-fill-role="edge-fill" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="152" y="91" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">진입 지시문 — CLAUDE.md · AGENTS.md · GEMINI.md</text>
+  <text x="152" y="110" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">세션 시작 시 연결되어 로드. 짧은 규칙·명령·라우팅. 압축 후 재주입</text>
+  <rect x="24" y="136" width="100" height="50" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="74" y="161.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">조건부</text>
+  <rect x="136" y="136" width="520" height="50" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="152" y="153" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">경로 규칙(paths) · 하위 지시문 · skill</text>
+  <text x="152" y="172" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">파일을 읽을 때 / cwd / 호출 시. 압축 후 다시 읽을 때 재로드</text>
+  <rect x="24" y="198" width="100" height="50" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="74" y="223.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">memory</text>
+  <rect x="136" y="198" width="520" height="50" rx="10" data-fill-role="api-fill" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="152" y="215" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">local memory — 색인 + 주제별 기록</text>
+  <text x="152" y="234" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude Code는 기본 제공 · Codex는 opt-in. 모델이 쓰고 사람이 감사</text>
+  <rect x="24" y="260" width="100" height="50" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="74" y="285.0" font-size="12.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">동적</text>
+  <rect x="136" y="260" width="520" height="50" rx="10" data-fill-role="data-fill" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="152" y="277" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">파일 읽기 · RAG 근거 · MCP 결과 · 대화와 작업 기록</text>
+  <text x="152" y="296" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">작업 중 선택해 가져온다. 크기·신뢰도·최신성을 함께 확인</text>
+  <text x="340.0" y="332" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Context Engineering = 선택 → 배치 → 회수 → 유지 → 폐기</text>
+</svg>

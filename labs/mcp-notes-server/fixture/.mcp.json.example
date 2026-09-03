@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "notes": {
+      "type": "stdio",
+      "command": "${MCP_NOTES_PYTHON:-python3}",
+      "args": ["${CLAUDE_PROJECT_DIR:-.}/notes_server.py"],
+      "env": { "NOTES_DIR": "${CLAUDE_PROJECT_DIR:-.}/notes" }
+    }
+  }
+}

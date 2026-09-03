@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" width="680" height="352" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>도구 실행을 지키는 세 겹의 경계</title>
+  <desc>모델이 제안한 도구 호출이 host 승인, 도구 정의의 annotation, 서버와 데이터 권한 세 층을 지나 실행되는 그림. annotation은 힌트이며 서버의 입력 검사와 실제 데이터 권한이 접근 범위를 제한한다.</desc>
+  <defs><marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="352" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">모델은 제안하고, 실행 경계는 바깥에서 지킨다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">host 승인과 annotation을 거쳐도 서버 입력 검사와 데이터 권한이 남아 있다</text>
+  <rect x="24" y="74" width="150" height="62" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="99" y="105.0" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">③ host 승인</text>
+  <rect x="186" y="74" width="470" height="62" rx="10" data-fill-role="warning-fill" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="202" y="94" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">permission mode · 허용 목록 · approval mode</text>
+  <text x="202" y="116" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">제품 설정에 따라 자동 실행·사용자 확인·거부가 갈린다</text>
+  <path d="M99 136 L99 156" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="24" y="166" width="150" height="62" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="99" y="197.0" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">② annotation</text>
+  <rect x="186" y="166" width="470" height="62" rx="10" data-fill-role="warning-fill" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="202" y="186" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">read_only_hint · destructive_hint (힌트)</text>
+  <text x="202" y="208" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">host가 정책 판단에 참고한다 — 신뢰하지 않는 서버의 값은 믿지 않는다</text>
+  <path d="M99 228 L99 248" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="24" y="258" width="150" height="62" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="99" y="289.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">① 서버·데이터 권한</text>
+  <rect x="186" y="258" width="470" height="62" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="202" y="278" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">입력·경로 검사 · 쓰기 미노출 · DB·API 계정 권한</text>
+  <text x="202" y="300" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">코드와 실제 데이터 계층이 함께 접근 범위를 제한한다</text>
+  <text x="340.0" y="338" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">MCP만 막아도 충분하지 않다 — 파일·shell 등 다른 실행 경로의 권한도 함께 좁힌다</text>
+</svg>

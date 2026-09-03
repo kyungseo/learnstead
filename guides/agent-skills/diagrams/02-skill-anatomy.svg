@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 336" width="680" height="336" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>SKILL.md 해부 — 폴더 하나, 파일 하나</title>
+  <desc>왼쪽은 skill 폴더 구조(폴더 이름이 name, SKILL.md 필수, scripts·references·assets 선택). 오른쪽은 SKILL.md의 두 부분: name과 description이 필수인 frontmatter와 모델이 읽고 따르는 본문.</desc>
+  <rect x="0" y="0" width="680" height="336" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">폴더 하나, 파일 하나 — SKILL.md 해부</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">frontmatter의 description은 항상 컨텍스트에 있는 유일한 부분이다</text>
+  <rect x="24" y="74" width="260" height="236" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="40" y="94" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">skill 폴더</text>
+  <text x="44" y="124" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">meeting-actions/</text>
+  <text x="44" y="150" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">├─ SKILL.md            ← 필수</text>
+  <text x="44" y="176" font-size="11.5" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">├─ scripts/check.py   (선택)</text>
+  <text x="44" y="202" font-size="11.5" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">├─ references/        (선택)</text>
+  <text x="44" y="228" font-size="11.5" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">└─ assets/            (선택)</text>
+  <text x="40" y="268" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">폴더 이름 = name · 부속 파일은</text>
+  <text x="40" y="286" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">본문에서 상대 경로로 가리킨다</text>
+  <rect x="308" y="74" width="348" height="104" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="324" y="92" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">frontmatter — 필수 2개 + 선택 필드</text>
+  <text x="324" y="116" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">name: meeting-actions          ← 폴더 이름과 같게</text>
+  <text x="324" y="138" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">description: 무엇을 / 언제 / 언제 아님   ← 발견의 근거</text>
+  <text x="324" y="160" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">license · compatibility · metadata · allowed-tools (선택)</text>
+  <rect x="308" y="190" width="348" height="120" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="324" y="208" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">본문 — 모델이 읽고 따르는 지시서</text>
+  <text x="324" y="232" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">목적과 금지 한 문단 · 번호 절차</text>
+  <text x="324" y="254" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">출력 형식은 말이 아니라 뼈대(표 한 줄)로</text>
+  <text x="324" y="276" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">경계 사례를 규칙에 · 입력→출력 예 한 쌍</text>
+  <text x="340.0" y="324" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">여러 도구에서 쓸 Skill은 공통 규격을 중심으로 쓴다 — 확장 필드는 해당 도구에서만 뜻이 있다</text>
+</svg>

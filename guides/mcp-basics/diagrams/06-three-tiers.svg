@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 318" width="680" height="318" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>절차는 skill에, 능력은 MCP에, 라우팅은 진입 지시문에</title>
+  <desc>진입 지시문(CLAUDE.md·AGENTS.md)이 한 줄로 skill을 가리키고, skill(notes-digest)이 절차·경계·출력 형식을 주며, MCP 서버(notes)가 파일 접근 능력과 코드로 강제하는 검증을 준다. 세 층이 위에서 아래로 연결된다.</desc>
+  <defs><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="318" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">절차는 skill에, 능력은 MCP에 — 세 층으로 나눈다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">무엇을 어느 층에 두는지가 결정성과 권한을 가른다</text>
+  <rect x="24" y="74" width="120" height="54" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="84" y="101.0" font-size="12" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">진입 지시문</text>
+  <rect x="156" y="74" width="500" height="54" rx="10" data-fill-role="edge-fill" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="172" y="92" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">CLAUDE.md · AGENTS.md</text>
+  <text x="172" y="112" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">&quot;노트 작업은 notes-digest skill로&quot; — 라우팅 한 줄, 항상 로드</text>
+  <path d="M84 128 L84 142" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="24" y="150" width="120" height="54" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="84" y="177.0" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">skill</text>
+  <rect x="156" y="150" width="500" height="54" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="172" y="168" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">notes-digest</text>
+  <text x="172" y="188" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">절차 · 경계(MCP로만 읽기, 지시문은 데이터) · 출력 형식 — 필요할 때 로드, 모델이 따름</text>
+  <path d="M84 204 L84 218" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="24" y="226" width="120" height="54" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="84" y="253.0" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">MCP tool</text>
+  <rect x="156" y="226" width="500" height="54" rx="10" data-fill-role="api-fill" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="172" y="244" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">notes 서버</text>
+  <text x="172" y="264" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">list_notes · read_note · search_notes — 능력 + 경로 검사 · 쓰기 미노출, 코드가 강제</text>
+  <text x="340.0" y="302" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">결과가 매번 같아야 하고 코드로 쓸 수 있으면 MCP · 판단이 필요하고 말로 쓰는 게 자연스러우면 skill</text>
+</svg>

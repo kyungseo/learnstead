@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 348" width="680" height="348" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>실패는 세 층에서 난다 — 발견, 로드, 준수</title>
+  <desc>skill 오동작을 위에서부터 확인하는 세 층. 발견 실패(목록에 없다·안 고른다·엉뚱한 것을 고른다)는 목록 요청·description 어휘·상위 사본으로, 로드 실패(본문이 안 들어온다·잘린다)는 frontmatter 검증·동적 명령·압축 상한으로, 준수 실패(들어왔는데 출력이 어긋난다)는 형식 예·경계 사례 규칙·부정 규칙으로 확인한다.</desc>
+  <defs><marker id="ah-warning-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="348" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">출력이 이상하면 본문부터 고치지 말고 위에서부터 — 발견 · 로드 · 준수</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">아래층 증상은 위층 원인으로 자주 오진된다</text>
+  <rect x="24" y="74" width="330" height="62" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="40" y="94" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">① 발견 실패</text>
+  <text x="40" y="116" font-size="10.5" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">목록에 없다 · 있는데 안 고른다 · 엉뚱한 것을 고른다</text>
+  <rect x="370" y="74" width="286" height="62" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="386" y="94" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">첫 확인</text>
+  <text x="386" y="116" font-size="10" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">목록 요청 · description에 요청 단어 · 상위 사본</text>
+  <path d="M189.0 136 L189.0 156" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" marker-end="url(#ah-warning-line-2)"/>
+  <rect x="24" y="166" width="330" height="62" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="40" y="186" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">② 로드 실패</text>
+  <text x="40" y="208" font-size="10.5" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">골랐는데 본문이 안 들어온다 · 잘려 들어온다</text>
+  <rect x="370" y="166" width="286" height="62" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="386" y="186" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">첫 확인</text>
+  <text x="386" y="208" font-size="10" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">frontmatter 파싱(validate) · 동적 명령 실패 · 압축 상한</text>
+  <path d="M189.0 228 L189.0 248" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" marker-end="url(#ah-warning-line-2)"/>
+  <rect x="24" y="258" width="330" height="62" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="40" y="278" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">③ 준수 실패</text>
+  <text x="40" y="300" font-size="10.5" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">본문은 들어왔는데 출력이 어긋난다</text>
+  <rect x="370" y="258" width="286" height="62" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="386" y="278" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">첫 확인</text>
+  <text x="386" y="300" font-size="10" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">형식 뼈대 · 경계 사례 규칙 · 부정 규칙(~하지 않는다)</text>
+  <text x="340.0" y="334" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">신뢰 경계도 한 층이다 — 저장소에 들어온 skill은 남의 지시문: allowed-tools와 동적 명령을 먼저 본다</text>
+</svg>

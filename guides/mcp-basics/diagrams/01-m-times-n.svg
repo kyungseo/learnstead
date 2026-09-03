@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 326" width="680" height="326" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>MCP가 푸는 문제 — M×N 개별 구현을 M+N 표준 구현으로</title>
+  <desc>왼쪽은 host 셋이 노트와 데이터베이스 도구를 각각 연결해 여섯 개 구현이 필요하다. 오른쪽은 host 쪽 client 셋과 도구 쪽 server 둘이 같은 규약을 구현해 다섯 개 구현으로 줄어든다. 실제 실행 연결 수가 아니라 구현해야 할 어댑터 수를 비교한다.</desc>
+  <rect x="0" y="0" width="680" height="326" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">여러 host와 도구를 잇기 — M×N 구현을 M+N으로</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">host는 남의 것, client는 host가 만든다, 내 코드는 server 자리</text>
+  <rect x="24" y="74" width="304" height="206" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="40" y="92" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">tool calling만 있을 때</text>
+  <rect x="40" y="118" width="96" height="34" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="88" y="135" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">Claude Code</text>
+  <rect x="160" y="118" width="68" height="34" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="194" y="135" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">노트 읽기</text>
+  <line x1="136" y1="135" x2="160" y2="135" data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+  <rect x="236" y="118" width="68" height="34" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="270" y="135" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">DB 질의</text>
+  <line x1="228" y1="135" x2="236" y2="135" data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+  <rect x="40" y="166" width="96" height="34" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="88" y="183" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">Codex</text>
+  <rect x="160" y="166" width="68" height="34" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="194" y="183" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">노트 읽기</text>
+  <line x1="136" y1="183" x2="160" y2="183" data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+  <rect x="236" y="166" width="68" height="34" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="270" y="183" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">DB 질의</text>
+  <line x1="228" y1="183" x2="236" y2="183" data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+  <rect x="40" y="214" width="96" height="34" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="88" y="231" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">내 앱</text>
+  <rect x="160" y="214" width="68" height="34" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="194" y="231" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">노트 읽기</text>
+  <line x1="136" y1="231" x2="160" y2="231" data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+  <rect x="236" y="214" width="68" height="34" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="270" y="231" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">DB 질의</text>
+  <line x1="228" y1="231" x2="236" y2="231" data-stroke-role="data-line" stroke="#636A75" stroke-width="1"/>
+  <text x="176" y="262" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">3 host × 2 도구 = 6번 구현</text>
+  <rect x="352" y="74" width="304" height="206" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="368" y="92" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">MCP가 있을 때</text>
+  <rect x="368" y="122" width="96" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="416" y="137" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">Claude Code</text>
+  <rect x="368" y="170" width="96" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="416" y="185" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">Codex</text>
+  <rect x="368" y="218" width="96" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="416" y="233" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">내 앱</text>
+  <line x1="464" y1="137" x2="500" y2="137" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.2"/>
+  <line x1="464" y1="185" x2="500" y2="185" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.2"/>
+  <line x1="464" y1="233" x2="500" y2="233" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.2"/>
+  <line x1="500" y1="137" x2="500" y2="233" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.2"/>
+  <line x1="500" y1="137" x2="530" y2="137" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.2"/>
+  <line x1="500" y1="213" x2="530" y2="213" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.2"/>
+  <rect x="530" y="119" width="110" height="36" rx="9" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="585" y="137" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">노트 서버</text>
+  <rect x="530" y="195" width="110" height="36" rx="9" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="585" y="213" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">DB 서버</text>
+  <text x="504" y="262" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">client 3 + server 2 = 5개 표준 구현</text>
+  <text x="340.0" y="308" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">실행 연결은 필요한 만큼 맺지만, 각 host와 도구가 같은 규약을 한 번씩만 구현한다</text>
+</svg>

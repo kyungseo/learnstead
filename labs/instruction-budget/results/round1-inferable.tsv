@@ -1,0 +1,36 @@
+claude-V0-1	turns=8 cache_w=14571 cache_r=167865 out=3507 score 5/5
+claude-V0-2	turns=8 cache_w=15014 cache_r=168488 out=3764 score 5/5
+claude-V0-3	turns=8 cache_w=14962 cache_r=169290 out=3883 score 5/5
+claude-V1-1	turns=4 cache_w=12975 cache_r=75328 out=2076 score 5/5
+claude-V1-2	turns=4 cache_w=13448 cache_r=75760 out=2433 score 5/5
+claude-V1-3	turns=4 cache_w=13968 cache_r=76448 out=3007 score 5/5
+claude-V2-1	turns=7 cache_w=20634 cache_r=181368 out=3852 score 5/5
+claude-V2-2	turns=7 cache_w=19482 cache_r=179097 out=2815 score 5/5
+claude-V2-3	turns=6 cache_w=19110 cache_r=149676 out=2485 score 5/5
+claude-V3-1	turns=6 cache_w=14160 cache_r=121327 out=3126 score 5/5
+claude-V3-2	turns=7 cache_w=15047 cache_r=148451 out=3564 score 5/5
+claude-V3-3	turns=6 cache_w=13889 cache_r=122652 out=2850 score 5/5
+claude-V3i-1	turns=6 cache_w=13919 cache_r=122690 out=2886 score 5/5
+claude-V3i-2	turns=5 cache_w=13791 cache_r=99128 out=2950 score 5/5
+claude-V3i-3	turns=8 cache_w=15090 cache_r=149339 out=3635 score 5/5
+claude-V4-1	turns=8 cache_w=14755 cache_r=170663 out=3021 score 5/5
+claude-V4-2	turns=4 cache_w=13255 cache_r=75562 out=2345 score 5/5
+claude-V4-3	turns=7 cache_w=14672 cache_r=146909 out=3405 score 5/5
+codex-V0-1	tokens=46,473 read_rules=3 score 5/5
+codex-V0-2	tokens=26,626 read_rules=1 score 5/5
+codex-V0-3	tokens=39,716 read_rules=1 score 5/5
+codex-V1-1	tokens=21,128 read_rules=2 score 5/5
+codex-V1-2	tokens=37,451 read_rules=2 score 5/5
+codex-V1-3	tokens=39,085 read_rules=1 score 5/5
+codex-V2-1	tokens=51,528 read_rules=1 score 5/5
+codex-V2-2	tokens=26,856 read_rules=1 score 5/5
+codex-V2-3	tokens=26,277 read_rules=9 score 5/5
+codex-V3-1	tokens=39,591 read_rules=6 score 5/5
+codex-V3-2	tokens=23,367 read_rules=4 score 5/5
+codex-V3-3	tokens=26,028 read_rules=4 score 5/5
+codex-V3i-1	tokens=22,849 read_rules=4 score 5/5
+codex-V3i-2	tokens=45,622 read_rules=4 score 5/5
+codex-V3i-3	tokens=35,514 read_rules=3 score 5/5
+codex-V4-1	tokens=22,760 read_rules=3 score 5/5
+codex-V4-2	tokens=24,019 read_rules=3 score 5/5
+codex-V4-3	tokens=35,448 read_rules=3 score 5/5

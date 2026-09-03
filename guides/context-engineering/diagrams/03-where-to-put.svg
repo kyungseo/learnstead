@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" width="680" height="352" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>어디에 둘 것인가 — 결정 순서</title>
+  <desc>지시를 어디에 둘지 고르는 결정 순서. 모든 작업에 필요하고 짧으면 진입 지시문, 특정 파일 종류면 Claude Code는 경로 규칙·Codex는 skill, 특정 작업 절차면 skill, 길지만 항상 필요하면 import, 참고 자료면 pointer에 읽을 시점을 문장으로. 실측 점수를 각 칸에 적었다.</desc>
+  <defs><marker id="ah-data-line-1.5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="352" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">짧은 진입 지시문 + 필요한 곳에 조건부</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">pointer는 조건부 로드가 아니다 — 도구의 기제를 쓴다</text>
+  <rect x="24" y="74" width="160" height="42" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="104" y="95.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">모든 작업 · 짧다</text>
+  <path d="M184 95.0 L206 95.0" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1.5)"/>
+  <rect x="212" y="74" width="444" height="42" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="228" y="89" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">진입 지시문 (항상)</text>
+  <text x="228" y="105" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude 11 · Codex 15</text>
+  <rect x="24" y="126" width="160" height="42" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="104" y="147.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">특정 파일 종류</text>
+  <path d="M184 147.0 L206 147.0" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1.5)"/>
+  <rect x="212" y="126" width="444" height="42" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="228" y="141" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">Claude: 경로 규칙 paths / Codex: skill</text>
+  <text x="228" y="157" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude 13 · (Codex 중첩 AGENTS.md는 cwd 조건, 6)</text>
+  <rect x="24" y="178" width="160" height="42" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="104" y="199.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">특정 작업 절차</text>
+  <path d="M184 199.0 L206 199.0" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1.5)"/>
+  <rect x="212" y="178" width="444" height="42" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="228" y="193" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">skill (두 도구 공통)</text>
+  <text x="228" y="209" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">agent-skills 실습 3/3</text>
+  <rect x="24" y="230" width="160" height="42" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="104" y="251.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">길지만 항상 필요</text>
+  <path d="M184 251.0 L206 251.0" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1.5)"/>
+  <rect x="212" y="230" width="444" height="42" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="228" y="245" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">Claude: @import / Codex: 본문에 직접 (32 KiB)</text>
+  <text x="228" y="261" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Codex에서 @는 문자 그대로라 pointer와 같은 조건 · Claude 13 · Codex 14</text>
+  <rect x="24" y="282" width="160" height="42" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="104" y="303.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">참고 자료</text>
+  <path d="M184 303.0 L206 303.0" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1.5)"/>
+  <rect x="212" y="282" width="444" height="42" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="228" y="297" font-size="11.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">pointer + &quot;언제 읽으라&quot;는 문장</text>
+  <text x="228" y="313" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude 9 · Codex 14 — 판단에 맡김</text>
+  <text x="340.0" y="338" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">점수는 실습 라운드 2 (규칙 5개 × 3회 = 15점) · 준수율이 낮으면 길이보다 규칙 문장의 모호함을 먼저 의심한다</text>
+</svg>
