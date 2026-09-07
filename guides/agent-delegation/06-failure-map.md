@@ -1,6 +1,6 @@
 # 06. 실패 지도 — 작업을 맡긴 뒤 생길 수 있는 다섯 가지 문제
 
-> 이전 ← [`05-plan-execute-review.md`](05-plan-execute-review.md) · 다음 → [`07-when-not-to-split.md`](07-when-not-to-split.md)
+> [← 이전: 05. 계획 → 실행 → 검토](05-plan-execute-review.md) · [목차](README.md) · [다음: 07. 작업을 맡길지 결정하기 →](07-when-not-to-split.md)
 
 ## 이 장에서 답하는 질문
 
@@ -71,3 +71,7 @@
 - 다섯 실패를 증상으로 알아보고, 각각의 신호를 어느 로그에서 읽는지 말할 수 있습니다.
 - 작업 지침, 작업 폴더 격리, 사용량 제한이 각각 어떤 실패에 대비하는지 설명할 수 있습니다.
 - subagent에 넘어가지 않는 권한 경계를 두 도구에서 설명하고, 가장 넓은 권한 기준으로 경계를 볼 수 있습니다.
+
+---
+
+> [← 이전: 05. 계획 → 실행 → 검토](05-plan-execute-review.md) · [목차](README.md) · [다음: 07. 작업을 맡길지 결정하기 →](07-when-not-to-split.md)

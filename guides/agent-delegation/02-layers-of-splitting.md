@@ -1,6 +1,6 @@
 # 02. 일을 나누고 조정하는 네 가지 방식
 
-> 이전 ← [`01-why-split-a-session.md`](01-why-split-a-session.md) · 다음 → [`03-subagent-anatomy.md`](03-subagent-anatomy.md)
+> [← 이전: 01. 한 세션이 막히는 세 가지 이유](01-why-split-a-session.md) · [목차](README.md) · [다음: 03. Subagent 해부 →](03-subagent-anatomy.md)
 
 ## 이 장에서 답하는 질문
 
@@ -69,3 +69,7 @@ Codex 문서는 subagent를 "bounded work를 메인 스레드에서 떼어 내�
 - 네 가지 조정 방식과 worktree의 관계를 설명하고, 도구별 지원 범위를 구분할 수 있습니다.
 - 조정 주체·워커 간 대화·같은 파일이라는 세 질문으로 조정 방식을 고를 수 있습니다.
 - 메인 컨텍스트 절약과 전체 토큰 절약이 다른 목표임을 설명할 수 있습니다.
+
+---
+
+> [← 이전: 01. 한 세션이 막히는 세 가지 이유](01-why-split-a-session.md) · [목차](README.md) · [다음: 03. Subagent 해부 →](03-subagent-anatomy.md)

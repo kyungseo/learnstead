@@ -1,6 +1,6 @@
 # 01. 기준선 — 한 세션이 하는 만큼
 
-> 다음 → [`02-delegate.md`](02-delegate.md)
+> [목차](README.md) · [다음: 02. 위임 →](02-delegate.md)
 
 ## 목표
 
@@ -52,3 +52,7 @@ Codex 검토 벽시계는 첫 배치 값(18.6·22.9·28.5초)입니다. 재실�
 | `tests` 열이 `None` | 실행이 중간에 끊겨 `tests.txt`가 없음 | `runs/main/<실행>/stderr.txt` 확인 후 해당 회차만 `run-*.sh`로 재실행 |
 | Codex가 `Reading additional input from stdin...` 후 멈춤 | stdin이 열려 있음 | 스크립트는 `</dev/null`을 붙입니다. 직접 실행할 때도 붙이세요 |
 | 적중 0, `parsed: false` | 답이 JSON 형식이 아님 | `answer_excerpt`를 보고 프롬프트의 출력 형식 문장을 유지 |
+
+---
+
+> [목차](README.md) · [다음: 02. 위임 →](02-delegate.md)

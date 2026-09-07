@@ -1,6 +1,6 @@
 # 08. 용어집
 
-> 이전 ← [`07-when-not-to-split.md`](07-when-not-to-split.md) · 처음 → [`README.md`](README.md)
+> [← 이전: 07. 작업을 맡길지 결정하기](07-when-not-to-split.md) · [목차](README.md) · [다음: 실습 →](../../labs/delegate-and-verify/README.md)
 
 등장 순서대로 배열했습니다. 앞선 가이드에 정의가 있는 용어는 그 정의를 따르고 링크만 둡니다.
 
@@ -39,3 +39,7 @@
 | worktree vs 담당 파일 범위(파일 소유권) | 작업 폴더 분리 ↔ 각 작업의 쓰기 범위 지정. 둘 다 통합 검증은 필요 |
 | 검토 vs 검사 | 모델이 읽고 판단 ↔ 코드가 돌리고 통과/실패. 검사가 먼저 |
 | plan mode vs 읽기 전용 subagent | 계획 단계의 편집 제한 ↔ 위임받은 작업의 권한 제한. 사람의 승인 지점은 별도 지정 |
+
+---
+
+> [← 이전: 07. 작업을 맡길지 결정하기](07-when-not-to-split.md) · [목차](README.md) · [다음: 실습 →](../../labs/delegate-and-verify/README.md)
