@@ -40,6 +40,20 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 | 회의록 정리 Skill을 직접 만들고, 명시 호출·자동 호출·과호출과 이름 충돌을 관측합니다. | Python으로 작은 읽기 전용 서버를 만든 뒤 잘못된 경로와 거짓 권한 힌트 같은 실패를 재현합니다. | 같은 과제를 여러 지시문 구성으로 반복해 보고, 규칙 준수율과 토큰 사용량을 기계적으로 비교합니다. |
 | **[1편 실습 →](labs/skill-workshop/README.md)** | **[2편 실습 →](labs/mcp-notes-server/README.md)** | **[3편 실습 →](labs/instruction-budget/README.md)** |
 
+### AI 여러 개로 일하기 — 코드로 엮기, 도구 안에서 맡기기
+
+| 코드로 여러 AI 엮기 | 코딩 Agent에게 나눠 맡기기 |
+| --- | --- |
+| [<img src="guides/agent-orchestration/assets/agent-orchestration-hero.webp" width="320" alt="여러 AI 호출을 흐름으로 연결하고 결과를 확인하는 작업대">](guides/agent-orchestration/README.md) | [<img src="guides/agent-delegation/assets/agent-delegation-hero.webp" width="320" alt="코딩 Agent가 작업을 나누고 결과를 검토해 합치는 모습">](guides/agent-delegation/README.md) |
+| 파이프라인·라우터·워커·평가 루프를 비교하고, 나누는 이유와 실패 신호를 익힙니다. | Subagent·병렬 작업·새 컨텍스트 검토를 구분하고, 맡길 범위와 확인할 결과를 정합니다. |
+| **[가이드 시작 →](guides/agent-orchestration/README.md)** | **[가이드 시작 →](guides/agent-delegation/README.md)** |
+
+| 패턴별 실패 재현 | 위임하고 검증하기 |
+| --- | --- |
+| [<img src="labs/when-splitting-fails/assets/when-splitting-fails-hero.webp" width="320" alt="나눠 처리한 답변의 오류와 비용을 비교하는 실습">](labs/when-splitting-fails/README.md) | [<img src="labs/delegate-and-verify/assets/delegate-and-verify-hero.webp" width="320" alt="작업 결과를 기준선과 비교하고 오류를 검증하는 실습">](labs/delegate-and-verify/README.md) |
+| 같은 과제를 다섯 방식으로 실행해 분류 오류·취합 손실·반복 실패와 토큰 비용을 관측합니다. | 결함을 심은 가계부 코드로 한 세션·위임·병렬·검토를 비교하고, 지적의 타당성과 통합 결과를 확인합니다. |
+| **[실습 시작 →](labs/when-splitting-fails/README.md)** | **[실습 시작 →](labs/delegate-and-verify/README.md)** |
+
 ### AI와 코딩하기 — 빠르게 만들되 결정권은 놓치지 않기
 
 | Git으로 변경 관리 | 바이브 코딩 가이드 | 다섯 가지 확인 실습 |
@@ -75,6 +89,15 @@ Local LLM을 프로그램에서 호출하는 방식이 먼저 궁금하면 [앱 
 6. [지시문 예산](labs/instruction-budget/README.md) — 지시문의 크기·위치·형태에 따른 준수 결과를 직접 비교합니다
 
 3편의 tool calling이 낯설다면 먼저 [Local LLM 앱 연결 가이드 06](guides/local-llm-app-integration/06-tool-calling-workflow-agent.md)을 읽어도 좋습니다.
+
+### AI 여러 개로 일하기 — 코드로 엮기, 도구 안에서 맡기기
+
+두 경로 가운데 지금 쓰는 방식부터 시작하세요. 프로그램에서 모델을 호출한다면 코드 경로를, Claude Code나 Codex에서 일을 나눈다면 코딩 도구 경로를 권합니다.
+
+- **코드 경로:** [여러 AI를 엮어 일하게 하기](guides/agent-orchestration/README.md) → [나눴더니 틀렸다](labs/when-splitting-fails/README.md). Local LLM 앱 연결 가이드의 tool calling·agent 기초를 알고, Python과 Ollama로 직접 비교하려는 독자에게 맞습니다.
+- **코딩 도구 경로:** [AI Agent에게 일을 나눠 맡기는 법](guides/agent-delegation/README.md) → [나눠 맡기고 검증하기](labs/delegate-and-verify/README.md). Context Engineering과 Git worktree의 기본을 알고, Claude Code 또는 Codex에서 위임 효과를 확인하려는 독자에게 맞습니다.
+
+한 경로를 마친 뒤 다른 경로를 읽으면, 코드가 작업 순서를 정하는 경우와 도구 안에서 Agent가 일을 나누는 경우의 공통점과 차이를 비교할 수 있습니다.
 
 ### AI와 코딩하기 — 빠르게 만들되 결정권은 놓치지 않기
 

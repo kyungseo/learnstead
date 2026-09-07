@@ -1,0 +1,1 @@
+`src/ledger/report.py`의 `render`에 `title: str | None = None` 인자를 추가하세요. 주어지면 첫 줄 위에 제목 줄을 하나 더 넣습니다. 기존 호출은 그대로 동작해야 합니다. `PYTHONPATH=src python3 -m unittest -q`로 통과를 확인하세요. 다른 파일은 건드리지 마세요.

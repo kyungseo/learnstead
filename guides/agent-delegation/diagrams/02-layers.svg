@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 396" width="680" height="396" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>일을 조정하는 네 가지 형태</title>
+  <desc>Subagent, 병렬 세션, 팀, 스크립트는 조정 형태를 비교한 네 가지 선택지다. 성숙도 단계가 아니며 컨텍스트와 파일 격리는 따로 정한다. 같은 파일을 편집할 때 소유권과 통합 담당을 지정하고 분리하기 어려우면 순차 실행한다. 실측 범위는 본문을 따른다.</desc>
+  <rect x="0" y="0" width="680" height="396" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">일을 조정하는 네 가지 형태 — 필요에 따라 조합한다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">단계가 아닌 선택지 · 컨텍스트와 파일 격리는 따로 정한다 · ①은 실측, ②는 부분 실측, ③④는 문서 확인만</text>
+
+  <!-- ④ 스크립트 (top) -->
+  <rect x="24" y="70" width="448" height="64" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <circle cx="56" cy="102" r="18" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <g transform="translate(46 92) scale(0.8333)"><path d="M5.5 4 H18.5 A2.5 2.5 0 0 1 21 6.5 V17.5 A2.5 2.5 0 0 1 18.5 20 H5.5 A2.5 2.5 0 0 1 3 17.5 V6.5 A2.5 2.5 0 0 1 5.5 4 M7 9 L10 12 L7 15 M13 15 H17" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="86" y="86" font-size="12.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">④ 스크립트 — dynamic workflows</text>
+  <text x="86" y="105" font-size="10.5" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">절차를 코드로 고정해 반복 실행 · 스크립트가 조정</text>
+  <text x="86" y="121" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude Code dynamic workflows: agent() · parallel() · pipeline()</text>
+  <rect x="376" y="78" width="84" height="20" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="418" y="88" font-size="10" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">문서 확인만</text>
+
+  <!-- ③ 팀 -->
+  <rect x="24" y="144" width="448" height="64" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <circle cx="56" cy="176" r="18" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <g transform="translate(46 166) scale(0.8333)"><path d="M8 11 A3 3 0 1 0 8 5 A3 3 0 1 0 8 11 M2 20 A6 6 0 0 1 14 20 M16 6 A3 3 0 0 1 16 11 M15 20 A6 6 0 0 0 22 20" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="86" y="160" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">③ 팀 — agent teams (실험)</text>
+  <text x="86" y="179" font-size="10.5" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">lead 세션이 계획·배분·감독 · teammate끼리 직접 대화</text>
+  <text x="86" y="195" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude Code agent teams · 공유 task list · worktree 격리 없음 → 파일 소유권 분할</text>
+  <rect x="376" y="152" width="84" height="20" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="418" y="162" font-size="10" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">문서 확인만</text>
+
+  <!-- ② 병렬 세션 -->
+  <rect x="24" y="218" width="448" height="64" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <circle cx="56" cy="250" r="18" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <g transform="translate(46 240) scale(0.8333)"><path d="M5 19 H12 A4 4 0 0 0 12 11 H8 A4 4 0 0 1 8 3 H19" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="86" y="234" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">② 병렬 세션</text>
+  <text x="86" y="253" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">worktree마다 세션 하나 · 사람이 터미널을 열고 조정</text>
+  <text x="86" y="269" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude Code --worktree · Codex 앱 worktree / CLI는 git worktree add</text>
+  <rect x="376" y="226" width="84" height="20" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="418" y="236" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">부분 실측</text>
+
+  <!-- ① Subagent (bottom) -->
+  <rect x="24" y="292" width="448" height="64" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <circle cx="56" cy="324" r="18" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <g transform="translate(46 314) scale(0.8333)"><path d="M14.5 5 A2.5 2.5 0 1 1 9.5 5 A2.5 2.5 0 1 1 14.5 5 M7.5 19 A2.5 2.5 0 1 1 2.5 19 A2.5 2.5 0 1 1 7.5 19 M21.5 19 A2.5 2.5 0 1 1 16.5 19 A2.5 2.5 0 1 1 21.5 19 M12 7.5 V13 M12 13 L7 17 M12 13 L17 17" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="86" y="308" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">① Subagent</text>
+  <text x="86" y="327" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">한 세션 안 · 메인이 위임하고 결과 요약만 받는다</text>
+  <text x="86" y="343" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">Claude Code Agent 도구 · .claude/agents · Codex spawn_agent · .codex/agents</text>
+  <rect x="376" y="300" width="84" height="20" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="418" y="310" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">실측</text>
+
+  <!-- 세 질문 -->
+  <text x="496" y="80" font-size="11" font-weight="700" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">형태를 고르는 세 질문</text>
+  <rect x="496" y="96" width="160" height="64" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="508" y="114" font-size="10" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">누가 조정하나?</text>
+  <text x="508" y="132" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">메인 ① · 사람 ②</text>
+  <text x="508" y="146" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">lead ③ · 스크립트 ④</text>
+  <rect x="496" y="172" width="160" height="64" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="508" y="190" font-size="10" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">워커끼리 대화가 필요한가?</text>
+  <text x="508" y="208" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">아니오 → ① 결과만 받는다</text>
+  <text x="508" y="222" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">예 → ③ 팀 · 세션 간 메시지</text>
+  <rect x="496" y="248" width="160" height="64" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
+  <text x="508" y="266" font-size="10" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">같은 파일을 건드리나?</text>
+  <text x="508" y="284" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">예 → 소유권·통합 담당 지정</text>
+  <text x="508" y="298" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">분리 어려우면 순차 실행</text>
+
+  <text x="340" y="378" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">독립된 결과만 필요하면 ①부터 검토한다 · 파일 격리는 별도 선택이다</text>
+</svg>

@@ -1,0 +1,1 @@
+`src/ledger/cli.py`에 `--json` 플래그를 추가하세요. 지정하면 텍스트 보고서 대신 `{"month": "YYYY-MM", "totals": {...}, "grand_total": N}`을 한 줄 JSON으로 출력합니다. `tests/test_cli.py`에 `--json` 출력 검증 unittest 1개를 추가하고 `PYTHONPATH=src python3 -m unittest -q`로 통과를 확인하세요. 다른 파일은 건드리지 마세요.

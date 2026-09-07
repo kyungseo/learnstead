@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>오케스트레이터-워커 구조</title>
+  <desc>코드가 문서별 작업을 고정해 워커들에게 분배하고 모델이 결과를 취합한다. 2026-08-30 요약 과제의 입력은 휴가 229, 장비 196, 회의실 204, 취합 339다. 전체 시간은 동시 호출 8.7초, 순차 6.6초였으며 9월 6일 재측정은 본문에 있다.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">뿌리고 · 각자 좁게 보고 · 결과만 모은다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">이 실습은 문서별 작업을 코드가 고정한다 · 동적 작업 분해와 구분</text>
+  <rect x="24" y="118" width="120" height="60" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="84.0" y="140.0" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">요청</text>
+  <text x="84.0" y="154.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">규정 3편 요약</text>
+  <rect x="180" y="118" width="120" height="60" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="240.0" y="140.0" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">오케스트레이터</text>
+  <text x="240.0" y="154.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">코드가 문서별 배분</text>
+  <path d="M146 148 L176 148" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="348" y="74" width="150" height="60" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="423" y="92" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">워커 A</text>
+  <text x="423" y="108" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">휴가-규정</text>
+  <text x="423" y="122" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">229토큰</text>
+  <path d="M302 148 Q324 148 344 104" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M500 104 Q522 104 540 148" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="348" y="140" width="150" height="60" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="423" y="158" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">워커 B</text>
+  <text x="423" y="174" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">장비-규정</text>
+  <text x="423" y="188" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">196토큰</text>
+  <path d="M302 148 Q324 148 344 170" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M500 170 Q522 170 540 148" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="348" y="206" width="150" height="60" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="423" y="224" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">워커 C</text>
+  <text x="423" y="240" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">회의실-예약</text>
+  <text x="423" y="254" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">204토큰</text>
+  <path d="M302 148 Q324 148 344 236" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M500 236 Q522 236 540 148" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="544" y="118" width="112" height="60" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="600.0" y="140.0" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">취합</text>
+  <text x="600.0" y="154.0" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">결과만 339토큰</text>
+  <text x="340" y="296" font-size="10.5" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">8월 30일: 전체 8.7초 · 순차 6.6초 · 9월 6일 재측정은 본문 참조</text>
+  <text x="340.0" y="310" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">입력 경계·실행 시간·취합 정확도를 각각 확인한다</text>
+</svg>
