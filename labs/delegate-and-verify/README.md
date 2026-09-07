@@ -1,5 +1,7 @@
 # 나눠 맡기고 확인하기 — Subagent 위임·병렬·검토 실측
 
+> [시작: 01. 기준선 — 한 세션이 하는 만큼 →](01-baseline.md)
+
 ![위임한 두 작업의 결과를 사람이 확대경·체크리스트·시간과 비용 지표로 확인하는 손그림](assets/delegate-and-verify-hero.webp)
 
 > 작은 가계부 프로젝트에 결함 세 개를 심어 두고, 같은 과제를 **한 세션 · subagent 위임 · subagent 병렬 · 새 컨텍스트 검토로** Claude Code와 Codex CLI에서 반복 실행합니다. 사용자가 대화하는 메인 세션의 마지막 입력 크기, 총 경과 시간(벽시계 시간), 미리 정한 결함 위치와 일치하는 지적 수를 채점기로 기록합니다. 불충분한 위임 요청·같은 파일의 편집 충돌·검토 범위를 넓혔을 때 늘어나는 제안을 살펴보고, 작성 세션 이어 가기 검토와 새 컨텍스트 검토를 같은 기준으로 비교합니다. 가이드 [AI Agent에게 일을 나눠 맡기는 법](../../guides/agent-delegation/README.md)의 실습편.
@@ -116,3 +118,7 @@ fixture 원본은 바뀌지 않고, 홈 디렉터리의 **설정**(`~/.claude/se
 ```bash
 python3 -m unittest discover -s scripts -p 'test_*.py' -v
 ```
+
+---
+
+> [시작: 01. 기준선 — 한 세션이 하는 만큼 →](01-baseline.md)
