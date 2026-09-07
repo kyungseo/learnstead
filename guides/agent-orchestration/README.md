@@ -1,5 +1,7 @@
 # 여러 AI를 엮어 일하게 하기 — Agent와 오케스트레이션
 
+> [시작: 01. 왜 하나로는 안 되는가 →](01-why-more-than-one.md)
+
 ![사람이 순서·분기·검토를 나타내는 카드로 로봇들의 작업 흐름을 구성하는 손그림](assets/agent-orchestration-hero.webp)
 
 > 하나의 에이전트로 처리하던 일을 여러 역할이나 단계로 분담하면 결과가 좋아질까요? 이 가이드는 **같은 질문·같은 모델·같은 문서 3편을 사용해 다섯 가지 처리 방식을 비교한 결과**로 그 질문을 살펴봅니다. 한 번에 답하기, 순서대로 처리하기, 담당 분야를 선택하기, 여러 작업 결과를 취합하기, 작성과 평가를 반복하기를 비교했습니다. 다섯 방식 중 셋은 정답을 냈지만, 담당을 선택하는 라우터는 분야를 잘못 골랐고 워커의 답에는 규정에 없는 설명이 섞였습니다. 정답을 유지하면서 토큰 사용량도 줄인 것은 파이프라인이었습니다. 역할과 단계를 늘리기 전에, 현재 방식보다 무엇이 나아지는지 확인하는 것이 이 가이드의 출발점입니다.
@@ -89,3 +91,7 @@ python3 patterns.py all "관리자는 연차를 며칠까지 이월할 수 있�
 
 - 출처: [`SOURCES.md`](SOURCES.md) · 변경: [`CHANGELOG.md`](CHANGELOG.md)
 - 이 가이드가 다루지 않는 것: 오케스트레이션 프레임워크(LangGraph·CrewAI·Microsoft Agent Framework·OpenAI Agents SDK 등)의 사용법과 비교 · 장기 기억·계획(planning) 알고리즘·자율 목표 설정 · 여러 사용자를 받는 agent 서비스의 인프라·큐·상태 관리 · 쓰기·실행 권한을 가진 agent의 안전 설계([앱 연결 06 §3](../../guides/local-llm-app-integration/06-tool-calling-workflow-agent.md)의 경계 원칙까지만) · 품질을 수치로 재는 평가 체계(→ 평가와 관측 가이드) · 코딩 에이전트 안의 subagent·worktree·검토(→ [나눠 맡기는 법](../../guides/agent-delegation/README.md))
+
+---
+
+> [시작: 01. 왜 하나로는 안 되는가 →](01-why-more-than-one.md)
