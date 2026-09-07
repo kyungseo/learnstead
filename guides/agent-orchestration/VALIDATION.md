@@ -57,3 +57,17 @@
 
 - 내장 imagegen으로 hero를 생성하고 한글 제목·구도를 확인한 뒤 WebP로 저장했습니다(1672×941, cwebp 품질 90).
 - 기존 hero 누락 4건을 해소했습니다. 두 팩 공개 레이아웃 배치 후 `python3 tools/validate.py --public` 최종 결과: PASS. 앞의 누락·FAIL 기록은 이미지 추가 전 검사입니다.
+
+## 2026-09-07 개요 SVG 검증
+
+- 첫 화면의 다섯 방식 텍스트 도식을 `diagrams/00-five-ways.svg`로 교체했습니다.
+- SVG lint 0 error·0 warning, 880×1084 원본의 2배 PNG(1760×2168) 렌더링 및 시각 확인을 통과했습니다. 라우터 선택·워커 취합·평가 재작성 경로와 본문 의미를 대조했습니다.
+- 렌더러: Google Chrome 152.0.7977.76. 로컬 `svg-infographic` 스킬의 `node scripts/render.mjs diagrams/00-five-ways.svg`로 검증했습니다.
+- 공개 레이아웃 `python3 tools/validate.py --public` PASS. 실습 실행 코드는 변경하지 않았습니다.
+
+## 2026-09-07 — 문장·용어 보완 확인
+
+- 두 가이드와 두 실습의 독자용 본문 28개를 검토·수정했습니다. 명령·코드 예제·실제 출력 블록과 표의 숫자는 보존했습니다. Mermaid의 표시 문구와 독자용 기록 양식은 설명에 맞춰 수정했습니다.
+- GFM 렌더 후 코드 밖에 남은 리터럴 `**` 0건. 공개 레이아웃의 링크·구조 검사(`python3 tools/validate.py --public`)와 `git diff --check` 통과. 원본과 공개용 작업본은 상대 링크 매핑을 제외하고 일치합니다.
+- 변경된 SVG 5개는 소스 검사 0 error·0 warning, Chrome 152.0.7977.76의 2× 렌더와 시각 확인을 통과했습니다. 렌더러: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`.
+- 문서와 도식 설명을 보완한 검증입니다. 모델 실험을 다시 실행하지 않았으며, 실제 초심자를 대상으로 이해도를 측정한 결과는 아닙니다.

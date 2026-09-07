@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 1084" width="880" height="1084" role="img" font-family="Pretendard, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
+<title>다섯 방식은 호출의 연결과 선택이 다르다</title><desc>단일은 모든 문서를 한 호출에 넣는다. 파이프라인은 정해진 순서대로 실행한다. 라우터는 담당 하나를 선택한다. 워커는 코드가 미리 정한 문서별 작업을 분배하고 취합한다. 평가 개선은 평가 후 통과하거나 상한에서 멈추고, 미달하면 다시 작성한다.</desc>
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<rect x="0" y="0" width="880" height="1084" rx="0" data-fill-role="canvas" fill="#F7F7F5" data-stroke-role="canvas" stroke="#F7F7F5"/>
+<text x="24" y="33" font-size="26" font-weight="700" text-anchor="start" dominant-baseline="central" data-fill-role="ink" fill="#252B35">다섯 방식은 호출의 연결과 선택이 다르다</text>
+<text x="24" y="65" font-size="16" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75">같은 과제의 비교 구성 · 모든 Agent 패턴을 나열한 목록은 아님</text>
+<rect x="24" y="90" width="832" height="140" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2"/>
+<circle cx="52" cy="118" r="14" data-fill-role="icon-tint" fill="#EAF0F6"/>
+<text x="52" y="118" font-size="16" font-weight="700" text-anchor="middle" dominant-baseline="central" data-fill-role="focus" fill="#2E6DA4">1</text>
+<text x="76" y="118" font-size="19" font-weight="700" text-anchor="start" dominant-baseline="central" data-fill-role="ink" fill="#252B35">단일</text>
+<text x="48" y="208" font-size="15" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75">모든 문서를 한 번에 전달한다. 다른 방식과 비교할 기준선이다.</text>
+<rect x="100" y="144" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="155.0" y="163" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">질문</text>
+<rect x="350" y="144" width="200" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="450.0" y="163" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">LLM · 문서 전부</text>
+<rect x="690" y="144" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="745.0" y="163" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">답</text>
+<path d="M220 163 H340" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M560 163 H680" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="24" y="244" width="832" height="140" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2"/>
+<circle cx="52" cy="272" r="14" data-fill-role="icon-tint" fill="#EAF0F6"/>
+<text x="52" y="272" font-size="16" font-weight="700" text-anchor="middle" dominant-baseline="central" data-fill-role="focus" fill="#2E6DA4">2</text>
+<text x="76" y="272" font-size="19" font-weight="700" text-anchor="start" dominant-baseline="central" data-fill-role="ink" fill="#252B35">파이프라인</text>
+<text x="48" y="362" font-size="15" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75">실행 순서를 코드가 고정한다. 앞 단계의 결과가 다음 단계로 넘어간다.</text>
+<rect x="64" y="298" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="119.0" y="317" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">질문</text>
+<rect x="224" y="298" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="279.0" y="317" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">분류</text>
+<rect x="384" y="298" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="439.0" y="317" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">답변</text>
+<rect x="544" y="298" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="599.0" y="317" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">다듬기</text>
+<rect x="704" y="298" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="759.0" y="317" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">답</text>
+<path d="M184 317 H214" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M344 317 H374" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M504 317 H534" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M664 317 H694" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="24" y="398" width="832" height="226" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2"/>
+<circle cx="52" cy="426" r="14" data-fill-role="icon-tint" fill="#EAF0F6"/>
+<text x="52" y="426" font-size="16" font-weight="700" text-anchor="middle" dominant-baseline="central" data-fill-role="focus" fill="#2E6DA4">3</text>
+<text x="76" y="426" font-size="19" font-weight="700" text-anchor="start" dominant-baseline="central" data-fill-role="ink" fill="#252B35">라우터</text>
+<text x="48" y="602" font-size="15" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75">담당 하나를 선택한다. 선택된 담당만 자기 문서를 읽고 답한다.</text>
+<rect x="64" y="492" width="100" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="114.0" y="511" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">질문</text>
+<rect x="228" y="492" width="100" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="278.0" y="511" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">분류</text>
+<rect x="430" y="448" width="150" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="505.0" y="467" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">휴가 담당</text>
+<rect x="430" y="492" width="150" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="505.0" y="511" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">장비 담당</text>
+<rect x="430" y="536" width="150" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="505.0" y="555" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">총무 담당</text>
+<path d="M174 511 H218" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M338 511 H378 V467 H420" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M338 511 H420" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M338 511 H378 V555 H420" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="704" y="492" width="110" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="759.0" y="511" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">답</text>
+<path d="M590 467 H638 V511 H694" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M590 511 H638 V511 H694" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M590 555 H638 V511 H694" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g transform="translate(0 44)">
+<rect x="24" y="600" width="832" height="230" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2"/>
+<circle cx="52" cy="628" r="14" data-fill-role="icon-tint" fill="#EAF0F6"/>
+<text x="52" y="628" font-size="16" font-weight="700" text-anchor="middle" dominant-baseline="central" data-fill-role="focus" fill="#2E6DA4">4</text>
+<text x="76" y="628" font-size="19" font-weight="700" text-anchor="start" dominant-baseline="central" data-fill-role="ink" fill="#252B35">오케스트레이터-워커</text>
+<text x="48" y="808" font-size="15" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75"></text>
+<rect x="48" y="705" width="92" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="94.0" y="724" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">요청</text>
+<rect x="196" y="705" width="150" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="271.0" y="724" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">코드로 작업 분배</text>
+<rect x="420" y="661" width="124" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="482.0" y="680" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">워커 A</text>
+<rect x="420" y="705" width="124" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="482.0" y="724" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">워커 B</text>
+<rect x="420" y="749" width="124" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="482.0" y="768" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">워커 C</text>
+<rect x="610" y="705" width="94" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="657.0" y="724" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">취합</text>
+<rect x="760" y="705" width="72" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="796.0" y="724" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">답</text>
+<path d="M150 724 H186" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M356 724 H384 V680 H410" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M356 724 H410" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M356 724 H384 V768 H410" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M554 680 H574 V724 H600" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M554 724 H600" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M554 768 H574 V724 H600" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M714 724 H750" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="48" y="806" font-size="15" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75">문서별 작업은 미리 정한다. 동시 실행의 속도 이득은 runtime과 과제에 따라 다르다.</text>
+<rect x="24" y="844" width="832" height="170" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="rule" stroke="#DEE0E2"/>
+<circle cx="52" cy="872" r="14" data-fill-role="icon-tint" fill="#EAF0F6"/>
+<text x="52" y="872" font-size="16" font-weight="700" text-anchor="middle" dominant-baseline="central" data-fill-role="focus" fill="#2E6DA4">5</text>
+<text x="76" y="872" font-size="19" font-weight="700" text-anchor="start" dominant-baseline="central" data-fill-role="ink" fill="#252B35">평가·개선</text>
+<text x="48" y="992" font-size="15" font-weight="400" text-anchor="start" dominant-baseline="central" data-fill-role="muted" fill="#636A75">실선은 진행, 점선은 재작성. 통과하거나 반복 상한에 도달하면 멈춘다.</text>
+<rect x="48" y="902" width="92" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="94.0" y="921" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">요청</text>
+<rect x="230" y="902" width="116" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="288.0" y="921" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">작성</text>
+<rect x="458" y="902" width="116" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="516.0" y="921" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">평가</text>
+<rect x="700" y="902" width="132" height="38" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="focus" stroke="#2E6DA4"/>
+<text x="766.0" y="921" font-size="16" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="ink" fill="#252B35">결과 확인</text>
+<path d="M150 921 H220" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M356 921 H448" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M584 921 H690" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="637" y="885" font-size="14" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="muted" fill="#636A75">통과 / 상한</text>
+<path d="M516 950 V971 H288 V950" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="400" y="956" font-size="14" font-weight="400" text-anchor="middle" dominant-baseline="central" data-fill-role="muted" fill="#636A75">미달 → 재작성</text>
+</g>
+</svg>

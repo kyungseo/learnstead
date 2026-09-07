@@ -5,7 +5,7 @@
   <defs><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-danger-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-data-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-warning-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" stroke-linecap="round"/></marker></defs>
   <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
-  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">기본값은 단일 호출 — 나누는 쪽이 근거를 댄다</text>
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">단일 호출로 시작하고, 추가할 역할과 단계의 필요성을 확인한다</text>
   <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">후보를 고르는 출발점 · 품질 문제는 근거 자료·모델·평가 기준도 살핀다</text>
   <rect x="24" y="140" width="130" height="56" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="89.0" y="160.0" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">단일 호출로</text>
@@ -14,7 +14,7 @@
   <text x="244.0" y="168.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">충분한가?</text>
   <path d="M156 168 L180 168" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
   <rect x="184" y="82" width="120" height="40" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
-  <text x="244.0" y="102.0" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">끝 — 안 나눔</text>
+  <text x="244.0" y="102.0" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">현재 방식 유지</text>
   <path d="M244 136 L244 126" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
   <text x="262" y="130" font-size="10" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">예</text>
   <rect x="340" y="74" width="176" height="38" rx="7" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
@@ -47,5 +47,5 @@
   <rect x="540" y="266" width="116" height="38" rx="7" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
   <text x="550" y="285" font-size="10" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">요청·근거를 정리</text>
   <path d="M306 168 Q322 168 336 285" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1_5)"/>
-  <text x="340.0" y="314" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">나눴다면 기준선과 토큰·정확도·시간을 비교한다. 안 나아졌으면 되돌린다</text>
+  <text x="340.0" y="314" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">구성을 바꿨다면 기존 방식과 토큰·정확도·시간을 비교해 유지할지 판단한다</text>
 </svg>

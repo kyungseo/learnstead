@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 320" width="680" height="320" role="img"
   style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
-  <title>나눌 목적과 보장되지 않는 이득</title>
-  <desc>나눌 목적을 컨텍스트, 시간, 역할과 품질로 정하고 기준선과 비교한다. 호출 수 증가만으로 품질·정확도·비용 개선이 보장되지는 않는다.</desc>
+  <title>작업 분담의 목적과 확인할 효과</title>
+  <desc>작업 분담의 목적을 입력량, 시간, 역할과 품질로 정하고 기준선과 비교한다. 호출 수 증가만으로 품질·정확도·비용 개선이 보장되지는 않는다.</desc>
 
   <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
-  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">나눌 목적과 확인할 이득을 먼저 정한다</text>
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">작업을 분담할 목적과 확인할 효과를 정한다</text>
   <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">컨텍스트·시간·역할·품질의 이득을 기준선과 비교한다</text>
   <rect x="24" y="74" width="200" height="96" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="124" y="96" font-size="12" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">① 컨텍스트를 좁히려고</text>
@@ -23,9 +23,9 @@
   <line x1="472" y1="136" x2="640" y2="136" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1"/>
   <text x="556" y="152" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">평가 루프 · 권한 분리</text>
   <rect x="24" y="192" width="632" height="96" rx="12" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
-  <text x="40" y="210" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">나누기만으로 보장되지 않는 것</text>
+  <text x="40" y="210" font-size="13" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">역할을 늘려도 보장되지 않는 것</text>
   <text x="40" y="226" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">✕  호출 수 증가만으로 품질 개선을 보장할 수 없다</text>
   <text x="40" y="248" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">✕  검토자도 같은 오류를 공유할 수 있다</text>
   <text x="40" y="270" font-size="11" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">✕  토큰·모델 단가·캐시를 포함한 비용은 별도 비교</text>
-  <text x="340.0" y="304" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">먼저 단일 호출로 만들고, 막힌 벽 하나에 패턴 하나를 더한 뒤, 기준선과 비교한다</text>
+  <text x="340.0" y="304" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">단일 호출로 시작하고, 해결할 문제에 맞는 패턴을 추가해 기존 결과와 비교한다</text>
 </svg>

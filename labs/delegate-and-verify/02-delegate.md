@@ -4,7 +4,7 @@
 
 ## 목표
 
-같은 검토를 `reviewer` subagent에 위임해 메인 토큰과 위임 토큰을 나눠 재고, 대화 이력에 기대는 한 문장 위임이 어떻게 되는지 본다.
+같은 검토를 `reviewer` subagent에 맡기고 메인과 subagent의 토큰 사용량을 각각 측정합니다. 이전 대화의 내용을 생략한 짧은 요청과, 대상·규격을 모두 적은 요청의 결과도 비교합니다.
 
 ## 1. 돌리기
 
@@ -12,7 +12,7 @@
 ./scripts/batch.sh main 3 s02-review-delegate s02-delegate-history s02-delegate-explicit
 ```
 
-`s02-review-delegate`는 실행 폴더에 `agents/*/reviewer.*`를 복사한 뒤 "아래 검토를 reviewer subagent 하나에게 그대로 위임하고 직접 읽지 마라"를 앞에 붙입니다. `s02-delegate-history`(`prompts/delegate-history.md`)는 메인이 결함을 확인한 뒤 **"우리가 확인한 그 결함을 고치고 테스트를 추가해"** 한 문장만으로 `implementer`에게 위임하게 시킵니다. `s02-delegate-explicit`(`prompts/delegate-explicit.md`)은 같은 결함을 파일·함수·규격·검사 명령까지 적은 자기완결 프롬프트로 위임하는 대조군입니다.
+`s02-review-delegate`는 실행 폴더에 `agents/*/reviewer.*`를 복사한 뒤 "아래 검토를 reviewer subagent 하나에게 그대로 위임하고 직접 읽지 마라"를 앞에 붙입니다. `s02-delegate-history`(`prompts/delegate-history.md`)는 메인이 결함을 확인한 뒤 **"우리가 확인한 그 결함을 고치고 테스트를 추가해"** 한 문장만으로 `implementer`에게 위임하게 시킵니다. `s02-delegate-explicit`(`prompts/delegate-explicit.md`)은 같은 결함을 파일·함수·규격·검사 명령까지 적은 요청만 읽어도 작업을 이해할 수 있는 자기완결 프롬프트로 위임하는 비교 조건입니다.
 
 ## 2. 채점과 근거 찾기
 
@@ -64,12 +64,12 @@ python3 scripts/score.py --tsv runs/main/*-s02-*
 | Codex | 자기완결 | 3/3 | 143,660 | 124,967 | 72.9초 |
 
 - 메인 컨텍스트 끝 크기는 Claude Code −3%, Codex −7%에 그쳤고, 위임 쪽에 각각 2.9만·13만 토큰이 새로 들었습니다. 이번 작은 읽기에서는 컨텍스트 절감이 작고 누적 입력은 늘었습니다. 위임 여부는 다른 목적과 비용도 함께 보고 판단합니다.
-- 이력 의존 위임은 Claude Code에서 결핍이 그대로 드러났고(추측하지 않고 되물음), Codex에서는 이력을 통째로 넘겨 가려졌습니다. 같은 결함을 자기완결 프롬프트로 위임한 대조군은 두 도구 모두 3/3이었고, Claude Code는 비용이 같았으며 Codex는 메인 토큰과 시간이 40% 줄었습니다.
+- 이력에 의존한 요청을 받은 Claude Code subagent는 필요한 정보를 되물었습니다. Codex는 3회 모두 수정했고, 3회차에서 전체 이력 전달을 확인했습니다. 위임 메시지 본문은 읽을 수 없어 전달 내용을 전부 확인하지는 못했습니다. 자기완결 요청에서는 두 도구 모두 수정에 성공했습니다(3/3). Claude Code의 입력량·시간 중앙값은 비슷했지만 성공 횟수가 달라 같은 결과를 얻는 비용이 같다고 볼 수 없습니다. Codex에서는 메인 토큰과 시간이 약 40% 줄었으나, 프롬프트와 실행 경로도 달라 그 원인을 이력 전달만으로 설명할 수는 없습니다.
 
 ## 흔한 실패 · 복구
 
 | 증상 | 원인 | 복구 |
 | --- | --- | --- |
 | `agent_or_spawn`이 0 | 위임하지 않았거나 호출 기록을 수집하지 못함 | 프롬프트의 "직접 읽지 마라"가 있는지 확인. 도구가 위임을 건너뛴 것도 관측으로 기록 |
-| Codex `rollouts/`에 자식 파일이 없음 | 세션 폴더가 다른 위치(`CODEX_HOME`) | `run-codex.sh`의 `$HOME/.codex/sessions` 경로를 환경에 맞게 수정 |
+| Codex `rollouts/`에 자식 파일이 없음 | 세션 폴더가 다른 위치(`CODEX_HOME`) | 실제 Codex 홈 경로를 `CODEX_HOME` 환경 변수로 지정하고 새 실행 이름으로 재시도 |
 | subagent가 "파일을 찾을 수 없다"(worktree 격리 시) | worktree는 커밋에서 갈라지므로 미커밋 파일이 없음 | 이 실습은 매 실행이 커밋된 fixture에서 시작하므로 해당 없음. 자기 저장소에서는 먼저 커밋하고, feature branch 위면 `worktree.baseRef: "head"` |
