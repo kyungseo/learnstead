@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img"
   style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
-  <title>컨텍스트 격리 — 각자 덜 보게 하기</title>
+  <title>컨텍스트 격리 — 각 호출에 필요한 자료만 전달하기</title>
   <desc>같은 단일 질문의 2026-08-30 측정이다. 단일 입력 508, 워커 입력 197·230·205와 취합 150의 합계는 782다. 전달 정보의 경계와 전체 토큰 비용을 구분한다.</desc>
 
   <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
