@@ -27,7 +27,7 @@ python3 scripts/score.py --tsv runs/main/*-s02-*
 
 ## 3. 기록
 
-| 도구 | 구성 | 메인 입력 | 위임 입력 | 합계 | 벽시계 | 위치 일치/3 |
+| 도구 | 구성 | 메인 입력 | 위임 입력 | 합계 | 총 경과 시간(초) | 위치 일치/3 |
 | --- | --- | --- | --- | --- | --- | --- |
 | Claude Code | 직접(01) | | 0 | | | |
 | Claude Code | 위임 | | | | | |
@@ -43,7 +43,7 @@ python3 scripts/score.py --tsv runs/main/*-s02-*
 
 ## 작성 환경의 실제 결과
 
-| 도구 | 구성 | 메인 컨텍스트(끝) | 메인 누적 | 위임 누적 | 벽시계 | 위치 일치/3 |
+| 도구 | 구성 | 메인 컨텍스트(끝) | 메인 누적 | 위임 누적 | 총 경과 시간(초) | 위치 일치/3 |
 | --- | --- | --- | --- | --- | --- | --- |
 | Claude Code | 직접(01) | 25,143 | 69,457 | 0 | 17.1초 | 3/3 |
 | Claude Code | 위임 | 24,441 | 48,022 | 28,757 | 32.6초 | 3/3 |
@@ -56,7 +56,7 @@ python3 scripts/score.py --tsv runs/main/*-s02-*
 | Claude Code 3회차 | 위와 같음 → 되묻자 `SendMessage`로 재개하며 파일·함수·검사 명령을 보탬 | `in_month` + `tests/test_summarize.py` | 통과 |
 | Codex 3회 | `spawn_agent`(`task_name: fix_month_end`, 3회차 `fork_turns: "all"`). 본문은 rollout에 암호화 | `in_month` + `tests/test_summarize.py` | 통과 |
 
-| 도구 | 프롬프트 | 수정 성공 | 메인 누적 | 위임 누적 | 벽시계 |
+| 도구 | 프롬프트 | 수정 성공 | 메인 누적 | 위임 누적 | 총 경과 시간(초) |
 | --- | --- | --- | --- | --- | --- |
 | Claude Code | 이력 의존 | 1/3 | 74,234 | 41,143 | 73.8초 |
 | Claude Code | 자기완결 | 3/3 | 74,177 | 42,765 | 76.7초 |
