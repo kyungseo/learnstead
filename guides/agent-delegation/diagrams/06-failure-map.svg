@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 350" width="680" height="350" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>나눴는데 틀리는 다섯 가지</title>
+  <desc>위임 프롬프트 결핍, 파일 충돌, 취합 과정의 손실, 검토 제안 증가, 비용 증가를 확인한다. 오류 메시지 유무만으로 성공을 판단하지 않고 원문, 통합 결과, 검사, 비용을 확인한다. 프롬프트 규칙과 도구가 강제하는 제한을 구분한다.</desc>
+  <defs>
+    <marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="350" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">나눌 때 살펴볼 다섯 가지 실패</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">작업 규칙을 명시하고, 강제해야 할 제한은 도구·격리·예산 설정으로 확인한다</text>
+
+  <!-- 흐름 -->
+  <rect x="24" y="78" width="104" height="44" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="76" y="100" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">메인</text>
+  <path d="M130 100 L148 100" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="156" y="78" width="104" height="44" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="208" y="100" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">위임</text>
+  <path d="M262 100 L280 100" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="288" y="78" width="104" height="44" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="340" y="100" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">병렬 실행</text>
+  <path d="M394 100 L412 100" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="420" y="78" width="104" height="44" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="472" y="100" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">취합</text>
+  <path d="M526 100 L544 100" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <rect x="552" y="78" width="104" height="44" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="604" y="100" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">검토</text>
+
+  <!-- 지시선: 흐름 → 실패 카드 -->
+  <path d="M208 123 V138 H95.5 V152" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.2" />
+  <path d="M340 123 V138 H258.5 V152" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.2" />
+  <path d="M472 123 V138 H421.5 V152" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.2" />
+  <path d="M604 123 V138 H584.5 V152" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.2" />
+
+  <!-- ① 위임 프롬프트 결핍 (위임) -->
+  <rect x="24" y="152" width="143" height="104" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="168" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">① 위임 프롬프트 결핍</text>
+  <text x="34" y="186" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">이력을 모른다</text>
+  <text x="34" y="201" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">엉뚱한 것을 고친다</text>
+  <line x1="34" y1="213" x2="157" y2="213" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" stroke-dasharray="3 3" />
+  <text x="34" y="226" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">멈춤 장치</text>
+  <text x="34" y="242" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">자기완결 프롬프트</text>
+
+  <!-- ③ 파일 충돌 (병렬 실행) -->
+  <rect x="187" y="152" width="143" height="104" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="197" y="168" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">③ 파일 충돌</text>
+  <text x="197" y="186" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">같은 파일 덮어쓰기</text>
+  <text x="197" y="201" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">worktree merge 충돌</text>
+  <line x1="197" y1="213" x2="320" y2="213" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" stroke-dasharray="3 3" />
+  <text x="197" y="226" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">멈춤 장치</text>
+  <text x="197" y="242" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">파일 소유권·worktree</text>
+
+  <!-- ② 조용한 손실 (취합) -->
+  <rect x="350" y="152" width="143" height="104" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="360" y="168" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">② 조용한 손실</text>
+  <text x="360" y="186" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">결과가 요약에서</text>
+  <text x="360" y="201" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">빠짐·뒤집힘</text>
+  <line x1="360" y1="213" x2="483" y2="213" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" stroke-dasharray="3 3" />
+  <text x="360" y="226" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">멈춤 장치</text>
+  <text x="360" y="242" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">결과 원문 인용</text>
+
+  <!-- ④ 검토 과잉 (검토) -->
+  <rect x="513" y="152" width="143" height="104" rx="10" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="523" y="168" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">④ 검토 과잉</text>
+  <text x="523" y="186" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">넓은 요청의 제안 증가</text>
+  <text x="523" y="201" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">타당성·필요성 별도 확인</text>
+  <line x1="523" y1="213" x2="646" y2="213" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" stroke-dasharray="3 3" />
+  <text x="523" y="226" font-size="9" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">멈춤 장치</text>
+  <text x="523" y="242" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">finding 정의·검사 먼저</text>
+
+  <!-- ⑤ 비용 폭주 (전 구간) -->
+  <rect x="24" y="272" width="632" height="40" rx="10" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" stroke-dasharray="6 4" />
+  <text x="40" y="292" font-size="10.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">⑤ 비용 폭주</text>
+  <text x="116" y="292" font-size="10.5" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">메인 부담 감소와 전체 비용 감소는 다르다</text>
+  <text x="640" y="292" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="end" dominant-baseline="central">멈춤 장치 · 예산·한도</text>
+
+  <text x="340" y="334" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">오류 없이 끝나도 완료는 아니다 · 원문·통합 결과·검사·비용을 확인한다</text>
+</svg>

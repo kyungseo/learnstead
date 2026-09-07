@@ -1,0 +1,1 @@
+`src/ledger/store.py`에 `read_records(path) -> list[Record]` 함수를 추가하세요. `append_records`가 쓴 JSON Lines를 다시 Record 목록으로 읽습니다(`day`는 ISO 문자열에서 date로). `tests/test_store.py`에 왕복(append 후 read) 테스트 1개를 추가하고 `PYTHONPATH=src python3 -m unittest -q`로 통과를 확인하세요. 다른 파일은 건드리지 마세요.

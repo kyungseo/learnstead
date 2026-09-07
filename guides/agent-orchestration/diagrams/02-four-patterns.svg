@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" width="680" height="430" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>네 가지 오케스트레이션 패턴</title>
+  <desc>이 가이드의 대표 네 구성은 파이프라인, 라우터, 워커 분배와 취합, 평가 루프다. 전체 패턴 목록이 아니며 실습의 워커 작업은 코드가 고정한다.</desc>
+  <defs><marker id="ah-api-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-edge-line-1_5" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="6.75" markerHeight="6.75" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker><marker id="ah-warning-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="430" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">이 가이드에서 비교할 대표적인 네 구성</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">전체 패턴 목록은 아니다 · 실습은 코드로 고정한 호출 흐름을 비교한다</text>
+  <rect x="24" y="70" width="304" height="148" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="40" y="88" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">① 파이프라인 — 순서 고정</text>
+  <rect x="44" y="112" width="74" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="81.0" y="131.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">분류</text>
+  <path d="M120 131 L132 131" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="134" y="112" width="74" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="171.0" y="131.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">답변</text>
+  <path d="M210 131 L222 131" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="224" y="112" width="74" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="261.0" y="131.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">다듬기</text>
+  <text x="176" y="178" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">제어 흐름 = 내 코드</text>
+  <text x="176" y="198" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">호출 수가 고정된다</text>
+  <rect x="352" y="70" width="304" height="148" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="368" y="88" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">② 라우터 — 분류 후 위임</text>
+  <rect x="368" y="116" width="64" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="400.0" y="135.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">분류</text>
+  <rect x="478" y="102" width="74" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="515.0" y="115.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">휴가</text>
+  <path d="M434 131 Q456 131 474 115" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="478" y="132" width="74" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="515.0" y="145.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">장비</text>
+  <path d="M434 131 Q456 131 474 145" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <rect x="478" y="162" width="74" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="515.0" y="175.0" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">총무</text>
+  <path d="M434 131 Q456 131 474 175" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1.5" marker-end="url(#ah-edge-line-1_5)"/>
+  <text x="504" y="200" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">하나만 고른다 · 오분류를 별도 평가</text>
+  <rect x="24" y="234" width="304" height="168" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="40" y="252" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">③ 워커 분배·취합 — 병렬</text>
+  <rect x="40" y="292" width="60" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="70.0" y="311.0" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">상위</text>
+  <rect x="126" y="266" width="68" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="160.0" y="279.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">워커A</text>
+  <path d="M102 311 Q112 311 122 279" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="126" y="298" width="68" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="160.0" y="311.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">워커B</text>
+  <path d="M102 311 Q112 311 122 311" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="126" y="330" width="68" height="26" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <text x="160.0" y="343.0" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">워커C</text>
+  <path d="M102 311 Q112 311 122 343" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <rect x="220" y="292" width="92" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="266.0" y="311.0" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">취합</text>
+  <path d="M196 279 Q206 279 216 311" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M196 311 Q206 311 216 311" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <path d="M196 343 Q206 343 216 311" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
+  <text x="176" y="369" font-size="10.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">실습은 문서별 고정 분배</text>
+  <text x="176" y="390" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">각자 좁은 컨텍스트</text>
+  <rect x="352" y="234" width="304" height="168" rx="12" data-fill-role="warning-fill" fill="#FAF3E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="368" y="252" font-size="13" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="start" dominant-baseline="central">④ 평가-개선 루프</text>
+  <rect x="392" y="268" width="84" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="434.0" y="287.0" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">작성</text>
+  <rect x="532" y="268" width="84" height="38" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
+  <text x="574.0" y="287.0" font-size="11" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">평가</text>
+  <path d="M478 287 L528 287" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" marker-end="url(#ah-warning-line-2)"/>
+  <text x="504" y="258" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">초안</text>
+  <path d="M574 308 L574 330 L434 330 L434 310" fill="none" data-stroke-role="warning-line" stroke="#B08434" stroke-width="2" marker-end="url(#ah-warning-line-2)"/>
+  <text x="504" y="362" font-size="10.5" font-weight="700" data-fill-role="warning-ink" fill="#6B4F1A" text-anchor="middle" dominant-baseline="central">불합격이면 재작성</text>
+  <text x="504" y="390" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">평가·개선 여부를 확인</text>
+  <text x="340.0" y="418" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처음부터 겹치지 말 것 — 단일 호출에서 시작해 벽 하나에 패턴 하나</text>
+</svg>

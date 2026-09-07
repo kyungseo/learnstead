@@ -162,7 +162,8 @@ endpoint별 부가 기능(Tool Calling, Response Schema 등)이 같은 방식으
 다음 내용은 여기서 완성된 해법을 제시하지 않습니다.
 
 - 쓰기·실행 권한을 가진 도구(파일 수정, 명령 실행, 외부 API 호출)의 안전한 설계
-- 멀티 agent 오케스트레이션, 장기 기억, 계획(planning) 프레임워크의 비교
+- 장기 기억, 계획(planning) 프레임워크의 비교
+- 여러 AI 호출을 엮는 구조는 후속 [여러 AI를 엮어 일하게 하기](../agent-orchestration/README.md)와 [패턴별 실패 실습](../../labs/when-splitting-fails/README.md)에서 다룹니다.
 - 조직 단위의 gateway, 인증 연동, DLP, 감사 로그와 규제 대응
 - 대규모 동시 사용자를 위한 서빙 아키텍처와 용량 계획
 - 모든 runtime·모델·프레임워크 조합의 tool calling 지원 보장

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 352" width="680" height="352" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>subagent에 건너가는 것과 막히는 것</title>
+  <desc>Claude Code 비-fork subagent의 전달 경계: 위임 메시지와 프로젝트 지시문, 도구 권한 설정은 전달되나 대화 이력과 auto memory는 전달되지 않는다. fork는 초기 이력을 받되 이후 기록은 분리된다. Codex의 이력 전달은 실습 3회차 fork_turns=all에서 확인했으며 기본값은 미확인이다.</desc>
+  <defs>
+    <marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker>
+    <marker id="ah-danger-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" stroke-linecap="round"/></marker>
+    <marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="352" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">Claude Code 비-fork subagent — 전달 경계</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">비-fork 기준: 이력·auto memory는 전달되지 않는다 · fork는 초기 이력을 받되 이후 기록은 분리된다</text>
+
+  <!-- 메인 세션 -->
+  <rect x="24" y="70" width="200" height="204" rx="12" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="36" y="86" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">메인 세션</text>
+  <rect x="36" y="99" width="176" height="26" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="124" y="112" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">위임 메시지</text>
+  <rect x="36" y="133" width="176" height="26" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="124" y="146" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">CLAUDE.md / AGENTS.md</text>
+  <rect x="36" y="167" width="176" height="26" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="124" y="180" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">도구·권한 설정</text>
+  <rect x="36" y="201" width="176" height="26" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="124" y="214" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">대화 이력</text>
+  <rect x="36" y="235" width="176" height="26" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="124" y="248" font-size="10.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">auto memory</text>
+
+  <!-- subagent -->
+  <rect x="456" y="70" width="200" height="204" rx="12" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <text x="468" y="86" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">subagent — 새 세션</text>
+  <rect x="468" y="99" width="176" height="26" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="556" y="112" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">위임 메시지</text>
+  <rect x="468" y="133" width="176" height="26" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="556" y="146" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">CLAUDE.md / AGENTS.md</text>
+  <rect x="468" y="167" width="176" height="26" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="556" y="180" font-size="10.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">도구·권한 (상속)</text>
+  <rect x="468" y="201" width="176" height="60" rx="8" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" stroke-dasharray="4 3" />
+  <text x="556" y="224" font-size="10" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">이력·memory 없이 시작</text>
+  <text x="556" y="240" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">메인이 지금까지 본 것을 모른다</text>
+
+  <!-- 경계 -->
+  <line x1="340" y1="78" x2="340" y2="266" data-stroke-role="muted" stroke="#636A75" stroke-width="1.5" stroke-dasharray="5 4" />
+
+  <!-- 건너가는 것 -->
+  <path d="M216 112 L460 112" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <circle cx="340" cy="112" r="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" />
+  <g transform="translate(334 106) scale(0.5)"><path d="M4 12 L10 18 L20 6" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path d="M216 146 L460 146" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <circle cx="340" cy="146" r="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" />
+  <g transform="translate(334 140) scale(0.5)"><path d="M4 12 L10 18 L20 6" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path d="M216 180 L460 180" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <circle cx="340" cy="180" r="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" />
+  <g transform="translate(334 174) scale(0.5)"><path d="M4 12 L10 18 L20 6" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+  <!-- 막히는 것 -->
+  <path d="M216 214 L320 214" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <circle cx="340" cy="214" r="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.5" />
+  <path d="M336 210 L344 218 M344 210 L336 218" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="354" y="214" font-size="10" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">못 받음 (fork 제외)</text>
+  <path d="M216 248 L320 248" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="2" marker-end="url(#ah-danger-line-2)"/>
+  <circle cx="340" cy="248" r="9" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.5" />
+  <path d="M336 244 L344 252 M344 244 L336 252" fill="none" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="354" y="248" font-size="10" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">못 받음 (fork 제외)</text>
+
+  <!-- 돌아오는 것 -->
+  <path d="M556 276 L556 300 L124 300 L124 286" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <text x="340" y="314" font-size="10.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">결과 요약만 메인으로 돌아온다</text>
+
+  <text x="340" y="336" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">Codex: 부모 설정 상속 · 실습 3회차에서 fork_turns=all 확인 · 기본값 미확인</text>
+</svg>

@@ -1,0 +1,1 @@
+`src/ledger/parse.py`의 `parse_amount`를 고치세요. 요구사항: 입력 문자열의 부호를 보존하되, **환불(memo에 "환불" 포함)은 지출과 마찬가지로 음수로 저장해야** 합니다. `parse_rows`에서 memo를 보고 부호를 조정하세요. `PYTHONPATH=src python3 -m unittest -q`로 통과를 확인하세요. 다른 파일은 건드리지 마세요.

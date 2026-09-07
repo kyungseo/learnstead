@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 326" width="680" height="326" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>계획 → 실행 → 검토 한 바퀴</title>
+  <desc>계획, 실행, 검토 역할을 나누는 예시 흐름이다. 승인 지점은 작업 규칙에 따르며 검토 컨텍스트는 이어 가기나 새 세션을 선택할 수 있다. finding 반영 횟수는 예를 들어 2회로 제한한다.</desc>
+  <defs>
+    <marker id="ah-edge-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker>
+    <marker id="ah-api-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round"/></marker>
+  </defs>
+  <rect x="0" y="0" width="680" height="326" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">계획·실행·검토의 역할을 나누고 승인 지점을 정한다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">예시 흐름: 편집 전 계획 승인 · 검토 뒤 최종 승인 · 필요한 승인 지점은 작업 규칙에 따른다</text>
+
+  <!-- 계획 -->
+  <rect x="24" y="84" width="160" height="104" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <circle cx="104" cy="106" r="16" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
+  <g transform="translate(95 97) scale(0.75)"><path d="M6 3 H14 L18 7 V21 H6 Z M14 3 V7 H18 M9 13 H15 M9 16.5 H15 M9 9.5 H11" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="104" y="132" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">계획</text>
+  <text x="104" y="152" font-size="10" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">읽기 전용 — plan mode</text>
+  <text x="104" y="168" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">조사만 하고 편집하지 않는다</text>
+
+  <!-- 계획 승인 -->
+  <path d="M188 136 L216 136" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+  <circle cx="240" cy="136" r="15" data-fill-role="icon-tint" fill="#EAF0F6" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="1.2" />
+  <g transform="translate(232 128) scale(0.6667)"><path d="M12 11 A3.5 3.5 0 1 0 12 4 A3.5 3.5 0 1 0 12 11 M4 21 A8 8 0 0 1 20 21" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="240" y="170" font-size="10" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">계획 승인</text>
+  <path d="M264 136 L288 136" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+
+  <!-- 실행 -->
+  <rect x="296" y="84" width="160" height="104" rx="12" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <circle cx="376" cy="106" r="16" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <g transform="translate(367 97) scale(0.75)"><path d="M5.5 4 H18.5 A2.5 2.5 0 0 1 21 6.5 V17.5 A2.5 2.5 0 0 1 18.5 20 H5.5 A2.5 2.5 0 0 1 3 17.5 V6.5 A2.5 2.5 0 0 1 5.5 4 M7 9 L10 12 L7 15 M13 15 H17" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="376" y="132" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">실행</text>
+  <text x="376" y="152" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">편집 · 검사 통과까지</text>
+  <text x="376" y="168" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">테스트·린트·타입 검사</text>
+
+  <path d="M460 136 L488 136" fill="none" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="2" marker-end="url(#ah-edge-line-2)"/>
+
+  <!-- 검토 -->
+  <rect x="496" y="84" width="160" height="104" rx="12" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <circle cx="576" cy="106" r="16" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
+  <g transform="translate(567 97) scale(0.75)"><path d="M4 12 L10 18 L20 6" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="576" y="132" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">검토</text>
+  <text x="576" y="152" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">규격·변경 결과를 대조한다</text>
+  <text x="576" y="168" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">이어 가기·새 세션 중 선택</text>
+
+  <!-- finding 반영 (되돌아가기) -->
+  <path d="M528 188 L528 214 L376 214 L376 200" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ah-api-line-2)"/>
+  <text x="446" y="230" font-size="10" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">finding 반영 (예: 상한 2회)</text>
+
+  <!-- 최종 승인 -->
+  <path d="M624 188 L624 220" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="2" marker-end="url(#ah-api-line-2)"/>
+  <circle cx="624" cy="246" r="15" data-fill-role="icon-tint" fill="#EAF0F6" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="1.2" />
+  <g transform="translate(616 238) scale(0.6667)"><path d="M12 11 A3.5 3.5 0 1 0 12 4 A3.5 3.5 0 1 0 12 11 M4 21 A8 8 0 0 1 20 21" fill="none" data-stroke-role="focus" stroke="#2E6DA4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="624" y="278" font-size="10" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">최종 승인</text>
+
+  <!-- 검토 메모 -->
+  <rect x="452" y="246" width="140" height="40" rx="8" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" stroke-dasharray="4 3" />
+  <text x="522" y="260" font-size="9.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">검사가 먼저</text>
+  <text x="522" y="274" font-size="9.5" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">합의한 검토 범위 안에서</text>
+
+  <text x="340" y="310" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">멈추는 자리 셋: 검사 통과 · 라운드 상한 · 사람의 승인 (점선 = finding을 되돌리는 재실행)</text>
+</svg>

@@ -1,0 +1,8 @@
+{
+  "bugs": [
+    {"file": "src/ledger/parse.py", "function": "parse_amount", "reason": "abs()가 지출의 음수 부호를 지운다. 규격은 지출 음수·수입 양수."},
+    {"file": "src/ledger/summarize.py", "function": "in_month", "reason": "end 비교가 <라서 월 마지막 날 거래가 빠진다. 규격은 말일 포함."},
+    {"file": "src/ledger/report.py", "function": "sort_for_report", "reason": "이름순 정렬. 규격은 합계 절댓값 큰 순서."}
+  ],
+  "clean": ["src/ledger/store.py", "src/ledger/cli.py"]
+}

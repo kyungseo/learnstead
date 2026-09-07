@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="680" height="340" role="img"
+  style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <title>다섯 가지 실패 모드와 멈춤 장치</title>
+  <desc>오분류, 수렴 실패, 조용한 손실, 비용 증가, 책임 불명을 살핀다. 오류 메시지 없이도 발생할 수 있으며 로그뿐 아니라 담당·승인 책임도 필요하다.</desc>
+  <defs><marker id="ah-compute-line-2" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M2 2 L10 6 L2 10" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" stroke-linecap="round"/></marker></defs>
+  <rect x="0" y="0" width="680" height="340" data-fill-role="surface" fill="#FFFFFF"/>
+  <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
+  <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">오류 메시지만으로 찾기 어려운 다섯 실패</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">오류 메시지 없이도 발생 가능 · 중간 기록과 결과를 대조한다</text>
+  <rect x="24" y="74" width="140" height="40" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="94" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">① 오분류 전파</text>
+  <rect x="172" y="74" width="254" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="182" y="94" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">앞이 틀린 판단 → 뒤는 틀린 전제 위에서 정상 동작</text>
+  <path d="M430 94 L444 94" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="450" y="74" width="206" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="460" y="94" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">분류 근거 로그 · 낮은 확신 시 폴백</text>
+  <rect x="24" y="122" width="140" height="40" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="142" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">② 수렴 실패</text>
+  <rect x="172" y="122" width="254" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="182" y="142" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">루프가 통과를 못 받고 상한까지 반복</text>
+  <path d="M430 142 L444 142" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="450" y="122" width="206" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="460" y="142" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">라운드·예산 · 반복 감지 보조</text>
+  <rect x="24" y="170" width="140" height="40" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="190" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">③ 조용한 손실</text>
+  <rect x="172" y="170" width="254" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="182" y="190" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">워커는 맞혔는데 취합에서 빠짐</text>
+  <path d="M430 190 L444 190" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="450" y="170" width="206" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="460" y="190" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">중간 결과 로그 · 최종 답과 대조</text>
+  <rect x="24" y="218" width="140" height="40" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="238" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">④ 비용 폭발</text>
+  <rect x="172" y="218" width="254" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="182" y="238" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">호출·토큰이 예상의 몇 배</text>
+  <path d="M430 238 L444 238" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="450" y="218" width="206" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="460" y="238" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">호출·시간·토큰 세 상한</text>
+  <rect x="24" y="266" width="140" height="40" rx="8" data-fill-role="danger-fill" fill="#F9ECEA" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="34" y="286" font-size="11.5" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">⑤ 책임 불명</text>
+  <rect x="172" y="266" width="254" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
+  <text x="182" y="286" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">틀렸는데 어느 단계인지 모름</text>
+  <path d="M430 286 L444 286" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="2" marker-end="url(#ah-compute-line-2)"/>
+  <rect x="450" y="266" width="206" height="40" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
+  <text x="460" y="286" font-size="10" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">단계 로그 + 담당·승인 책임</text>
+  <rect x="24" y="318" width="632" height="0" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
+  <text x="340.0" y="328" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">최후의 폴백은 단일 호출 — 그 경로를 지우지 말 것</text>
+</svg>

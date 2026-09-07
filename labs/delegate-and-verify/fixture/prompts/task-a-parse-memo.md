@@ -1,0 +1,1 @@
+`src/ledger/parse.py`에 `parse_memo(text: str) -> str` 함수를 추가하세요. 앞뒤 공백을 제거하고 연속 공백을 하나로 합칩니다. `parse_rows`가 memo를 만들 때 이 함수를 쓰게 바꾸고, `tests/test_parse_memo.py`에 unittest 3개를 추가한 뒤 `PYTHONPATH=src python3 -m unittest -q`로 통과를 확인하세요. 다른 파일은 건드리지 마세요.
