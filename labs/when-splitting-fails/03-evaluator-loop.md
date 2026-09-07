@@ -1,6 +1,6 @@
 # 03. 평가-개선 루프 — 통과 기준과 중단 조건을 확인한다
 
-> 이전 ← [`02-orchestrator-workers.md`](02-orchestrator-workers.md) · 처음 → [`README.md`](README.md)
+> [← 이전: 02. 오케스트레이터-워커](02-orchestrator-workers.md) · [목차](README.md)
 
 ## 목표
 
@@ -169,3 +169,7 @@ python3 patterns.py loop "신입에게 보낼 휴가 안내문을 써 줘" --bud
 - 원리와 선택 규칙은 [가이드 05](../../guides/agent-orchestration/05-when-not-to.md)에, 코딩 에이전트 안에서 같은 판단을 하는 법은 [나눠 맡기는 법](../../guides/agent-delegation/README.md)에 있습니다.
 
 reset: `ollama stop gemma3:4b` (이 실습은 파일을 만들지 않습니다)
+
+---
+
+> [← 이전: 02. 오케스트레이터-워커](02-orchestrator-workers.md) · [목차](README.md)

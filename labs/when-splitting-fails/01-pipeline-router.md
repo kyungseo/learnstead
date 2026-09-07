@@ -1,6 +1,6 @@
 # 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다
 
-> 다음 → [`02-orchestrator-workers.md`](02-orchestrator-workers.md)
+> [목차](README.md) · [다음: 02. 오케스트레이터-워커 →](02-orchestrator-workers.md)
 
 ## 목표
 
@@ -217,3 +217,7 @@ python3 patterns.py router "노트북은 언제까지 반납하나요?" --fallba
 - [ ] 라우터의 오분류를 재현했거나, 재현되지 않았음을 8문항 정확도와 함께 기록했다
 - [ ] 분류 근거(`reason`)를 로그에 남기고 있다
 - [ ] 폴백 경로가 있고, 폴백의 비용을 알고 있다
+
+---
+
+> [목차](README.md) · [다음: 02. 오케스트레이터-워커 →](02-orchestrator-workers.md)

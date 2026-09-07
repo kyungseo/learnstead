@@ -1,6 +1,6 @@
 # 04. 검토 — 누가 보느냐, 무엇을 찾으라 하느냐
 
-> 이전 ← [`03-parallel.md`](03-parallel.md) · 다음 → [`05-decide.md`](05-decide.md)
+> [← 이전: 03. 병렬](03-parallel.md) · [목차](README.md) · [다음: 05. 판정 →](05-decide.md)
 
 ## 목표
 
@@ -76,3 +76,7 @@ python3 scripts/score.py --tsv runs/main/*-s04-*
 | `s04-fresh-review`가 "원본 실행 없음" | `s04-writer-only` 같은 회차가 먼저 없음 | 순서대로 돌리거나 `batch.sh`에 함께 넣기 |
 | 작성 세션이 지시를 거부하고 규격대로 고침 | 모델이 README와 충돌을 알아챔 | 그 자체가 관측. `answer_excerpt`에 이유가 있는지 기록 |
 | `--continue`가 다른 세션을 이어 감 | 같은 폴더의 더 최근 세션 | 실행 폴더마다 새 프로젝트 폴더라 보통 해당 없음. 직접 돌릴 때는 `--resume <세션>` |
+
+---
+
+> [← 이전: 03. 병렬](03-parallel.md) · [목차](README.md) · [다음: 05. 판정 →](05-decide.md)

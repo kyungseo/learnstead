@@ -1,6 +1,6 @@
 # 03. 병렬 — 동시 실행과 시간 절감은 다르다
 
-> 이전 ← [`02-delegate.md`](02-delegate.md) · 다음 → [`04-review.md`](04-review.md)
+> [← 이전: 02. 위임](02-delegate.md) · [목차](README.md) · [다음: 04. 검토 →](04-review.md)
 
 ## 목표
 
@@ -75,3 +75,7 @@ Claude Code는 이 단계를 Opus 5(`CLAUDE_MODEL=opus`)로 돌렸습니다. Fab
 | 동시 3의 벽시계가 순차와 같다 | 순차 실행·대기·요청 한도 등 여러 가능성 | 스트림에서 `Agent` 호출 시각을 보고 실제 동시성 확인. 겹치지 않았다면 그 사실도 결과에 기록 |
 | worktree 실행 뒤 `proj/`에 변경이 없다 | 편집이 `.claude/worktrees/<이름>/`에 남음 | `worktrees.txt`로 위치 확인. 메인이 최종 작업 폴더로 변경을 통합했는지 확인 |
 | `git worktree add` 실패 | 이전 실행 잔존 또는 Git 오류 | `stderr`를 확인하고 새 실행 이름으로 재시도. 보존할 기록을 먼저 확인 |
+
+---
+
+> [← 이전: 02. 위임](02-delegate.md) · [목차](README.md) · [다음: 04. 검토 →](04-review.md)

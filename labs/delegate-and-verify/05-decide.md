@@ -1,6 +1,6 @@
 # 05. 판정 — 유지할 것과 되돌릴 것
 
-> 이전 ← [`04-review.md`](04-review.md) · 처음 → [`README.md`](README.md)
+> [← 이전: 04. 검토](04-review.md) · [목차](README.md)
 
 ## 목표
 
@@ -47,3 +47,7 @@ python3 scripts/summarize.py runs/main --md > ../results/my-summary.md
 비교 조건이 다르거나 결과를 확인하지 못했으면 유지·되돌림을 강제하지 말고 **보완 후 재측정**으로 남깁니다. 특히 worktree 실험은 편집 시간과 통합 완료 시간을 구분합니다.
 
 reset: `rm -rf runs` (fixture/ 안에서)
+
+---
+
+> [← 이전: 04. 검토](04-review.md) · [목차](README.md)

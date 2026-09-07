@@ -1,6 +1,6 @@
 # 02. 패턴 지도 — 대표적인 네 구성
 
-> 이전 ← [`01-why-more-than-one.md`](01-why-more-than-one.md) · 다음 → [`03-context-isolation.md`](03-context-isolation.md)
+> [← 이전: 01. 왜 하나로는 안 되는가](01-why-more-than-one.md) · [목차](README.md) · [다음: 03. 컨텍스트 격리가 핵심이다 →](03-context-isolation.md)
 
 ## 이 장에서 답하는 질문
 
@@ -87,3 +87,7 @@ LangGraph·CrewAI·Microsoft Agent Framework·OpenAI Agents SDK 같은 도구가
 - 파이프라인·라우터·오케스트레이터-워커·평가 루프를 그림과 제어 흐름으로 구분할 수 있습니다.
 - 처리 순서·담당 분야·동시 실행·평가 필요성에 따라 패턴을 고르고, 처음부터 여러 패턴을 함께 적용하지 않는 이유를 설명할 수 있습니다.
 - 프레임워크가 대신해 주는 것과 실습 코드가 직접 처리하는 것을 가릴 수 있습니다.
+
+---
+
+> [← 이전: 01. 왜 하나로는 안 되는가](01-why-more-than-one.md) · [목차](README.md) · [다음: 03. 컨텍스트 격리가 핵심이다 →](03-context-isolation.md)

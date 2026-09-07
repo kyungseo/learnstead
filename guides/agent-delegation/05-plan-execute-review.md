@@ -1,6 +1,6 @@
 # 05. 계획 → 실행 → 검토 — 검토 기준과 컨텍스트 선택
 
-> 이전 ← [`04-parallel-and-worktrees.md`](04-parallel-and-worktrees.md) · 다음 → [`06-failure-map.md`](06-failure-map.md)
+> [← 이전: 04. 병렬은 언제 실제로 빠른가](04-parallel-and-worktrees.md) · [목차](README.md) · [다음: 06. 실패 지도 →](06-failure-map.md)
 
 ## 이 장에서 답하는 질문
 
@@ -88,3 +88,7 @@ Claude Code 문서는 이렇게 경고합니다. "gap을 찾으라고 한 검토
 - plan mode가 편집 권한과 사람의 승인을 어떻게 분리하는지, 조정 방식을 바꿀 때 승인이 어디로 가는지 설명할 수 있습니다.
 - 작성 세션 이어 가기와 새 컨텍스트 검토를 같은 기준으로 비교하고, 이번 조건에서 확인된 결과와 아직 입증하지 못한 효과를 구분할 수 있습니다.
 - 검토 프롬프트에 finding의 정의를 넣고, 코드 검사를 검토자 앞에 두는 순서를 설계할 수 있습니다.
+
+---
+
+> [← 이전: 04. 병렬은 언제 실제로 빠른가](04-parallel-and-worktrees.md) · [목차](README.md) · [다음: 06. 실패 지도 →](06-failure-map.md)

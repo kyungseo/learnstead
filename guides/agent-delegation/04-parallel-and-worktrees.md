@@ -1,6 +1,6 @@
 # 04. 병렬은 언제 실제로 빠른가 — worktree와 파일 소유권
 
-> 이전 ← [`03-subagent-anatomy.md`](03-subagent-anatomy.md) · 다음 → [`05-plan-execute-review.md`](05-plan-execute-review.md)
+> [← 이전: 03. Subagent 해부](03-subagent-anatomy.md) · [목차](README.md) · [다음: 05. 계획 → 실행 → 검토 →](05-plan-execute-review.md)
 
 ## 이 장에서 답하는 질문
 
@@ -79,3 +79,7 @@ worktree를 쓰든 안 쓰든, 병렬 과제에서는 **각 에이전트가 수�
 - 병렬이 실제로 시간을 줄였는지 순차 대조로 판정할 수 있습니다.
 - subagent worktree가 해결하는 것(덮어쓰기)과 미루는 것(merge)을 구분할 수 있습니다.
 - Claude Code의 base branch 기본값과 Codex CLI의 대안을 알고 병렬 과제마다 담당 파일 범위를 정할 수 있습니다.
+
+---
+
+> [← 이전: 03. Subagent 해부](03-subagent-anatomy.md) · [목차](README.md) · [다음: 05. 계획 → 실행 → 검토 →](05-plan-execute-review.md)
