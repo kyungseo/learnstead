@@ -1,0 +1,19 @@
+{
+  "name": "learnstead-study-signup",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "setup": "node ../scripts/local.mjs setup",
+    "verify": "node ../scripts/verify.mjs",
+    "db:start": "node ../scripts/local.mjs start",
+    "db:stop": "node ../scripts/local.mjs stop",
+    "db:reset": "node ../scripts/local.mjs reset"
+  },
+  "devDependencies": {
+    "supabase": "2.117.0"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

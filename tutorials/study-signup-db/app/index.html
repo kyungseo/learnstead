@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>작은 모임 · 데이터베이스 연습</title><link rel="stylesheet" href="/style.css"><script type="module" src="/main.js"></script></head>
+<body><main>
+<header><p class="eyebrow">LEARNSTEAD · DATABASE PRACTICE</p><h1>작은 모임, 함께 시작해요.</h1><p class="intro">신청하고, 메모를 남기고, 다른 계정으로 확인해 보세요.<br>새로고침해도 신청 내역은 데이터베이스에 남습니다.</p><span class="badge">이 컴퓨터의 가상 데이터로 연습 중</span></header>
+<section class="account"><div><h2>내 연습 계정</h2><p id="identity">로그인하면 모임과 내 신청 내역이 나타납니다.</p></div><form id="login"><label>이메일<input id="email" type="email" value="alice@example.com" required autocomplete="username"></label><label>비밀번호<input id="password" type="password" required autocomplete="current-password"></label><button>로그인</button></form><button id="logout" hidden>로그아웃</button><p class="hint">연습 계정: alice@example.com / bob@example.com<br>공개 연습 비밀번호: Learnstead-local-2026!<br>화면을 새로고침하면 다시 로그인합니다.</p></section>
+<p id="message" role="status" aria-live="polite">데이터 연결을 준비하고 있습니다.</p>
+<section aria-labelledby="events-title"><div class="section-head"><h2 id="events-title">참여할 수 있는 모임</h2><button id="refresh" hidden>새로 불러오기</button></div><div id="events" class="cards"><p class="empty">로그인 후 모임을 확인할 수 있습니다.</p></div></section>
+<section aria-labelledby="registrations-title"><h2 id="registrations-title">내 신청 내역</h2><div id="registrations"><p class="empty">아직 불러온 신청 내역이 없습니다.</p></div></section>
+<footer>화면에 보이는 내용과 실제 저장된 내용을 함께 확인하는 연습입니다.</footer>
+</main></body></html>
