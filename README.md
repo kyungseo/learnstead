@@ -62,6 +62,14 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 | AI가 만든 변경을 저장·확인·분리·공유하고, branch와 worktree로 여러 작업을 안전하게 나눕니다. | 목표와 범위를 정하고 한 번에 하나씩 바꾸며, 확인·복구·공개 전 점검까지 이어 갑니다. | 비슷해 보이는 할 일 앱 세 판을 직접 눌러 보며 숨어 있는 실패를 찾아냅니다. |
 | **[Git부터 시작 →](guides/git-for-vibe-coders/README.md)** | **[가이드 이어 읽기 →](guides/vibe-coding-practice/README.md)** | **[실습으로 확인 →](labs/five-checks/README.md)** |
 
+### AI로 만든 앱의 데이터 — 이해부터 권한·복구 확인까지
+
+| 데이터베이스 이해하기 | DB로 신청 앱 만들기 | 데이터 직접 확인하기 |
+| --- | --- | --- |
+| [![저장 위치와 접근 권한, 복구 방법을 배우는 데이터베이스 가이드](guides/database-for-vibe-coders/assets/database-guide-hero.png)](guides/database-for-vibe-coders/README.md) | [![로컬 DB로 모임 신청과 취소를 연결하는 튜토리얼](tutorials/study-signup-db/assets/study-signup-db-hero.png)](tutorials/study-signup-db/README.md) | [![중복 입력과 타인 접근, 복원을 직접 판정하는 데이터베이스 실습](labs/database-safety/assets/database-safety-hero.png)](labs/database-safety/README.md) |
+| SQLite·PostgreSQL·MySQL·MongoDB·Firestore를 사례로 데이터 구조와 선택 기준을 익힙니다. | 로컬 Supabase와 PostgreSQL로 로그인·모임 신청·취소를 연결합니다. | 저장·제약·동시성·권한·구조 변경·복원을 가상 데이터로 확인합니다. |
+| **[가이드 시작 →](guides/database-for-vibe-coders/README.md)** | **[튜토리얼 시작 →](tutorials/study-signup-db/README.md)** | **[실습 시작 →](labs/database-safety/README.md)** |
+
 ## 추천 학습 경로
 
 ### Local LLM — 실행한 모델을 프로그램까지 연결하기
@@ -104,6 +112,14 @@ Local LLM을 프로그램에서 호출하는 방식이 먼저 궁금하면 [앱 
 1. [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) — commit과 diff부터 branch·worktree·PR·공개 전 점검까지
 2. [AI와 함께 만들기 — 바이브 코딩에서 Agentic Engineering으로](guides/vibe-coding-practice/README.md) — 목표·범위·확인 방법을 정하고, 작은 변경과 복구를 반복하는 작업 습관
 3. [다섯 가지 확인](labs/five-checks/README.md) — 같은 요청을 처리한 것처럼 보이는 세 판을 직접 확인하며 실패를 판정하는 실습
+
+### AI로 만든 앱의 데이터 — 이해부터 권한·복구 확인까지
+
+1. [AI로 만든 앱의 데이터, 이해하고 다루기](guides/database-for-vibe-coders/README.md) — 저장 위치·데이터 구조·DB 선택·권한·변경·복구의 개념을 익힙니다.
+2. [AI와 함께 만드는 작은 신청 앱](tutorials/study-signup-db/README.md) — 로컬 Supabase와 PostgreSQL로 신청 앱을 완성합니다.
+3. [저장됐다고 끝이 아니다](labs/database-safety/README.md) — 정상처럼 보이는 실패를 찾아내고 데이터와 접근 규칙을 직접 확인합니다.
+
+바이브 코딩 가이드 다음에 읽으면 좋습니다. 개념 가이드는 단독으로 읽을 수 있으며, SQLite 입문에는 Python이, 신청 앱에는 Docker와 Node.js가 필요합니다. 클라우드 계정 없이 합성 데이터로 연습하며, 실제 검증 범위는 각 자료의 검증 기록에 남깁니다.
 
 ## 문서가 지키는 기준
 

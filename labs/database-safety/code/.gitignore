@@ -1,0 +1,6 @@
+# Local practice data
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+__pycache__/
