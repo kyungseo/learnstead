@@ -2,7 +2,7 @@
 
 [시작: 저장 위치](01-where-data-lives.md) · [직접 만들기](../../tutorials/study-signup-db/README.md) · [실패 확인 실습](../../labs/database-safety/README.md)
 
-![Learnstead: 데이터베이스 — 화면에서 저장과 권한, 복구까지](assets/database-guide-hero.png)
+![앱 화면의 신청 기록을 데이터베이스에 저장하고 열쇠로 접근 권한을 살펴보는 손그림](assets/database-guide-hero.webp)
 
 AI가 만든 앱에 ‘저장’ 버튼이 생겼습니다. 이제 데이터가 어디에 남는지, 다른 사용자가 무엇을 볼 수 있는지, 잘못 바뀌면 어떻게 되살릴지 알아볼 차례입니다.
 

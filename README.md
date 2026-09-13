@@ -64,11 +64,28 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 
 ### AI로 만든 앱의 데이터 — 이해부터 권한·복구 확인까지
 
-| 데이터베이스 이해하기 | DB로 신청 앱 만들기 | 데이터 직접 확인하기 |
-| --- | --- | --- |
-| [![저장 위치와 접근 권한, 복구 방법을 배우는 데이터베이스 가이드](guides/database-for-vibe-coders/assets/database-guide-hero.png)](guides/database-for-vibe-coders/README.md) | [![로컬 DB로 모임 신청과 취소를 연결하는 튜토리얼](tutorials/study-signup-db/assets/study-signup-db-hero.png)](tutorials/study-signup-db/README.md) | [![중복 입력과 타인 접근, 복원을 직접 판정하는 데이터베이스 실습](labs/database-safety/assets/database-safety-hero.png)](labs/database-safety/README.md) |
-| SQLite·PostgreSQL·MySQL·MongoDB·Firestore를 사례로 데이터 구조와 선택 기준을 익힙니다. | 로컬 Supabase와 PostgreSQL로 로그인·모임 신청·취소를 연결합니다. | 저장·제약·동시성·권한·구조 변경·복원을 가상 데이터로 확인합니다. |
-| **[가이드 시작 →](guides/database-for-vibe-coders/README.md)** | **[튜토리얼 시작 →](tutorials/study-signup-db/README.md)** | **[실습 시작 →](labs/database-safety/README.md)** |
+<table>
+<tr>
+<th width="33%">데이터베이스 이해하기</th>
+<th width="33%">DB로 신청 앱 만들기</th>
+<th width="33%">데이터 직접 확인하기</th>
+</tr>
+<tr>
+<td width="33%"><a href="guides/database-for-vibe-coders/README.md"><img src="guides/database-for-vibe-coders/assets/database-guide-hero.webp" width="320" alt="앱 화면의 신청 기록을 데이터베이스에 저장하고 열쇠로 접근 권한을 살펴보는 손그림"></a></td>
+<td width="33%"><a href="tutorials/study-signup-db/README.md"><img src="tutorials/study-signup-db/assets/study-signup-db-hero.webp" width="320" alt="AI와 함께 신청 앱 화면을 만들고 데이터베이스와 사용자별 기록을 연결하는 손그림"></a></td>
+<td width="33%"><a href="labs/database-safety/README.md"><img src="labs/database-safety/assets/database-safety-hero.webp" width="320" alt="돋보기로 데이터와 중복 기록을 살피고 접근 권한과 복원을 확인하는 손그림"></a></td>
+</tr>
+<tr>
+<td>SQLite · PostgreSQL · MySQL · MongoDB · Firestore를 사례로 데이터 구조와 선택 기준을 익힙니다.</td>
+<td>로컬 Supabase와 PostgreSQL로 로그인·모임 신청·취소를 연결합니다.</td>
+<td>저장·제약·동시성·권한·구조 변경·복원을 가상 데이터로 확인합니다.</td>
+</tr>
+<tr>
+<td><strong><a href="guides/database-for-vibe-coders/README.md">가이드 시작 →</a></strong></td>
+<td><strong><a href="tutorials/study-signup-db/README.md">튜토리얼 시작 →</a></strong></td>
+<td><strong><a href="labs/database-safety/README.md">실습 시작 →</a></strong></td>
+</tr>
+</table>
 
 ## 추천 학습 경로
 

@@ -1,6 +1,6 @@
 # 저장됐다고 끝이 아니다 — 데이터·권한·복구 확인하기
 
-![저장된 신청 데이터를 여섯 가지 상황으로 확인하는 실습 지도](assets/database-safety-hero.png)
+![돋보기로 데이터와 중복 기록을 살피고 접근 권한과 복원을 확인하는 손그림](assets/database-safety-hero.webp)
 
 [01 저장 확인부터 시작 →](01-persistence.md) · [앱을 먼저 만들기](../../tutorials/study-signup-db/README.md) · [개념 가이드](../../guides/database-for-vibe-coders/README.md)
 
