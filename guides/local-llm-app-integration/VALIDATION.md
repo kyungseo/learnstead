@@ -124,7 +124,7 @@ PNG는 검증용으로만 생성했고 저장소에는 SVG 원본만 둡니다.
 - Python: `ast.parse`로 구문 검사, 도구 함수 단독 호출
 - SVG: svg-infographic 소스 lint + Chromium 2× 렌더
 
-정적 검증 통과는 모델 호출 경로의 실행 성공을 대신하지 않습니다.
+문서 검사를 통과했더라도 모델 호출이 실제로 동작하는지는 직접 실행해 확인해야 합니다.
 
 <!-- learnstead:footer:start -->
 

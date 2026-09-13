@@ -119,7 +119,7 @@ PNG는 검증용으로만 생성했고 저장소에는 SVG 원본만 둡니다.
 - 셸 명령: 시나리오를 bash 스크립트로 묶어 실제 실행
 - SVG: svg-infographic 소스 lint + Chromium 2× 렌더
 
-정적 검증 통과는 GitHub 웹 조작의 성공을 대신하지 않습니다.
+문서 검사를 통과했더라도 GitHub 웹에서 해당 절차가 동작하는지는 직접 확인해야 합니다.
 
 <!-- learnstead:footer:start -->
 
