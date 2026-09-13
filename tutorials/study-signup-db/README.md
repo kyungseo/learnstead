@@ -1,6 +1,6 @@
 # AI와 함께 만드는 작은 신청 앱 — DB 연결부터 사용자별 접근까지
 
-![화면의 신청 버튼에서 인증과 DB의 모임·신청 테이블로 이어지는 학습 흐름](assets/study-signup-db-hero.png)
+![AI와 함께 신청 앱 화면을 만들고 데이터베이스와 사용자별 기록을 연결하는 손그림](assets/study-signup-db-hero.webp)
 
 [01 준비부터 시작 →](01-prepare.md) · [개념 가이드](../../guides/database-for-vibe-coders/README.md) · [실패와 복원 실습](../../labs/database-safety/README.md)
 
