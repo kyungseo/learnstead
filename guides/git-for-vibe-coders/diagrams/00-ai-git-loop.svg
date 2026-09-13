@@ -8,7 +8,7 @@
   </defs>
   <rect width="1440" height="760" fill="#F7F7F5" data-fill-role="canvas"/>
   <text x="72" y="88" fill="#252B35" data-fill-role="ink" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="42" font-weight="700">AI와 코딩할 때 Git을 쓰는 순서</text>
-  <text x="72" y="132" fill="#636A75" data-fill-role="muted" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">저장 → 확인 → 분리 → 공유. 실행은 AI에게 맡겨도 판단의 경계는 남긴다.</text>
+  <text x="72" y="132" fill="#636A75" data-fill-role="muted" font-family="Pretendard, Apple SD Gothic Neo, sans-serif" font-size="24">저장 → 확인 → 분리 → 공유. 실행은 AI에게 맡기고, 변경 범위와 결과는 사용자가 확인한다.</text>
 
   <g font-family="Pretendard, Apple SD Gothic Neo, sans-serif">
     <rect x="72" y="220" width="280" height="330" rx="30" fill="#FFFFFF" stroke="#2E6DA4" stroke-width="3" data-fill-role="surface" data-stroke-role="focus"/>

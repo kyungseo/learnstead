@@ -34,7 +34,7 @@
 
 - [Claude Code Subagents](https://code.claude.com/docs/en/sub-agents): fork의 초기 이력과 이후 별도 기록, skills 사전 적재와 도구 권한의 차이, 부모 권한 모드의 영향.
 - [Claude Code Worktrees](https://code.claude.com/docs/en/worktrees): 원격 기본 브랜치와 원격이 없을 때 HEAD 기준의 차이.
-- [Claude Code 병렬 실행](https://code.claude.com/docs/en/agents): 조정 형태 비교. 본 가이드에서는 이를 성숙도 단계로 해석하지 않습니다.
+- [Claude Code 병렬 실행](https://code.claude.com/docs/en/agents): 작업을 조정하는 방식의 차이를 비교합니다. 한 방식에서 다음 방식으로 발전해야 한다는 순서는 아닙니다.
 - [Codex Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents): 정의 파일·상속·쓰기 병렬 경계.
 
 나머지 항목의 확인일은 위 표의 2026-09-06을 유지합니다.

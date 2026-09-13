@@ -34,7 +34,7 @@ DB 관리자 자격 과정, 대규모 성능 튜닝, 결제 시스템, 개인정
 - [01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md)
 - [02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md)
 - [03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md)
-- [04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md)
+- [04. 앱은 DB에 어떻게 요청할까?](04-talk-to-the-database.md)
 - [05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md)
 - [06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md)
 - [07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md)
