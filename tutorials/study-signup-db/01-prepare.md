@@ -17,7 +17,7 @@
 
 터미널이 처음이라면 [Git 환경 준비](https://github.com/kyungseo/learnstead/blob/main/guides/git-for-vibe-coders/03-setup-mac-windows.md)에서 폴더 이동과 명령 실행부터 익혀도 됩니다. 이 자료에서는 macOS 터미널의 명령을 기준으로 설명합니다. 실제 확인한 버전은 [검증 기록](VALIDATION.md)에 있습니다. 로컬 시작 도구는 Unix 소켓으로 연결하는 Docker 환경을 대상으로 하며, 이 자료의 기준은 macOS의 Docker Desktop입니다. Windows 네이티브 Docker 소켓·원격 Docker에는 이 명령 경로를 그대로 적용하지 않습니다. Windows·Linux·클라우드 배포는 이 경로의 실행 검증에 포함하지 않습니다.
 
-Supabase CLI는 로컬 서비스를 실행할 때 Docker와 호환되는 실행 환경을 사용합니다. 이 자료에는 설정 파일이 포함되어 있으므로 별도로 `supabase init`을 실행해 덮어쓸 필요가 없습니다. `[문서 확인 · 2026-09-13]` [공식 로컬 개발 안내](https://supabase.com/docs/guides/local-development)
+Supabase CLI는 로컬 서비스를 실행할 때 Docker와 호환되는 실행 환경을 사용합니다. 이 자료에는 설정 파일이 포함되어 있으므로 별도로 `supabase init`을 실행해 덮어쓸 필요가 없습니다. `문서 확인 · 2026-09-13` [공식 로컬 개발 안내](https://supabase.com/docs/guides/local-development)
 
 ## 실습 데이터의 경계
 
