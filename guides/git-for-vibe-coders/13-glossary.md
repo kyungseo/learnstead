@@ -42,13 +42,13 @@
 | 용어 | 뜻 |
 | --- | --- |
 | **커밋 (commit)** | 그 시점의 프로젝트 전체 상태 + 메시지 + 이전 커밋 연결 ([05](05-commits-and-undo.md)) |
-| **해시 (hash)** | 커밋을 가리키는 ID. `b975e6c…` 앞 7글자만 써도 됨 |
+| **해시 (hash)** | 커밋을 가리키는 ID. `b975e6c…`처럼 유일하게 구분되는 길이로 줄여 쓸 수 있음 |
 | **HEAD** | "지금 내가 있는 위치". `HEAD~1`은 그 하나 앞 커밋 |
 | **`git log`** | 커밋 기록 보기. `--oneline`으로 한 줄씩 |
 | **`git diff`** | 바뀐 줄 보기. `+`는 추가, `−`는 삭제 ([10 S5](10-scenarios-solo.md)) |
-| **`git restore 파일`** | 그 파일의 미커밋 변경을 버리고 기준 commit 상태로 되돌림 |
+| **`git restore 파일`** | 그 파일의 add 이후 변경을 버리고 staging 상태로 되돌림 |
 | **`git revert 해시`** | 그 commit을 취소하는 **새 commit을** 만들어 기존 기록을 보존 |
-| **`git reset --hard`** ⛔ | 기록과 파일을 지움. **커밋 안 된 작업은 영구 삭제** ([05 §4](05-commits-and-undo.md)) |
+| **`git reset --hard`** ⛔ | 브랜치·스테이징·작업 파일을 지정 커밋에 맞춤. **추적 파일의 미커밋 수정은 잃을 수 있음** ([05 §4](05-commits-and-undo.md)) |
 | **`git commit --amend`** | 마지막 커밋을 다시 쓰기. push 전에만 |
 | **`git stash`** | 하던 작업을 임시 서랍에 치워 두기 ([10 S6](10-scenarios-solo.md)) |
 | **`git reflog`** | HEAD가 거쳐 온 기록. 실수로 날린 **커밋**을 되찾을 때 |
@@ -61,10 +61,10 @@
 | **main (예전 master)** | 기본 브랜치. "항상 돌아가는 상태"로 유지 |
 | **`git switch -c 이름`** | 브랜치를 만들며 이동 (예전 `checkout -b`) |
 | **`git merge 이름`** | 그 브랜치를 지금 브랜치에 합치기 |
-| **충돌 (conflict)** | 두 브랜치가 같은 줄을 다르게 고쳤을 때. `<<<<<<<` 표시로 나타남 ([06 §4](06-branches.md)) |
+| **충돌 (conflict)** | Git이 두 변경을 자동으로 합치지 못하는 상태. 같은 부분의 수정·삭제 등이 원인. `<<<<<<<` 표시로 나타남 ([06 §4](06-branches.md)) |
 | **Fast-forward** | 갈라진 적이 없어 포인터만 앞으로 옮기는 병합 |
 | **트렁크 기반 (trunk-based)** | main 하나 + 짧게 사는 브랜치. 이 가이드의 권장 전략 ([06 §3](06-branches.md)) |
-| **GitFlow** | develop·release·hotfix 등 여러 장수 브랜치를 쓰는 모델. 큰 팀용 |
+| **GitFlow** | main·develop을 유지하고 feature·release·hotfix를 정해진 경로로 분기·병합하는 모델 |
 | **working tree** | 현재 branch의 파일을 펼쳐 놓고 고치는 작업 폴더 |
 | **worktree** | 같은 repository에 연결된 추가 working tree. commit·branch 기록은 공유하고 미커밋 변경·staging은 분리 ([07](07-worktrees.md)) |
 | **`git worktree add`** | 새 작업 폴더를 repository에 연결하고 branch를 checkout |
@@ -93,15 +93,15 @@
 | **저장(Ctrl+S) vs 커밋** | 파일을 바꿈 ↔ 되돌릴 수 있는 지점을 남김 |
 | **`add` vs `commit`** | 담을 것 고르기 ↔ 담은 것으로 지점 만들기 |
 | **`commit` vs `push`** | 내 컴퓨터에 저장 ↔ 인터넷에 올리기. 커밋만 하면 백업 아님 |
-| **`restore` vs `reset --hard`** | 지목한 파일만 되돌림 ↔ 전부 지움(복구 불가) |
-| **`revert` vs `reset`** | 취소 커밋을 **쌓음**(안전) ↔ 기록을 **지움**(위험) |
+| **`restore` vs `reset --hard`** | 기본적으로 staging에서 파일 복원 ↔ HEAD·staging·추적 파일을 대상 commit에 맞춤. 둘 다 변경을 버릴 수 있음 |
+| **`revert` vs `reset`** | 취소 commit을 추가함 ↔ 모드에 따라 branch 위치·staging·작업 파일을 조정함 |
 | **`fetch` vs `pull`** | 받아만 둠 ↔ 받아서 내 파일에 합침 |
 | **`stash pop` vs `apply`** | 꺼내고 서랍 비움 ↔ 꺼내되 서랍에 남김 |
 | **`switch -c` vs `switch`** | 만들며 이동 ↔ 있는 브랜치로 이동 |
 | **branch vs worktree** | commit 기록의 갈래 ↔ 그 갈래를 별도 폴더에 펼친 작업 공간 |
 | **merge 충돌 vs 오류** | 사람에게 고르라는 **질문** ↔ 고장. 충돌은 정상적인 상황 |
 | **untracked vs modified** | Git이 모르는 새 파일 ↔ 알고 있는데 바뀐 파일 |
-| **커밋 전 비밀값 vs push 후 비밀값** | 지우면 끝 ↔ **키를 바꿔야 함** ([11 S10](11-scenarios-share.md)) |
+| **커밋 전 비밀값 vs push 후 비밀값** | commit 포함 여부와 별도 노출 여부부터 확인 ↔ **키 교체가 우선** ([11 S10](11-scenarios-share.md)) |
 
 <!-- learnstead:footer:start -->
 

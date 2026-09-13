@@ -16,13 +16,13 @@
   <text x="259.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">강제</text>
   <text x="259.0" y="118" font-size="13.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">hook</text>
   <line x1="202" y1="136" x2="316" y2="136" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1"/>
-  <text x="259.0" y="154" font-size="10" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">이벤트에 묶여 무조건</text>
+  <text x="259.0" y="154" font-size="10" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">설정된 이벤트에 따라</text>
   <text x="259.0" y="172" font-size="10" data-fill-role="warning-ink" fill="#5E4416" text-anchor="middle" dominant-baseline="central">실행. 모델 판단 없음</text>
   <rect x="348" y="74" width="146" height="118" rx="10" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="421.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">능력</text>
   <text x="421.0" y="118" font-size="13.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">MCP</text>
   <line x1="364" y1="136" x2="478" y2="136" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1"/>
-  <text x="421.0" y="154" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">외부 프로세스가 주는</text>
+  <text x="421.0" y="154" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">외부 기능을 연결하는</text>
   <text x="421.0" y="172" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">새 tool. 세션 연결 시</text>
   <rect x="510" y="74" width="146" height="118" rx="10" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="583.0" y="94" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">상시 배경</text>

@@ -23,7 +23,8 @@
 
 ## 1. 안전망 ① — 저장 지점
 
-터미널에 입력합니다(터미널이 처음이면 [Git 가이드 03](../git-for-vibe-coders/03-setup-mac-windows.md)). 아래 💬처럼 AI에게 시켜도 됩니다.
+먼저 `git status`와 `git diff`로 변경을 살펴보고, API 키·비밀번호 등 Secret이 포함되지 않았는지 확인합니다(§3).
+그다음 터미널에 입력합니다(터미널이 처음이면 [Git 가이드 03](../git-for-vibe-coders/03-setup-mac-windows.md)). 아래 💬처럼 AI에게 시켜도 됩니다.
 
 ```bash
 git add .
@@ -42,9 +43,9 @@ git commit -m "AI에게 (하려는 일) 시키기 전"
 
 **되돌리는 법은** [Git 가이드 10 S3](../git-for-vibe-coders/10-scenarios-solo.md)에 상황별로 있습니다. 요약하면:
 
-- 아직 커밋 안 한 변경 되돌리기 → `git restore 파일`
+- 스테이징하지 않은 파일 변경 버리기 → `git restore 파일`. 기본적으로 스테이징 영역의 내용으로 덮어쓰므로, 남길 변경은 먼저 별도로 보관합니다
 - 이미 커밋한 것 취소 → `git revert 해시` (해시 = 커밋마다 붙는 고유 번호, `git log`에 보임)
-- ⛔ `git reset --hard`는 커밋 안 된 작업을 **영구 삭제합니다**
+- ⛔ `git reset --hard`는 추적 중인 파일의 미커밋 변경을 버립니다. **별도로 보관하지 않았다면 복구하지 못할 수 있습니다**
 
 ## 2. 안전망 ② — "되는 상태"의 기록
 

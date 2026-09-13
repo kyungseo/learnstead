@@ -21,7 +21,7 @@
 - 프레임워크는 **커넥터·체인·메모리·도구 추상화** 같은 부품을 제공해 반복 구현을 줄입니다. 대신 실제 요청과 기본 설정이 추상화 뒤에 가려질 수 있습니다. 챗 하나와 도구 몇 개라면 SDK로 충분합니다. `[해석]`
 - Python은 LangChain·LlamaIndex·Haystack, Java는 Spring AI·LangChain4j, JS는 Vercel AI SDK가 2026년 8월 기준 대표적입니다. `[자료 확인 · 2026-08-23]`
 - 앱 구조에서는 **스트리밍을 UI까지 전달할지, 동시 요청을 어떻게 제한할지, 백엔드 전환점을 어디에 둘지** 결정해야 합니다. `[해석]`
-- 로컬에서 운영 환경으로 전환할 때는 `base_url`·`model`·API Key를 설정으로 분리합니다. 또한 endpoint별 부가 기능(Tool Calling, Response Schema 등)이 같은 방식으로 동작하는지 검증하고, 백엔드가 여러 개라면 게이트웨이를 둡니다. `[해석]`
+- 로컬에서 운영 환경으로 전환할 때는 `base_url`·`model`·API Key를 설정으로 분리합니다. 또한 endpoint별 부가 기능(Tool Calling, Response Schema 등)이 같은 방식으로 동작하는지 검증하고, 백엔드가 여러 개라면 라우팅·키 관리를 모을 게이트웨이가 필요한지 검토합니다. `[해석]`
 
 ## 1. 프레임워크 — 언제, 무엇을
 
@@ -62,7 +62,7 @@
 | **스트리밍을 UI까지** | 서버가 runtime의 SSE를 받아 클라이언트로 다시 SSE/WebSocket으로 흘림 / 완성 후 한 번에 | 답이 3초 넘으면 스트리밍. 구조화 출력은 완성 후 파싱 |
 | **동시 요청** | 로컬 runtime은 동시 처리 수가 제한됨. 앱 쪽에 큐·세마포어 | Ollama는 `OLLAMA_NUM_PARALLEL`로 동시 슬롯 조정, vLLM은 배칭이 기본 `[문서 확인 · 2026-08-23]` |
 | **타임아웃** | 첫 토큰까지 / 전체 | 로컬은 모델 적재 시간(수십 초) 포함. `keep_alive`와 함께 설계 ([04 §3](04-parameters-and-context.md)) |
-| **캐시** | 같은 입력 → 같은 출력 캐시 (temperature 0일 때) / prefix cache(runtime) | 반복 질문이 많으면. 시스템 프롬프트가 길면 runtime의 prefix cache가 효과 |
+| **캐시** | 검증된 응답 재사용 / prefix cache(runtime) | 응답 캐시 키에는 모델·설정·자료 버전·사용자 권한을 반영. prefix cache는 공통 입력 계산을 재사용하며 응답 재사용과 다름 |
 | **기록 저장** | 메모리 / DB | 여러 서버·재시작을 넘기려면 DB. 기록은 사용자 데이터이므로 보존 정책 필요 |
 | **검증 위치** | 모델 출력을 쓰기 전에 서버가 검증 | [05 §4](05-structured-output.md), [08](08-lab-prompt-injection.md) — 클라이언트를 믿지 않듯 모델을 믿지 않음 |
 
@@ -104,7 +104,7 @@ def stream_answer(messages):
 
 RAG는 이 가이드의 호출 앞에 **검색 단계**를 붙인 것입니다. `messages`의 `user` 내용에 검색된 조각을 넣고, 임베딩은
 `/v1/embeddings`로 부릅니다. 나머지(기록·구조화 출력·도구·경계)는 전부 이 가이드 그대로입니다.
-검색·인덱싱·근거 평가는 별도 후속 주제로 다룹니다. `[원리]`
+검색·인덱싱·근거 평가는 [로컬 RAG 가이드](../local-rag/README.md)와 [실패 실습](../../labs/why-rag-fails/README.md)에서 이어갑니다. `[원리]`
 
 ## 5. 이 문서의 점검표
 

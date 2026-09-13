@@ -28,7 +28,7 @@
 
 | 용어 | 뜻 |
 | --- | --- |
-| **messages** | 역할이 붙은 메시지 배열. 대화 전체를 매 요청에 보냄 ([02 §2](02-openai-compatible-api.md)) |
+| **messages** | 역할이 붙은 메시지 배열. 필요한 대화 기록을 예산에 맞춰 매 요청에 보냄 ([02 §2](02-openai-compatible-api.md)) |
 | **role (system / user / assistant / tool)** | 규칙 / 사용자 입력 / 모델의 이전 답 / 도구 실행 결과 ([02 §2](02-openai-compatible-api.md)) |
 | **stateless** | runtime이 이전 요청을 기억하지 않음. 대화 상태는 내 프로그램의 책임 ([04 §4](04-parameters-and-context.md)) |
 | **temperature / top_p** | 다음 토큰 선택의 무작위성 ([04 §1](04-parameters-and-context.md)) |
@@ -91,7 +91,7 @@
 | **tool calling vs 실행** | 모델은 요청만, 실행은 내 코드. 모델은 주방에 못 들어간다 |
 | **workflow vs agent** | 순서를 코드가 쥠 ↔ 모델이 쥠 |
 | **프롬프트 vs 경계** | 안내 ↔ 코드. 프롬프트는 시도를 줄이고, 경계는 결과를 막는다 |
-| **재시도할 오류 vs 안 할 오류** | 연결·타임아웃 ↔ 4xx·잘린 답·틀린 답 |
+| **재시도할 오류 vs 안 할 오류** | 일시 연결 오류·429 ↔ 입력·인증·모델 설정 오류. 잘린 답·틀린 답은 원인 확인 |
 | **200 OK vs 맞는 답** | 호출 성공 ↔ 내용 정확. LLM 앱에서는 다르다 |
 
 <!-- learnstead:footer:start -->

@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">경계는 코드에 — 프롬프트는 안내일 뿐</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">모델이 읽는 모든 텍스트는 잠재적 명령이다 (prompt injection)</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">외부 텍스트에 지시가 섞일 수 있다 (prompt injection)</text>
   <rect x="24" y="70" width="420" height="240" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
   <text x="36" y="86" font-size="11" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">④ 실행 환경 — OS 권한 · 네트워크 · 컨테이너</text>
   <rect x="48" y="104" width="372" height="182" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />

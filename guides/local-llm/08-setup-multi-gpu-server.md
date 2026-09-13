@@ -165,7 +165,7 @@ docker run --gpus all \
 
 | 항목 | 이유 |
 | --- | --- |
-| `--ipc=host` / `--shm-size` | **다중 GPU는 프로세스 간 공유메모리를 쓴다.** 기본값(64MB)이면 실패한다 |
+| `--ipc=host` / `--shm-size` | **다중 GPU는 프로세스 간 공유메모리를 쓴다.** 기본값(64MB)이 부족해 실패할 수 있다 |
 | 모델 캐시 볼륨 | 수십~수백 GB 재다운로드 방지. **디스크 용량과 네트워크가 실제 병목이 되는 지점** |
 | `--gpus all` | 특정 카드만 쓰려면 `--gpus '"device=0,1"'` |
 
@@ -182,7 +182,7 @@ curl http://localhost:8000/metrics            # vLLM 메트릭 (Prometheus 형�
 
 ### ★ 성공 판정
 
-- `nvidia-smi`에서 **모든 카드의 VRAM 점유가 비슷하다** — 한 장만 높으면 TP가 적용되지 않고 단일 GPU로 동작 중이다
+- `nvidia-smi`에서 **모든 카드의 VRAM 점유가 비슷하다** — 불균형이 크면 TP 설정·배치·기동 로그를 확인한다. 점유량만으로 TP 미적용을 확정하지 않는다
 - `/v1/models`가 모델 목록을 반환한다
 - 실제 chat completions 요청([07 §5](07-setup-nvidia-workstation.md)와 동일 형식)에 응답한다
 
@@ -198,8 +198,8 @@ curl http://localhost:8000/metrics            # vLLM 메트릭 (Prometheus 형�
 
 | 증상 | 원인 | 대응 |
 | --- | --- | --- |
-| 기동 시 헤드 수 관련 오류 | TP 값이 헤드 수를 못 나눔 | TP를 2의 거듭제곱으로 (§2) |
-| 다중 GPU에서만 행(hang) | 공유메모리 부족 **또는 NCCL 통신 문제** | `--ipc=host`/`--shm-size=16g` → 그래도면 `NCCL_DEBUG=INFO`로 진단 (§3 팁) |
+| 기동 시 헤드 수 관련 오류 | TP 값이 헤드 수를 못 나눔 | 모델의 head 수와 해당 런타임 제약에 맞는 TP로 (§2) |
+| 다중 GPU에서만 행(hang) | 공유메모리 부족 **또는 NCCL 통신 문제** | `--ipc=host`/`--shm-size=16g` → 그래도 실패하면 `NCCL_DEBUG=INFO`로 진단 (§3 팁) |
 | 카드 한 장만 사용됨 | TP 미적용 | `--tensor-parallel-size` 확인, 컨테이너 GPU 노출 확인 |
 | 카드를 늘렸는데 처리량이 안 늚 | PCIe 통신 병목 | `topo -m`으로 연결 확인 (§0). 정상적 한계면 큰 카드로 통합 검토 |
 | OOM인데 VRAM은 남아 보임 | 활성화·통신 버퍼 미고려, 또는 vLLM이 KV 블록을 선점 할당한 것 (§4) | `--gpu-memory-utilization` 하향 |
@@ -218,7 +218,7 @@ curl http://localhost:8000/metrics            # vLLM 메트릭 (Prometheus 형�
 | 용량·관측 | 목표 동시성에서 TTFT·TPOT·throughput·error rate를 측정한다 |
 | 평가·거버넌스 | 사용 목적별 evaluation set, model·prompt version, 승인·변경 기록을 남긴다 |
 
-> **한 줄:** 이 문서가 만드는 것은 **엔드포인트 하나**다. 조직이 쓰는 시스템은 그 엔드포인트 **앞에** 만들어진다. `[해석]`
+> **한 줄:** 이 문서가 만드는 것은 **엔드포인트 하나**다. 조직에서 쓰려면 인증·운영·평가 체계를 그 엔드포인트와 **함께** 구성해야 한다. `[해석]`
 > 그 엔드포인트를 혼자서라도 꺼지지 않게 유지하려면(재부팅 자동 기동·컨테이너 재시작 정책) [07 §6](07-setup-nvidia-workstation.md)의 운영 팁과 [10 §5](10-operations.md).
 
 ---

@@ -37,7 +37,7 @@
   <text x="24" y="162" font-size="11.5" fill="var(--data-ink)" dominant-baseline="central">시스템 프롬프트 ~200</text>
 
   <text x="618" y="152" font-size="12" font-weight="700" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">↑</text>
-  <text x="645" y="172" font-size="12" fill="var(--warn-ink)" text-anchor="end" dominant-baseline="central">문서를 크게 붙일수록 여기가 먼저 말라붙는다</text>
+  <text x="645" y="172" font-size="12" fill="var(--warn-ink)" text-anchor="end" dominant-baseline="central">입력이 길어질수록 생성에 남는 공간이 줄어든다</text>
 
   <text x="24" y="198" font-size="12" fill="var(--muted)" dominant-baseline="central">입력과 출력이 같은 창을 나눠 쓴다 — 출력 여지를 따로 남긴다</text>
 </svg>

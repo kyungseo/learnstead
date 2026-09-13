@@ -27,7 +27,7 @@
 
 ## 확인하지 못한 것
 
-- Codex의 compaction 세부 동작과 local memory 실실행.
+- Codex의 compaction 세부 동작과 local memory 실제 실행.
 - 200줄을 넘는 지시문에서의 희석 정도(V2는 176줄).
 - Claude Code에서 규칙 문장을 "테스트 함수 포함"으로 고쳤을 때의 점수(해석으로만 남김).
 - Gemini CLI·Cursor 실측.

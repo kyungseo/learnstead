@@ -96,7 +96,7 @@ mv .mcp.json.bak .mcp.json; rm notes_server_bad.py
 | d3 (Codex) | 요약만. 호출 없음 |
 | e5 | SDK client: `ValidationError: Invalid JSON … 'starting notes server'`를 찍고 계속 → `tools: [list_notes, read_note, search_notes]`. Claude Code: `connected`, 정상 답. 호출 중 `print()`도 같음 |
 
-해석 [해석]: 네 실험이 가리키는 층이 다릅니다. b·c는 host 승인 층이 **설정과 annotation 신뢰에 좌우됨을**, d는 막힌 것이 **모델 판단이지** 보장이 아님을, e는 규격 위반이 **당장은 드러나지 않을 수 있음을** 보여 줍니다. 확실한 것은 01에서 본 서버 코드 층뿐입니다.
+[해석] 네 실험이 가리키는 층이 다릅니다. b·c는 host 승인 층이 **설정과 annotation 신뢰에 좌우됨을**, d는 막힌 것이 **모델 판단이지** 보장이 아님을, e는 규격 위반이 **당장은 드러나지 않을 수 있음을** 보여 줍니다. 01의 경로 검사와 쓰기 도구 미등록은 모델 판단과 무관하게 작동했습니다. 실제 접근 범위를 제한하려면 서버 코드뿐 아니라 파일·데이터 권한과 host의 우회 경로도 함께 확인해야 합니다.
 
 ## 흔한 실패 · 복구
 

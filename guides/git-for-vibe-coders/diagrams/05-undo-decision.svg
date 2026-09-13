@@ -45,7 +45,7 @@
   <rect x="220" y="268" width="200" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
   <text x="230" y="288" font-size="11" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="start" dominant-baseline="central">git reset --hard</text>
   <rect x="432" y="268" width="172" height="40" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="danger-line" stroke="#B45A50" stroke-width="1" />
-  <text x="442" y="288" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">커밋 안 된 작업이 영구 삭제됨</text>
+  <text x="442" y="288" font-size="9.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">미커밋 변경 손실 · 복구 미보장</text>
   <text x="636" y="288" font-size="15" font-weight="700" data-fill-role="danger-ink" fill="#6E2F28" text-anchor="middle" dominant-baseline="central">✕</text>
   <rect x="24" y="320" width="632" height="0" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
   <text x="340.0" y="328" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">AI가 reset --hard · push --force · clean -fd 를 제안하면 멈추고 되묻는다 (12 신호등)</text>

@@ -26,5 +26,5 @@
   <text x="572" y="157.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">+ &quot;문서에 없는 질문&quot; 5개</text>
   <text x="572" y="171.75" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">→ 앞 두 층을 자동 반복</text>
   <path d="M486 141 L470 141" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="2" marker-end="url(#ah-data-line-2)"/>
-  <text x="340.0" y="280" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">청킹을 바꿨는데 recall↓ → 청킹 문제 · recall 같은데 faithfulness↓ → 프롬프트·모델 문제 (08 진단표와 동일)</text>
+  <text x="340.0" y="280" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">지표 하락은 원인을 좁히는 신호 — 조각 경계·검색 결과·프롬프트·모델을 함께 대조</text>
 </svg>

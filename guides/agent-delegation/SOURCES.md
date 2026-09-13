@@ -10,24 +10,24 @@
 
 | 자료 | 무엇을 확인했나 | 쓰인 장 |
 | --- | --- | --- |
-| Claude Code Docs — Subagents (`code.claude.com/docs/en/sub-agents`) | frontmatter 필드(`tools`·`disallowedTools`·`model`·`permissionMode`·`isolation`·`memory` 등), 내장 Explore·Plan·general-purpose, 비-fork subagent가 대화 이력·auto memory를 받지 않음, 깊이 3·동시 20 한도, `SendMessage` 재개, 출력 스캔 | 02·03·06 |
-| Claude Code Docs — Worktrees (`/docs/en/worktrees`) | `--worktree`, `.claude/worktrees/`·`worktree-<이름>`, base = 원격 default branch(`worktree.baseRef`), 격리 강제 4종, 정리·잠금·sweep, `.worktreeinclude`, `isolation: worktree` | 04 |
-| Claude Code Docs — Run agents in parallel (`/docs/en/agents`) | 네 층 비교와 세 질문(누가 조정·워커 간 대화·같은 파일), `/batch` | 02·07 |
-| Claude Code Docs — Agent teams (`/docs/en/agent-teams`) | 실험·`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`, 공유 task list·mailbox, worktree 격리 없음, teammate plan 자동 승인, 3~5명 권장, 제한 | 02·04·05 |
-| Claude Code Docs — Dynamic workflows (`/docs/en/workflows`) | `agent()`·`parallel()`·`pipeline()`, `ultracode` 옵트인, 동시 16·실행당 1,000, "누가 계획을 쥐는가" 표 | 02 |
-| Claude Code Docs — Cross-session messaging (`/docs/en/cross-session-messaging`) | `ListAgents`·`SendMessage`, 수신 메시지는 승인 대행 불가·설정 변경 불가, `crossSessionInbound` | 02·06 |
-| Claude Code Docs — Best practices (`/docs/en/best-practices`) | plan mode 4단계와 "diff를 한 문장으로 설명할 수 있으면 건너뛴다", Writer/Reviewer, adversarial review subagent와 과잉 설계 경고, `/goal`·Stop hook, 실패 패턴 | 05·07 |
-| Claude Code Docs — Costs (`/docs/en/costs`) | agent teams 약 7배, 위임으로 verbose 출력을 subagent에 | 02·06 |
+| [Claude Code Docs — Subagents](https://code.claude.com/docs/en/sub-agents) | frontmatter 필드(`tools`·`disallowedTools`·`model`·`permissionMode`·`isolation`·`memory` 등), 내장 Explore·Plan·general-purpose, 비-fork subagent가 대화 이력·auto memory를 받지 않음, 깊이 3·동시 20 한도, `SendMessage` 재개, 출력 스캔 | 02·03·06 |
+| [Claude Code Docs — Worktrees](https://code.claude.com/docs/en/worktrees) | `--worktree`, `.claude/worktrees/`·`worktree-<이름>`, base = 원격 default branch(`worktree.baseRef`), 격리 강제 4종, 정리·잠금·sweep, `.worktreeinclude`, `isolation: worktree` | 04 |
+| [Claude Code Docs — Run agents in parallel](https://code.claude.com/docs/en/agents) | 네 층 비교와 세 질문(누가 조정·워커 간 대화·같은 파일), `/batch` | 02·07 |
+| [Claude Code Docs — Agent teams](https://code.claude.com/docs/en/agent-teams) | 실험·`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`, 공유 task list·mailbox, worktree 격리 없음, teammate plan 자동 승인, 3~5명 권장, 제한 | 02·04·05 |
+| [Claude Code Docs — Dynamic workflows](https://code.claude.com/docs/en/workflows) | `agent()`·`parallel()`·`pipeline()`, `ultracode` 옵트인, 동시 16·실행당 1,000, "누가 계획을 쥐는가" 표 | 02 |
+| [Claude Code Docs — Cross-session messaging](https://code.claude.com/docs/en/cross-session-messaging) | `ListAgents`·`SendMessage`, 수신 메시지는 승인 대행 불가·설정 변경 불가, `crossSessionInbound` | 02·06 |
+| [Claude Code Docs — Best practices](https://code.claude.com/docs/en/best-practices) | plan mode 4단계와 "diff를 한 문장으로 설명할 수 있으면 건너뛴다", Writer/Reviewer, adversarial review subagent와 과잉 설계 경고, `/goal`·Stop hook, 실패 패턴 | 05·07 |
+| [Claude Code Docs — Costs](https://code.claude.com/docs/en/costs) | agent teams 약 7배, 위임으로 verbose 출력을 subagent에 | 02·06 |
 | Claude Code CLI 출력 (`claude -p --output-format json`) | `usage`(메인)와 `modelUsage`(전체)가 따로 보고됨. 실측에서 확인 | 03·실습 |
 
 ## 1차 자료 — Codex CLI (0.153.4 기준, 2026-09-06 확인)
 
 | 자료 | 무엇을 확인했나 | 쓰인 장 |
 | --- | --- | --- |
-| Codex Docs — Subagents (`learn.chatgpt.com/docs/agent-configuration/subagents`) | `[agents]` 설정(`enabled`·`max_concurrent_threads_per_session`·`default_subagent_model`), `.codex/agents/*.toml`(`name`·`description`·`developer_instructions`·`sandbox_mode`), 내장 `default`·`worker`·`explorer`, 부모 sandbox·approval·AGENTS.md·skills 상속, 읽기 위주 권장·쓰기 병렬 신중, `/agent`, 결과 통합 반환 | 02·03·06 |
-| Codex Docs — Configuration reference (`/docs/config-file/config-reference`) | `features.multi_agent`(기본 on)와 도구 `spawn_agent`·`send_input`·`resume_agent`·`wait_agent`·`close_agent`, `agents.<이름>.config_file` | 03 |
-| Codex Docs — Worktrees (`/docs/environments/git-worktrees`) | 데스크톱 앱 전용, `$CODEX_HOME/worktrees`, detached HEAD, 최근 15개 보존 | 04 |
-| Codex Docs — Best practices (`/guides/best-practices`) | "bounded work"를 subagent에, 한 chat = 한 작업 단위, plan 먼저, `/compact` | 05 |
+| [Codex Docs — Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents) | `[agents]` 설정(`enabled`·`max_concurrent_threads_per_session`·`default_subagent_model`), `.codex/agents/*.toml`(`name`·`description`·`developer_instructions`·`sandbox_mode`), 내장 `default`·`worker`·`explorer`, 부모 sandbox·approval·AGENTS.md·skills 상속, 읽기 위주 권장·쓰기 병렬 신중, `/agent`, 결과 통합 반환 | 02·03·06 |
+| [Codex Docs — Configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference) | `features.multi_agent`(기본 on)와 도구 `spawn_agent`·`send_input`·`resume_agent`·`wait_agent`·`close_agent`, `agents.<이름>.config_file` | 03 |
+| [Codex Docs — Worktrees](https://learn.chatgpt.com/docs/environments/git-worktrees) | 데스크톱 앱 전용, `$CODEX_HOME/worktrees`, detached HEAD, 최근 15개 보존 | 04 |
+| [Codex Docs — Best practices](https://learn.chatgpt.com/guides/best-practices) | "bounded work"를 subagent에, 한 chat = 한 작업 단위, plan 먼저, `/compact` | 05 |
 | Codex CLI 출력 (`codex exec --json`, 세션 rollout) | 스트림에 `wait`만 나오고 `spawn_agent`는 rollout에만 기록됨. `spawn_agent` 메시지 본문은 rollout에서 암호화됨. `fork_turns` 인자로 이력 전달. 실측에서 확인 | 03·06·실습 |
 
 ## 2026-09-07 재확인 범위

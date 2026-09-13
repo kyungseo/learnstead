@@ -4,7 +4,7 @@
 [← 이전: 08. 배포·공유·버전·공개 경계](08-sharing-and-boundaries.md) · [목차](README.md)
 <!-- learnstead:nav:end -->
 
-가나다·알파벳 순이 아니라 **가이드에서 등장한 순서로** 배열했다. 처음 나온 장을 함께 적는다.
+용어를 **가이드에서 등장한 순서로** 배열하고, 처음 나온 장을 함께 적었습니다.
 
 | 용어 | 뜻 | 장 |
 | --- | --- | --- |
@@ -17,7 +17,7 @@
 | **progressive disclosure (점진적 공개)** | 이름·설명 → 본문 → 부속 파일 순으로 필요한 만큼만 컨텍스트에 넣는 설계 원칙 | 01 |
 | **Agent Skills 규격** | agentskills.io가 정한 `SKILL.md` 구조. 필수 필드 2개와 선택 필드를 여러 도구가 공통으로 읽음 | 02 |
 | **frontmatter** | `SKILL.md` 첫머리의 YAML 블록. `name`·`description` 필수 | 02 |
-| **description** | skill이 무엇을·언제 하는지 적은 한 줄. 항상 컨텍스트에 있는 유일한 부분이며 자동 호출의 근거 | 02 |
+| **description** | skill이 무엇을·언제 하는지 적은 한 줄. 이름과 함께 초기 목록에 들어가며 자동 호출의 근거 | 02 |
 | **확장 필드** | 규격 밖에서 도구가 더 읽는 frontmatter 키. Claude Code의 `context: fork` 등 | 02 |
 | **slash command** | 사람이 `/name`으로 부르는 프롬프트 템플릿. Claude Code·Cursor에서 skill로 통합됨 | 03 |
 | **rule (경로 조건)** | 파일 경로 glob에 따라 켜지는 지시문. Cursor `.mdc`, Claude Code skill `paths` | 03 |

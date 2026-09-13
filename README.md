@@ -1,60 +1,25 @@
 # Learnstead
 
-Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도록 정리한 학습 자료 모음입니다.
-짧게 읽는 글보다 오래 참고할 수 있는 설명, 따라 할 수 있는 절차, 검증 기록을 한곳에 둡니다.
+AI를 직접 실행하고, 앱을 만들고, 결과를 확인하는 학습 자료 모음입니다. **관심 있는 주제 하나를 골라 시작하세요.** 각 자료의 소개 페이지에서 준비물과 읽는 순서, 실제 검증 범위를 확인할 수 있습니다.
 
-> **이름에 담긴 뜻**
->
-> **Learnstead = learn + homestead.** 배운 내용을 직접 실행하고 검증하며 차곡차곡 쌓아 가는 작은 배움의
-> 터전이라는 뜻입니다. 각 자료는 핵심 개념, 따라 할 수 있는 절차, 검증 기록을 함께 제공합니다.
+## 어디서 시작할까요?
+
+| 하고 싶은 일 | 찾아갈 카테고리 |
+| --- | --- |
+| AI로 앱을 만들고 변경을 되돌릴 수 있게 관리하기 | [AI와 코딩하기](#ai와-코딩하기--빠르게-만들되-결정권은-놓치지-않기) |
+| 앱의 저장 기능·사용자별 권한·백업 이해하기 | [데이터베이스](#ai로-만든-앱의-데이터--이해부터-권한복구-확인까지) |
+| 내 컴퓨터에서 모델을 실행하고 프로그램에 연결하기 | [Local LLM](#local-llm--실행한-모델을-프로그램까지-연결하기) |
+| 내 문서를 근거로 답하는 AI 만들기 | [RAG와 Graph](#내-문서에-답하는-ai--rag-이해부터-실패-진단까지) |
+| Agent에게 반복 절차를 가르치고 도구·정보 연결하기 | [Agent Skills·MCP·Context Engineering](#ai-agent-다루기--절차도구컨텍스트를-설계하기) |
+| 여러 모델 호출이나 Agent에게 작업 나눠 맡기기 | [오케스트레이션과 작업 위임](#ai-여러-개로-일하기--코드로-엮기-도구-안에서-맡기기) |
+
+**가이드는** 개념과 선택 기준을 설명합니다. **튜토리얼은** 한 경로를 따라 결과물을 만듭니다. **실습은** 정해진 과제에서 예상과 실제 결과를 비교합니다. 현재 가이드 11편·튜토리얼 2편·실습 8편이 있습니다.
 
 ## 학습 자료 한눈에 보기
 
-### Local LLM — 실행한 모델을 프로그램까지 연결하기
-
-| Local LLM 실행 | Local LLM 앱 연결 |
-| --- | --- |
-| [<img src="guides/local-llm/assets/local-llm-guide-hero.webp" width="320" alt="Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가는 Local LLM 가이드">](guides/local-llm/README.md) | [<img src="guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp" width="320" alt="코드가 로컬 LLM으로 전달되고 구조화 출력과 도구 실행으로 나뉘는 앱 연결 가이드">](guides/local-llm-app-integration/README.md) |
-| 내 장비에서 모델을 고르고 실행한 뒤 GPU 적재와 첫 응답까지 확인합니다. | 실행한 모델을 프로그램에서 호출하고 대화·답변 형식·도구 사용 범위를 다룹니다. |
-| **[1편 시작 →](guides/local-llm/README.md)** | **[2편 시작 →](guides/local-llm-app-integration/README.md)** |
-
-### 내 문서에 답하는 AI — RAG 이해부터 실패 진단까지
-
-| RAG와 Graph 이해 | Local RAG 만들기 | RAG 실패 실습 |
-| --- | --- | --- |
-| [![내 문서를 검색해 근거와 함께 답하고 관계 그래프로 여러 사실을 잇는 RAG와 Graph 가이드](guides/local-rag/assets/local-rag-guide-hero.webp)](guides/local-rag/README.md) | [![문서 조각을 임베딩하고 검색해 Local LLM이 근거와 함께 답하는 Local RAG 튜토리얼](tutorials/local-rag-build/assets/local-rag-build-hero.webp)](tutorials/local-rag-build/README.md) | [![검색 누락과 근거 없는 답변을 찾아 진단하고 고치는 RAG 실패 실습](labs/why-rag-fails/assets/why-rag-fails-hero.webp)](labs/why-rag-fails/README.md) |
-| RAG의 색인·검색·생성 흐름과 GraphRAG가 필요한 질문을 개념부터 설명합니다. | Ollama와 Python으로 내 문서에 답하는 최소 RAG를 만들고 근거를 판정합니다. | 검색·청킹·생성·그래프의 실패를 재현하고 골든셋 지표로 변경 전후를 비교합니다. |
-| **[가이드 시작 →](guides/local-rag/README.md)** | **[튜토리얼 시작 →](tutorials/local-rag-build/README.md)** | **[실습 시작 →](labs/why-rag-fails/README.md)** |
-
-### AI Agent 다루기 — 절차·도구·컨텍스트를 설계하기
-
-| Agent에게 일 가르치기 | MCP로 도구 연결하기 | 필요한 정보 설계하기 |
-| --- | --- | --- |
-| [![반복 절차 카드를 골라 실행하고 확인된 결과로 이어 가는 AI Agent와 작업대의 손그림](guides/agent-skills/assets/agent-skills-hero.webp)](guides/agent-skills/README.md) | [![AI Agent가 MCP를 통해 노트와 외부 도구를 안전하게 사용하는 연결 구조를 보여 주는 가이드](guides/mcp-basics/assets/mcp-basics-hero.webp)](guides/mcp-basics/README.md) | [![지시문과 Skill, 도구 결과, 기억을 필요한 시점에 Agent에게 전달하는 흐름을 보여 주는 가이드](guides/context-engineering/assets/context-engineering-hero.webp)](guides/context-engineering/README.md) |
-| 반복해서 설명하던 절차를 Skill로 만들고, Agent가 필요할 때 찾아 쓰게 하는 방법을 배웁니다. | 내 파일과 API를 Agent에 연결할 때 모델·host·MCP 서버가 맡는 역할과 권한 경계를 익힙니다. | 지시문·Skill·도구 결과·기억 가운데 지금 필요한 정보를 골라 모델에 전달하는 방법을 배웁니다. |
-| **[1편 시작 →](guides/agent-skills/README.md)** | **[2편 시작 →](guides/mcp-basics/README.md)** | **[3편 시작 →](guides/context-engineering/README.md)** |
-
-| Skill 워크숍 | 노트 MCP 서버 실습 | 지시문 예산 실습 |
-| --- | --- | --- |
-| [![회의록을 액션 아이템으로 바꾸는 Skill을 만들어 두 AI 코딩 도구에서 실행하고 비교하는 실습](labs/skill-workshop/assets/skill-workshop-hero.webp)](labs/skill-workshop/README.md) | [![읽기 전용 노트 MCP 서버를 만들고 두 AI 코딩 도구에 연결해 권한 실패를 확인하는 실습](labs/mcp-notes-server/assets/mcp-notes-server-hero.webp)](labs/mcp-notes-server/README.md) | [![길이와 위치가 다른 지시문을 반복 실행해 규칙 준수 결과를 비교하는 실습](labs/instruction-budget/assets/instruction-budget-hero.webp)](labs/instruction-budget/README.md) |
-| 회의록 정리 Skill을 직접 만들고, 명시 호출·자동 호출·과호출과 이름 충돌을 관측합니다. | Python으로 작은 읽기 전용 서버를 만든 뒤 잘못된 경로와 거짓 권한 힌트 같은 실패를 재현합니다. | 같은 과제를 여러 지시문 구성으로 반복해 보고, 규칙 준수율과 토큰 사용량을 기계적으로 비교합니다. |
-| **[1편 실습 →](labs/skill-workshop/README.md)** | **[2편 실습 →](labs/mcp-notes-server/README.md)** | **[3편 실습 →](labs/instruction-budget/README.md)** |
-
-### AI 여러 개로 일하기 — 코드로 엮기, 도구 안에서 맡기기
-
-| 코드로 여러 AI 엮기 | 코딩 Agent에게 나눠 맡기기 |
-| --- | --- |
-| [<img src="guides/agent-orchestration/assets/agent-orchestration-hero.webp" width="320" alt="여러 AI 호출을 흐름으로 연결하고 결과를 확인하는 작업대">](guides/agent-orchestration/README.md) | [<img src="guides/agent-delegation/assets/agent-delegation-hero.webp" width="320" alt="코딩 Agent가 작업을 나누고 결과를 검토해 합치는 모습">](guides/agent-delegation/README.md) |
-| 파이프라인·라우터·워커·평가 루프를 비교하고, 나누는 이유와 실패 신호를 익힙니다. | Subagent·병렬 작업·새 컨텍스트 검토를 구분하고, 맡길 범위와 확인할 결과를 정합니다. |
-| **[가이드 시작 →](guides/agent-orchestration/README.md)** | **[가이드 시작 →](guides/agent-delegation/README.md)** |
-
-| 패턴별 실패 재현 | 위임하고 검증하기 |
-| --- | --- |
-| [<img src="labs/when-splitting-fails/assets/when-splitting-fails-hero.webp" width="320" alt="나눠 처리한 답변의 오류와 비용을 비교하는 실습">](labs/when-splitting-fails/README.md) | [<img src="labs/delegate-and-verify/assets/delegate-and-verify-hero.webp" width="320" alt="작업 결과를 기준선과 비교하고 오류를 검증하는 실습">](labs/delegate-and-verify/README.md) |
-| 같은 과제를 다섯 방식으로 실행해 분류 오류·취합 손실·반복 실패와 토큰 비용을 관측합니다. | 결함을 심은 가계부 코드로 한 세션·위임·병렬·검토를 비교하고, 지적의 타당성과 통합 결과를 확인합니다. |
-| **[실습 시작 →](labs/when-splitting-fails/README.md)** | **[실습 시작 →](labs/delegate-and-verify/README.md)** |
-
 ### AI와 코딩하기 — 빠르게 만들되 결정권은 놓치지 않기
+
+Git으로 변경을 남기는 법부터 익히고, 바이브 코딩의 작업 흐름과 확인 실습으로 이어 갑니다.
 
 | Git으로 변경 관리 | 바이브 코딩 가이드 | 다섯 가지 확인 실습 |
 | --- | --- | --- |
@@ -62,7 +27,10 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 | AI가 만든 변경을 저장·확인·분리·공유하고, branch와 worktree로 여러 작업을 안전하게 나눕니다. | 목표와 범위를 정하고 한 번에 하나씩 바꾸며, 확인·복구·공개 전 점검까지 이어 갑니다. | 비슷해 보이는 할 일 앱 세 판을 직접 눌러 보며 숨어 있는 실패를 찾아냅니다. |
 | **[Git부터 시작 →](guides/git-for-vibe-coders/README.md)** | **[가이드 이어 읽기 →](guides/vibe-coding-practice/README.md)** | **[실습으로 확인 →](labs/five-checks/README.md)** |
 
+
 ### AI로 만든 앱의 데이터 — 이해부터 권한·복구 확인까지
+
+개념 가이드는 단독으로 읽을 수 있습니다. 먼저 실행해 보려면 Python을 사용하는 실습의 SQLite 경로를, 신청 앱을 만들려면 Docker·Node.js를 사용하는 튜토리얼을 선택하세요. 클라우드 계정 없이 가상 데이터로 연습합니다.
 
 <table>
 <tr>
@@ -87,56 +55,62 @@ Learnstead는 한 가지 주제를 직접 이해하고 실행해 볼 수 있도�
 </tr>
 </table>
 
-## 추천 학습 경로
 
 ### Local LLM — 실행한 모델을 프로그램까지 연결하기
 
-1. [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) — 모델·runtime 선택, 설치, 첫 응답, GPU 적재 확인
-2. [Local LLM을 내 프로그램에 연결하기](guides/local-llm-app-integration/README.md) — 대화 상태, 구조화 출력, tool calling, 읽기 전용 agent
+모델 실행부터 시작하고, 준비된 모델이 있다면 앱 연결 가이드로 이동하세요.
 
-Local LLM을 프로그램에서 호출하는 방식이 먼저 궁금하면 [앱 연결 가이드](guides/local-llm-app-integration/README.md)를 1편 다음에
-읽어도 좋습니다.
+| Local LLM 실행 | Local LLM 앱 연결 |
+| --- | --- |
+| [<img src="guides/local-llm/assets/local-llm-guide-hero.webp" width="320" alt="Qwen, Gemma, DeepSeek 모델이 노트북 안으로 들어가는 Local LLM 가이드">](guides/local-llm/README.md) | [<img src="guides/local-llm-app-integration/assets/local-llm-app-integration-hero.webp" width="320" alt="코드가 로컬 LLM으로 전달되고 구조화 출력과 도구 실행으로 나뉘는 앱 연결 가이드">](guides/local-llm-app-integration/README.md) |
+| 내 장비에서 모델을 고르고 실행한 뒤 GPU 적재와 첫 응답까지 확인합니다. | 실행한 모델을 프로그램에서 호출하고 대화·답변 형식·도구 사용 범위를 다룹니다. |
+| **[1편 시작 →](guides/local-llm/README.md)** | **[2편 시작 →](guides/local-llm-app-integration/README.md)** |
+
 
 ### 내 문서에 답하는 AI — RAG 이해부터 실패 진단까지
 
-1. [내 장비에서 LLM 직접 실행하기](guides/local-llm/README.md) — 모델을 준비하고 로컬 실행을 확인합니다
-2. [내 문서와 대화하는 AI 이해하기 — RAG와 Graph](guides/local-rag/README.md) — 색인·검색·생성, 청킹, 근거 제시, GraphRAG 선택 기준을 익힙니다
-3. [내 문서에 답하는 Local RAG 만들기](tutorials/local-rag-build/README.md) — Ollama와 Python으로 최소 RAG를 직접 완성합니다
-4. [RAG는 왜 틀리는가](labs/why-rag-fails/README.md) — 실패를 재현하고 원인을 구분한 뒤 골든셋으로 다시 잽니다
+개념 → 만들기 → 실패 진단 순서입니다. 실습 전에 Local LLM 실행 환경을 준비합니다.
+
+| RAG와 Graph 이해 | Local RAG 만들기 | RAG 실패 실습 |
+| --- | --- | --- |
+| [![내 문서를 검색해 근거와 함께 답하고 관계 그래프로 여러 사실을 잇는 RAG와 Graph 가이드](guides/local-rag/assets/local-rag-guide-hero.webp)](guides/local-rag/README.md) | [![문서 조각을 임베딩하고 검색해 Local LLM이 근거와 함께 답하는 Local RAG 튜토리얼](tutorials/local-rag-build/assets/local-rag-build-hero.webp)](tutorials/local-rag-build/README.md) | [![검색 누락과 근거 없는 답변을 찾아 진단하고 고치는 RAG 실패 실습](labs/why-rag-fails/assets/why-rag-fails-hero.webp)](labs/why-rag-fails/README.md) |
+| RAG의 색인·검색·생성 흐름과 GraphRAG가 필요한 질문을 개념부터 설명합니다. | Ollama와 Python으로 내 문서에 답하는 최소 RAG를 만들고 근거를 판정합니다. | 검색·청킹·생성·그래프의 실패를 재현하고 골든셋 지표로 변경 전후를 비교합니다. |
+| **[가이드 시작 →](guides/local-rag/README.md)** | **[튜토리얼 시작 →](tutorials/local-rag-build/README.md)** | **[실습 시작 →](labs/why-rag-fails/README.md)** |
+
 
 ### AI Agent 다루기 — 절차·도구·컨텍스트를 설계하기
 
-1. [AI Agent에게 일을 가르치는 법 — Agent Skills 기초](guides/agent-skills/README.md) — Agent의 작동 구조를 익히고 반복 절차를 Skill로 만듭니다
-2. [Skill 워크숍](labs/skill-workshop/README.md) — 작은 Skill을 두 도구에서 실행하며 선택·충돌·실패를 관측합니다
-3. [AI Agent에 내 도구를 연결하는 법 — MCP 기초](guides/mcp-basics/README.md) — 외부 도구 연결과 실제 실행 주체, 권한 경계를 구분합니다
-4. [노트 MCP 서버](labs/mcp-notes-server/README.md) — 읽기 전용 서버를 만들고 연결·거부·오염 실패를 재현합니다
-5. [AI Agent가 놓치지 않게 정보 설계하기 — Context Engineering 기초](guides/context-engineering/README.md) — Agent가 읽는 정보를 고르고 배치하고 유지하는 기준을 익힙니다
-6. [지시문 예산](labs/instruction-budget/README.md) — 지시문의 크기·위치·형태에 따른 준수 결과를 직접 비교합니다
+Skill → MCP → Context Engineering 순서로 읽되, 각 가이드 바로 다음에 대응 실습을 선택할 수 있습니다. Tool calling이 낯설다면 [앱 연결 가이드 06](guides/local-llm-app-integration/06-tool-calling-workflow-agent.md)을 먼저 읽어 보세요.
 
-3편의 tool calling이 낯설다면 먼저 [Local LLM 앱 연결 가이드 06](guides/local-llm-app-integration/06-tool-calling-workflow-agent.md)을 읽어도 좋습니다.
+| Agent에게 일 가르치기 | MCP로 도구 연결하기 | 필요한 정보 설계하기 |
+| --- | --- | --- |
+| [![반복 절차 카드를 골라 실행하고 확인된 결과로 이어 가는 AI Agent와 작업대의 손그림](guides/agent-skills/assets/agent-skills-hero.webp)](guides/agent-skills/README.md) | [![AI Agent가 MCP를 통해 노트와 외부 도구를 안전하게 사용하는 연결 구조를 보여 주는 가이드](guides/mcp-basics/assets/mcp-basics-hero.webp)](guides/mcp-basics/README.md) | [![지시문과 Skill, 도구 결과, 기억을 필요한 시점에 Agent에게 전달하는 흐름을 보여 주는 가이드](guides/context-engineering/assets/context-engineering-hero.webp)](guides/context-engineering/README.md) |
+| 반복해서 설명하던 절차를 Skill로 만들고, Agent가 필요할 때 찾아 쓰게 하는 방법을 배웁니다. | 내 파일과 API를 Agent에 연결할 때 모델·host·MCP 서버가 맡는 역할과 권한 경계를 익힙니다. | 지시문·Skill·도구 결과·기억 가운데 지금 필요한 정보를 골라 모델에 전달하는 방법을 배웁니다. |
+| **[1편 시작 →](guides/agent-skills/README.md)** | **[2편 시작 →](guides/mcp-basics/README.md)** | **[3편 시작 →](guides/context-engineering/README.md)** |
+
+| Skill 워크숍 | 노트 MCP 서버 실습 | 지시문 예산 실습 |
+| --- | --- | --- |
+| [![회의록을 액션 아이템으로 바꾸는 Skill을 만들어 두 AI 코딩 도구에서 실행하고 비교하는 실습](labs/skill-workshop/assets/skill-workshop-hero.webp)](labs/skill-workshop/README.md) | [![읽기 전용 노트 MCP 서버를 만들고 두 AI 코딩 도구에 연결해 권한 실패를 확인하는 실습](labs/mcp-notes-server/assets/mcp-notes-server-hero.webp)](labs/mcp-notes-server/README.md) | [![길이와 위치가 다른 지시문을 반복 실행해 규칙 준수 결과를 비교하는 실습](labs/instruction-budget/assets/instruction-budget-hero.webp)](labs/instruction-budget/README.md) |
+| 회의록 정리 Skill을 직접 만들고, 명시 호출·자동 호출·과호출과 이름 충돌을 관측합니다. | Python으로 작은 읽기 전용 서버를 만든 뒤 잘못된 경로와 거짓 권한 힌트 같은 실패를 재현합니다. | 같은 과제를 여러 지시문 구성으로 반복해 보고, 규칙 준수율과 토큰 사용량을 기계적으로 비교합니다. |
+| **[1편 실습 →](labs/skill-workshop/README.md)** | **[2편 실습 →](labs/mcp-notes-server/README.md)** | **[3편 실습 →](labs/instruction-budget/README.md)** |
+
 
 ### AI 여러 개로 일하기 — 코드로 엮기, 도구 안에서 맡기기
 
-두 경로 가운데 지금 쓰는 방식부터 시작하세요. 프로그램에서 모델을 호출한다면 코드 경로를, Claude Code나 Codex에서 일을 나눈다면 코딩 도구 경로를 권합니다.
+프로그램에서 모델을 호출한다면 왼쪽 코드 경로를, Claude Code나 Codex에서 작업을 나눈다면 오른쪽 코딩 도구 경로를 고르세요. 코드 경로는 Python·Ollama와 tool calling·agent 기초, 코딩 도구 경로는 Context Engineering·Git worktree 기초를 전제로 합니다.
 
-- **코드 경로:** [여러 AI를 엮어 일하게 하기](guides/agent-orchestration/README.md) → [나눴더니 틀렸다](labs/when-splitting-fails/README.md). Local LLM 앱 연결 가이드의 tool calling·agent 기초를 알고, Python과 Ollama로 직접 비교하려는 독자에게 맞습니다.
-- **코딩 도구 경로:** [AI Agent에게 일을 나눠 맡기는 법](guides/agent-delegation/README.md) → [나눠 맡기고 검증하기](labs/delegate-and-verify/README.md). Context Engineering과 Git worktree의 기본을 알고, Claude Code 또는 Codex에서 위임 효과를 확인하려는 독자에게 맞습니다.
+| 코드로 여러 AI 엮기 | 코딩 Agent에게 나눠 맡기기 |
+| --- | --- |
+| [<img src="guides/agent-orchestration/assets/agent-orchestration-hero.webp" width="320" alt="여러 AI 호출을 흐름으로 연결하고 결과를 확인하는 작업대">](guides/agent-orchestration/README.md) | [<img src="guides/agent-delegation/assets/agent-delegation-hero.webp" width="320" alt="코딩 Agent가 작업을 나누고 결과를 검토해 합치는 모습">](guides/agent-delegation/README.md) |
+| 파이프라인·라우터·워커·평가 루프를 비교하고, 나누는 이유와 실패 신호를 익힙니다. | Subagent·병렬 작업·새 컨텍스트 검토를 구분하고, 맡길 범위와 확인할 결과를 정합니다. |
+| **[가이드 시작 →](guides/agent-orchestration/README.md)** | **[가이드 시작 →](guides/agent-delegation/README.md)** |
 
-한 경로를 마친 뒤 다른 경로를 읽으면, 코드가 작업 순서를 정하는 경우와 도구 안에서 Agent가 일을 나누는 경우의 공통점과 차이를 비교할 수 있습니다.
+| 패턴별 실패 재현 | 위임하고 검증하기 |
+| --- | --- |
+| [<img src="labs/when-splitting-fails/assets/when-splitting-fails-hero.webp" width="320" alt="나눠 처리한 답변의 오류와 비용을 비교하는 실습">](labs/when-splitting-fails/README.md) | [<img src="labs/delegate-and-verify/assets/delegate-and-verify-hero.webp" width="320" alt="작업 결과를 기준선과 비교하고 오류를 검증하는 실습">](labs/delegate-and-verify/README.md) |
+| 같은 과제를 다섯 방식으로 실행해 분류 오류·취합 손실·반복 실패와 토큰 비용을 관측합니다. | 결함을 심은 가계부 코드로 한 세션·위임·병렬·검토를 비교하고, 지적의 타당성과 통합 결과를 확인합니다. |
+| **[실습 시작 →](labs/when-splitting-fails/README.md)** | **[실습 시작 →](labs/delegate-and-verify/README.md)** |
 
-### AI와 코딩하기 — 빠르게 만들되 결정권은 놓치지 않기
-
-1. [AI로 코딩하는 사람을 위한 Git](guides/git-for-vibe-coders/README.md) — commit과 diff부터 branch·worktree·PR·공개 전 점검까지
-2. [AI와 함께 만들기 — 바이브 코딩에서 Agentic Engineering으로](guides/vibe-coding-practice/README.md) — 목표·범위·확인 방법을 정하고, 작은 변경과 복구를 반복하는 작업 습관
-3. [다섯 가지 확인](labs/five-checks/README.md) — 같은 요청을 처리한 것처럼 보이는 세 판을 직접 확인하며 실패를 판정하는 실습
-
-### AI로 만든 앱의 데이터 — 이해부터 권한·복구 확인까지
-
-1. [AI로 만든 앱의 데이터, 이해하고 다루기](guides/database-for-vibe-coders/README.md) — 저장 위치·데이터 구조·DB 선택·권한·변경·복구의 개념을 익힙니다.
-2. [AI와 함께 만드는 작은 신청 앱](tutorials/study-signup-db/README.md) — 로컬 Supabase와 PostgreSQL로 신청 앱을 완성합니다.
-3. [저장됐다고 끝이 아니다](labs/database-safety/README.md) — 정상처럼 보이는 실패를 찾아내고 데이터와 접근 규칙을 직접 확인합니다.
-
-바이브 코딩 가이드 다음에 읽으면 좋습니다. 개념 가이드는 단독으로 읽을 수 있으며, SQLite 입문에는 Python이, 신청 앱에는 Docker와 Node.js가 필요합니다. 클라우드 계정 없이 합성 데이터로 연습하며, 실제 검증 범위는 각 자료의 검증 기록에 남깁니다.
 
 ## 문서가 지키는 기준
 
@@ -159,6 +133,10 @@ Learnstead는 설명만 제시하지 않습니다. 독자가 근거와 검증 �
   `VALIDATION.md`에 기록합니다.
 
 도구와 모델은 계속 바뀝니다. 단순히 “된다”고 단정하지 않고, 언제 어떤 환경에서 무엇을 확인했는지 함께 남깁니다.
+
+## Learnstead라는 이름
+
+Learnstead는 learn과 homestead를 합친 이름입니다. 배운 내용을 직접 실행하고 검증하며 차곡차곡 쌓아 가는 작은 배움의 터전이라는 뜻입니다.
 
 ## 오류 제보
 

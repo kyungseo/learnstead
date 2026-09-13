@@ -38,7 +38,7 @@
 | **활성화 메모리(activation)** | 추론 중 계산 중간값을 담는 버퍼. 가중치·KV와 함께 메모리 예산의 세 번째 항이며 "오버헤드"의 주성분 ([02 §1](02-model-anatomy.md), [08 §4](08-setup-multi-gpu-server.md)) |
 | **오프로딩(offloading)** | VRAM에 못 넣은 부분을 CPU/RAM에 두는 것. 동작은 하지만 급격히 느려진다 ([07 §3](07-setup-nvidia-workstation.md)) |
 | **스왑(swap)** | OS가 부족한 RAM의 일부를 storage로 옮기는 것. model workload에서는 큰 지연과 system memory pressure를 일으킬 수 있다 ([06 §6](06-setup-apple-silicon.md)) |
-| **TTFT** | 첫 토큰까지 걸린 시간. prefill 비용 ([10 §1](10-operations.md)) |
+| **TTFT** | 첫 토큰까지 걸린 시간. prefill 외 load·queue·network 등이 포함될 수 있음 ([10 §1](10-operations.md)) |
 | **TPS** | 초당 생성 토큰 수. decode 속도 ([10 §1](10-operations.md)) |
 | **prefill / decode** | 프롬프트를 통째로 처리하는 단계 / 토큰을 하나씩 만드는 단계. 생성 루프 그림은 [02 §0](02-model-anatomy.md) |
 | **prefix caching** | 매 요청 동일한 프롬프트 앞부분(시스템 프롬프트 등)의 KV를 재사용해 TTFT를 줄이는 기법 ([02 §5](02-model-anatomy.md) 팁) |
@@ -58,7 +58,7 @@
 | **imatrix / IQ 계열** | importance matrix를 활용하는 양자화 계열. 같은 용량에서도 model·calibration·task에 따라 결과가 달라진다 ([03 §4](03-quantization.md)) |
 | **캘리브레이션 데이터** | 양자화 시 "어느 가중치가 중요한가"를 재는 샘플 텍스트. 배포자 간 품질 차이의 주요 원인 ([03 §2](03-quantization.md) 팁) |
 | **NVFP4 / MXFP4** | 4bit 부동소수 형식. Blackwell 네이티브이며 일부 모델(gpt-oss 등)의 기본 배포 형식 ([03 §3](03-quantization.md)) |
-| **perplexity** | 모델이 다음 토큰을 얼마나 "덜 놀라며" 맞히는가의 지표. 낮을수록 좋다. 양자화 품질 비교에 자주 쓰인다 ([03 §4](03-quantization.md)) |
+| **perplexity** | 실제 다음 토큰에 부여한 확률로 계산한 지표. 같은 평가 조건에서 낮을수록 예측이 잘 맞는다. 양자화 품질 비교에 자주 쓰인다 ([03 §4](03-quantization.md)) |
 | **MLX** | Apple Silicon용 array·machine learning framework. `mlx-lm`은 이를 이용해 LLM을 실행·변환하는 도구다 ([05 §2](05-stack-map.md)) |
 
 ## 4. 실행·서빙
@@ -102,7 +102,7 @@
 | --- | --- |
 | **hosted LLM vs local LLM** | 사업자 서버에서 실행 ↔ 내 장비에서 실행. 데이터 흐름과 비용 구조가 다르다 ([01 §0](01-orientation.md)) |
 | **총 파라미터 vs 활성 파라미터** | 메모리 ↔ 속도. MoE에서 섞으면 계산이 통째로 틀린다 |
-| **open-weight vs open-source** | 가중치만 ↔ 학습 코드·데이터까지 |
+| **open-weight vs open-source** | 가중치 접근 범위 ↔ 수정·재현 등에 필요한 공개 범위와 이용 조건을 함께 판단 |
 | **open-weight vs 자유 라이선스** | 공개 여부 ↔ 사용 허용 범위. **별개다** |
 | **GGUF vs AWQ** | 파일 포맷 ↔ 양자화 알고리즘. 층이 다르다 |
 | **VRAM 용량 vs 대역폭** | 가부(可否) ↔ 속도 |

@@ -29,7 +29,7 @@ scripts/run-codex.sh  s2 "내 노트에서 이번에 해야 할 일 정리해 �
 cat logs/s1.out; cat logs/s2.out
 ```
 
-요약 줄에서 Claude는 `Skill(notes-digest)` 뒤에 `mcp__notes__…`만 있는지, Codex는 `SKILL.md`를 읽는 `sed` 줄 뒤에 `mcp:` 줄이 오는지 봅니다. 파일을 `cat`으로 읽은 흔적이 있으면 skill 규칙이 깨진 것입니다.
+요약 줄에서 Claude는 `Skill(notes-digest)` 뒤에 `mcp__notes__…`만 있는지, Codex는 `SKILL.md`를 읽는 `sed` 줄 뒤에 `mcp:` 줄이 오는지 봅니다. 노트 본문을 `cat`으로 직접 읽은 흔적이 있으면 skill 규칙이 깨진 것입니다. skill 파일 자체를 읽는 것은 정상입니다.
 
 ## 3. 기록
 
@@ -49,7 +49,7 @@ cat logs/s1.out; cat logs/s2.out
 
 ## 정리 — 이 실습을 끝내면
 
-- 서버 코드 층만이 확실한 경계이고, annotation·host 승인·모델 판단은 조건부라는 것을 실험으로 확인할 수 있습니다.
+- 서버의 입력 검사·실제 데이터 권한, host의 허용 규칙, 모델 판단이 서로 다른 역할을 한다는 것을 실험 결과와 대조할 수 있습니다.
 - 연결·호출 여부를 모델의 말이 아니라 로그로 확인합니다.
 - 절차는 skill에, 능력은 MCP에 두고 skill에서 서버 쪽 도구 이름으로 가리킵니다.
 

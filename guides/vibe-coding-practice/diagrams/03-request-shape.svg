@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="680" height="300" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">좋은 요청은 네 조각으로 되어 있다</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">&quot;이걸 어떻게 확인하지?&quot;에 답할 수 없으면 아직 요청이 아니다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">확인 방법까지 적어야 결과를 판정할 수 있다</text>
   <rect x="24" y="76" width="92" height="44" rx="8" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
   <text x="70" y="98" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">① 지금</text>
   <rect x="126" y="76" width="316" height="44" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />

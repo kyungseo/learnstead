@@ -72,7 +72,7 @@ cat logs/e3.out
 | e3 요약 | 없음 | FAIL(정상) | 34,020 / 7,961 / 567 |
 
 - 자동 호출은 명시 호출보다 한 턴(목록 보고 Skill tool 호출)이 더 들어 캐시 읽기가 약 1.7만 토큰 많았다.
-- 모델은 파일을 읽을 때 `Read` tool 대신 `Bash(cat …)`를 썼다. `--allowedTools "Read Skill"`만 허용했는데도 읽기 전용 shell 명령은 실행됐다. 실습에는 영향 없다.
+- 모델은 파일을 읽을 때 `Read` tool 대신 `Bash(cat …)`를 썼다. `--allowedTools "Read Skill"`로 사전 승인 목록을 줬지만 읽기 전용 shell 명령도 실행됐다. 이 옵션을 두 도구만 실행할 수 있는 제한 목록으로 해석하면 안 된다.
 - e2를 두 번 더 돌려 3/3 모두 Skill 호출·PASS였다(05에서 사용).
 
 ## 흔한 실패 · 복구

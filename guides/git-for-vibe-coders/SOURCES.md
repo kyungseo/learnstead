@@ -6,7 +6,8 @@
 
 **AI로 코딩하는 사람을 위한 Git에서** 버전에 따라 달라질 수 있는 정보와 그 근거 자료를 연결합니다.
 
-- 마지막 확인일: 2026-08-27
+- 마지막 전체 확인일: 2026-08-27
+- 2026-09-13 부분 확인: [Pro Git의 중앙 집중식·분산형 구분](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control), `restore`의 기본 복원 기준과 `reset --hard`의 삭제 범위, [GitHub의 commit 이메일 설정](https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address)을 재확인했습니다. 기존 실행 결과를 재실행한 것은 아닙니다.
 - `문서 확인`은 공식 문서를 읽었다는 뜻이며, 명령 실행 성공을 뜻하지 않습니다.
 - Git 명령의 동작은 오래 안정적이지만, GitHub 웹 화면과 인증 방식은 바뀝니다.
 

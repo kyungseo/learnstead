@@ -14,7 +14,7 @@
 cat $FIX/variants/V4-rule-python.md
 ```
 
-`run-variant.sh`가 Codex용으로는 같은 규칙을 `src/AGENTS.md`에 넣는다(frontmatter 없이).
+`run-variant.sh`가 Codex용으로는 같은 규칙을 `src/AGENTS.md`에 넣습니다(frontmatter 없이).
 
 ## 2. 돌리기
 
@@ -47,7 +47,7 @@ Codex 문서에 설명된 동작과 같습니다. 중첩 `AGENTS.md`는 **루트
 | 증상 | 원인 | 복구 |
 | --- | --- | --- |
 | Claude V4가 낮음 | `.py`를 읽기 전에 파일을 만듦(규칙이 늦게 로드) | 정상 범위. 3회 결과를 그대로 기록 |
-| Codex V4가 높음 | 모델이 읽은 파일을 지시로 취급 | 그대로 기록. transcript로 자동 로드 여부를 구분 |
+| Codex V4가 높음 | 읽은 규칙을 더 따랐을 가능성 | 그대로 기록. 명시적 파일 읽기 로그와 cwd·도구의 자동 로드 규칙을 함께 확인 |
 
 <!-- learnstead:footer:start -->
 

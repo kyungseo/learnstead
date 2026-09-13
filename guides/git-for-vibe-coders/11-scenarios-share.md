@@ -151,9 +151,9 @@ git branch -d fix-login           # 정리
 
 | 단계 | 심각도 | 해결 |
 | --- | --- | --- |
-| ① 작업 폴더에만 있음 | 😀 문제 없음 | `.gitignore`에 추가 |
+| ① 작업 폴더에만 있음 | 아직 Git에 담기지 않음 | `.gitignore`에 추가하고 다른 경로의 노출 여부 확인 |
 | ② `add`함 (커밋 전) | 🙂 쉬움 | `git restore --staged 파일` |
-| ③ 커밋함 (push 전) | 😐 가능 | `git rm --cached` + `commit --amend` |
+| ③ 마지막 커밋에만 있음 (push 전) | 기록에서 제외 필요 | `git rm --cached` + `commit --amend` |
 | ④ **push함** | 😱 **키를 바꿔야 함** | 아래 참조 |
 
 ### ② add했지만 커밋 전

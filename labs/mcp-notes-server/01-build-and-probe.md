@@ -81,7 +81,7 @@ cat notes_server.py
 | --- | --- | --- |
 | `No module named 'mcp.server.mcpserver'` | SDK 1.x 설치 | `pip install "mcp==2.1.1"` |
 | `No module named 'mcp'` | 다른 python | `setup.sh`에 준 python 경로로 실행 |
-| probe가 멈춤 | 서버가 stdout에 무언가 씀 / import 오류 | 터미널에서 `"$MCP_NOTES_PYTHON" notes_server.py`를 직접 띄워 stderr 확인, Ctrl-C |
+| probe가 멈춤 | 서버가 stdout에 MCP 외의 내용을 씀 / import 오류 | 터미널에서 `"$MCP_NOTES_PYTHON" notes_server.py`를 직접 띄워 stderr 확인, Ctrl-C |
 
 <!-- learnstead:footer:start -->
 

@@ -17,7 +17,7 @@
   <path d="M97.0 190 L97.0 198" fill="none" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1.5" marker-end="url(#ah-compute-line-1_5)"/>
   <rect x="24" y="200" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="97.0" y="216" font-size="11" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">runtime</text>
-  <text x="97.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처음 · 대부분의 앱</text>
+  <text x="97.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">처음 · 단순한 앱</text>
   <rect x="186" y="70" width="146" height="30" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="259.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">② 프레임워크</text>
   <rect x="186" y="112" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
@@ -28,7 +28,7 @@
   <path d="M259.0 190 L259.0 198" fill="none" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1.5" marker-end="url(#ah-api-line-1_5)"/>
   <rect x="186" y="200" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="259.0" y="216" font-size="11" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">runtime</text>
-  <text x="259.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">체인 3단↑ · 부품 교체 잦음</text>
+  <text x="259.0" y="258" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">복잡한 흐름 · 부품 재사용</text>
   <rect x="348" y="70" width="146" height="30" rx="9" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="421.0" y="85.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">③ 게이트웨이</text>
   <rect x="348" y="112" width="146" height="32" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />

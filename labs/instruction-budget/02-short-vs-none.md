@@ -10,6 +10,8 @@ fixture(라운드 2 상태)로 V0와 V1을 돌려 지시문의 효과를 분리�
 
 ## 1. 돌리기
 
+아래 명령은 `~/ctx-workshop/runs/`와 `results.tsv`의 기존 기록을 지웁니다. 보관할 실행 기록은 먼저 다른 곳에 복사하세요. 01의 `round1/`과 `results-round1.tsv`는 지우지 않습니다.
+
 ```bash
 cd ~/ctx-workshop && rm -rf runs results.tsv
 $FIX/scripts/batch.sh claude "V0 V1" 3
@@ -43,7 +45,7 @@ head -12 runs/claude-V1-1/tests/test_slug.py
 
 Claude V1-1의 파일을 보면 `slug.py`는 owner·한국어 docstring·타입 힌트를 모두 갖췄습니다. `tests/test_slug.py`에는 owner 주석이 있지만 `def test_slugify_basic():`에 docstring과 반환 타입이 없습니다. 규칙 "모든 함수"를 **구현 함수에만** 적용한 것입니다. 3회 중 1회는 테스트까지 적용해 5/5를 받았고, Codex는 3회 모두 테스트 함수에도 적용했습니다.
 
-여기서 배우는 것: 준수율이 낮을 때 첫 의심은 길이가 아니라 **규칙 문장의 포함 범위다**. "테스트 함수를 포함한 모든 함수"라고 썼다면 달랐을 가능성이 크다(실험하지 않음 — 재현 시 V1의 규칙 2·3을 그렇게 고쳐 비교해 보라).
+준수율이 낮다면 길이와 함께 **규칙 문장의 포함 범위를** 확인합니다. "테스트 함수를 포함한 모든 함수"라고 쓰면 달라질지는 이 실험에서 확인하지 않았습니다. 재현 시 V1의 규칙 2·3을 그렇게 고쳐 비교해 볼 수 있습니다.
 
 ## 흔한 실패 · 복구
 

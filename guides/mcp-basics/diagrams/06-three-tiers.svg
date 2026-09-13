@@ -24,5 +24,5 @@
   <rect x="156" y="226" width="500" height="54" rx="10" data-fill-role="api-fill" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="172" y="244" font-size="11.5" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">notes 서버</text>
   <text x="172" y="264" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">list_notes · read_note · search_notes — 능력 + 경로 검사 · 쓰기 미노출, 코드가 강제</text>
-  <text x="340.0" y="302" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">결과가 매번 같아야 하고 코드로 쓸 수 있으면 MCP · 판단이 필요하고 말로 쓰는 게 자연스러우면 skill</text>
+  <text x="340.0" y="302" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">여러 host에서 쓸 실행 기능은 MCP tool · 모델이 따를 절차와 판단 기준은 skill</text>
 </svg>

@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="680" height="330" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">두 파이프라인 — 색인은 정확하게, 질의는 빠르게</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">둘이 공유하는 것은 단 하나, 같은 embedding model</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">비교할 벡터는 같은 embedding model과 호환 설정으로 만든다</text>
   <rect x="24" y="68" width="632" height="96" rx="12" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="40" y="86" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">색인 시점 — 문서가 바뀔 때마다</text>
   <rect x="40" y="102" width="108" height="50" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />

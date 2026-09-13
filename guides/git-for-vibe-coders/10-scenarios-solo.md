@@ -100,7 +100,7 @@ $ git status --short
 
 `[실행 검증 · 2026-08-23]` — `restore`는 **지목한 파일만** 건드립니다. 나머지 작업은 살아남습니다.
 
-**전부 되돌리기(마지막 커밋 상태로):** `git restore .` — 단, tracked file의 커밋 안 된 작업이 **전부 사라집니다.**
+**현재 폴더 아래의 add 이후 변경을 버리기:** `git restore .` — tracked file을 staging 상태로 되돌립니다. add하지 않았다면 마지막 commit 상태와 같지만, 이미 staging에 담긴 변경까지 버리지는 않습니다.
 `git diff`로 살릴 변경이 없는지 먼저 확인하세요.
 
 ### 3-2. 이미 커밋했다
@@ -182,9 +182,11 @@ git branch -D try-blue   # 폐기
 | 알고 싶은 것 | 명령 | 출력 |
 | --- | --- | --- |
 | **어떤 파일이** 바뀌었나 | `git status --short` | `M index.html` / `?? style.css` |
-| **어떤 줄이** 바뀌었나 (아직 커밋 전) | `git diff` | `+<p>새 문단</p>` 처럼 +/− 로 |
+| **어떤 줄이** 바뀌었나 (add 이후) | `git diff` | `+<p>새 문단</p>` 처럼 +/− 로 |
 | 얼마나 바뀌었나 (요약) | `git diff --stat` | `index.html \| 1 +` |
 | **마지막 커밋이** 무엇을 바꿨나 | `git show --stat HEAD` | 커밋 정보 + 파일 목록 |
+
+이미 add한 변경은 `git diff --staged`로 별도 확인합니다.
 
 실제 출력 예:
 

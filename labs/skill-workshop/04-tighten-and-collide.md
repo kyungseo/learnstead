@@ -90,7 +90,7 @@ rmdir ~/.agents/skills ~/.agents 2>/dev/null
 
 **v1.1 수렴**: Codex 2/2 PASS, Claude Code 2/2 PASS. 규칙 한 줄로 5행이 4행이 됐다. Codex 토큰은 v1.0 약 15,000에서 v1.1 약 13,500으로 오히려 줄었다(본문은 길어졌지만 출력이 짧아짐).
 
-**겹치는 description**: "회의록 정리해 줘" → Claude Code 3/3 `notes-summary`, Codex 1/1 `notes-summary`(transcript에 `.agents/skills/notes-summary/SKILL.md` 읽는 줄). "액션 아이템을 정리해 줘" → `meeting-actions`. 두 description이 각자 "정리"와 "액션 아이템"을 갖고 있었고, 모델은 요청의 단어를 그대로 대조했다.
+**겹치는 description**: "회의록 정리해 줘" → Claude Code 3/3 `notes-summary`, Codex 1/1 `notes-summary`(transcript에 `.agents/skills/notes-summary/SKILL.md` 읽는 줄). "액션 아이템을 정리해 줘" → `meeting-actions`. 두 description이 각자 "정리"와 "액션 아이템"을 갖고 있었고, 요청 어휘에 따라 선택 결과가 달랐다. 내부 판단 과정을 직접 확인한 것은 아니다.
 
 **같은 이름**:
 

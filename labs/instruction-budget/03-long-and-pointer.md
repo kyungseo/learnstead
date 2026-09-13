@@ -42,15 +42,15 @@ grep -l RULES runs/claude-V3-*/out.json | wc -l      # pointer를 읽었나(결�
 | V3 pointer | **9/15** (3·3·3) | 테스트 함수 docstring·타입 힌트 | 14/15 (5·5·4) | docstring 1회 |
 | V3i import | 13/15 (5·5·3) | 1회만 테스트 함수 | 14/15 (5·4·5) | docstring 1회 |
 
-- **Codex는 희석됐습니다.** V1 15 → V2 10. 176줄 속의 "한국어 docstring"을 3회 모두 놓치고 `"""Convert text to a lowercase, hyphen-separated slug."""`처럼 영어로 썼습니다.
-- **Claude는 V1과 V2가 같았다**(11 = 11). 놓친 항목도 같다(테스트 함수). 길이 효과가 있었더라도 이 실험의 규칙 모호함에 가려졌을 수 있습니다.
-- **Claude의 pointer(9) < import(13).** V3 3회 모두 결과 텍스트에 "RULES.md를 따랐다"는 언급이 있었는데도 점수는 낮았습니다. 읽었지만 덜 따랐습니다. Codex는 `@`가 문자 그대로라 V3와 V3i가 같은 조건이었고 둘 다 14점이었습니다.
+- **Codex는 긴 지시문 조건에서 점수가 낮았습니다.** V1 15 → V2 10. 176줄 속의 "한국어 docstring"을 3회 모두 놓치고 `"""Convert text to a lowercase, hyphen-separated slug."""`처럼 영어로 썼습니다.
+- **Claude는 V1과 V2의 점수가 같았습니다**(11 = 11). 놓친 항목도 같았습니다(테스트 함수). 길이 효과가 있었더라도 이 실험의 규칙 모호함에 가려졌을 수 있습니다.
+- **Claude의 pointer(9) < import(13).** V3 3회 모두 결과 텍스트에 "RULES.md를 따랐다"는 언급이 있었는데도 점수는 낮았습니다. 다만 결과 텍스트의 자기 보고만으로 실제 읽기 여부를 입증할 수는 없습니다. Codex는 `@`가 문자 그대로라 V3와 V3i가 같은 조건이었고 둘 다 14점이었습니다.
 
 ## 흔한 실패 · 복구
 
 | 증상 | 원인 | 복구 |
 | --- | --- | --- |
-| Codex V2가 만점 | 모델·버전 차이 | 그대로 기록. V2를 250줄 이상으로 늘려 재시도 |
+| Codex V2가 만점 | 모델·버전 차이 | 그대로 기록. 길이를 바꾸는 추가 실험은 원래 결과와 구분 |
 | Claude V3가 pointer를 안 읽음 | 판단에 맡긴 결과 | 정상. pointer 문장에 "`.py`를 만들기 전에 읽는다"를 붙여 비교해 보라 |
 
 <!-- learnstead:footer:start -->

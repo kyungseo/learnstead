@@ -99,10 +99,10 @@
 
 | 명령 | 무슨 일이 일어나나 |
 | --- | --- |
-| `git reset --hard` | **커밋 안 된 작업이 복구 불가능하게 삭제** ([05 §4](05-commits-and-undo.md)에서 실제 확인) |
+| `git reset --hard` | **추적 파일의 미커밋 수정을 잃을 수 있으며 Git 복구는 보장되지 않음** ([05 §4](05-commits-and-undo.md)에서 실제 확인) |
 | `git restore .` (점) | 현재 폴더 아래 tracked file의 미커밋 변경을 한꺼번에 버림 |
 | `git push --force` / `-f` | 원격의 남의 커밋을 덮어씀. 협업 중이면 사고 |
-| `git clean -fd` | **Git이 모르는 파일들을 삭제** (새로 만든 파일 전부) |
+| `git clean -fd` | **Git이 모르는 파일들을 삭제** (기본적으로 ignore 대상은 제외) |
 | `git checkout -f` / `--force` | 작업 중인 변경을 버림 |
 | `git branch -D` | merge되지 않은 branch도 강제로 삭제 |
 | `git filter-repo` / `filter-branch` | 기록 전체를 다시 씀 |
@@ -132,7 +132,7 @@ git show --stat HEAD        # 마지막 커밋에 무슨 파일이 들어갔나
 
 **확인 포인트 셋:**
 
-1. **Secret 파일이 안 들어갔나** — `git show --stat HEAD`의 파일 목록
+1. **비밀값이 안 들어갔나** — `git show --stat HEAD`로 파일 목록을 보고 실제 diff 내용도 확인
 2. **한 커밋에 여러 일이 섞이지 않았나** — 섞였으면 나중에 되돌리기 어려움
 3. **메시지가 읽을 만한가** — `update` 같은 메시지면 다시 쓰게 하기
 
