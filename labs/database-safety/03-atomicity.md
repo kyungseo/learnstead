@@ -21,13 +21,13 @@
 
 ## 시나리오 B — 작업 중간에 실패
 
-트랜잭션(transaction)은 여러 DB 변경을 하나의 작업으로 묶는 단위입니다. 작업이 성공하면 함께 확정하고, 실패하면 그 작업의 변경을 되돌릴 수 있습니다. `[원리]` [PostgreSQL 트랜잭션 설명](https://www.postgresql.org/docs/current/tutorial-transactions.html)
+트랜잭션(transaction)은 여러 DB 변경을 하나의 작업으로 묶는 단위입니다. 작업이 성공하면 함께 확정하고, 실패하면 그 작업의 변경을 되돌릴 수 있습니다. `원리` [PostgreSQL 트랜잭션 설명](https://www.postgresql.org/docs/current/tutorial-transactions.html)
 
 검증 코드는 일부러 실패하는 작업을 수행한 뒤, 중간에 만들려던 변경이 남았는지 확인합니다. 실패 자체가 성공 판정은 아닙니다. **처음 상태와 실패 후 상태를 비교해 부분 변경이 남지 않았는지** 확인해야 합니다.
 
 ## 실행 결과에서 확인하기
 
-[공통 실행](README.md)의 동시 신청과 원자성 항목을 읽습니다. 결과를 보기 전에 예상치를 적어 보세요.
+결과를 보기 전에 예상치를 적고 [공통 실행](README.md)을 진행합니다. `관찰 [03] 마지막 자리 동시 신청`의 `success`, `rows`, `owner`와 `강제 오류 전후`의 `before`, `after`, `remainingChanges`를 비교합니다. 예상의 `owner`는 성공 응답을 받은 사용자이며, 실제의 `owner`는 저장된 신청의 소유자입니다.
 
 | 항목 | 실행 전 예상 | 실제 결과 |
 | --- | --- | --- |

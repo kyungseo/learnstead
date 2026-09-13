@@ -21,13 +21,13 @@
 
 ## migration 읽기
 
-튜토리얼의 `supabase/migrations/20260913000100_initial.sql`은 처음 구조를 만들고, `20260913000200_registration_note.sql`은 그다음 변경을 기록합니다. migration은 **DB가 어떤 순서로 달라졌는지 재현할 수 있게 남긴 SQL**입니다. `[문서 확인 · 2026-09-13]` [Supabase migration 안내](https://supabase.com/docs/guides/deployment/database-migrations)
+튜토리얼의 `supabase/migrations/20260913000100_initial.sql`은 처음 구조를 만들고, `20260913000200_registration_note.sql`은 그다음 변경을 기록합니다. migration은 **DB가 어떤 순서로 달라졌는지 재현할 수 있게 남긴 SQL**입니다. `문서 확인 · 2026-09-13` [Supabase migration 안내](https://supabase.com/docs/guides/deployment/database-migrations)
 
 이번에는 열을 추가하는 작은 변경입니다. 열 삭제·타입 변경·이름 변경·대량 데이터 변환은 보존할 값과 앱 호환성을 따로 검토해야 합니다. 기본값만 넣으면 모든 변경이 안전하다는 뜻은 아닙니다.
 
 ## 실행 결과에서 볼 것
 
-[공통 실행](README.md)은 기존 데이터가 있는 변경 검사를 격리된 DB에서 수행합니다. 원래 DB의 SQL 파일을 손으로 고치거나 운영 DB를 초기화하지 않습니다.
+[공통 실행](README.md)은 기존 데이터가 있는 변경 검사를 격리된 DB에서 수행합니다. `관찰 [05] 메모 열 추가 전후 신청`의 실제 `before`와 `after`에서 ID·사용자·모임·메모를 옮겨 적습니다. `행 수와 기본값`에는 전후 행 수와 빈 메모 수(`emptyNotes`)가 나옵니다. 원래 DB의 SQL 파일을 손으로 고치거나 운영 DB를 초기화하지 않습니다.
 
 | 비교 항목 | 변경 전 | 변경 후 |
 | --- | --- | --- |

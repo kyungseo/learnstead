@@ -41,9 +41,9 @@ A와 B가 같은 모임에 각각 신청했습니다. A·B의 인증 토큰은 �
 
 ## 실행과 기록
 
-[공통 실행](README.md) 결과에서 사용자별 접근 항목을 찾습니다. 아래 네 가지를 한 줄씩 기록하세요.
+[공통 실행](README.md)의 `관찰 [04]`에서 아래 네 요청을 찾습니다. `http`는 응답 상태, `returned`는 반환된 목록, `owner`는 B가 다시 읽은 신청입니다. 위조 생성의 `forgedRows`는 B가 다시 조회한 값이 아니라 검증 도구가 DB에서 직접 센 위조 행 수입니다. 조회 항목의 `ownerRows`는 B가 다시 읽은 행 수입니다. 예상과 실제를 대조해 기록하세요.
 
-| 요청자 | 작업·대상 | 응답 | 소유자가 다시 본 상태 |
+| 요청자 | 작업·대상 | 응답 | 재조회 또는 DB 확인 |
 | --- | --- | --- | --- |
 | A | B의 신청 조회 | | |
 | A | B 소유로 신청 생성 | | |
@@ -54,7 +54,7 @@ A와 B가 같은 모임에 각각 신청했습니다. A·B의 인증 토큰은 �
 
 ## 관리자 권한으로 대신 검사하지 않기
 
-관리자 도구는 데이터를 모두 볼 수 있어도 이상하지 않을 수 있습니다. 일반 사용자의 접근을 검증할 때 관리자 키나 DB 소유자 연결을 쓰면 검사하려던 규칙을 건너뛸 수 있습니다. `[문서 확인 · 2026-09-13]` [Supabase RLS](https://supabase.com/docs/guides/database/postgres/row-level-security), [API 키의 권한](https://supabase.com/docs/guides/getting-started/api-keys)
+관리자 도구는 데이터를 모두 볼 수 있어도 이상하지 않을 수 있습니다. 일반 사용자의 접근을 검증할 때 관리자 키나 DB 소유자 연결을 쓰면 검사하려던 규칙을 건너뛸 수 있습니다. `문서 확인 · 2026-09-13` [Supabase RLS](https://supabase.com/docs/guides/database/postgres/row-level-security), [API 키의 권한](https://supabase.com/docs/guides/getting-started/api-keys)
 
 > “각 요청이 A·B·비로그인 중 누구의 권한으로 실행됐는지 표시해 줘. 응답 상태뿐 아니라 반환된 행 수와 실제 변경 결과를 비교해. 관리자 권한으로 통과한 결과는 일반 사용자 검사로 세지 마.”
 

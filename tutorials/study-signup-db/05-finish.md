@@ -67,11 +67,11 @@ DB가 필요한 앱을 AI에게 맡길 때도 이 표부터 작성하면 무엇�
 
 이 튜토리얼은 인터넷 공개 배포까지 완료했다는 뜻이 아닙니다. 클라우드 프로젝트의 설정·메일 인증·주소·비밀값·요금·백업 조건을 따로 확인해야 합니다. 로컬 계정과 예제 비밀번호를 운영 환경에 옮기지 않습니다.
 
-Supabase는 migration을 이용해 DB 구조 변경을 관리하는 경로를 안내합니다. `[문서 확인 · 2026-09-13]` [공식 migration 문서](https://supabase.com/docs/guides/deployment/database-migrations). 해당 클라우드 경로는 이 자료에서 실행 검증하지 않았습니다.
+Supabase는 migration을 이용해 DB 구조 변경을 관리하는 경로를 안내합니다. `문서 확인 · 2026-09-13` [공식 migration 문서](https://supabase.com/docs/guides/deployment/database-migrations). 해당 클라우드 경로는 이 자료에서 실행 검증하지 않았습니다.
 
 ## 다음 학습
 
-[저장됐다고 끝이 아니다](../../labs/database-safety/README.md)에서는 화면이 정상이어도 놓칠 수 있는 실패 여섯 가지를 확인합니다. 저장·제약조건·동시 요청·사용자별 접근·기존 데이터의 구조 변경·복원까지, 조건을 하나씩 바꿔 보고 결과로 판정합니다.
+[저장됐다고 끝이 아니다](../../labs/database-safety/README.md)에서는 화면이 정상이어도 놓칠 수 있는 실패 여섯 가지를 확인합니다. 저장은 SQLite로 비교하고, 나머지는 고정된 시나리오를 검증 도구가 차례로 실행합니다. 실행 전에 예상한 값과 도구가 출력한 실제 응답·행 수·변경 전후 값을 대조해 판정합니다.
 
 <!-- learnstead:footer:start -->
 
