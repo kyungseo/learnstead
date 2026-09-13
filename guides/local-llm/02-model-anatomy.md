@@ -88,7 +88,7 @@ framework 자체 memory, graphics driver 예약분이 포함됩니다. model 구
 **"7B는 14GB"의 정체:** 7×10⁹ 개 × 2 byte = 14×10⁹ byte ≈ 14 GB. 그뿐이다. `[원리]`
 
 > **왜 4bit를 많이 쓰나.** 이론상 FP16 weight의 1/4 크기라 같은 memory에 더 큰 model을 넣을 수 있습니다.
-> 품질 손실은 model, quantization 방식과 task에 따라 달라지므로 “체감되지 않는다”고 일반화하지 않습니다. 원리와
+> 품질 손실은 model, quantization 방식과 task에 따라 달라지며, 체감할 만큼 클 수도 있습니다. 원리와
 > 선택 기준은 [03](03-quantization.md)에서 다룹니다.
 
 ### 실측이 계산보다 큰 이유

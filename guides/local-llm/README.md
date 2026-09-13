@@ -82,7 +82,7 @@ Mac에서 실제로 확인했습니다. `[실행 검증 · 2026-08-11]`
 
 NVIDIA GPU가 있는 Linux 또는 Windows+WSL2 환경이라면 [NVIDIA 단일 GPU 설정](07-setup-nvidia-workstation.md),
 여러 GPU에 한 모델을 나눠 올리려면 [멀티 GPU 서버 설정](08-setup-multi-gpu-server.md)으로 이동합니다. 이 두
-경로는 현재 문서 확인 상태이며, 실제 실행 검증 전에는 그대로 동작한다고 보장하지 않습니다.
+경로는 문서로만 확인했으며, 실제 장비에서는 실행해 보지 않았습니다.
 
 ### 테스트를 마친 뒤
 

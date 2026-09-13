@@ -45,7 +45,7 @@ MongoDB의 유연한 구조도 모델링을 없애 주지는 않습니다. 검�
 
 ## 이 시리즈의 학습 경로
 
-먼저 SQLite로 저장과 규칙 위반을 짧게 관찰합니다. 그다음 [신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)에서 로컬 Supabase/PostgreSQL로 사용자별 접근을 배웁니다. MySQL·MongoDB·Firestore는 비교 설명이며 이 시리즈에서 실행했다고 주장하지 않습니다. 클라우드 가입, 유료 요금제, 실제 개인정보 없이 학습하는 경로를 기준으로 삼았습니다.
+먼저 SQLite로 저장과 규칙 위반을 짧게 관찰합니다. 그다음 [신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)에서 로컬 Supabase/PostgreSQL로 사용자별 접근을 배웁니다. MySQL·MongoDB·Firestore는 문서로 비교했으며, 이 시리즈에서 직접 실행하지는 않았습니다. 클라우드 가입, 유료 요금제, 실제 개인정보 없이 학습하는 경로를 기준으로 삼았습니다.
 
 ## AI에게 부탁할 말
 
