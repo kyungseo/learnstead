@@ -20,8 +20,8 @@
     <g stroke="var(--edge-line)" stroke-width="0.8" opacity="0.85">
       <line x1="160" y1="66" x2="160" y2="78"/><line x1="168" y1="67" x2="168" y2="77"/><line x1="176" y1="67" x2="176" y2="77"/><line x1="184" y1="67" x2="184" y2="77"/><line x1="192" y1="67" x2="192" y2="77"/><line x1="200" y1="67" x2="200" y2="77"/><line x1="208" y1="67" x2="208" y2="77"/><line x1="216" y1="67" x2="216" y2="77"/><line x1="224" y1="67" x2="224" y2="77"/><line x1="232" y1="67" x2="232" y2="77"/><line x1="240" y1="67" x2="240" y2="77"/><line x1="248" y1="67" x2="248" y2="77"/><line x1="256" y1="67" x2="256" y2="77"/><line x1="264" y1="67" x2="264" y2="77"/><line x1="272" y1="67" x2="272" y2="77"/><line x1="280" y1="67" x2="280" y2="77"/><line x1="288" y1="67" x2="288" y2="77"/><line x1="296" y1="67" x2="296" y2="77"/><line x1="304" y1="67" x2="304" y2="77"/><line x1="312" y1="67" x2="312" y2="77"/><line x1="320" y1="67" x2="320" y2="77"/><line x1="328" y1="67" x2="328" y2="77"/><line x1="336" y1="67" x2="336" y2="77"/><line x1="344" y1="67" x2="344" y2="77"/><line x1="352" y1="67" x2="352" y2="77"/><line x1="360" y1="67" x2="360" y2="77"/><line x1="368" y1="67" x2="368" y2="77"/><line x1="376" y1="67" x2="376" y2="77"/><line x1="384" y1="67" x2="384" y2="77"/><line x1="392" y1="67" x2="392" y2="77"/><line x1="400" y1="67" x2="400" y2="77"/><line x1="408" y1="67" x2="408" y2="77"/><line x1="416" y1="67" x2="416" y2="77"/><line x1="424" y1="67" x2="424" y2="77"/><line x1="432" y1="67" x2="432" y2="77"/><line x1="440" y1="67" x2="440" y2="77"/><line x1="448" y1="67" x2="448" y2="77"/><line x1="456" y1="67" x2="456" y2="77"/><line x1="464" y1="67" x2="464" y2="77"/><line x1="472" y1="67" x2="472" y2="77"/><line x1="480" y1="67" x2="480" y2="77"/><line x1="488" y1="67" x2="488" y2="77"/><line x1="496" y1="67" x2="496" y2="77"/><line x1="504" y1="67" x2="504" y2="77"/><line x1="512" y1="67" x2="512" y2="77"/><line x1="520" y1="67" x2="520" y2="77"/><line x1="528" y1="67" x2="528" y2="77"/><line x1="536" y1="67" x2="536" y2="77"/><line x1="544" y1="67" x2="544" y2="77"/><line x1="552" y1="67" x2="552" y2="77"/><line x1="560" y1="66" x2="560" y2="78"/>
     </g>
-    <text x="576" y="64" font-size="11.5" fill="var(--muted)" dominant-baseline="central">65,536 눈금</text>
-    <text x="576" y="80" font-size="12" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">→ 0.4823</text>
+    <text x="576" y="64" font-size="11.5" fill="var(--muted)" dominant-baseline="central">비균일 간격</text>
+    <text x="576" y="80" font-size="12" font-weight="700" fill="var(--edge-ink)" dominant-baseline="central">근삿값 저장</text>
   </g>
 
   <!-- INT8: 성긴 눈금 (25px 간격) -->
@@ -52,5 +52,5 @@
   </g>
 
   <rect x="24" y="252" width="632" height="34" rx="10" fill="var(--warn-fill)" stroke="var(--warn-line)" stroke-width="1"/>
-  <text x="340" y="269" font-size="12" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">실제 포맷은 블록별 배율(scale)로 눈금 간격을 조정해 이 그림보다 오차가 훨씬 작다 (본문 참조)</text>
+  <text x="340" y="269" font-size="12" fill="var(--warn-ink)" text-anchor="middle" dominant-baseline="central">정수 눈금은 개념 예시 · FP16은 비균일 간격 · 실제 오차는 방식과 배율에 따라 다름</text>
 </svg>

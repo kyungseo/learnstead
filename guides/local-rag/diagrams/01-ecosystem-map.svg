@@ -25,7 +25,7 @@
   <rect x="510" y="74" width="146" height="78" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="583.0" y="96.5" font-size="13" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">④ 저장소</text>
   <text x="583.0" y="112.0" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">vector: Chroma·pgvector</text>
-  <text x="583.0" y="127.5" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">graph: Neo4j · Kuzu</text>
+  <text x="583.0" y="127.5" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">graph: Neo4j · FalkorDB</text>
   <rect x="24" y="196" width="146" height="78" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="97.0" y="218.5" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">⑤ 검색·재정렬</text>
   <text x="97.0" y="234.0" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">dense · BM25 · hybrid</text>

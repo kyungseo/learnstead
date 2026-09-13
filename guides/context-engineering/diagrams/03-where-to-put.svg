@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="680" height="352" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">짧은 진입 지시문 + 필요한 곳에 조건부</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">pointer는 조건부 로드가 아니다 — 도구의 기제를 쓴다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">pointer만으로 자동 로드는 보장되지 않는다</text>
   <rect x="24" y="74" width="160" height="42" rx="10" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
   <text x="104" y="95.0" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">모든 작업 · 짧다</text>
   <path d="M184 95.0 L206 95.0" fill="none" data-stroke-role="data-line" stroke="#636A75" stroke-width="1.5" marker-end="url(#ah-data-line-1.5)"/>

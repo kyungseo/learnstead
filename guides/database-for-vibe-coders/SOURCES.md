@@ -21,7 +21,7 @@
 | [Firestore 데이터 모델](https://firebase.google.com/docs/firestore/data-model) | 문서·컬렉션을 통한 모델링 | 02·03 |
 | [Firestore Security Rules](https://firebase.google.com/docs/firestore/security/get-started) | 클라이언트 규칙과 서버 접근 경로의 구분 | 06 |
 | [Firestore 과금](https://firebase.google.com/docs/firestore/pricing) | 읽기·쓰기 등의 사용량, 리스너 읽기 비용 | 08 |
-| [Supabase API 키](https://supabase.com/docs/guides/getting-started/api-keys) | publishable과secret/service-role의 권한 차이 | 06 |
+| [Supabase API 키](https://supabase.com/docs/guides/getting-started/api-keys) | publishable과 secret/service-role의 권한 차이 | 06 |
 | [Supabase RLS](https://supabase.com/docs/guides/database/postgres/row-level-security) | 행 단위 정책, 역할별 접근, 사용자 권한으로 확인 | 06 |
 | [Supabase migration](https://supabase.com/docs/guides/deployment/database-migrations) | 파일로 DB 변경 관리, 로컬과 원격 적용의 구분 | 07 |
 | [Supabase 백업](https://supabase.com/docs/guides/platform/backups) | DB 백업에 Storage 파일 본체가 포함되지 않는 범위 | 08 |

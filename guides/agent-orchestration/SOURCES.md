@@ -25,7 +25,7 @@
 | --- | --- | --- | --- |
 | 워크플로와 agent의 구분, 기본 패턴 | 프롬프트 체이닝·라우팅·병렬화·오케스트레이터-워커·평가자-최적화기 | [Building effective agents (Anthropic)](https://www.anthropic.com/engineering/building-effective-agents) | 문서 확인 |
 | 멀티 agent 아키텍처 선택 | 서브에이전트·핸드오프·라우터의 트레이드오프 | [Choosing the right multi-agent architecture (LangChain)](https://www.langchain.com/blog/choosing-the-right-multi-agent-architecture) | 자료 확인 |
-| 컨텍스트 격리의 효과 | 서브에이전트가 토큰을 줄이는 구조적 이유 | 공개 비교 자료 (아래 2차 자료) | 자료 확인 |
+| 컨텍스트 격리의 효과 | 요약 반환이 부모에게 전달되는 분량을 줄일 수 있음. 총 토큰 감소 보장은 아님 | [실습 검증 기록](../../labs/when-splitting-fails/VALIDATION.md) | 해당 실습 범위의 해석 |
 | 오케스트레이션 패턴 성능·트레이드오프 | 코디네이터 패턴 비교 | [Orchestration patterns for multi-agent systems (Microsoft ISE)](https://devblogs.microsoft.com/ise/coordinator-patterns-multi-agent-systems/) | 자료 확인 |
 
 ## 프레임워크 (2026-08-30 조회)

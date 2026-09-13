@@ -57,7 +57,7 @@
 
 ## 함께 보는 실습
 
-[나눴더니 틀렸다 — 패턴별 실측과 실패 재현](../../labs/when-splitting-fails/README.md)이 다섯 방식을 한 스크립트로 돌립니다. Ollama와 Python 환경을 준비하면 스크립트로 실행할 수 있습니다. 측정 결과부터 확인하고 싶다면 실습에서 시작해도 됩니다. `[실행 검증 · 2026-08-30]`
+[나눴더니 틀렸다 — 패턴별 실측과 실패 재현](../../labs/when-splitting-fails/README.md)이 다섯 방식을 한 스크립트로 돌립니다. Ollama와 Python 환경을 준비하면 스크립트로 실행할 수 있습니다. 아래 명령은 실습 폴더 `labs/when-splitting-fails/`에서 시작합니다. 측정 결과부터 확인하고 싶다면 실습에서 시작해도 됩니다. `[실행 검증 · 2026-08-30]`
 
 ```bash
 ollama pull gemma3:4b && pip install openai

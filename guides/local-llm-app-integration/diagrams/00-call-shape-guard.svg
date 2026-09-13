@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img" style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
   <title>Call, Shape, Guard로 완성하는 Local LLM 앱</title>
-  <desc>내 프로그램이 전체 대화 기록으로 runtime을 호출하고, 응답 형태를 고정한 뒤 도구 권한과 실행 상한으로 결과를 통제하는 세 단계.</desc>
+  <desc>내 프로그램이 필요한 대화 기록으로 runtime을 호출하고, 응답 형태를 고정한 뒤 도구 권한과 실행 상한으로 결과를 통제하는 세 단계.</desc>
   <defs><marker id="arrow" viewBox="0 0 12 12" refX="9" refY="6" markerWidth="8" markerHeight="8" markerUnits="userSpaceOnUse" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#2E6DA4" stroke-width="2" stroke-linecap="round"/></marker></defs>
   <rect width="680" height="300" fill="#fff"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" fill="#2E6DA4"/>

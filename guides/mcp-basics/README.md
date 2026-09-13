@@ -19,7 +19,7 @@ AI Agent가 내 노트·데이터베이스·사내 API를 사용하게 하려면
 
 - MCP의 **host · client · server를** 구분하고 모델과 실제 실행 사이의 경계를 설명할 수 있습니다.
 - 서버가 주는 **tools · resources · prompts와** tool 정의·결과·오류 두 종류를 구분할 수 있습니다.
-- **stdio와** **Streamable HTTP를** 구분하고 stdio 서버의 규칙(stdout 금지)을 지킬 수 있습니다.
+- **stdio와** **Streamable HTTP를** 구분하고 stdio 서버의 규칙(MCP 외 stdout 출력 금지)을 지킬 수 있습니다.
 - Claude Code·Codex에 서버를 **등록·확인·제거하고** 비-대화형으로 호출할 수 있습니다.
 - 권한을 **서버·데이터 권한 · annotation · host 승인** 세 겹으로 보고, 어느 층이 실제로 막는지 실측으로 확인할 수 있습니다.
 - skill(절차)과 MCP(능력)를 역할로 구분하고 함께 쓸 수 있습니다.

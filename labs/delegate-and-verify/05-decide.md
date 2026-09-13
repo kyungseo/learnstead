@@ -48,7 +48,7 @@ python3 scripts/summarize.py runs/main --md > ../results/my-summary.md
 
 비교 조건이 다르거나 결과를 확인하지 못했으면 유지·되돌림을 강제하지 말고 **보완 후 재측정**으로 남깁니다. 특히 worktree 실험은 편집 시간과 통합 완료 시간을 구분합니다.
 
-reset: `rm -rf runs` (fixture/ 안에서)
+필요한 실행 기록과 변경을 별도로 보관한 뒤 초기화합니다: `rm -rf runs` (fixture/ 안에서). `runs/` 아래 결과와 작업 폴더가 삭제됩니다.
 
 <!-- learnstead:footer:start -->
 

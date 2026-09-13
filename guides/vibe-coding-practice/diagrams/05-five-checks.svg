@@ -18,7 +18,7 @@
   <rect x="174" y="122" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
   <text x="184" y="141" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">빈칸·긴 글자·특수문자</text>
   <rect x="374" y="122" width="200" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
-  <text x="384" y="141" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">조용히 깨지지 않나</text>
+  <text x="384" y="141" font-size="10" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">잘못된 입력을 안내하나</text>
   <rect x="24" y="168" width="140" height="38" rx="8" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="34" y="187" font-size="11.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">③ 껐다 켜기</text>
   <rect x="174" y="168" width="190" height="38" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />

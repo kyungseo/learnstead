@@ -10,7 +10,7 @@
   <text x="74" y="99.0" font-size="12.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">항상</text>
   <rect x="136" y="74" width="520" height="50" rx="10" data-fill-role="edge-fill" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="152" y="91" font-size="11.5" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="start" dominant-baseline="central">진입 지시문 — CLAUDE.md · AGENTS.md · GEMINI.md</text>
-  <text x="152" y="110" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">세션 시작 시 연결되어 로드. 짧은 규칙·명령·라우팅. 압축 후 재주입</text>
+  <text x="152" y="110" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">세션 시작 시 연결되어 로드. 짧은 규칙·명령·라우팅. Claude Code는 압축 후 재주입</text>
   <rect x="24" y="136" width="100" height="50" rx="10" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="74" y="161.0" font-size="12.5" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">조건부</text>
   <rect x="136" y="136" width="520" height="50" rx="10" data-fill-role="compute-fill" fill="#FFFFFF" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />

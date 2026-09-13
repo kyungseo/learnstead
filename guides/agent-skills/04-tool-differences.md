@@ -41,7 +41,7 @@
 | Gemini CLI | — (모델 경유) | `activate_skill` tool 호출 | 본문 + 폴더 구조가 대화에 삽입, skill 폴더가 허용 경로에 추가 | **있음** — 이름·목적·접근 경로를 보여 주고 확인 요청 |
 | Cursor | `/`로 검색·선택, custom mode | 설명 보고 선택 | (문서에 미기재) | 없음 |
 
-Claude Code와 Codex의 삽입 방식 차이는 실습 로그에서 그대로 보입니다. Claude Code는 `Skill` tool 호출 한 번으로 본문이 들어오고, Codex는 shell 명령으로 `SKILL.md`를 읽는 단계가 transcript에 남습니다 [실행 검증 · 실습 01·03]. 결과는 같아도 **비용 구조가 다릅니다.** Codex는 파일을 읽는 tool 호출 한 턴이 더 듭니다.
+Claude Code와 Codex의 삽입 방식 차이는 실습 로그에서 그대로 보입니다. Claude Code는 `Skill` tool 호출 한 번으로 본문이 들어오고, Codex는 shell 명령으로 `SKILL.md`를 읽는 단계가 transcript에 남습니다 [실행 검증 · 실습 01·03]. 이 로그에서는 본문을 읽는 방식이 달랐습니다. 다만 두 방식 모두 컨텍스트와 호출을 사용하므로, 이 차이만으로 **전체 비용의 우열을** 판단할 수는 없습니다.
 
 ## 3. 같은 이름이 둘이면
 
@@ -52,7 +52,7 @@ Claude Code와 Codex의 삽입 방식 차이는 실습 로그에서 그대로 �
 | Gemini CLI | 워크스페이스 > 사용자 > extension > built-in. 높은 쪽이 이김 | [문서 확인] |
 | Cursor | (문서에 미기재) | — |
 
-Claude Code와 Codex의 방향이 **반대라는** 점을 기억해 두면 좋습니다. Claude Code는 개인 사본이 프로젝트 사본을 덮고, Codex는 관측상 저장소 사본이 홈 사본보다 먼저 선택됐습니다. 팀 skill을 개인 폴더에 복사해 두고 잊으면 Claude Code에서는 팀 버전이 조용히 무시됩니다.
+이 실험에서는 두 도구가 선택한 사본이 **달랐습니다.** Claude Code는 개인 사본이 프로젝트 사본을 덮고, Codex는 관측상 저장소 사본이 홈 사본보다 먼저 선택됐습니다. 팀 skill을 개인 폴더에 복사해 두고 잊으면 Claude Code에서는 팀 버전이 조용히 무시됩니다.
 
 ## 4. 무엇이 있는지 확인하는 법
 
@@ -94,7 +94,7 @@ Claude Code에서 skill이 실제로 호출됐는지는 `stream-json` 출력의 
 ## 이 장을 끝내면
 
 - 네 도구의 skill 경로를 확인하고, `.agents/skills`가 왜 여러 도구의 공통 자리인지 설명할 수 있습니다.
-- Claude Code와 Codex의 충돌 규칙이 반대 방향임을 알 수 있습니다.
+- 문서의 충돌 규칙과 적은 횟수로 관측한 선택 결과를 구분할 수 있습니다.
 - 내 환경에 어떤 skill이 로드됐는지 터미널에서 확인할 수 있습니다.
 
 <!-- learnstead:footer:start -->

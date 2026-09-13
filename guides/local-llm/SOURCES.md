@@ -6,7 +6,8 @@
 
 **내 장비에서 LLM 직접 실행하기**에서 version에 따라 달라질 수 있는 핵심 정보와 그 근거가 되는 1차 자료를 연결합니다.
 
-- 마지막 확인일: 2026-08-10
+- 마지막 전체 확인일: 2026-08-10
+- 2026-09-13 부분 확인: 양자화의 오차·배율 설명, [KV cache의 구조와 적용 범위](https://huggingface.co/docs/transformers/cache_explanation), [llama.cpp 서버의 GPU layer 옵션](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)을 다시 대조했습니다. 모델·장비 목록과 기존 실행 결과를 갱신한 것은 아닙니다.
 - `문서 확인`은 아래 공식 문서·model card를 읽었다는 뜻이며, 명령 실행 성공을 뜻하지 않습니다.
 - URL의 내용이 바뀔 수 있으므로 중요한 구성 변경 전에는 다시 확인합니다.
 

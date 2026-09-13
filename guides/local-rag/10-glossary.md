@@ -15,7 +15,7 @@
 | 용어 | 뜻 |
 | --- | --- |
 | **RAG (Retrieval-Augmented Generation, 검색 증강 생성)** | 질문 시점에 관련 문서 조각을 찾아 프롬프트에 넣고 답하게 하는 방식. 모델 가중치는 바꾸지 않음 ([01 §0](01-ecosystem-map.md)) |
-| **검색(retrieval)** | 질문과 관련된 조각을 찾아오는 단계. RAG 품질의 대부분이 여기서 갈림 ([03](03-pipeline-anatomy.md)) |
+| **검색(retrieval)** | 질문과 관련된 조각을 찾아오는 단계. 생성 단계와 나눠 품질을 확인해야 함 ([03](03-pipeline-anatomy.md)) |
 | **생성(generation)** | 찾아온 조각을 읽고 답을 쓰는 단계. LLM의 역할 ([06](06-generation-and-grounding.md)) |
 | **색인 시점 / 질의 시점(indexing / query time)** | 문서를 준비하는 파이프라인과 질문에 답하는 파이프라인. 같은 embedding model을 공유 ([03 §0](03-pipeline-anatomy.md)) |
 | **근거 고정(grounding)** | 답을 제공된 조각 안의 내용으로만 쓰게 하고 출처를 붙이는 것 ([06 §2](06-generation-and-grounding.md)) |
@@ -54,7 +54,7 @@
 | **겹침(overlap)** | 인접 조각이 경계 부분을 공유하게 하는 것. 경계에서 문맥이 잘리는 것을 완화 ([05 §1.3](05-chunking-and-retrieval-quality.md)) |
 | **재귀 분할(recursive splitting)** | 절→단락→문장 순으로 경계를 찾아 자르는 방식. 기본값 ([05 §1.2](05-chunking-and-retrieval-quality.md)) |
 | **부모-자식 청킹(parent-child)** | 작은 조각으로 검색하고 큰 단위를 생성에 넣는 방식 ([05 §1.2](05-chunking-and-retrieval-quality.md)) |
-| **late chunking** | 문서 전체를 임베딩한 뒤 조각 단위로 벡터를 나누는 방식 ([05 §1.2](05-chunking-and-retrieval-quality.md)) |
+| **late chunking** | 전체 텍스트를 토큰 벡터로 인코딩한 뒤 조각별로 풀링하는 방식 ([05 §1.2](05-chunking-and-retrieval-quality.md)) |
 | **메타데이터(metadata)** | 조각에 붙는 출처·절·날짜·권한 정보. 출처 제시와 필터의 근거 ([03 §1](03-pipeline-anatomy.md)) |
 
 ## 4. 그래프
@@ -95,12 +95,12 @@
 | **유사도 vs 거리** | 높을수록 가까움 ↔ 낮을수록 가까움. 도구마다 보고 방식이 다름 ([04 §2](04-embeddings-and-vector-search.md)) |
 | **top-k vs 점수 하한** | 몇 개를 가져올지 ↔ 어느 점수 아래는 버릴지. 둘 다 필요 |
 | **dense vs sparse** | 뜻으로 찾음 ↔ 단어로 찾음. 서로 다른 실패를 보완 |
-| **reranker vs 더 큰 embedding model** | 후보를 다시 읽어 순위 개선 ↔ 1차 검색 자체 개선. 전자가 보통 비용 대비 효과 큼 |
+| **reranker vs 더 큰 embedding model** | 후보를 다시 읽어 순위 개선 ↔ 1차 검색 자체 개선. 후보에 정답이 있는지와 추가 지연을 함께 비교 |
 | **vector store vs graph database** | 비슷한 조각의 창고 ↔ 관계의 지도. 푸는 질문이 다름 |
 | **local search vs global search** | 개체 주변 탐색 ↔ 전체 요약. GraphRAG의 두 질의 방식 |
 | **Long Context vs RAG** | 통째로 넣기 ↔ 찾아서 넣기. 문서 규모·출처 추적·비용으로 선택 |
 | **모델이 선언한 context vs runtime이 적용한 context** | 상한 ↔ 이번 실행의 실제 값. 후자를 넘기면 runtime이 입력 일부를 제외할 수 있음 |
-| **검색 전 필터 vs 검색 후 필터** | 권한은 반드시 전자. 후자는 품질 저하 + 누락 위험 |
+| **검색 전 필터 vs 검색 후 필터** | 전자는 검색 대상을 제한. 후자는 후보 감소에 유의하며 모델 등에 전달하기 전에 반드시 차단 |
 
 <!-- learnstead:footer:start -->
 

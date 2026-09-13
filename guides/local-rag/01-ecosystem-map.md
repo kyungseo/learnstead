@@ -9,9 +9,9 @@ RAG를 배우기 시작하면 embedding model, vector database, LangChain, Graph
 읽을 수 있게 만드는 지도입니다.
 
 
-> **왜 읽나:** embedding, vector DB, LangChain, GraphRAG… 이름은 스무 개인데 자리는 일곱 개뿐입니다.
+> **왜 읽나:** embedding, vector DB, LangChain, GraphRAG… 여러 도구를 이 가이드의 일곱 역할로 나눠 살펴봅니다.
 >
-> **읽고 나면:** 어떤 도구 이름이 나와도 "아, 그 자리"라고 배치할 수 있고, 처음엔 프레임워크가 왜 방해가 되는지 설명할 수 있습니다.
+> **읽고 나면:** 어떤 도구 이름이 나와도 "아, 그 자리"라고 배치할 수 있고, 이 가이드가 프레임워크 없이 시작하는 이유를 설명할 수 있습니다.
 >
 > **바쁘면:** §0 "결론 먼저"와 ★ 절만 읽고 다음 문서로 넘어가도 흐름이 끊기지 않습니다.
 
@@ -58,7 +58,7 @@ RAG를 배우기 시작하면 embedding model, vector database, LangChain, Graph
 | 개념 | 한 줄 | 자세히 |
 | --- | --- | --- |
 | chunk(조각) | 문서를 검색 단위로 자른 텍스트 덩어리. 너무 크면 잡음이, 너무 작으면 문맥이 사라짐 | [05 §1](05-chunking-and-retrieval-quality.md) |
-| embedding(임베딩) | 텍스트의 의미를 수백~수천 차원의 숫자 벡터로 바꾼 것. 의미가 가까우면 벡터도 가까움 | [04 §1](04-embeddings-and-vector-search.md) |
+| embedding(임베딩) | 텍스트의 의미를 수백~수천 차원의 숫자 벡터로 바꾼 것. 의미가 가까운 텍스트를 가까운 벡터로 표현하도록 학습 | [04 §1](04-embeddings-and-vector-search.md) |
 | 유사도(similarity) | 두 벡터가 얼마나 가까운지의 점수. 보통 코사인 유사도 | [04 §2](04-embeddings-and-vector-search.md) |
 | vector store / vector database | 벡터를 저장하고 "가장 가까운 k개"를 빠르게 찾아 주는 저장소 | [04 §5](04-embeddings-and-vector-search.md) |
 | top-k | 검색에서 가져오는 조각 수. 프롬프트 길이와 잡음을 함께 결정 | [05 §3](05-chunking-and-retrieval-quality.md) |

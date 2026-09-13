@@ -68,7 +68,7 @@ RAG가 된다는 것, 그리고 답이 나왔을 때 **근거가 답을 정말 �
 | `model "bge-m3" not found` | `ollama pull bge-m3` 실행 여부, `ollama list` |
 | `ModuleNotFoundError: openai` | 같은 Python 환경에 `pip install openai`를 했는가 (`python3 -m pip install openai`) |
 | 첫 질문이 10초 넘게 걸림 | 첫 호출은 모델을 메모리에 올리는 시간이 포함됩니다(작성 환경 8초, 이후 1~3초) |
-| 근거는 맞는데 답이 근거와 다름 | 모델이 규칙을 어긴 것 — [실습 ④](../../labs/why-rag-fails/02-generation-failure.md) |
+| 근거는 맞는데 답이 근거와 다름 | 프롬프트·근거 배열·입력 잘림·생성 결과 확인 — [실습 ④](../../labs/why-rag-fails/02-generation-failure.md) |
 | 근거에 엉뚱한 조각만 있음 | 질문을 바꿔 보고, 그래도 그러면 [실습 ①·③](../../labs/why-rag-fails/01-retrieval-failures.md) |
 
 **원상복구:** 01은 파일을 만들지 않습니다(리스트 기반이라 매 실행 시 다시 색인). 02를 했다면 `python3 rag_chroma.py --reset`으로
@@ -102,7 +102,7 @@ RAG가 된다는 것, 그리고 답이 나왔을 때 **근거가 답을 정말 �
 이 튜토리얼이 끝나는 지점은 **가상 규정 4편에 대해 로컬 모델이 근거를 제시하며 답하고, 그 근거가 답을 뒷받침하는지 내가 판정한
 순간입니다.** 다음은 다루지 않습니다.
 
-- 키워드 검색(BM25)·hybrid·reranker·점수 하한 — 실습에서 실패를 재현하며 다룹니다
+- 키워드 검색(BM25)·hybrid·점수 하한 — 실습에서 다룹니다. reranker는 가이드에서 원리만 설명합니다
 - PDF·HWP 파싱, 수천 개 이상 조각의 색인, 권한·갱신·운영
 - 프레임워크(LangChain·LlamaIndex 등)로 같은 일을 하는 방법
 

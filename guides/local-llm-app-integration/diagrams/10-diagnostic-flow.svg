@@ -7,7 +7,7 @@
   <path d="M340 116 V137" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/>
   <rect x="264" y="143" width="152" height="42" rx="10" fill="#FFF4D8" stroke="#C98A1B"/><text x="340" y="164" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="700" fill="#704D0F">예외가 났는가?</text>
   <path d="M260 164 H120 V205" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="172" y="154" font-size="10" fill="#636A75">연결·timeout</text>
-  <path d="M420 164 H560 V205" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="480" y="154" font-size="10" fill="#636A75">4xx</text>
+  <path d="M420 164 H560 V205" fill="none" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="480" y="154" font-size="10" fill="#636A75">400·401·404</text>
   <path d="M340 187 V226" stroke="#2E6DA4" stroke-width="2" marker-end="url(#arrow)"/><text x="350" y="210" font-size="10" fill="#636A75">아니오</text>
   <rect x="34" y="211" width="172" height="66" rx="10" fill="#FCEBEC" stroke="#B04A5A"/><text x="120" y="235" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7A2734">runtime 상태 확인</text><text x="120" y="257" text-anchor="middle" font-size="10" fill="#636A75">지수 backoff · 상한 3회</text>
   <rect x="474" y="211" width="172" height="66" rx="10" fill="#FCEBEC" stroke="#B04A5A"/><text x="560" y="232" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7A2734">요청을 고친다</text><text x="560" y="251" text-anchor="middle" font-size="10" fill="#636A75">404 모델 · 400 입력/context</text><text x="560" y="266" text-anchor="middle" font-size="10" fill="#636A75">401 키·프록시</text>

@@ -48,7 +48,7 @@ Claude Code에서 같은 쓰기 요청을 세 조건으로 실행했습니다 [�
 | `--permission-mode default`, 허용 목록 없음 | **거부** (`permission_denials`에 `list_notes`·`read_note`·`write_note` 셋 다) | 읽기 도구까지 거부 |
 | `--permission-mode default`, 허용 목록 = 읽기 3개 | 읽기는 실행, **`write_note`만 거부** | 의도한 경계 |
 
-이 실험에서 Claude Code의 경계는 **permission mode + 허용 규칙으로** 갈렸고 annotation에 따른 차이는 관측되지 않았습니다. 작성 환경의 `defaultMode: "auto"`가 모든 MCP 도구를 자동 승인했으므로, 이 설정을 쓰는 장비에서는 "읽기 전용"을 서버 코드와 실제 데이터 권한으로 보장해야 합니다. 결과는 2026-08-30의 Claude Code 2.1.251에서 세 조건을 각 1회 실행한 값입니다. 규칙 문법은 다음과 같습니다 [문서 확인].
+이 실험에서 Claude Code의 경계는 **permission mode + 허용 규칙으로** 갈렸고 annotation에 따른 차이는 관측되지 않았습니다. 작성 환경의 `defaultMode: "auto"`가 실험에서 요청한 MCP 도구를 자동 승인했으므로, 이 설정을 쓰는 장비에서는 "읽기 전용"을 서버 코드와 실제 데이터 권한으로 보장해야 합니다. 결과는 2026-08-30의 Claude Code 2.1.251에서 세 조건을 각 1회 실행한 값입니다. 규칙 문법은 다음과 같습니다 [문서 확인].
 
 ```text
 mcp__notes__read_note      # 도구 하나
@@ -83,7 +83,7 @@ Skill(notes-digest)        # skill과 같은 자리에서 관리
 ## 이 장을 끝내면
 
 - "읽기 전용"을 서버 코드와 실제 데이터 권한으로 보장해야 하는 이유를 설명할 수 있습니다.
-- annotation을 믿는 host(Codex)와 안 믿는 host(Claude Code)의 차이를 설정으로 설명할 수 있습니다.
+- 확인한 버전·설정에서 annotation과 허용 규칙이 승인에 어떻게 영향을 줬는지 설명할 수 있습니다.
 - 주입 실험이 막힌 것을 구조적 보장으로 오해하지 않습니다.
 
 <!-- learnstead:footer:start -->

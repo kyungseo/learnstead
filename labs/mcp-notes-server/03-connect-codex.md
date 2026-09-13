@@ -10,7 +10,7 @@
 
 ## 1. 등록
 
-`setup.sh`가 출력한 명령을 그대로 실행한다(형태):
+먼저 `codex mcp get notes`로 같은 이름의 기존 서버가 있는지 확인합니다. 기존 `notes` 서버가 있다면 덮어쓰거나 제거하지 말고, 설정을 보존한 뒤 이름이 겹치지 않는 별도 실습 환경에서 진행합니다. 아래는 `notes`가 아직 등록되지 않은 환경에서 `setup.sh`가 출력한 명령의 형태입니다:
 
 ```bash
 codex mcp add notes --env NOTES_DIR=<워크숍 절대 경로>/notes -- <python 절대 경로> <워크숍 절대 경로>/notes_server.py

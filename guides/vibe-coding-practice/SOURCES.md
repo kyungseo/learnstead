@@ -7,6 +7,7 @@
 **AI와 함께 만들기 — 바이브 코딩에서 Agentic Engineering으로** 가이드의 근거 자료를 연결합니다.
 
 - 마지막 확인일: 2026-09-01 (초판 조사 2026-08-24)
+- 2026-09-13 부분 재확인: [git restore](https://git-scm.com/docs/git-restore), [git reset](https://git-scm.com/docs/git-reset), [추적 파일과 ignore 설정](https://docs.github.com/en/get-started/git-basics/ignoring-files), [저장소 공개 범위](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility). 복구·비밀값 제외·접근 권한의 설명을 보정했으며, 아래 나머지 자료의 확인일을 갱신한 것은 아닙니다.
 - 이 가이드는 **작업 방식을** 다루므로 대부분이 `해석`(저자의 정리)입니다. 명령·도구 동작·웹앱 구조만 아래에 근거를 둡니다.
 - AI 코딩·개발·배포 도구의 화면과 기능은 빠르게 바뀝니다. 00장은 2026-09-01 기준의 역할만 소개하며 단계별 사용법이나 제품
   순위를 다루지 않습니다.

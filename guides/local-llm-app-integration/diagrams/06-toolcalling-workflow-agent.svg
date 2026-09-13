@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="680" height="320" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">누가 제어 흐름을 쥐는가 — 코드에서 모델로</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">순서를 아는 일은 workflow로 · agent는 &quot;다음에 뭘 할지 모르는&quot; 일에만</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">순서를 아는 일은 workflow로 · agent는 다음 행동을 상황에 따라 골라야 할 때</text>
   <rect x="24" y="70" width="200" height="34" rx="9" data-fill-role="compute-fill" fill="#ECF4F1" data-stroke-role="compute-line" stroke="#3F8F72" stroke-width="1" />
   <text x="124.0" y="87.0" font-size="13" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">tool calling</text>
   <text x="124.0" y="122" font-size="11" font-weight="700" data-fill-role="compute-ink" fill="#234F3F" text-anchor="middle" dominant-baseline="central">한 번의 왕복</text>
@@ -29,7 +29,7 @@
   <rect x="378" y="140" width="50" height="30" rx="9" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="403.0" y="155.0" font-size="11" font-weight="700" data-fill-role="edge-ink" fill="#193C5A" text-anchor="middle" dominant-baseline="central">분류</text>
   <text x="340.0" y="242.75" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">읽기 → 요약 → 분류 → 저장</text>
-  <text x="340.0" y="257.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">각 단계가 모델 호출</text>
+  <text x="340.0" y="257.25" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">필요한 단계에서 모델 호출</text>
   <rect x="456" y="70" width="200" height="34" rx="9" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="556.0" y="87.0" font-size="13" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">agent</text>
   <text x="556.0" y="122" font-size="11" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">모델이 다음 행동 결정</text>

@@ -14,7 +14,7 @@
 
 ## 2026-09-03 공개 전 재검증
 
-- 현재 `.mcp.json.example`로 만든 설정을 Claude Code 2.1.259에서 읽혔고, `notes` 서버의 `connected` 상태와 `list_notes`·`read_note` 호출을 확인했습니다.
+- 현재 `.mcp.json.example`로 만든 설정을 Claude Code 2.1.259가 읽었고, `notes` 서버의 `connected` 상태와 `list_notes`·`read_note` 호출을 확인했습니다.
 - `PERM=default`의 도구 거부 실행과 MCP 호출이 없는 Codex `c0` 실행 모두 runner가 중단되지 않고 CLI 종료 코드와 요약을 남겼습니다.
 - `mcp==2.1.1` offline probe는 읽기 도구 3종을 노출하고, 정상 읽기는 성공, 경로 탈출과 미등록 쓰기 도구는 `is_error`로 반환했습니다.
 

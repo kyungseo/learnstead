@@ -5,7 +5,7 @@
   <rect x="0" y="0" width="680" height="336" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">폴더 하나, 파일 하나 — SKILL.md 해부</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">frontmatter의 description은 항상 컨텍스트에 있는 유일한 부분이다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">name과 description은 초기 목록에 들어가며 skill 선택의 근거가 된다</text>
   <rect x="24" y="74" width="260" height="236" rx="12" data-fill-role="data-fill" fill="#F4F5F5" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
   <text x="40" y="94" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">skill 폴더</text>
   <text x="44" y="124" font-size="11.5" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="start" dominant-baseline="central">meeting-actions/</text>

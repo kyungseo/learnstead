@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420" role="img"
   style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
   <title>청킹 다섯 전략 — 같은 문서, 다른 경계</title>
-  <desc>고정 길이는 문장 중간을 자르고, 재귀 분할은 절·단락 경계를 따르며, 의미 기반은 주제 전환에서 자르고, 부모-자식은 작은 조각으로 찾아 큰 단위를 넣으며, late chunking은 문서 전체를 임베딩한 뒤 조각으로 나눈다.</desc>
+  <desc>고정 길이는 문장 중간을 자르고, 재귀 분할은 절·단락 경계를 따르며, 의미 기반은 주제 전환에서 자르고, 부모-자식은 작은 조각으로 찾아 큰 단위를 넣으며, late chunking은 전체 텍스트를 인코딩한 뒤 조각별 토큰 벡터를 풀링한다.</desc>
 
   <rect x="0" y="0" width="680" height="420" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
@@ -48,10 +48,10 @@
   <rect x="534" y="282" width="76" height="26" rx="4" data-fill-role="edge-fill" fill="#EAF0F6" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <rect x="24" y="334" width="130" height="58" rx="8" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <text x="34" y="349" font-size="12" font-weight="700" data-fill-role="api-ink" fill="#322E5C" text-anchor="start" dominant-baseline="central">late chunking</text>
-  <text x="34" y="366" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">문서 전체를 임베딩</text>
-  <text x="34" y="380" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">후 조각으로 분할</text>
+  <text x="34" y="366" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">전체 토큰 인코딩</text>
+  <text x="34" y="380" font-size="10" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">후 조각별 풀링</text>
   <rect x="170" y="342" width="446" height="38" rx="6" data-fill-role="api-fill" fill="#EFEEF6" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
-  <text x="393" y="352" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">문서 전체를 한 번에 임베딩</text>
+  <text x="393" y="352" font-size="10" data-fill-role="api-ink" fill="#322E5C" text-anchor="middle" dominant-baseline="central">전체 문맥을 반영한 토큰 벡터</text>
   <rect x="178" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <rect x="266" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
   <rect x="354" y="362" width="80" height="12" rx="3" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />

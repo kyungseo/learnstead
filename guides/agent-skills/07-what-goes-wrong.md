@@ -22,7 +22,7 @@
 | 목록에 없다 | 경로가 그 도구가 읽는 곳이 아님 (`.agents/skills`에 두고 Claude Code에서 찾음, 또는 반대) | [`04`](04-tool-differences.md) 1절. Claude Code는 symlink로 해결 |
 | 목록에 없다 | 폴더 이름 ≠ `name`, 대문자·밑줄 사용 | 이름 규칙: 소문자·숫자·하이픈, 폴더와 일치 |
 | 목록에 있지만 설명이 비었거나 자동 호출이 안 된다 | frontmatter YAML 오류 | `skills-ref validate <skill-dir>`. plugin이라면 `claude plugin validate <plugin-dir>`도 실행 [문서 확인] |
-| 목록에 없다 | `disable-model-invocation: true` 또는 `skillOverrides: off` | 의도한 설정인지 확인. 사람 호출(`/name`)은 여전히 된다 |
+| 목록에 없다 | `disable-model-invocation: true` 또는 `skillOverrides: off` | 두 설정을 구분. `disable-model-invocation`은 사람 호출을 남기지만 `off`는 비활성화 |
 | 목록에서 빠지거나 설명이 잘림 | skill 목록 예산 초과 | 도구의 경고와 `/context`를 확인하고, 겹치거나 쓰지 않는 skill을 정리 |
 | 있는데 안 고른다 | description에 요청의 단어가 없음 | 요청을 description 어휘로 바꿔 시험 → 되면 description을 고친다 |
 | 엉뚱한 것을 고른다 | description이 이웃 skill과 겹침 | 실습 04: "정리해 줘"는 `notes-summary`, "액션 아이템"은 `meeting-actions`로 갈렸다. 제외 조건을 각 description에 명시 |
@@ -55,7 +55,7 @@ skill은 지시문이며, 저장소에 들어온 skill은 **다른 사람이 쓴
 
 - Claude Code의 `allowed-tools`는 폴더 신뢰 여부와 무관하게 적용됩니다. 처음 여는 저장소의 `.claude/skills/*/SKILL.md`에서 `allowed-tools`를 먼저 확인합니다 [문서 확인].
 - 동적 컨텍스트 `` !`명령` ``은 본문 전송 전에 **내 장비에서** 실행됩니다. 정책으로 끄려면 `disableSkillShellExecution: true`를 사용합니다 [문서 확인].
-- Gemini CLI만 skill을 활성화할 때 동의 프롬프트를 표시합니다 [문서 확인]. 나머지 도구는 묻지 않습니다.
+- 이 가이드에서 비교한 문서에는 Gemini CLI의 skill 활성화 동의 절차가 명시돼 있습니다 [문서 확인]. 다른 도구에도 명령 실행·파일 접근에 대한 별도 승인이 있을 수 있습니다.
 - 2026-08-30 실측에서는 Codex가 `~/.codex/skills`의 symlink를 따라갔습니다. 현재 공식 사용자 경로는 `$HOME/.agents/skills`이므로 새 설치는 그 경로를 기준으로 삼고, symlink 대상도 함께 검토합니다 [과거 실행 검증 · 현재 문서 확인].
 
 ## 6. 실패 재현 습관

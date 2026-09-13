@@ -33,6 +33,6 @@
   <text x="176" y="188" font-size="10.5" data-fill-role="compute-ink" fill="#234F3F" text-anchor="start" dominant-baseline="central">{choices[0].message.content, usage, finish_reason}</text>
   <rect x="24" y="214" width="632" height="48" rx="10" data-fill-role="strip" fill="#F7F9FB" data-stroke-role="rule" stroke="#DEE0E2" stroke-width="1" />
   <text x="340" y="230" font-size="11" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">내 프로그램 ↔ runtime 사이가 HTTP  →  언어 무관 · runtime 교체 가능 · 로컬에서 개발하고 운영에서 다른 백엔드로</text>
-  <text x="340" y="248" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">runtime은 이전 요청을 기억하지 않는다(stateless) — 대화 기록은 내 프로그램이 들고 매번 보낸다</text>
-  <text x="340.0" y="284" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">날씨 API를 부르듯 주소와 JSON만 알면 된다 — 다른 점은 느리고, 길고(스트리밍), 매번 조금 다르다는 것</text>
+  <text x="340" y="248" font-size="10.5" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">이 Chat Completions 호출은 stateless — 앱이 필요한 기록을 매번 보낸다</text>
+  <text x="340.0" y="284" font-size="11" data-fill-role="muted" fill="#636A75" text-anchor="middle" dominant-baseline="central">HTTP 연결 뒤에도 검증은 계속 — 생성된 내용과 도구 실행 권한을 확인한다</text>
 </svg>

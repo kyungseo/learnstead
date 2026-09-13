@@ -34,9 +34,9 @@
   <rect x="152" y="194" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />
   <text x="228" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">조각 단위 가능</text>
   <rect x="328" y="194" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="api-line" stroke="#5B54A8" stroke-width="1" />
-  <text x="404" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">통째로라 약함</text>
+  <text x="404" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">원문 위치 연결 필요</text>
   <rect x="504" y="194" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="data-line" stroke="#636A75" stroke-width="1" />
-  <text x="580" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">불가</text>
+  <text x="580" y="212.0" font-size="11.5" data-fill-role="ink" fill="#252B35" text-anchor="middle" dominant-baseline="central">별도 근거 연결 필요</text>
   <rect x="24" y="236" width="104" height="36" rx="8" data-fill-role="data-fill" fill="#F4F5F5" />
   <text x="76" y="254.0" font-size="12" font-weight="700" data-fill-role="data-ink" fill="#363A40" text-anchor="middle" dominant-baseline="central">모델 변경</text>
   <rect x="152" y="236" width="152" height="36" rx="8" data-fill-role="surface" fill="#FFFFFF" data-stroke-role="edge-line" stroke="#2E6DA4" stroke-width="1" />

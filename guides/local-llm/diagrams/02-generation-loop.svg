@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" role="img"
   style="font-family:Pretendard,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
-  <title>생성 — 한 번에 한 토큰씩, 자기 출력을 다시 먹는다</title>
+  <title>생성 — 한 번에 한 토큰씩, 생성한 토큰을 다음 입력에 붙인다</title>
   <desc>prefill 단계는 프롬프트 전체를 한꺼번에 처리하고, decode 단계는 토큰 하나를 만들어 입력 끝에 붙이는 일을 반복한다.</desc>
   <style>
     svg{ --bg:#FFFFFF; --ink:#1F2733; --muted:#5B6675; --hair:#D6E0EC;
@@ -79,5 +79,5 @@
   <text x="42" y="340" font-size="12" font-weight="700" fill="var(--k8s-ink)" dominant-baseline="central">↑ 입력이 매 스텝 한 토큰씩 길어진다 — 초록 토큰이 방금 만든 출력</text>
 
   <!-- 하단 캡션 -->
-  <text x="340" y="378" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">이 그림 하나에서 TTFT · TPS · KV 캐시 · 컨텍스트 비용이 전부 파생된다</text>
+  <text x="340" y="378" font-size="12" fill="var(--muted)" text-anchor="middle" dominant-baseline="central">prefill · decode를 나눠 TTFT · TPS · KV 캐시의 역할을 이해한다</text>
 </svg>

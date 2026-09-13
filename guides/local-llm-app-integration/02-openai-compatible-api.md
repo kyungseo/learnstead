@@ -8,7 +8,7 @@ SDK가 숨기는 JSON을 한 번은 눈으로 봐야 합니다. 그래야 오류
 runtime마다 무엇이 다른지 알 수 있습니다. 이 문서는 `curl`로 요청과 응답을 직접 보고, 필드를 하나씩 읽습니다.
 
 
-> **왜 읽나:** SDK가 숨기는 JSON을 한 번도 본 적 없다면, 첫 오류 메시지를 읽지 못합니다.
+> **왜 읽나:** SDK가 주고받는 JSON 구조를 알면 오류 메시지가 가리키는 필드를 찾기 쉽습니다.
 >
 > **읽고 나면:** curl로 요청·응답을 직접 보고 각 필드를 읽으며, `finish_reason`을 왜 확인해야 하는지와 runtime마다 무엇이 다른지 표로 기억할 수 있습니다.
 >
@@ -60,7 +60,7 @@ curl -s http://localhost:11434/v1/chat/completions \
 ```
 
 필드 이름은 OpenAI 형식을 따릅니다. `system_fingerprint`처럼 runtime이 자기 식으로 채우는 필드(`fp_ollama`)나 비워 두는
-필드가 있을 수 있으니, 앱 코드는 `choices`·`usage`·`finish_reason`만 믿고 나머지는 있으면 쓰는 정도로 다룹니다. `[해석]`
+필드가 있을 수 있으니, 앱 코드는 필요한 `choices`·`usage`·`finish_reason`의 존재 여부와 값을 확인하고, 추가 필드는 지원 여부를 확인한 뒤 사용합니다. `[해석]`
 
 ## 2. 요청 필드 읽기
 
@@ -69,7 +69,7 @@ curl -s http://localhost:11434/v1/chat/completions \
 | 필드 | 뜻 | 메모 |
 | --- | --- | --- |
 | `model` | runtime에 올라 있는 모델 식별자 | Ollama는 `이름:태그`. `/v1/models`로 목록 확인 |
-| `messages` | 대화 전체. 역할·내용의 배열 | **매 요청에 전부** 보낸다 — runtime은 이전 요청을 기억하지 않음 |
+| `messages` | 이번 답에 필요한 대화. 역할·내용의 배열 | 적용 context 창에 맞춰 매번 구성한다 — 이 호출은 이전 대화를 자동으로 이어 주지 않음 |
 | `temperature` | 무작위성 (0 = 가장 결정적) | 앱·추출은 0~0.3 ([04](04-parameters-and-context.md)) |
 | `max_tokens` | 생성할 최대 토큰 | 없으면 runtime 기본값. 답이 잘리면 이것부터 |
 | `stream` | `true`면 토큰 단위로 흘려보냄 | UI 반응성. 03 실습 |
@@ -98,7 +98,7 @@ curl -s http://localhost:11434/v1/chat/completions \
 | `usage.prompt_tokens` | 입력 토큰 수 | context 예산 감시. 기록이 얼마나 커졌는지 |
 | `usage.completion_tokens` | 생성 토큰 수 | 속도·비용 계산 |
 
-`[문서 확인 · 2026-08-23]` — `finish_reason`을 확인하지 않는 것이 초보 앱의 가장 흔한 누락입니다. 잘린 답을 완전한 답으로 다룹니다.
+`[문서 확인 · 2026-08-23]` — `finish_reason`을 확인하지 않으면 잘린 답을 완전한 답으로 다룰 수 있습니다.
 
 ### 스트리밍일 때
 

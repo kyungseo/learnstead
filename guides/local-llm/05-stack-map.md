@@ -49,7 +49,7 @@ Ollama·LM Studio·llama.cpp·MLX·vLLM·SGLang·TGI. **이름이 나란히 놓�
 
 `[자료 확인 · 2026-08-10]`
 
-**"ChatGPT 같은 화면"은 어디에 있나:** Ollama 자체는 CLI다. 웹 채팅 화면을 원하면 **Open WebUI**
+**"ChatGPT 같은 화면"은 어디에 있나:** Ollama는 CLI와 앱을 제공한다. 별도의 웹 채팅 화면을 원하면 **Open WebUI**
 같은 프런트엔드를 Ollama 위에 얹는다(설치형 웹 앱 — Ollama의 API를 바라보게 설정하면 끝).
 LM Studio·Jan은 이 두 층이 앱 하나에 합쳐진 형태다. `[자료 확인 · 2026-08-10]`
 
@@ -116,7 +116,7 @@ option 범위는 runtime마다 다릅니다. `[문서 확인 · 2026-08-10]`
 > 조직 규모에서는 이 interface 앞에 gateway를 둘 수 있지만 인증·masking·routing이 자동으로 생기는 것은 아닙니다.
 > 그 설계는 이 가이드의 범위 밖입니다.
 
-> 🔧 **한 단계 더 — "호환"의 구멍.** 기본 채팅은 어디서나 동작하지만 가장자리는 런타임마다 다르다:
+> 🔧 **한 단계 더 — "호환"의 구멍.** 기본 채팅 형식이 비슷해도 지원 범위는 런타임마다 다르다:
 > **tool calling·구조화 출력(JSON) 지원 여부와 문법**, 스트리밍 응답의 usage 필드 유무, `/v1/models`
 > 응답 형식. 그리고 Ollama의 컨텍스트 길이(`num_ctx`) 같은 런타임 고유 옵션은 OpenAI 호환 API가
 > 아니라 **네이티브 API(`/api/chat`)나 Modelfile로만** 조정되는 경우가 있다. 앱을 붙이다 막히면

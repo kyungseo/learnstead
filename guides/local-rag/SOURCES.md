@@ -6,7 +6,8 @@
 
 **내 문서와 대화하는 AI 이해하기 — RAG와 Graph에서** version에 따라 달라질 수 있는 핵심 정보와 그 근거가 되는 자료를 연결합니다.
 
-- 마지막 확인일: 2026-08-30 (초안 조사 2026-08-23)
+- 전체 확인일: 2026-08-30 (초안 조사 2026-08-23)
+- 부분 재확인: 2026-09-13 — bge-m3 입력 길이, e5 접두어, late chunking의 인코딩·풀링 순서. 모델·실습 전 경로를 재검증한 날짜는 아닙니다.
 - `문서 확인`은 공식 문서·model card·논문 원문을 읽었다는 뜻이며, 명령 실행 성공을 뜻하지 않습니다.
 - `자료 확인`은 2차 정리 자료(블로그·비교 글)로만 확인한 항목입니다. 선택의 출발점으로만 쓰고, 확정 전에는 1차 자료로 다시 확인합니다.
 - URL의 내용이 바뀔 수 있으므로 중요한 구성 변경 전에는 다시 확인합니다.
@@ -25,6 +26,8 @@
 | NetworkX | `DiGraph`, 이웃 탐색 | [NetworkX documentation](https://networkx.org/documentation/stable/) | 문서 확인 |
 
 ## 모델
+
+2026-09-13 문구 교정 근거: [multilingual-e5-large 모델 카드](https://huggingface.co/intfloat/multilingual-e5-large)의 `query:`·`passage:` 접두어와 [late chunking 원 논문](https://arxiv.org/abs/2409.04701)의 토큰 인코딩 후 조각별 풀링 순서를 확인했습니다.
 
 | 범위 | 확인한 내용 | 1차 자료 | 상태 |
 | --- | --- | --- | --- |

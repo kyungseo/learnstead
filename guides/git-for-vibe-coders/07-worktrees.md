@@ -153,7 +153,7 @@ git worktree list
 
 순서가 중요합니다.
 
-1. 새 worktree의 미커밋 변경이 없는지 확인합니다.
+1. 새 worktree의 미커밋 변경과 고유 commit을 확인합니다. `git status`에 기본 표시되지 않는 ignored 파일도 따로 살펴보고 필요한 산출물을 보관합니다.
 2. `git worktree remove`로 연결된 작업 폴더를 제거합니다.
 3. main에 합친 branch를 `git branch -d`로 지웁니다.
 4. `git worktree list`로 남은 작업 공간을 확인합니다.

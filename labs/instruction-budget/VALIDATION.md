@@ -54,7 +54,7 @@ runner와 batch 요약에는 CLI 종료 코드를 별도 필드로 남깁니다.
 
 - 3회 반복. 과제·규칙·모델 각 하나.
 - `--max-turns 25` 안에서 모두 끝났습니다.
-- 실행마다 새 git 저장소를 만들므로 `~/.claude.json`에 프로젝트 항목이 쌓인다(무해).
+- 실행마다 새 git 저장소를 만들므로 `~/.claude.json`에 프로젝트 항목이 추가될 수 있습니다.
 
 <!-- learnstead:footer:start -->
 

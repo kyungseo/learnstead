@@ -6,7 +6,7 @@
   <rect x="0" y="0" width="680" height="348" data-fill-role="surface" fill="#FFFFFF"/>
   <rect x="24" y="13" width="3" height="22" rx="1.5" data-fill-role="focus" fill="#2E6DA4" />
   <text x="36" y="24" font-size="18" font-weight="700" data-fill-role="ink" fill="#252B35" text-anchor="start" dominant-baseline="central">출력이 이상하면 본문부터 고치지 말고 위에서부터 — 발견 · 로드 · 준수</text>
-  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">아래층 증상은 위층 원인으로 자주 오진된다</text>
+  <text x="36" y="46" font-size="11.5" data-fill-role="muted" fill="#636A75" text-anchor="start" dominant-baseline="central">로드 문제를 본문 준수 문제로 오인하지 않도록 순서대로 확인한다</text>
   <rect x="24" y="74" width="330" height="62" rx="10" data-fill-role="warning-fill" fill="#FBF4E6" data-stroke-role="warning-line" stroke="#B08434" stroke-width="1" />
   <text x="40" y="94" font-size="12.5" font-weight="700" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">① 발견 실패</text>
   <text x="40" y="116" font-size="10.5" data-fill-role="warning-ink" fill="#5E4416" text-anchor="start" dominant-baseline="central">목록에 없다 · 있는데 안 고른다 · 엉뚱한 것을 고른다</text>

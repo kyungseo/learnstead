@@ -79,7 +79,7 @@ No module named 'mcp.server.fastmcp'. This is mcp 2.x, where FastMCP was renamed
 
 ## 6. MCP가 아닌 것
 
-- **skill이 아닙니다.** skill은 모델이 읽고 따르는 절차 지시문이고, MCP는 모델이 호출하는 **능력입니다.** 둘의 역할 분담은 6장과 [agent-skills 가이드 03장](../agent-skills/03-same-thing-different-names.md)에 있습니다.
+- **skill이 아닙니다.** skill은 모델이 읽고 따르는 절차 지시문이고, MCP는 도구·데이터를 여러 host에 연결하는 **규약입니다.** 둘의 역할 분담은 6장과 [agent-skills 가이드 03장](../agent-skills/03-same-thing-different-names.md)에 있습니다.
 - **모델 API가 아닙니다.** MCP는 모델과 대화하는 규약이 아니라 host와 도구 서버 사이의 규약입니다. 모델은 MCP를 모릅니다. host가 MCP 서버의 도구 목록을 모델이 아는 tool calling 형식으로 바꿔 보여 줍니다.
 - **에이전트 프레임워크가 아닙니다.** 제어 흐름(무엇을 언제 부를지)은 여전히 host와 모델의 몫입니다.
 

@@ -52,7 +52,7 @@ SDK가 만들어 보낸 정의를 LLM 없이 client로 받아 보면 다음과 �
     annotations={'read_only_hint': True, 'destructive_hint': False, 'open_world_hint': False}
 ```
 
-**docstring이 곧 `description`이고, 타입 힌트가 곧 `inputSchema`입니다.** 그러므로 docstring은 주석이 아니라 모델에게 보여 주는 문장입니다. skill의 `description`과 같은 원리로 "무엇을 하는지 + 인자를 어떻게 주는지"를 적습니다. 실습에서 `name은 '회의-0828' 또는 '회의-0828.md'`라고 적어 두자 두 도구 모두 확장자 유무를 헷갈리지 않고 호출했습니다.
+**docstring이 곧 `description`이고, 타입 힌트가 곧 `inputSchema`입니다.** 그러므로 docstring은 코드 설명인 동시에 모델에게 보여 주는 문장입니다. skill의 `description`과 같은 원리로 "무엇을 하는지 + 인자를 어떻게 주는지"를 적습니다. 실습에서 `name은 '회의-0828' 또는 '회의-0828.md'`라고 적어 두자 두 도구 모두 확장자 유무를 헷갈리지 않고 호출했습니다.
 
 ### annotations는 힌트입니다
 

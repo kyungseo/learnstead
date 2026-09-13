@@ -12,7 +12,7 @@
 
 ## 1. 규격 안에서 쓰면 한 벌로 끝난다
 
-실습의 `meeting-actions`는 규격 필드(`name`, `description`, `license`, `metadata`)만 사용했습니다. 같은 폴더를 `.claude/skills/`와 `.agents/skills/`에 두었더니 Claude Code와 Codex 모두 읽었고, 본문을 한 줄 고친 v1.1은 두 도구에서 모두 판정을 통과했습니다 [실행 검증 · 실습 03·04]. **본문이 규격 안에 있으면 이식은 경로 문제로 줄어듭니다.**
+실습의 `meeting-actions`는 규격 필드(`name`, `description`, `license`, `metadata`)만 사용했습니다. 같은 폴더를 `.claude/skills/`와 `.agents/skills/`에 두었더니 Claude Code와 Codex 모두 읽었고, 본문을 한 줄 고친 v1.1은 두 도구에서 모두 판정을 통과했습니다 [실행 검증 · 실습 03·04]. **이 실습에서는 공통 본문을 경로만 맞춰 재사용할 수 있었습니다.** 공통 규격을 따르더라도 필요한 도구·런타임과 결과는 환경별로 확인해야 합니다.
 
 경로 문제의 답은 [`04`](04-tool-differences.md) 1절에 있습니다. `.agents/skills`는 Codex·Gemini CLI·Cursor가 공유하고 Claude Code만 `.claude/skills`를 읽습니다. Claude Code는 **symlink도 따라갑니다** [실행 검증]. 따라서 가장 단순한 배치는 다음과 같습니다.
 
@@ -32,12 +32,12 @@ symlink 대신 복사해도 되지만, 시간이 지나면 두 사본의 내용�
 
 | 써도 되는 것 | 피해야 하는 것 (도구 전용) |
 | --- | --- |
-| `name` `description` `license` `compatibility` `metadata`와 신중하게 쓴 `allowed-tools` | Claude Code: `context: fork`, `agent`, `hooks`, `paths`, `!`명령`` 동적 컨텍스트, `${CLAUDE_SKILL_DIR}` 치환 |
+| `name` `description` `license` `compatibility` `metadata`와 신중하게 쓴 `allowed-tools` | Claude Code: `context: fork`, `agent`, `hooks`, `paths`, `` !`명령` `` 동적 컨텍스트, `${CLAUDE_SKILL_DIR}` 치환 |
 | 본문 Markdown, 상대 경로로 가리키는 `scripts/` `references/` `assets/` | Codex: `agents/openai.yaml`의 정책·표시 정보 |
 | "인자로 파일 경로가 오면 읽는다" 같은 **말로 쓴** 인자 처리 | `$ARGUMENTS`, `$1` 자리표시자 |
 | 실행 명령을 **폴더 기준 상대 경로로** 서술 | 특정 tool 이름(`Bash`, `Read`)에 의존한 지시 |
 
-기준은 "다른 도구에서 그 줄이 **문자 그대로** 모델에게 보였을 때 해가 없는가"입니다. `!`명령``이 Codex에서 문자 그대로 보이면 모델은 그것을 지시로 오해할 수 있습니다. 반대로 `metadata.version` 같은 필드는 무시돼도 동작에 영향을 주지 않습니다.
+기준은 "다른 도구에서 그 줄이 **문자 그대로** 모델에게 보였을 때 해가 없는가"입니다. `` !`명령` ``이 Codex에서 문자 그대로 보이면 모델은 그것을 지시로 오해할 수 있습니다. 반대로 `metadata.version` 같은 필드는 무시돼도 동작에 영향을 주지 않습니다.
 
 ## 3. 도구 전용 기능이 필요할 때 — canonical + adapter
 
@@ -61,7 +61,7 @@ skills/
 
 adapter는 짧게 유지합니다. 도구별 frontmatter와 "canonical을 읽어라"는 한 줄, 그리고 그 도구에서만 뜻이 있는 진입 규약(인자 자리표시자, 동적 컨텍스트)만 담습니다. 절차를 고칠 때는 canonical 파일 하나만 수정합니다.
 
-이 방식에는 **간접 참조 한 번이라는 비용이** 있습니다. 모델이 adapter를 읽고 다시 canonical을 읽어야 하므로 tool 호출이 한 턴 늘고, canonical 경로가 바뀌면 adapter가 모두 깨집니다. 따라서 adapter마다 canonical 경로를 검사하는 스크립트(예: 각 adapter가 가리키는 파일이 존재하는지, 이름이 일치하는지)를 두는 편이 좋습니다. 이 가이드를 만든 저장소는 그 검사를 테스트 러너에 넣어 두었습니다.
+이 방식에는 **간접 참조 한 번이라는 비용이** 있습니다. 모델이 adapter를 읽고 다시 canonical을 읽어야 하므로 추가 파일 읽기가 필요할 수 있고, canonical 경로가 바뀌면 adapter가 모두 깨집니다. 따라서 adapter마다 canonical 경로를 검사하는 스크립트(예: 각 adapter가 가리키는 파일이 존재하는지, 이름이 일치하는지)를 두는 편이 좋습니다. 이 가이드를 만든 저장소는 그 검사를 테스트 러너에 넣어 두었습니다.
 
 ## 4. 선택 기준
 
@@ -71,7 +71,7 @@ adapter는 짧게 유지합니다. 도구별 frontmatter와 "canonical을 읽어
 | 한 도구에서만 전용 기능이 필요 | 그 도구 경로에만 두고 호환 범위를 명시 |
 | 여러 도구에서 서로 다른 전용 기능이 필요 | canonical + 얇은 adapter + 경로 검사 |
 
-처음부터 canonical + adapter로 시작하면 필요 이상으로 복잡해질 수 있습니다. 실습의 skill처럼 규격 안에서 끝나는 절차가 대부분이며, 도구별 기능이 실제로 필요해졌을 때 adapter를 도입해도 늦지 않습니다.
+처음부터 canonical + adapter로 시작하면 필요 이상으로 복잡해질 수 있습니다. 실습의 skill처럼 공통 규격으로 충분한 절차라면, 도구별 기능이 실제로 필요해졌을 때 adapter를 도입해도 늦지 않습니다.
 
 ## 5. 진입 지시문과의 연결
 
