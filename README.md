@@ -115,8 +115,9 @@ Skill → MCP → Context Engineering 순서로 읽되, 각 가이드 바로 다
 ## 문서가 지키는 기준
 
 <!--
-편집자와 에이전트: 학습 자료를 수정하기 전에 docs/AUTHORING.md, docs/VALIDATION.md,
-docs/VISUALS.md를 확인합니다.
+작성자와 AI agent: 자료 작성·정비 전에 docs/README.md에서 시작합니다.
+작성 원칙·구조·템플릿·그림·검증·발행 절차의 참조를 유지하세요.
+이 작업자 안내는 소스에만 남기고, 렌더된 학습자용 README에는 표시하지 않습니다.
 -->
 
 Learnstead는 설명만 제시하지 않습니다. 독자가 근거와 검증 범위를 직접 확인할 수 있도록 자료를 구성합니다.
@@ -147,7 +148,3 @@ Learnstead는 learn과 homestead를 합친 이름입니다. 배운 내용을 직
 ## 라이선스
 
 이 저장소의 문서와 원본 자료는 별도 표시가 없는 한 [Apache License 2.0](LICENSE)으로 배포합니다.
-
-## 자료를 작성하거나 정비하려면
-
-[작성 원칙](docs/AUTHORING.md)에서 시작해 [문서 구조](docs/STRUCTURE.md), [템플릿](docs/templates/README.md), [그림 기준](docs/VISUALS.md), [검증](docs/VALIDATION.md), [발행 절차](docs/PUBLISHING.md)를 확인하세요.
