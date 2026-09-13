@@ -1,8 +1,11 @@
 # 저장됐다고 끝이 아니다 — 데이터·권한·복구 확인하기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 저장 — 껐다 켜도 남는가](01-persistence.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![돋보기로 데이터와 중복 기록을 살피고 접근 권한과 복원을 확인하는 손그림](assets/database-safety-hero.webp)
 
-[01 저장 확인부터 시작 →](01-persistence.md) · [앱을 먼저 만들기](../../tutorials/study-signup-db/README.md) · [개념 가이드](../../guides/database-for-vibe-coders/README.md)
 
 **저장 위치·잘못된 입력·동시 신청·다른 사용자·구조 변경·백업 복원을 직접 확인합니다.** AI가 만든 앱의 화면만으로 완료를 판단하기 어려운 분을 위한 실습입니다. 코드를 모두 해석할 필요는 없지만 명령의 대상과 결과는 확인해야 합니다.
 
@@ -94,6 +97,12 @@ npm run db:stop
 - [공식 출처](SOURCES.md)
 - [변경 기록](CHANGELOG.md)
 
+함께 읽기: [개념 가이드](../../guides/database-for-vibe-coders/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-[01 저장 확인부터 시작 →](01-persistence.md) · [앱을 먼저 만들기](../../tutorials/study-signup-db/README.md) · [개념 가이드](../../guides/database-for-vibe-coders/README.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 저장 — 껐다 켜도 남는가](01-persistence.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 05. 발견과 호출 — description이 하는 일
 
-> 이전 ← [`04-tool-differences.md`](04-tool-differences.md) · 다음 → [`06-canonical-and-adapters.md`](06-canonical-and-adapters.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 도구별 차이 — Claude Code · Codex · Gemini CLI · Cursor](04-tool-differences.md) · [목차](README.md) · [다음: 06. 한 절차를 여러 도구에 — canonical + adapter](06-canonical-and-adapters.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -87,3 +89,11 @@ Claude Code는 본문의 `` !`명령` ``을 모델에 보내기 전에 실행해
 - description을 "무엇/언제/언제 아님" 구조로 쓰고, 과호출·미호출을 요청 문장으로 시험할 수 있습니다.
 - 도구별로 자동 호출을 끄고 켜는 방법을 알 수 있습니다.
 - 호출된 본문이 남는 방식과 압축 시 한계를 이해하고, 필요하면 다시 부를 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 04. 도구별 차이 — Claude Code · Codex · Gemini CLI · Cursor](04-tool-differences.md) · [목차](README.md) · [다음: 06. 한 절차를 여러 도구에 — canonical + adapter](06-canonical-and-adapters.md)
+
+<!-- learnstead:footer:end -->

@@ -1,5 +1,9 @@
 # 출처
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **나눴더니 틀렸다 — 패턴별 실측과 실패 재현에서** version에 따라 달라질 수 있는 정보와 그 근거를 연결합니다.
 
 - 마지막 확인일: 2026-08-30
@@ -30,3 +34,11 @@
 ## 2026-09-07 보강 시 재확인
 
 [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)의 고정 경로 workflow·동적 agent 구분, 고정 병렬 분배와 동적 작업 분해의 차이, 반복 후보 비교·평가 피드백의 활용을 확인했습니다. 이 실습의 `workers`는 고정 분배 구현입니다. 기존 프레임워크·실행 환경 항목의 확인일은 유지합니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

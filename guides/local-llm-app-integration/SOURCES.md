@@ -1,5 +1,9 @@
 # 출처
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **Local LLM을 내 프로그램에 연결하기**에서 버전에 따라 달라질 수 있는 핵심 정보와 공식 근거를 연결합니다.
 
 - 마지막 확인일: 2026-08-24
@@ -45,3 +49,11 @@
 2. 블로그·비교 글은 탐색에만 쓰고, 확정 주장은 공식 문서나 원문으로 다시 확인합니다.
 3. 직접 실행한 결과는 이 문서가 아니라 [VALIDATION.md](VALIDATION.md)에 환경·명령·결과를 남깁니다.
 4. 자료가 충돌하면 하나를 임의로 택하지 않고 본문 주장을 좁히거나 검증 상태를 낮춥니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

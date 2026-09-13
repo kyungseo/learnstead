@@ -1,6 +1,8 @@
 # 03. 연결 — stdio와 Streamable HTTP
 
-> 이전 ← [`02-what-a-server-offers.md`](02-what-a-server-offers.md) · 다음 → [`04-connecting-to-tools.md`](04-connecting-to-tools.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 서버가 주는 세 가지 — tools · resources · prompts](02-what-a-server-offers.md) · [목차](README.md) · [다음: 04. 도구별 연결 — Claude Code · Codex](04-connecting-to-tools.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -72,3 +74,11 @@ server.run(transport="stdio")
 - stdio 서버의 세 규칙(stdout 금지·한 줄 한 메시지·EOF 종료)을 말할 수 있습니다.
 - 잘못된 stdout이 최신 클라이언트에서 "살아남는" 이유와 그래도 규칙을 지켜야 하는 이유를 설명할 수 있습니다.
 - 개인 도구는 stdio, 공유·서비스는 HTTP로 구분할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 02. 서버가 주는 세 가지 — tools · resources · prompts](02-what-a-server-offers.md) · [목차](README.md) · [다음: 04. 도구별 연결 — Claude Code · Codex](04-connecting-to-tools.md)
+
+<!-- learnstead:footer:end -->

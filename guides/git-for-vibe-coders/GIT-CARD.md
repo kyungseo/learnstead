@@ -1,9 +1,12 @@
 # 내 프로젝트 Git 카드
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 프로젝트마다 "지금 Git이 어떤 상태인지"를 한 장에 적어 두는 양식입니다. 특히 **원격 복사본과 Secret 파일 처리는** 사고가 난 뒤에
 찾으면 늦습니다.
 
-← [가이드 README](README.md) · 다음 → [01 버전 관리란](01-what-is-version-control.md)
 
 ---
 
@@ -69,6 +72,10 @@
 | Secret | .gitignore에 `.env`, `secret-config.txt` 등록 · 커밋된 적 없음 |
 | 다음 | GitHub Private 저장소를 만들어 commit 기록의 원격 복사본 추가 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 버전 관리란 무엇인가](01-what-is-version-control.md)
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

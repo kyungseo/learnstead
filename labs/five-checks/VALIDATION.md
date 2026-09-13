@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **다섯 가지 확인 — 코드를 읽지 않고 세 판을 판정하기의** fixture와 절차를 어디까지 실제로 확인했는지 기록합니다.
 
 ## 현재 요약
@@ -59,3 +63,11 @@
 - 내부 링크·이미지 경로: Markdown 링크 대상을 파일 존재 여부로 전수 검사
 - JavaScript: `node --check`
 - 한국어 강조 표기: 공개 후보 Markdown 22개를 GitHub GFM API로 렌더링하고, code 영역 밖에 문자 그대로 남은 `**`가 없음을 확인
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

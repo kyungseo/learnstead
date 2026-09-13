@@ -1,6 +1,8 @@
 # 06. skill과 MCP — 절차와 능력의 역할 분담
 
-> 이전 ← [`05-permission-boundaries.md`](05-permission-boundaries.md) · 다음 → [`07-what-goes-wrong.md`](07-what-goes-wrong.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05. 권한 경계 — 서버가 막고, host가 묻고, 사용자가 정한다](05-permission-boundaries.md) · [목차](README.md) · [다음: 07. 잘못되는 방식](07-what-goes-wrong.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -75,3 +77,11 @@ agent-skills 06장의 "진입 지시문은 가리키기만"이라는 원칙이 �
 - 결정성·코드화 가능성으로 skill과 MCP를 구분할 수 있습니다.
 - skill에서 MCP 도구를 서버 쪽 이름으로 가리키고 `compatibility`에 의존을 적을 수 있습니다.
 - 경로 검사 같은 강제 규칙을 skill 본문에 두지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 05. 권한 경계 — 서버가 막고, host가 묻고, 사용자가 정한다](05-permission-boundaries.md) · [목차](README.md) · [다음: 07. 잘못되는 방식](07-what-goes-wrong.md)
+
+<!-- learnstead:footer:end -->

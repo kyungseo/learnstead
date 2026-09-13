@@ -1,5 +1,9 @@
 # MCP-CARD — 한 장 요약
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 한 문장
 
 **도구를 서버로 한 번 만들어 MCP를 말하는 host(Claude Code·Codex·…)에 모두 꽂는다.** 내 코드는 server, host는 남의 것, client는 host가 만든다.
@@ -58,3 +62,11 @@ MCP 밖의 파일·shell 권한도 함께 좁힌다 — 막히면 모델은 우�
 ## 진단 순서
 
 `mcp list` → 명령 직접 실행 → `probe.py`(LLM 없이) → 작업 시키고 로그의 호출 줄 → 거부·취소 줄
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

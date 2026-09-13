@@ -1,5 +1,9 @@
 # VALIDATION
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 작성 환경
 
 | 항목 | 값 |
@@ -51,3 +55,11 @@ runner와 batch 요약에는 CLI 종료 코드를 별도 필드로 남깁니다.
 - 3회 반복. 과제·규칙·모델 각 하나.
 - `--max-turns 25` 안에서 모두 끝났습니다.
 - 실행마다 새 git 저장소를 만들므로 `~/.claude.json`에 프로젝트 항목이 쌓인다(무해).
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

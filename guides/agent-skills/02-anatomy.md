@@ -1,6 +1,8 @@
 # 02. SKILL.md 해부
 
-> 이전 ← [`01-why-skills.md`](01-why-skills.md) · 다음 → [`03-same-thing-different-names.md`](03-same-thing-different-names.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 왜 같은 프롬프트를 매번 다시 쓰는가](01-why-skills.md) · [목차](README.md) · [다음: 03. 이름이 다른 같은 것들 — skill · command · plugin · rule · hook · MCP](03-same-thing-different-names.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -121,3 +123,11 @@ frontmatter 오류는 조용히 실패합니다. Claude Code는 YAML이 깨지�
 - `SKILL.md`의 필수 필드 두 개와 선택 필드 네 개를 말할 수 있습니다.
 - description을 "무엇/언제/언제 아님" 세 부분으로 쓸 수 있습니다.
 - 본문을 목적·절차·형식 예·경계 사례·예 한 쌍의 뼈대로 구성할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 01. 왜 같은 프롬프트를 매번 다시 쓰는가](01-why-skills.md) · [목차](README.md) · [다음: 03. 이름이 다른 같은 것들 — skill · command · plugin · rule · hook · MCP](03-same-thing-different-names.md)
+
+<!-- learnstead:footer:end -->

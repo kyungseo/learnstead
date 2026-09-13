@@ -1,6 +1,8 @@
 # 03. 이름이 다른 같은 것들 — skill · command · plugin · rule · hook · MCP
 
-> 이전 ← [`02-anatomy.md`](02-anatomy.md) · 다음 → [`04-tool-differences.md`](04-tool-differences.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. SKILL.md 해부](02-anatomy.md) · [목차](README.md) · [다음: 04. 도구별 차이 — Claude Code · Codex · Gemini CLI · Cursor](04-tool-differences.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -87,3 +89,11 @@ plugin은 여러 구성 요소를 담는 **묶음입니다.** skill 여러 개�
 - 네 축(트리거·로드 시점·내용물·실행 주체)으로 어떤 도구의 어떤 이름이든 분류할 수 있습니다.
 - "command냐 skill이냐"보다 트리거를 정하는 일이 중요하다는 점을 설명할 수 있습니다.
 - 절차·강제·능력·상시 배경을 각각 skill·hook·MCP·진입 지시문에 배정할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 02. SKILL.md 해부](02-anatomy.md) · [목차](README.md) · [다음: 04. 도구별 차이 — Claude Code · Codex · Gemini CLI · Cursor](04-tool-differences.md)
+
+<!-- learnstead:footer:end -->

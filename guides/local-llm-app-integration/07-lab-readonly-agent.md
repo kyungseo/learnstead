@@ -1,9 +1,12 @@
 # 07 — 실습: 읽기 전용 도구를 쓰는 Local Agent 만들기
 
+<!-- learnstead:nav:start -->
+[← 이전: 06 — 도구를 쓰는 LLM 이해하기: Tool Calling · workflow · agent, 그리고 권한 경계](06-tool-calling-workflow-agent.md) · [목차](README.md) · [다음: 08 — 실습: Prompt Injection과 도구 권한 경계](08-lab-prompt-injection.md)
+<!-- learnstead:nav:end -->
+
 계산기와 제한된 문서 읽기·검색, 네 개의 **읽기 전용 도구**를 가진 작은 agent를 만듭니다. 모델이 도구를 고르고, 내 코드가
 실행하고, 결과를 돌려받아 답하는 루프를 끝까지 눈으로 봅니다. 08에서 같은 코드로 경계를 시험합니다.
 
-← [06 도구를 쓰는 LLM](06-tool-calling-workflow-agent.md) · 다음 → [08 실습: Prompt Injection과 권한 경계](08-lab-prompt-injection.md)
 
 > **왜 읽나:** 실습에서 모델은 첫 검색에 실패하자 목록을 확인하고 문서를 통째로 읽어 답을 찾았습니다. 이렇게 다음 행동을 고르는 것이 agent의 핵심 동작입니다.
 >
@@ -141,6 +144,10 @@ Shape: tools 4개 (calculate · list_docs · read_doc · search_docs) · qwen3:4
 Guard: 읽기 전용 · docs/ 경로 경계 · ast 계산기 · max_steps 6 · 문서 속 지시 무시(프롬프트)
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [08 실습: Prompt Injection과 도구 권한 경계 — 허용 범위를 넘어서는 실험](08-lab-prompt-injection.md)
+[← 이전: 06 — 도구를 쓰는 LLM 이해하기: Tool Calling · workflow · agent, 그리고 권한 경계](06-tool-calling-workflow-agent.md) · [목차](README.md) · [다음: 08 — 실습: Prompt Injection과 도구 권한 경계](08-lab-prompt-injection.md)
+
+<!-- learnstead:footer:end -->

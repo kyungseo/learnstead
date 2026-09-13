@@ -1,6 +1,8 @@
 # 08. 데이터가 늘거나 사라지면 어떻게 할까?
 
-[이전: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md) · [목차](README.md) · [다음: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md) · [목차](README.md) · [다음: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md)
+<!-- learnstead:nav:end -->
 
 신청자가 열 명일 때는 빨랐던 목록이 수천 명이 되면 느려질 수 있습니다. 반대로 사고는 단 한 건의 기록에서도 발생합니다. 규모가 커졌을 때의 조회와 잃었을 때의 복구를 처음부터 작게 연습해 둡니다.
 
@@ -46,6 +48,10 @@ CSV 내보내기는 기록을 확인하는 데 유용하지만 DB의 권한 정�
 
 복구 결과를 [데이터 관리 카드](DATA-CARD.md)에 기록합니다. 마지막 성공 날짜와 실제로 복원한 범위가 있어야 다음 사람이 같은 작업을 이어받을 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md) · [목차](README.md) · [다음: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md)
+[← 이전: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md) · [목차](README.md) · [다음: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md)
+
+<!-- learnstead:footer:end -->

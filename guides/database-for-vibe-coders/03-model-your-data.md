@@ -1,6 +1,8 @@
 # 03. 데이터를 어떤 모양으로 나눌까?
 
-[이전: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md) · [목차](README.md) · [다음: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md) · [목차](README.md) · [다음: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md)
+<!-- learnstead:nav:end -->
 
 신청자 이름 옆에 모임 이름을 써 둔 표 하나로도 첫 화면을 만들 수 있습니다. 그런데 모임 이름이 바뀌면 모든 신청 행을 수정해야 하고, 동명이인이 생기면 누구의 신청인지 헷갈립니다. 데이터 구조는 이런 변경을 견디도록 정합니다.
 
@@ -56,6 +58,10 @@ SQLite는 외래키 선언만 보고 활성화됐다고 가정하면 안 됩니�
 
 사람이 볼 것은 필드 개수보다 바뀌는 상황입니다. ‘동명이인 둘’, ‘모임 이름 변경’, ‘같은 사람의 두 번째 신청’이 생겨도 의도를 유지하는지 말로 따라가 보세요.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md) · [목차](README.md) · [다음: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md)
+[← 이전: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md) · [목차](README.md) · [다음: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md)
+
+<!-- learnstead:footer:end -->

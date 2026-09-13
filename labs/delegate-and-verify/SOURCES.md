@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 실습이 기대는 사실과 출처입니다. 도구 동작의 1차 출처는 가이드 [`SOURCES.md`](../../guides/agent-delegation/SOURCES.md)에 있고, 여기에는 실습 고유 항목만 둡니다.
 
 ## 1차 자료
@@ -24,3 +28,11 @@
 
 - 두 도구의 토큰 단위와 캐시 회계가 다르므로 도구 간 토큰 비교는 하지 않았습니다.
 - Codex `spawn_agent`가 기본적으로 대화 이력을 넘기는지(`fork_turns`의 기본값)는 문서에서 확인하지 못했습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

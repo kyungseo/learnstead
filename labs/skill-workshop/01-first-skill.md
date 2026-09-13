@@ -1,6 +1,8 @@
 # 01. 첫 skill — 설치, 명시 호출, 자동 호출
 
-> 다음 → [`02-description-experiments.md`](02-description-experiments.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. description 실험 — 과호출과 끄기](02-description-experiments.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -81,3 +83,11 @@ cat logs/e3.out
 | 목록에 `meeting-actions`가 없다 | symlink가 깨졌거나 `.claude/skills`가 아닌 곳에 있음 | `ls -la .claude/skills/` 확인. `ln -sfn ../../.agents/skills/meeting-actions .claude/skills/meeting-actions` |
 | 이미 Claude Code 세션 안에서 실행 중 | 중첩 실행 제한 | 별도 터미널에서 실행하거나 `env -u CLAUDECODE scripts/run-claude.sh …` |
 | Skill 호출은 됐는데 FAIL | 모델·버전 차이로 형식이 어긋남 | 04에서 본문을 보강하는 방법을 따른다. 결과를 그대로 기록 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. description 실험 — 과호출과 끄기](02-description-experiments.md)
+
+<!-- learnstead:footer:end -->

@@ -1,10 +1,13 @@
 # 06 — 도구를 쓰는 LLM 이해하기: Tool Calling · workflow · agent, 그리고 권한 경계
 
+<!-- learnstead:nav:start -->
+[← 이전: 05 — 구조화 출력: 답을 프로그램이 읽게 만들기](05-structured-output.md) · [목차](README.md) · [다음: 07 — 실습: 읽기 전용 도구를 쓰는 Local Agent 만들기](07-lab-readonly-agent.md)
+<!-- learnstead:nav:end -->
+
 모델은 계산도, 검색도, 파일 읽기도 **직접 하지 못합니다.** 모델은 "이 함수를 이 인자로 불러 달라"는 **요청만 출력**하고,
 실행은 내 프로그램이 담당합니다. 이 차이를 이해하면 tool calling·workflow·agent를 구분할 수 있고, 권한 경계를 왜 내 코드에
 두어야 하는지도 알 수 있습니다.
 
-← [05 구조화 출력](05-structured-output.md) · 다음 → [07 실습: 읽기 전용 Local Agent](07-lab-readonly-agent.md)
 
 > **왜 읽나:** 모델은 계산도 검색도 파일 읽기도 직접 못 합니다. "이 함수를 불러 달라"고 말할 수 있을 뿐이고, 그 말을 누가 어디까지 들어줄지는 내 코드가 정합니다.
 >
@@ -111,6 +114,10 @@ MCP 서버로 감싸는 방법을 검토할 수 있습니다. MCP는 재사용 �
 - [ ] 도구 집합이 읽기 전용인지, 아니라면 사람 확인이 있는지
 - [ ] 호출 상한과 인자 검증이 코드에 있다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [07 실습: 읽기 전용 도구를 쓰는 Local Agent 만들기](07-lab-readonly-agent.md)
+[← 이전: 05 — 구조화 출력: 답을 프로그램이 읽게 만들기](05-structured-output.md) · [목차](README.md) · [다음: 07 — 실습: 읽기 전용 도구를 쓰는 Local Agent 만들기](07-lab-readonly-agent.md)
+
+<!-- learnstead:footer:end -->

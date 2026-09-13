@@ -1,6 +1,8 @@
 # 04. 접근 — 다른 사람의 데이터도 바꿀 수 있는가
 
-[← 03 동시 변경](03-atomicity.md) · [전체 목차](README.md) · [05 구조 변경 →](05-migration.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 동시 변경 — 마지막 자리를 둘이 차지하는가](03-atomicity.md) · [목차](README.md) · [다음: 05. 구조 변경 — 예전 데이터도 살아남는가](05-migration.md)
+<!-- learnstead:nav:end -->
 
 다른 사용자의 신청을 읽고 바꾸려 합니다. 로그인한 A·B와 비로그인 요청을 구분합니다. **화면에서 감춰진 정보가 API에서도 보호되는지, 거절된 요청 뒤 DB가 그대로인지** 확인합니다.
 
@@ -60,6 +62,10 @@ A와 B가 같은 모임에 각각 신청했습니다. A·B의 인증 토큰은 �
 
 공통 검증을 반복하면 fixture의 신청을 다시 준비합니다. 임의로 RLS를 끄거나 테이블 권한을 넓혀 실패를 해결하지 마세요. 다시 원본 상태가 필요하면 [튜토리얼 초기화](../../tutorials/study-signup-db/01-prepare.md)에서 이 연습 프로젝트만 초기화합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 03 동시 변경](03-atomicity.md) · [전체 목차](README.md) · [05 구조 변경 →](05-migration.md)
+[← 이전: 03. 동시 변경 — 마지막 자리를 둘이 차지하는가](03-atomicity.md) · [목차](README.md) · [다음: 05. 구조 변경 — 예전 데이터도 살아남는가](05-migration.md)
+
+<!-- learnstead:footer:end -->

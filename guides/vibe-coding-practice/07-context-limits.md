@@ -1,6 +1,8 @@
 # 07 — 대화가 길어지면 생기는 일
 
-← [06 막혔을 때 빠져나오기](06-getting-unstuck.md) · 다음 → [08 남에게 보여 주기 전 점검](08-before-sharing.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06 — 막혔을 때 빠져나오기](06-getting-unstuck.md) · [목차](README.md) · [다음: 08 — 남에게 보여 주기 전 점검](08-before-sharing.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** AI가 처음 정한 규칙이나 이미 끝낸 작업을 놓치기 시작했다면 컨텍스트 한계를 의심할 수 있습니다. 다만 같은
 > 증상이 모호한 지시나 잘못된 가정 때문에 생길 수도 있으므로, 현재 상태를 다시 확인하는 일이 먼저입니다.
@@ -87,6 +89,10 @@
   알려 주는 편이 좋습니다
 - **결정은 커밋 메시지에 남깁니다.** 대화보다 오래갑니다([Git 가이드 08](../git-for-vibe-coders/08-commit-messages.md))
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [08 남에게 보여 주기 전 점검](08-before-sharing.md)
+[← 이전: 06 — 막혔을 때 빠져나오기](06-getting-unstuck.md) · [목차](README.md) · [다음: 08 — 남에게 보여 주기 전 점검](08-before-sharing.md)
+
+<!-- learnstead:footer:end -->

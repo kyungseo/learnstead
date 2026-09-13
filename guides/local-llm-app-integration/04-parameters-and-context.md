@@ -1,10 +1,13 @@
 # 04 — 파라미터 · context · 대화 상태: 무엇이 무엇을 바꾸는가
 
+<!-- learnstead:nav:start -->
+[← 이전: 03 — 실습: 작은 Python 대화 프로그램 만들기](03-lab-chat-program.md) · [목차](README.md) · [다음: 05 — 구조화 출력: 답을 프로그램이 읽게 만들기](05-structured-output.md)
+<!-- learnstead:nav:end -->
+
 모델 호출에는 10개 남짓의 설정 항목이 있습니다. 대부분은 기본값으로 시작해도 되지만,
 **temperature, max_tokens, context 창**은 반드시 이해해야 합니다. 특히 모델이 선언한 상한과 **runtime이 실제로 적용한 context 창**이
 다를 수 있어, 로컬 환경에서 자주 혼동을 일으킵니다.
 
-← [03 실습: 대화 프로그램](03-lab-chat-program.md) · 다음 → [05 구조화 출력](05-structured-output.md)
 
 > **왜 읽나:** 작성 환경에서는 모델이 262,144 토큰을 선언했지만 runtime은 4,096을 적용했습니다. 선언 상한만 믿으면 긴 입력이 실제 창을 넘는 문제를 놓치기 쉽습니다.
 >
@@ -121,6 +124,10 @@ def trim(history, max_tokens_est=3000):
 - [ ] 기록 자르기 전략을 정했고 system이 항상 맨 앞에 붙는다
 - [ ] 서비스라면 `keep_alive`를 정했다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [05 구조화 출력 — 답을 프로그램이 읽게 만들기](05-structured-output.md)
+[← 이전: 03 — 실습: 작은 Python 대화 프로그램 만들기](03-lab-chat-program.md) · [목차](README.md) · [다음: 05 — 구조화 출력: 답을 프로그램이 읽게 만들기](05-structured-output.md)
+
+<!-- learnstead:footer:end -->

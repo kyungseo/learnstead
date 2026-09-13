@@ -1,6 +1,8 @@
 # 04. memory — 세션을 넘어 남는 것
 
-> 이전 ← [`03-always-vs-conditional.md`](03-always-vs-conditional.md) · 다음 → [`05-budget-and-compaction.md`](05-budget-and-compaction.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 항상 vs 조건부 — 규칙·하위 지시문·skill·pointer](03-always-vs-conditional.md) · [목차](README.md) · [다음: 05. 예산과 compaction — 컨텍스트가 찰 때 무엇이 남는가](05-budget-and-compaction.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -77,3 +79,11 @@ Anthropic 글의 "structured note-taking"(에이전트가 `NOTES.md` 같은 외�
 - 지시문·local memory·작업 문서를 저자·소유·로드로 구분합니다.
 - auto memory의 로드 한계(200줄/25 KB)와 감사 방법을 설명할 수 있습니다.
 - 팀 규칙을 memory에 두지 않는 이유를 말할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 03. 항상 vs 조건부 — 규칙·하위 지시문·skill·pointer](03-always-vs-conditional.md) · [목차](README.md) · [다음: 05. 예산과 compaction — 컨텍스트가 찰 때 무엇이 남는가](05-budget-and-compaction.md)
+
+<!-- learnstead:footer:end -->

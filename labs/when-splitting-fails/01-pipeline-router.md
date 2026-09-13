@@ -1,6 +1,8 @@
 # 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다
 
-> [목차](README.md) · [다음: 02. 오케스트레이터-워커 →](02-orchestrator-workers.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 오케스트레이터-워커 — 입력 경계·병렬 시간·취합 결과를 따로 본다](02-orchestrator-workers.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -218,6 +220,10 @@ python3 patterns.py router "노트북은 언제까지 반납하나요?" --fallba
 - [ ] 분류 근거(`reason`)를 로그에 남기고 있다
 - [ ] 폴백 경로가 있고, 폴백의 비용을 알고 있다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [목차](README.md) · [다음: 02. 오케스트레이터-워커 →](02-orchestrator-workers.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 오케스트레이터-워커 — 입력 경계·병렬 시간·취합 결과를 따로 본다](02-orchestrator-workers.md)
+
+<!-- learnstead:footer:end -->

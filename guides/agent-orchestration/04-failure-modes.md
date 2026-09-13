@@ -1,6 +1,8 @@
 # 04. 실패 모드와 멈추는 법
 
-> [← 이전: 03. 컨텍스트 격리가 핵심이다](03-context-isolation.md) · [목차](README.md) · [다음: 05. 여러 역할과 단계가 필요한가 →](05-when-not-to.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 컨텍스트 격리가 핵심이다](03-context-isolation.md) · [목차](README.md) · [다음: 05. 여러 역할과 단계가 필요한가 — 선택 기준](05-when-not-to.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -109,6 +111,10 @@ MAX_TOKENS = 20000     # 누적 토큰      (실습: --budget-tokens)
 - 단계별 로그와 호출·시간·토큰 상한, 단일 호출 폴백을 구성에 붙일 수 있습니다.
 - 분기 판단·상한 도달·쓰기 직전이라는 세 개입 지점을 설계할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 03. 컨텍스트 격리가 핵심이다](03-context-isolation.md) · [목차](README.md) · [다음: 05. 여러 역할과 단계가 필요한가 →](05-when-not-to.md)
+[← 이전: 03. 컨텍스트 격리가 핵심이다](03-context-isolation.md) · [목차](README.md) · [다음: 05. 여러 역할과 단계가 필요한가 — 선택 기준](05-when-not-to.md)
+
+<!-- learnstead:footer:end -->

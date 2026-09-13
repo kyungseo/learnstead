@@ -1,5 +1,9 @@
 # 출처
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **AI로 코딩하는 사람을 위한 Git에서** 버전에 따라 달라질 수 있는 정보와 그 근거 자료를 연결합니다.
 
 - 마지막 확인일: 2026-08-27
@@ -57,3 +61,11 @@
 2. 블로그·요약 글은 탐색에만 쓰고, 확정 설명은 공식 문서로 확인합니다.
 3. 직접 실행한 결과는 이 문서가 아니라 [VALIDATION.md](VALIDATION.md)에 환경·명령·결과를 남깁니다.
 4. GitHub 화면 설명은 바뀌기 쉬우므로 `문서 확인` 이상으로 올리지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 09. 용어집
 
-> 이전 ← [`08-sharing-and-boundaries.md`](08-sharing-and-boundaries.md) · 처음 → [`README.md`](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 08. 배포·공유·버전·공개 경계](08-sharing-and-boundaries.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 가나다·알파벳 순이 아니라 **가이드에서 등장한 순서로** 배열했다. 처음 나온 장을 함께 적는다.
 
@@ -36,3 +38,11 @@
 | **신뢰 경계** | 저장소에 들어온 skill이 내 장비에서 명령을 실행하거나 권한을 얻는 지점 | 07 |
 | **managed / marketplace** | 조직 단위 배포 경로. Claude Code managed settings, plugin marketplace | 08 |
 | **`metadata.version`** | skill 버전을 적는 관례 자리. 규격에 버전 필드는 없음 | 08 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 08. 배포·공유·버전·공개 경계](08-sharing-and-boundaries.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

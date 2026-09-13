@@ -1,8 +1,11 @@
 # 01 — 단계별로 만들기: 색인 → 검색 → 근거 있는 답변
 
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — 선택: 저장소를 Chroma로 바꾸기](02-chroma.md)
+<!-- learnstead:nav:end -->
+
 `rag_skeleton.py` 한 파일로 가상 규정 4편에 답하는 RAG를 만들고, 답이 나올 때마다 **근거가 답을 뒷받침하는지** 판정합니다.
 
-← [README](README.md) · 다음 → [02 저장소를 Chroma로 바꾸기](02-chroma.md)
 
 > **검증 상태:** 이 문서의 모든 명령을 Apple M4 Pro·24GB Mac, Ollama 0.33.0, `bge-m3`·`gemma3:4b`에서 실행했습니다.
 > `[실행 검증 · 2026-08-30]` "실제 출력"은 그때 관찰한 것이며, 점수와 답의 표현은 모델·버전에 따라 달라집니다.
@@ -142,6 +145,12 @@ Ask:   dense · top-k 3 · threshold 없음 · 규칙 3종 · gemma3:4b · tempe
 Prove: 질문 4건 · 근거 판정 통과 4건 / 실패 0건 (첫 질문은 top-k 3에서 한도 생략)
 ```
 
+함께 읽기: [실습: RAG는 왜 틀리는가](../../labs/why-rag-fails/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [02 저장소를 Chroma로 바꾸기 (선택)](02-chroma.md) · **실패를 만들어 보려면 →** [실습: RAG는 왜 틀리는가](../../labs/why-rag-fails/README.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — 선택: 저장소를 Chroma로 바꾸기](02-chroma.md)
+
+<!-- learnstead:footer:end -->

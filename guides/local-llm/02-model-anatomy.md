@@ -1,8 +1,11 @@
 # 02 — 모델 해부: 파라미터·MoE·메모리 산식
 
+<!-- learnstead:nav:start -->
+[← 이전: 01 — 오리엔테이션: 로컬 실행의 전체 지도](01-orientation.md) · [목차](README.md) · [다음: 03 — 양자화: 무엇을 받아야 하는가](03-quantization.md)
+<!-- learnstead:nav:end -->
+
 **이 가이드에서 가장 실용적인 문서다.** "이 모델이 내 장비에서 돌아가는가"를 스스로 계산하기 위한 것.
 
-← [01 오리엔테이션](01-orientation.md) · 다음 → [03 양자화](03-quantization.md)
 
 ---
 
@@ -371,6 +374,10 @@ flowchart TD
 - [ ] 가중치·KV·overhead 합계가 OS와 다른 application 몫을 남기고 장비 memory에 들어가는가 ([04 §2](04-hardware-tiers.md))
 - [ ] 라이선스가 내 용도에 맞는가 ([09 §4](09-model-landscape.md))
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [03 양자화 — 포맷 선택](03-quantization.md)
+[← 이전: 01 — 오리엔테이션: 로컬 실행의 전체 지도](01-orientation.md) · [목차](README.md) · [다음: 03 — 양자화: 무엇을 받아야 하는가](03-quantization.md)
+
+<!-- learnstead:footer:end -->

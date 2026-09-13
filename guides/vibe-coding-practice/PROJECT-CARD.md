@@ -1,8 +1,11 @@
 # 내 프로젝트 카드
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 만드는 것·확인 방법·막힌 지점을 한 장에 남기는 양식입니다. 대화는 사라져도 이 카드는 남습니다.
 
-← [가이드 README](README.md) · 다음 → [00 코드를 둘러싼 큰 그림](00-big-picture.md)
 
 ---
 
@@ -89,6 +92,10 @@
 | 막힌 기록 | 8/24 업로드 413 반복 → 코드가 아니라 서버 설정 문제였음 |
 | 다음 | 빈칸 제출 시 안내 문구 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 무엇을 만들지부터 정한다](01-decide-first.md)
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

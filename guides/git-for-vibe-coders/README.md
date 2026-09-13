@@ -1,5 +1,9 @@
 # AI로 코딩하는 사람을 위한 Git
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 버전 관리란 무엇인가: "최종_진짜최종"에서 Git까지](01-what-is-version-control.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![한 프로젝트의 변경을 commit으로 저장하고 branch와 여러 worktree로 나누어 AI 작업을 안전하게 진행한 뒤 검토해 합치는 모습](assets/git-for-vibe-coders-hero.webp)
 
 AI 코딩 도구는 여러 파일을 빠르게 바꿉니다. 문제는 속도보다 **무엇이 바뀌었는지, 어디까지 되돌릴지, 어떤 결과를
@@ -131,7 +135,7 @@ git log --oneline -1
 
 - **오늘 하나만:** 위 10분 경로 → [10 S2 AI 작업 전 저장](10-scenarios-solo.md#s2--ai에게-시키기-전-세이브-포인트)
 - **개념부터 정독:** 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09
-- **AI가 방금 망가뜨렸다:** [10 S3](10-scenarios-solo.md#s3--ai가-망가뜨렸다) → [05](05-commits-and-undo.md)
+- **AI가 방금 망가뜨렸다:** [10 S3](10-scenarios-solo.md#s3--ai가-망쳐놨다) → [05](05-commits-and-undo.md)
 - **AI 작업 두 개를 동시에 돌리고 싶다:** [06](06-branches.md) → [07](07-worktrees.md)
 - **GitHub에 올리고 싶다:** [02](02-git-vs-github.md) → [09](09-github-and-pr.md) → [11](11-scenarios-share.md)
 - **Private 저장소를 처음 공개하거나 새 version을 release하려 한다:** [11 S11](11-scenarios-share.md#s11--공개-전-점검하기)
@@ -170,4 +174,10 @@ git log --oneline -1
 - [핵심 정보의 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**다음 →** [01 버전 관리란 무엇인가](01-what-is-version-control.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 버전 관리란 무엇인가: "최종_진짜최종"에서 Git까지](01-what-is-version-control.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

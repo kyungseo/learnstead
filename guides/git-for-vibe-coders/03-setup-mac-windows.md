@@ -1,6 +1,8 @@
 # 03 — 내 컴퓨터에 Git 준비하기: macOS와 Windows
 
-← [02 Git과 GitHub는 다르다](02-git-vs-github.md) · 다음 → [04 Git의 네 공간](04-four-areas.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02 — Git과 GitHub는 다르다: 도구와 서비스](02-git-vs-github.md) · [목차](README.md) · [다음: 04 — Git의 네 공간: add·commit·push가 무엇을 옮기는가](04-four-areas.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 대부분의 Mac에는 Git이 이미 있고, Windows에는 없습니다. 그리고 Windows에서는 "어떤 검은 창에 명령을 치는가"가
 > 결과를 바꿉니다. 이 문서 하나로 두 환경의 출발선을 맞춥니다.
@@ -140,6 +142,10 @@ git config --global user.email   # 내 이메일
 > 💬 **AI에게 이렇게 말하세요:** 설치가 헷갈릴 때 — "내 컴퓨터에 git이 설치돼 있는지, 사용자 이름과 이메일이 설정돼 있는지
 > 확인하는 명령을 실행하고, 빠진 게 있으면 뭘 해야 하는지 알려 줘. 나는 (macOS / Windows)를 쓰고 있어."
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [04 Git의 네 공간 — add·commit·push가 무엇을 옮기는가](04-four-areas.md)
+[← 이전: 02 — Git과 GitHub는 다르다: 도구와 서비스](02-git-vs-github.md) · [목차](README.md) · [다음: 04 — Git의 네 공간: add·commit·push가 무엇을 옮기는가](04-four-areas.md)
+
+<!-- learnstead:footer:end -->

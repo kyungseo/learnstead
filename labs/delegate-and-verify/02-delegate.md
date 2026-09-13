@@ -1,6 +1,8 @@
 # 02. 위임 — 메인 컨텍스트는 줄었는가
 
-> [← 이전: 01. 기준선](01-baseline.md) · [목차](README.md) · [다음: 03. 병렬 →](03-parallel.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 기준선 — 한 세션이 하는 만큼](01-baseline.md) · [목차](README.md) · [다음: 03. 병렬 — 동시 실행과 시간 절감은 다르다](03-parallel.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -74,6 +76,10 @@ python3 scripts/score.py --tsv runs/main/*-s02-*
 | Codex `rollouts/`에 자식 파일이 없음 | 세션 폴더가 다른 위치(`CODEX_HOME`) | 실제 Codex 홈 경로를 `CODEX_HOME` 환경 변수로 지정하고 새 실행 이름으로 재시도 |
 | subagent가 "파일을 찾을 수 없다"(worktree 격리 시) | worktree는 커밋에서 갈라지므로 미커밋 파일이 없음 | 이 실습은 매 실행이 커밋된 fixture에서 시작하므로 해당 없음. 자기 저장소에서는 먼저 커밋하고, feature branch 위면 `worktree.baseRef: "head"` |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 01. 기준선](01-baseline.md) · [목차](README.md) · [다음: 03. 병렬 →](03-parallel.md)
+[← 이전: 01. 기준선 — 한 세션이 하는 만큼](01-baseline.md) · [목차](README.md) · [다음: 03. 병렬 — 동시 실행과 시간 절감은 다르다](03-parallel.md)
+
+<!-- learnstead:footer:end -->

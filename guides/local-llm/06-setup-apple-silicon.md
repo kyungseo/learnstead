@@ -1,9 +1,12 @@
 # 06 — 설정: Apple Silicon Mac
 
+<!-- learnstead:nav:start -->
+[← 이전: 05 — 스택 지도: 어떤 도구를 쓸 것인가](05-stack-map.md) · [목차](README.md) · [다음: 07 — 셋업: NVIDIA 단일 GPU 워크스테이션](07-setup-nvidia-workstation.md)
+<!-- learnstead:nav:end -->
+
 M-series Mac에서 model을 실행하는 절차입니다. 24GB unified memory를 예시로 쓰지만, 실제 판단은 model file,
 context와 runtime log를 자기 장비에서 확인해야 합니다.
 
-← [05 스택 지도](05-stack-map.md) · 다음 → [07 NVIDIA 워크스테이션 셋업](07-setup-nvidia-workstation.md)
 
 > **검증 상태:** Ollama 경로는 M4 Pro·통합 메모리 24GB 환경에서 설치, 한국어 생성, GPU 적재와 OpenAI 호환
 > API까지 확인했습니다. LM Studio, llama.cpp와 MLX 직접 실행 경로는 공식 자료만 대조했으며 아직 실행하지
@@ -276,6 +279,10 @@ Activity Monitor의 Memory Pressure가 계속 yellow/red이거나 swap이 빠르
 - [ ] OpenAI 호환 엔드포인트에 curl이 응답한다
 - [ ] 실사용할 컨텍스트 길이로 한 번 테스트했다 (짧은 대화만 테스트하면 KV memory 한계를 확인하기 어렵다)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [07 NVIDIA 워크스테이션 셋업](07-setup-nvidia-workstation.md)
+[← 이전: 05 — 스택 지도: 어떤 도구를 쓸 것인가](05-stack-map.md) · [목차](README.md) · [다음: 07 — 셋업: NVIDIA 단일 GPU 워크스테이션](07-setup-nvidia-workstation.md)
+
+<!-- learnstead:footer:end -->

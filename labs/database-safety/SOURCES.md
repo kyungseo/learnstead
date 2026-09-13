@@ -1,5 +1,9 @@
 # 출처와 확인 범위
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 확인일은 2026-09-13입니다. 아래는 공식 문서를 읽어 확인한 내용이며, 이 예제의 실제 실행 결과는 [VALIDATION.md](VALIDATION.md)에서 따로 확인합니다. 문서의 `current` 주소는 나중에 다른 버전을 가리킬 수 있습니다.
 
 | 주제 | 공식 출처 | 사용한 범위 | 상태 |
@@ -22,4 +26,10 @@
 
 Supabase CLI·Auth·API·DB 버전, Docker의 포트 공개 방식, 호스팅·백업 조건이 달라지면 해당 공식 문서와 실행 경로를 다시 확인합니다. 가격표·무료 제공량·클라우드 운영 보장은 이 자료의 주장 범위에 넣지 않았습니다.
 
-[← 자료 목차](README.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

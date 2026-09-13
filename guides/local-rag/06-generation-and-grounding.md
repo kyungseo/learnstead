@@ -1,9 +1,12 @@
 # 06 — 생성과 근거 제시: 조각을 읽혀 답하게 하기
 
+<!-- learnstead:nav:start -->
+[← 이전: 05 — 청킹과 검색 품질: 자르기 · 섞기 · 재정렬](05-chunking-and-retrieval-quality.md) · [목차](README.md) · [다음: 07 — 그래프 기초와 지식 그래프: 점과 선으로 관계를 저장한다](07-graph-basics.md)
+<!-- learnstead:nav:end -->
+
 검색이 맞는 조각을 찾아왔다면, 남은 일은 모델이 **그 조각만 보고** 답하게 만들고, **어느 조각을 근거로 썼는지**
 드러내게 하는 것입니다. 이 문서는 프롬프트 조립, 근거 고정(grounding), context 예산을 다룹니다.
 
-← [05 청킹과 검색 품질](05-chunking-and-retrieval-quality.md) · 다음 → [07 그래프 기초](07-graph-basics.md)
 
 > **왜 읽나:** 맞는 조각을 찾아왔는데도 답이 어긋나면 프롬프트 규칙, 근거 배열, context 예산, 생성 모델을 차례로 확인해야 합니다.
 >
@@ -140,4 +143,10 @@ OpenAI 호환 endpoint로 호출할 때 창을 늘리는 방법은 runtime마다
 
 여기까지가 RAG의 뼈대입니다. **직접 만들어 보려면 →** [튜토리얼: 내 문서에 답하는 Local RAG 만들기](../../tutorials/local-rag-build/README.md)
 
-**계속 읽으려면 →** [07 그래프 기초와 지식 그래프](07-graph-basics.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 05 — 청킹과 검색 품질: 자르기 · 섞기 · 재정렬](05-chunking-and-retrieval-quality.md) · [목차](README.md) · [다음: 07 — 그래프 기초와 지식 그래프: 점과 선으로 관계를 저장한다](07-graph-basics.md)
+
+<!-- learnstead:footer:end -->

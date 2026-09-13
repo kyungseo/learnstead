@@ -1,5 +1,9 @@
 # CONTEXT-CARD — 한 장 요약
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 한 문장
 
 **모델이 보는 토큰 집합을 설계한다** — 항상 넣을 것, 조건부로 넣을 것, 세션을 넘겨 남길 것, 넣지 않을 것.
@@ -42,3 +46,11 @@
 ## Claude Code의 압축 손잡이
 
 `/context` 확인 · `/compact <초점>` · `/autocompact` · `/clear` 작업 전환 · 큰 읽기는 서브에이전트 · 살아남을 지시는 파일로
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

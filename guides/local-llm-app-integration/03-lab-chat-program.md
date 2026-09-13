@@ -1,9 +1,12 @@
 # 03 — 실습: 작은 Python 대화 프로그램 만들기
 
+<!-- learnstead:nav:start -->
+[← 이전: 02 — OpenAI 호환 API 읽기: endpoint · 요청 · 응답 해부](02-openai-compatible-api.md) · [목차](README.md) · [다음: 04 — 파라미터 · context · 대화 상태: 무엇이 무엇을 바꾸는가](04-parameters-and-context.md)
+<!-- learnstead:nav:end -->
+
 README의 첫 호출 코드에 **대화 기록·스트리밍·시스템 프롬프트·오류 처리**를 추가해 터미널 대화 프로그램을 만듭니다.
 60줄 남짓의 코드이며, 이후 실습도 같은 기본 구조를 사용합니다.
 
-← [02 OpenAI 호환 API](02-openai-compatible-api.md) · 다음 → [04 파라미터·context·대화 상태](04-parameters-and-context.md)
 
 > **왜 읽나:** 모델은 사용자의 이름을 스스로 기억하지 않습니다. 기억하는 것처럼 보이는 이유는 내 프로그램이 매번 대화 전체를 다시 보내기 때문이며, 실습에서 토큰 수로 확인합니다.
 >
@@ -116,6 +119,10 @@ Connection error.`가 출력되고 프로그램은 다음 입력을 기다립니
 Call: Ollama /v1 · gemma3:4b · system 1줄 · 최근 20개 기록 · stream · max_tokens 512 · temperature 0.3
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [04 파라미터·context·대화 상태 — 무엇이 무엇을 바꾸는가](04-parameters-and-context.md)
+[← 이전: 02 — OpenAI 호환 API 읽기: endpoint · 요청 · 응답 해부](02-openai-compatible-api.md) · [목차](README.md) · [다음: 04 — 파라미터 · context · 대화 상태: 무엇이 무엇을 바꾸는가](04-parameters-and-context.md)
+
+<!-- learnstead:footer:end -->

@@ -1,5 +1,9 @@
 # AI와 함께 만들기 — 바이브 코딩에서 Agentic Engineering으로
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 00 — 코드를 둘러싼 큰 그림](00-big-picture.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![자연어로 설명한 아이디어를 계획·확인·복구를 거쳐 앱으로 만들어 가는 바이브 코딩 가이드](assets/vibe-coding-practice-hero.webp)
 
 **AI가 코드를 만들어 주는데, 결과는 왜 이렇게 다를까요?**
@@ -154,4 +158,10 @@
 - [핵심 정보의 출처](SOURCES.md)
 - [검증 기록](VALIDATION.md)
 
-**다음 →** [00 코드를 둘러싼 큰 그림](00-big-picture.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 00 — 코드를 둘러싼 큰 그림](00-big-picture.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 03. 항상 vs 조건부 — 규칙·하위 지시문·skill·pointer
 
-> 이전 ← [`02-entry-instructions.md`](02-entry-instructions.md) · 다음 → [`04-memory.md`](04-memory.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 진입 지시문 — CLAUDE.md · AGENTS.md의 계층과 발견](02-entry-instructions.md) · [목차](README.md) · [다음: 04. memory — 세션을 넘어 남는 것](04-memory.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -68,3 +70,11 @@
 - 조건부 로드 네 형태와 각각의 켜지는 조건을 도구별로 말할 수 있습니다.
 - pointer가 조건부 로드가 아님을 실측으로 설명할 수 있습니다.
 - 규칙을 둘 자리를 결정 순서로 고릅니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 02. 진입 지시문 — CLAUDE.md · AGENTS.md의 계층과 발견](02-entry-instructions.md) · [목차](README.md) · [다음: 04. memory — 세션을 넘어 남는 것](04-memory.md)
+
+<!-- learnstead:footer:end -->

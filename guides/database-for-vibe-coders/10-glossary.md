@@ -1,6 +1,8 @@
 # 10. 데이터베이스 용어집
 
-[이전: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md) · [목차](README.md) · [다음: 신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 앞의 글에서 낯선 말이 나왔을 때 찾아보는 페이지입니다. 용어를 모두 외운 뒤 시작할 필요는 없습니다. 자신의 앱을 설명하는 문장에 넣어 보세요.
 
@@ -49,6 +51,12 @@
 
 이 질문에 답할 수 있다면 DB의 모든 내부 원리를 알지 못해도 자신의 앱이 데이터를 다루는 방식을 더 정확히 판단할 수 있습니다.
 
+함께 읽기: [다음: 신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md) · [목차](README.md) · [다음: 신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)
+[← 이전: 09. 다른 사람에게 공개해도 될까?](09-ready-to-share.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

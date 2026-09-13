@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 확인일 2026-08-30~31.
 
 ## 1차 자료
@@ -14,3 +18,11 @@
 ## 2차 자료
 
 없음.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

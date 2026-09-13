@@ -1,6 +1,8 @@
 # 06. 용어집
 
-> [← 이전: 05. 여러 역할과 단계가 필요한가](05-when-not-to.md) · [목차](README.md) · [다음: 실습 →](../../labs/when-splitting-fails/README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05. 여러 역할과 단계가 필요한가 — 선택 기준](05-when-not-to.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 모르는 단어가 나왔을 때 여는 참조 부록입니다. 서브에이전트·컨텍스트 격리처럼 앞선 가이드에 정의가 있는 용어는 그 정의를 따르고 링크를 둡니다.
 
@@ -59,6 +61,12 @@
 | **작업 분담 vs 컨텍스트 격리** | 역할·단계를 구분해 처리 ↔ 각 호출에 전달할 자료를 제한. 별도 호출이라도 같은 자료 전체를 받을 수 있으므로 입력 범위와 비용을 따로 확인 |
 | **오분류 vs 오류** | 예외 없이 정상처럼 보임 ↔ 예외가 남 |
 
+함께 읽기: [다음: 실습](../../labs/when-splitting-fails/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 05. 여러 역할과 단계가 필요한가](05-when-not-to.md) · [목차](README.md) · [다음: 실습 →](../../labs/when-splitting-fails/README.md)
+[← 이전: 05. 여러 역할과 단계가 필요한가 — 선택 기준](05-when-not-to.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

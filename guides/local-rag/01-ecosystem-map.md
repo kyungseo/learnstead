@@ -1,10 +1,13 @@
 # 01 — RAG·Graph 생태계 지도: 무엇이 어느 자리에 있는가
 
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — 내 문서와 대화하는 AI 이해하기: RAG · Long Context · Fine-tuning](02-rag-vs-long-context-vs-finetuning.md)
+<!-- learnstead:nav:end -->
+
 RAG를 배우기 시작하면 embedding model, vector database, LangChain, GraphRAG 같은 이름이 한꺼번에 쏟아집니다.
 이 문서는 그 이름들을 **파이프라인의 자리에** 하나씩 놓아, 이후 문서에서 어떤 도구가 나와도 "아, 그 자리의 것"이라고
 읽을 수 있게 만드는 지도입니다.
 
-← [README](README.md) · 다음 → [02 내 문서와 대화하는 AI 이해하기](02-rag-vs-long-context-vs-finetuning.md)
 
 > **왜 읽나:** embedding, vector DB, LangChain, GraphRAG… 이름은 스무 개인데 자리는 일곱 개뿐입니다.
 >
@@ -109,6 +112,10 @@ store에 넣고, 질의 시점에 벡터 검색으로 찾은 조각의 **이웃 
 한눈에 보이며, 실패를 일부러 만들기 쉽도록 고른 구성입니다. 실제 서비스에
 그대로 쓰라는 권장이 아닙니다. `[해석]` 모델 태그는 Ollama library에서 확인할 수 있습니다. `[문서 확인 · 2026-08-23]`
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [02 내 문서와 대화하는 AI 이해하기 — RAG·Long Context·Fine-tuning](02-rag-vs-long-context-vs-finetuning.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — 내 문서와 대화하는 AI 이해하기: RAG · Long Context · Fine-tuning](02-rag-vs-long-context-vs-finetuning.md)
+
+<!-- learnstead:footer:end -->

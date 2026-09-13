@@ -1,6 +1,8 @@
 # 07. 작업을 맡길지 결정하기 — 목적·품질·통합 비용
 
-> [← 이전: 06. 실패 지도](06-failure-map.md) · [목차](README.md) · [다음: 08. 용어집 →](08-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06. 실패 지도 — 작업을 맡긴 뒤 생길 수 있는 다섯 가지 문제](06-failure-map.md) · [목차](README.md) · [다음: 08. 용어집](08-glossary.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -63,6 +65,10 @@
 - 측정값·관측·일반적인 권고를 구분할 수 있습니다.
 - 목적별로 유지·보완 후 재측정·되돌림을 판단할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 06. 실패 지도](06-failure-map.md) · [목차](README.md) · [다음: 08. 용어집 →](08-glossary.md)
+[← 이전: 06. 실패 지도 — 작업을 맡긴 뒤 생길 수 있는 다섯 가지 문제](06-failure-map.md) · [목차](README.md) · [다음: 08. 용어집](08-glossary.md)
+
+<!-- learnstead:footer:end -->

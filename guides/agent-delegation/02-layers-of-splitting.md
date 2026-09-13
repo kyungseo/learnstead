@@ -1,6 +1,8 @@
 # 02. 일을 나누고 조정하는 네 가지 방식
 
-> [← 이전: 01. 한 세션이 막히는 세 가지 이유](01-why-split-a-session.md) · [목차](README.md) · [다음: 03. Subagent 해부 →](03-subagent-anatomy.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향](01-why-split-a-session.md) · [목차](README.md) · [다음: 03. Subagent 해부 — 무엇을 보고 무엇을 못 보는가](03-subagent-anatomy.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -70,6 +72,10 @@ Codex 문서는 subagent를 "bounded work를 메인 스레드에서 떼어 내�
 - 조정 주체·워커 간 대화·같은 파일이라는 세 질문으로 조정 방식을 고를 수 있습니다.
 - 메인 컨텍스트 절약과 전체 토큰 절약이 다른 목표임을 설명할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 01. 한 세션이 막히는 세 가지 이유](01-why-split-a-session.md) · [목차](README.md) · [다음: 03. Subagent 해부 →](03-subagent-anatomy.md)
+[← 이전: 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향](01-why-split-a-session.md) · [목차](README.md) · [다음: 03. Subagent 해부 — 무엇을 보고 무엇을 못 보는가](03-subagent-anatomy.md)
+
+<!-- learnstead:footer:end -->

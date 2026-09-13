@@ -1,6 +1,8 @@
 # 00 — 코드를 둘러싼 큰 그림
 
-← [가이드 README](README.md) · 다음 → [01 무엇을 만들지부터 정한다](01-decide-first.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 01 — 무엇을 만들지부터 정한다](01-decide-first.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** AI가 화면을 빠르게 만들어 줘도, 그 뒤에서 무엇이 실행되고 어디에 데이터가 저장되는지 모르면 요청 범위와
 > 위험을 판단하기 어렵습니다.
@@ -112,6 +114,10 @@ AI 도구나 harness는 실수를 줄이고 확인 절차를 반복하는 데 �
 Git을 아직 쓰지 않는다면 [AI로 코딩하는 사람을 위한 Git](../git-for-vibe-coders/README.md)의 10분 경로를 먼저 따라 해보세요.
 AI가 여러 파일을 바꾸는 환경에서는 되돌릴 지점이 곧 실험할 수 있는 여유가 됩니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 무엇을 만들지부터 정한다](01-decide-first.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 01 — 무엇을 만들지부터 정한다](01-decide-first.md)
+
+<!-- learnstead:footer:end -->

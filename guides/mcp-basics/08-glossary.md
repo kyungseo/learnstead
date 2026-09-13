@@ -1,6 +1,8 @@
 # 08. 용어집
 
-> 이전 ← [`07-what-goes-wrong.md`](07-what-goes-wrong.md) · 처음 → [`README.md`](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07. 잘못되는 방식](07-what-goes-wrong.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 등장 순서대로 배열했습니다.
 
@@ -31,3 +33,11 @@
 | **절차 vs 능력** | skill(모델이 따르는 지시문) vs MCP tool(코드가 실행하는 함수)의 역할 구분 | 06 |
 | **`compatibility`** | skill frontmatter 규격 필드. MCP 서버 의존을 적는 자리 | 06 |
 | **`instructions`** | MCP 서버가 host에 전달하는 안내문. host별 취급이 다름 | 05, 06 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 07. 잘못되는 방식](07-what-goes-wrong.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

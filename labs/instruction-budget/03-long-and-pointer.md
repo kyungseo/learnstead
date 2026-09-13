@@ -1,6 +1,8 @@
 # 03. 긴 지시문과 pointer — 희석과 간접 참조
 
-> 이전 ← [`02-short-vs-none.md`](02-short-vs-none.md) · 다음 → [`04-conditional.md`](04-conditional.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 짧은 지시문 vs 없음 — 코드가 규칙을 따르지 않을 때](02-short-vs-none.md) · [목차](README.md) · [다음: 04. 조건부 로드 — Claude 경로 규칙 vs Codex 중첩 AGENTS.md](04-conditional.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -50,3 +52,11 @@ grep -l RULES runs/claude-V3-*/out.json | wc -l      # pointer를 읽었나(결�
 | --- | --- | --- |
 | Codex V2가 만점 | 모델·버전 차이 | 그대로 기록. V2를 250줄 이상으로 늘려 재시도 |
 | Claude V3가 pointer를 안 읽음 | 판단에 맡긴 결과 | 정상. pointer 문장에 "`.py`를 만들기 전에 읽는다"를 붙여 비교해 보라 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 02. 짧은 지시문 vs 없음 — 코드가 규칙을 따르지 않을 때](02-short-vs-none.md) · [목차](README.md) · [다음: 04. 조건부 로드 — Claude 경로 규칙 vs Codex 중첩 AGENTS.md](04-conditional.md)
+
+<!-- learnstead:footer:end -->

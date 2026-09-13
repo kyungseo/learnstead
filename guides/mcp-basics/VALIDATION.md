@@ -1,5 +1,9 @@
 # VALIDATION
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 작성 환경
 
 | 항목 | 값 |
@@ -55,3 +59,11 @@
 - 반복 1~3회. 승인 정책·자동 로드 동작은 도구 버전과 사용자 설정에 따라 다릅니다.
 - 실습 서버는 stdio·무상태·읽기 위주입니다. HTTP·인증·상태 핸들은 문서 확인에 그칩니다.
 - Claude Code 권한 관측은 작성 환경의 `defaultMode: "auto"`가 개입합니다. 다른 설정에서는 6번의 첫 행이 달라집니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

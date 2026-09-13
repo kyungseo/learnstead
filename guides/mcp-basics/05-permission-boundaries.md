@@ -1,6 +1,8 @@
 # 05. 권한 경계 — 서버가 막고, host가 묻고, 사용자가 정한다
 
-> 이전 ← [`04-connecting-to-tools.md`](04-connecting-to-tools.md) · 다음 → [`06-skills-and-mcp.md`](06-skills-and-mcp.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 도구별 연결 — Claude Code · Codex](04-connecting-to-tools.md) · [목차](README.md) · [다음: 06. skill과 MCP — 절차와 능력의 역할 분담](06-skills-and-mcp.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -83,3 +85,11 @@ Skill(notes-digest)        # skill과 같은 자리에서 관리
 - "읽기 전용"을 서버 코드와 실제 데이터 권한으로 보장해야 하는 이유를 설명할 수 있습니다.
 - annotation을 믿는 host(Codex)와 안 믿는 host(Claude Code)의 차이를 설정으로 설명할 수 있습니다.
 - 주입 실험이 막힌 것을 구조적 보장으로 오해하지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 04. 도구별 연결 — Claude Code · Codex](04-connecting-to-tools.md) · [목차](README.md) · [다음: 06. skill과 MCP — 절차와 능력의 역할 분담](06-skills-and-mcp.md)
+
+<!-- learnstead:footer:end -->

@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **AI로 코딩하는 사람을 위한 Git의** 명령을 어디까지 실제로 확인했는지 기록합니다. 공식 문서를 확인한 것과 명령을
 직접 실행한 것은 구분합니다.
 
@@ -116,3 +120,11 @@ PNG는 검증용으로만 생성했고 저장소에는 SVG 원본만 둡니다.
 - SVG: svg-infographic 소스 lint + Chromium 2× 렌더
 
 정적 검증 통과는 GitHub 웹 조작의 성공을 대신하지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

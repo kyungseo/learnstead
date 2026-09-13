@@ -1,6 +1,8 @@
 # 07. 잘못되는 방식
 
-> 이전 ← [`06-skills-and-mcp.md`](06-skills-and-mcp.md) · 다음 → [`08-glossary.md`](08-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06. skill과 MCP — 절차와 능력의 역할 분담](06-skills-and-mcp.md) · [목차](README.md) · [다음: 08. 용어집](08-glossary.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -70,3 +72,11 @@
 - 연결·발견·호출 세 층으로 증상을 나누고 첫 확인 명령을 선택할 수 있습니다.
 - 모델의 자기 보고 대신 로그를 봅니다.
 - 남의 `.mcp.json`이 내 장비에서 실행되는 경계를 이해할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 06. skill과 MCP — 절차와 능력의 역할 분담](06-skills-and-mcp.md) · [목차](README.md) · [다음: 08. 용어집](08-glossary.md)
+
+<!-- learnstead:footer:end -->

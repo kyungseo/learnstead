@@ -1,9 +1,12 @@
 # 02 — 생성 실패와 진단표: ④ 근거 없는 답변
 
+<!-- learnstead:nav:start -->
+[← 이전: 01 — 검색·청킹 실패: ① 검색 누락 · ② 잘못된 조각 · ②′ 불완전 답변 · ③ 관련 없는 문서 · ③′ 단어 겹침](01-retrieval-failures.md) · [목차](README.md) · [다음: 03 — multi-hop: 벡터가 막히고 그래프가 답할 때](03-multi-hop.md)
+<!-- learnstead:nav:end -->
+
 검색이 맞는 조각을 찾아왔는데도 답이 틀리는 경우입니다. 근거 목록은 정상인데 **답만 다릅니다.** 이 문서 끝에 여섯 실패를 한
 장에 모은 진단표와 작성 환경의 채점표가 있습니다.
 
-← [01 검색·청킹 실패](01-retrieval-failures.md) · 다음 → [03 multi-hop](03-multi-hop.md)
 
 > **검증 상태:** 모든 명령을 Apple M4 Pro·24GB Mac, Ollama 0.33.0, `bge-m3`·`gemma3:4b`에서 실행했습니다. `[실행 검증 · 2026-08-30]`
 > 규칙을 빼는 방식으로는 재현되지 않았습니다. ④는 01의 ③′에서 이미 다른 얼굴로 나타났습니다.
@@ -80,6 +83,10 @@ python3 rag_minimal.py "경조 휴가는 언제까지 써야 하나요?" --top-k
 | ④ 근거 없는 답변 | △ | 규칙 제거로는 미재현. ③′에서 발현 — 근거 있음·내용 불일치 |
 | ⑤ multi-hop | ○ | 문서 4편·조각 10개에서 벡터 top-k 3 실패, 그래프 3홉 성공(단, 인용 틀림) — [03](03-multi-hop.md) |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [03 multi-hop — 벡터가 막히고 그래프가 답할 때](03-multi-hop.md)
+[← 이전: 01 — 검색·청킹 실패: ① 검색 누락 · ② 잘못된 조각 · ②′ 불완전 답변 · ③ 관련 없는 문서 · ③′ 단어 겹침](01-retrieval-failures.md) · [목차](README.md) · [다음: 03 — multi-hop: 벡터가 막히고 그래프가 답할 때](03-multi-hop.md)
+
+<!-- learnstead:footer:end -->

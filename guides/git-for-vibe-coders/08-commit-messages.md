@@ -1,6 +1,8 @@
 # 08 — 커밋 메시지 쓰는 법: 미래의 나에게 보내는 쪽지
 
-← [07 worktree](07-worktrees.md) · 다음 → [09 GitHub에 올리기와 PR](09-github-and-pr.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07 — worktree: 브랜치를 여러 작업 폴더에 동시에 펼치기](07-worktrees.md) · [목차](README.md) · [다음: 09 — GitHub에 올리기와 PR: 원격 복사본, 공유, 검토](09-github-and-pr.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 커밋 메시지는 "숙제"가 아니라 **되돌릴 때 읽는 목록**입니다. `update`, `수정`, `ㅁㄴㅇㄹ`로 채워진 기록에서는
 > 어느 지점으로 돌아가야 할지 고를 수 없습니다.
@@ -113,6 +115,10 @@ AI는 **바뀐 내용(diff)을 읽고 "무엇을"을 요약할** 수 있습니�
 - [ ] "왜"는 본문에 남긴다는 것을 안다
 - [ ] AI가 쓴 메시지를 세 기준으로 검토한다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [09 GitHub에 올리기와 PR](09-github-and-pr.md)
+[← 이전: 07 — worktree: 브랜치를 여러 작업 폴더에 동시에 펼치기](07-worktrees.md) · [목차](README.md) · [다음: 09 — GitHub에 올리기와 PR: 원격 복사본, 공유, 검토](09-github-and-pr.md)
+
+<!-- learnstead:footer:end -->

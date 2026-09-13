@@ -1,6 +1,8 @@
 # 08. 용어집
 
-> 이전 ← [`07-what-not-to-put-in.md`](07-what-not-to-put-in.md) · 처음 → [`README.md`](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07. 무엇을 넣지 말 것인가](07-what-not-to-put-in.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 등장 순서대로 배열했습니다.
 
@@ -26,3 +28,11 @@
 | **희석(dilution)** | 긴 지시문 속에서 개별 규칙이 덜 지켜지는 현상. 이 가이드에서는 한 과제·한 도구(Codex)의 3회 실행에서 관측한 경향 | 06 |
 | **기계 판정** | 규칙 준수를 스크립트로 채점하는 것. 실험의 전제 | 06 |
 | **추론 가능한 관례** | 기존 코드에서 모델이 읽어 낼 수 있는 규칙. 지시문에 적을 필요가 없는 것 | 01, 07 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 07. 무엇을 넣지 말 것인가](07-what-not-to-put-in.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

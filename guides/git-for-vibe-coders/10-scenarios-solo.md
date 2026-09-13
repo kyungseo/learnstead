@@ -1,6 +1,8 @@
 # 10 — 시나리오: 혼자 만들 때
 
-← [09 GitHub에 올리기와 PR](09-github-and-pr.md) · 다음 → [11 시나리오: 올리고 공개할 때](11-scenarios-share.md)
+<!-- learnstead:nav:start -->
+[← 이전: 09 — GitHub에 올리기와 PR: 원격 복사본, 공유, 검토](09-github-and-pr.md) · [목차](README.md) · [다음: 11 — 시나리오: 올리고 공개할 때](11-scenarios-share.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 여기서부터는 개념이 아니라 **상황**입니다. "AI가 망쳐놨다", "두 안 중에 고르고 싶다", "잠깐 다른 일을 해야 한다" —
 > 목차에서 내 상황을 찾아 그 절만 읽으세요.
@@ -262,6 +264,10 @@ The stash entry is kept in case you need it again.
 - [ ] `git diff`의 `+`/`−`를 읽을 수 있다 (S5)
 - [ ] stash pop에서 충돌이 나도 당황하지 않는다 (S6)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [11 시나리오: 올리고 공개할 때](11-scenarios-share.md)
+[← 이전: 09 — GitHub에 올리기와 PR: 원격 복사본, 공유, 검토](09-github-and-pr.md) · [목차](README.md) · [다음: 11 — 시나리오: 올리고 공개할 때](11-scenarios-share.md)
+
+<!-- learnstead:footer:end -->

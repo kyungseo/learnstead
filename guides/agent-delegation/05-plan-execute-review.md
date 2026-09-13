@@ -1,6 +1,8 @@
 # 05. 계획 → 실행 → 검토 — 검토 기준과 컨텍스트 선택
 
-> [← 이전: 04. 병렬은 언제 실제로 빠른가](04-parallel-and-worktrees.md) · [목차](README.md) · [다음: 06. 실패 지도 →](06-failure-map.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 병렬은 언제 실제로 빠른가 — worktree와 파일 소유권](04-parallel-and-worktrees.md) · [목차](README.md) · [다음: 06. 실패 지도 — 작업을 맡긴 뒤 생길 수 있는 다섯 가지 문제](06-failure-map.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -89,6 +91,10 @@ Claude Code 문서는 이렇게 경고합니다. "gap을 찾으라고 한 검토
 - 작성 세션 이어 가기와 새 컨텍스트 검토를 같은 기준으로 비교하고, 이번 조건에서 확인된 결과와 아직 입증하지 못한 효과를 구분할 수 있습니다.
 - 검토 프롬프트에 finding의 정의를 넣고, 코드 검사를 검토자 앞에 두는 순서를 설계할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 04. 병렬은 언제 실제로 빠른가](04-parallel-and-worktrees.md) · [목차](README.md) · [다음: 06. 실패 지도 →](06-failure-map.md)
+[← 이전: 04. 병렬은 언제 실제로 빠른가 — worktree와 파일 소유권](04-parallel-and-worktrees.md) · [목차](README.md) · [다음: 06. 실패 지도 — 작업을 맡긴 뒤 생길 수 있는 다섯 가지 문제](06-failure-map.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 08. 용어집
 
-> [← 이전: 07. 작업을 맡길지 결정하기](07-when-not-to-split.md) · [목차](README.md) · [다음: 실습 →](../../labs/delegate-and-verify/README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07. 작업을 맡길지 결정하기 — 목적·품질·통합 비용](07-when-not-to-split.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 등장 순서대로 배열했습니다. 앞선 가이드에 정의가 있는 용어는 그 정의를 따르고 링크만 둡니다.
 
@@ -40,6 +42,12 @@
 | 검토 vs 검사 | 모델이 읽고 판단 ↔ 코드가 돌리고 통과/실패. 검사가 먼저 |
 | plan mode vs 읽기 전용 subagent | 계획 단계의 편집 제한 ↔ 위임받은 작업의 권한 제한. 사람의 승인 지점은 별도 지정 |
 
+함께 읽기: [다음: 실습](../../labs/delegate-and-verify/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 07. 작업을 맡길지 결정하기](07-when-not-to-split.md) · [목차](README.md) · [다음: 실습 →](../../labs/delegate-and-verify/README.md)
+[← 이전: 07. 작업을 맡길지 결정하기 — 목적·품질·통합 비용](07-when-not-to-split.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,9 +1,12 @@
 # 내 RAG 구성 카드
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 답이 나왔다는 사실만이 아니라 **무엇을 색인했는지(Index), 무엇이 검색돼 프롬프트에 들어갔는지(Ask), 근거가 답을
 뒷받침하는지(Prove)를** 한 장에 남기는 기록 양식입니다. 청킹·검색·모델을 바꿀 때마다 아래 template을 복사해 사용하세요.
 
-← [가이드 README](README.md) · 다음 → [01 생태계 지도](01-ecosystem-map.md)
 
 ---
 
@@ -71,6 +74,10 @@
 세부 판정 방법은 [실습](../../labs/why-rag-fails/README.md), 평가를 숫자로 바꾸는 방법은 [09 §4](09-personal-vs-enterprise.md)와 [실습 ④](../../labs/why-rag-fails/04-golden-set.md)를
 참고하세요.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 RAG·Graph 생태계 지도](01-ecosystem-map.md)
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

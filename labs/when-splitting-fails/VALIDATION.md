@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **나눴더니 틀렸다 — 패턴별 실측과 실패 재현의** 시나리오를 어디까지 실제로 실행했는지 기록합니다.
 
 ## 현재 요약
@@ -120,3 +124,11 @@
 - GFM 렌더 후 코드 밖에 남은 리터럴 `**` 0건. 공개 레이아웃의 링크·구조 검사(`python3 tools/validate.py --public`)와 `git diff --check` 통과. 원본과 공개용 작업본은 상대 링크 매핑을 제외하고 일치합니다.
 - 변경된 SVG 5개는 소스 검사 0 error·0 warning, Chrome 152.0.7977.76의 2× 렌더와 시각 확인을 통과했습니다. 렌더러: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`.
 - 문서와 도식 설명을 보완한 검증입니다. 모델 실험을 다시 실행하지 않았으며, 실제 초심자를 대상으로 이해도를 측정한 결과는 아닙니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

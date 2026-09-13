@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **내 문서에 답하는 Local RAG 만들기의** 명령을 어디까지 실제로 실행했는지 기록합니다.
 
 ## 현재 요약
@@ -42,3 +46,11 @@
 위 표는 한 장비·한 모델 조합의 1회 실행 결과이며, 다른 장비·모델·버전에서 같은 답을 보장하지 않습니다. 재현 가능한 issue를
 만들려면 OS·Python·패키지 버전, Ollama 버전과 모델 ID(`ollama list`), `ollama ps`의 CONTEXT, 실행한 명령과 출력의 근거 목록(점수
 포함), 답변 원문과 판정 결과를 함께 적습니다. 문서 원문에 개인정보나 내부 정보가 있다면 공개 issue에 넣지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

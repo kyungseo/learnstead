@@ -1,6 +1,8 @@
 # 05. skill vs 프롬프트 직접 지시 — 3회씩 판정
 
-> 이전 ← [`04-tighten-and-collide.md`](04-tighten-and-collide.md) · 처음 → [`README.md`](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 본문 보강과 충돌 — v1.1로 수렴, 겹치는 description, 같은 이름](04-tighten-and-collide.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -72,3 +74,11 @@ for l in A-1 A-2 A-3 B-1 B-2 B-3 C-1; do printf '%-5s %s\n' $l "$(python3 .agent
 - skill의 효과를 "있다/없다"가 아니라 **판정 통과 수와 토큰으로** 말할 수 있다.
 - 기준선을 잴 때 skill을 **꺼야** 하는 이유를 안다.
 - 다음 skill을 만들 때 description·본문·판정기를 함께 만든다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 04. 본문 보강과 충돌 — v1.1로 수렴, 겹치는 description, 같은 이름](04-tighten-and-collide.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 09. 다른 사람에게 공개해도 될까?
 
-[이전: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md) · [목차](README.md) · [다음: 10. 데이터베이스 용어집](10-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md) · [목차](README.md) · [다음: 10. 데이터베이스 용어집](10-glossary.md)
+<!-- learnstead:nav:end -->
 
 신청 하나가 저장되는 것을 확인했다면 첫 기능은 완성된 것입니다. 다른 사람이 쓰기 시작하려면 그 사람이 볼 수 있는 범위와 사고 후 복구까지 확인해야 합니다. 이 장은 앞의 내용을 실제 공개 결정으로 연결합니다.
 
@@ -43,6 +45,10 @@
 
 다음에는 [용어집](10-glossary.md)에서 낯선 말을 다시 확인하거나, [신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)로 넘어가 직접 만들어 보세요. 앱이 이미 있다면 [DB 안전 실습](../../labs/database-safety/README.md)의 관찰 기준을 연습 환경에서 적용할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md) · [목차](README.md) · [다음: 10. 데이터베이스 용어집](10-glossary.md)
+[← 이전: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md) · [목차](README.md) · [다음: 10. 데이터베이스 용어집](10-glossary.md)
+
+<!-- learnstead:footer:end -->

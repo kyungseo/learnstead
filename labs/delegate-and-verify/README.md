@@ -1,6 +1,8 @@
 # 나눠 맡기고 확인하기 — Subagent 위임·병렬·검토 실측
 
-> [시작: 01. 기준선 — 한 세션이 하는 만큼 →](01-baseline.md)
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 기준선 — 한 세션이 하는 만큼](01-baseline.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
 
 ![위임한 두 작업의 결과를 사람이 확대경·체크리스트·시간과 비용 지표로 확인하는 손그림](assets/delegate-and-verify-hero.webp)
 
@@ -121,6 +123,10 @@ fixture 원본은 바뀌지 않고, 홈 디렉터리의 **설정**(`~/.claude/se
 python3 -m unittest discover -s scripts -p 'test_*.py' -v
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [시작: 01. 기준선 — 한 세션이 하는 만큼 →](01-baseline.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 기준선 — 한 세션이 하는 만큼](01-baseline.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

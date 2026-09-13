@@ -1,9 +1,12 @@
 # 11 — 용어집
 
+<!-- learnstead:nav:start -->
+[← 이전: 10 — 신뢰성과 운영: 오류 · 재시도 · 로그 · 테스트 · 노출](10-reliability-and-operations.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 전 문서의 **참조 부록**입니다. 순서대로 읽는 문서가 아니라, 모르는 용어가 나왔을 때 여는 문서입니다. 정의는 이 가이드의
 서술 기준을 따르며, 상세 설명이 있는 본문 위치를 함께 적었습니다.
 
-← [10 신뢰성과 운영](10-reliability-and-operations.md) · [README로](README.md)
 
 ---
 
@@ -91,6 +94,10 @@
 | **재시도할 오류 vs 안 할 오류** | 연결·타임아웃 ↔ 4xx·잘린 답·틀린 답 |
 | **200 OK vs 맞는 답** | 호출 성공 ↔ 내용 정확. LLM 앱에서는 다르다 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**← [README로 돌아가기](README.md)**
+[← 이전: 10 — 신뢰성과 운영: 오류 · 재시도 · 로그 · 테스트 · 노출](10-reliability-and-operations.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

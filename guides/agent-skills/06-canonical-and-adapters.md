@@ -1,6 +1,8 @@
 # 06. 한 절차를 여러 도구에 — canonical + adapter
 
-> 이전 ← [`05-discovery-and-invocation.md`](05-discovery-and-invocation.md) · 다음 → [`07-what-goes-wrong.md`](07-what-goes-wrong.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05. 발견과 호출 — description이 하는 일](05-discovery-and-invocation.md) · [목차](README.md) · [다음: 07. 잘못되는 방식 — 실패 지도](07-what-goes-wrong.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -80,3 +82,11 @@ skill이 여럿이 되면 진입 지시문(`CLAUDE.md`·`AGENTS.md`)에 **라우
 - 규격 필드만 쓴 skill을 `.agents/skills` + symlink로 네 도구에 한 벌로 배치할 수 있습니다.
 - 도구 전용 필드를 canonical에서 adapter로 분리하는 기준을 알 수 있습니다.
 - adapter의 비용(간접 참조, 경로 검사)을 설명할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 05. 발견과 호출 — description이 하는 일](05-discovery-and-invocation.md) · [목차](README.md) · [다음: 07. 잘못되는 방식 — 실패 지도](07-what-goes-wrong.md)
+
+<!-- learnstead:footer:end -->

@@ -1,9 +1,12 @@
 # 05 — 구조화 출력: 답을 프로그램이 읽게 만들기
 
+<!-- learnstead:nav:start -->
+[← 이전: 04 — 파라미터 · context · 대화 상태: 무엇이 무엇을 바꾸는가](04-parameters-and-context.md) · [목차](README.md) · [다음: 06 — 도구를 쓰는 LLM 이해하기: Tool Calling · workflow · agent, 그리고 권한 경계](06-tool-calling-workflow-agent.md)
+<!-- learnstead:nav:end -->
+
 대화 프로그램의 출력은 사람이 읽는 문자열입니다. 프로그램이 읽으려면 **정해진 모양의 JSON**이어야 합니다. "JSON으로 답해"라고
 부탁하는 것과, runtime이 **토큰 단위로 스키마를 강제**하는 것은 다른 일입니다. 이 문서는 그 차이와 사용법을 다룹니다.
 
-← [04 파라미터·context](04-parameters-and-context.md) · 다음 → [06 도구를 쓰는 LLM 이해하기](06-tool-calling-workflow-agent.md)
 
 > **왜 읽나:** "JSON으로만 답해"라는 프롬프트 지시는 항상 지켜지지 않습니다. 실습에서는 같은 요청이 코드 펜스 하나 때문에 파싱에 실패했습니다.
 >
@@ -124,6 +127,10 @@ python3 extract.py "내일 점심 같이 먹자"
 - [ ] 형식 외 내용 검증 코드가 있다 (필수 필드·범위·원문 대조)
 - [ ] 낮은 `confidence`의 처리 경로를 정했다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [06 도구를 쓰는 LLM 이해하기 — Tool Calling · workflow · agent](06-tool-calling-workflow-agent.md)
+[← 이전: 04 — 파라미터 · context · 대화 상태: 무엇이 무엇을 바꾸는가](04-parameters-and-context.md) · [목차](README.md) · [다음: 06 — 도구를 쓰는 LLM 이해하기: Tool Calling · workflow · agent, 그리고 권한 경계](06-tool-calling-workflow-agent.md)
+
+<!-- learnstead:footer:end -->

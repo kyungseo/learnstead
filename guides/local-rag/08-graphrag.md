@@ -1,10 +1,13 @@
 # 08 — GraphRAG: 언제 그래프가 필요한가
 
+<!-- learnstead:nav:start -->
+[← 이전: 07 — 그래프 기초와 지식 그래프: 점과 선으로 관계를 저장한다](07-graph-basics.md) · [목차](README.md) · [다음: 09 — 개인 RAG와 기업 RAG: 파이프라인 아키텍처 비교](09-personal-vs-enterprise.md)
+<!-- learnstead:nav:end -->
+
 GraphRAG는 색인 시점에 문서에서 지식 그래프를 뽑아 두고, 질의 시점에 그래프를 따라가며 근거를 모으는 RAG의 변형입니다.
 이 문서는 **어떤 질문에서 벡터 RAG가 막히는지**, GraphRAG의 대표 구조, 변형들, 비용, 그리고 **벡터·그래프·결합의 선택
 규칙을** 다룹니다. 손으로 돌려 보는 실습은 별도 자료([실습 ⑤](../../labs/why-rag-fails/03-multi-hop.md))에 있습니다.
 
-← [07 그래프 기초](07-graph-basics.md) · 다음 → [09 개인 RAG와 기업 RAG](09-personal-vs-enterprise.md)
 
 > **왜 읽나:** GraphRAG는 모든 질문의 기본값이 아닙니다. 벡터 검색만으로 근거를 모으기 어려운 관계 연쇄·전체 요약 질문이 실제로 있는지 판단하는 것이 이 문서의 핵심입니다.
 >
@@ -119,6 +122,10 @@ GraphRAG는 색인 시점에 문서에서 지식 그래프를 뽑아 두고, 질
 | 문서가 자주 바뀜 | ◎ (재색인 쉬움) | ○ (증분 지원 도구 필요) | △ (요약 재생성) |
 | 로컬 소형 모델 | ◎ | ○ | △ |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [09 개인 RAG와 기업 RAG — 파이프라인 아키텍처 비교](09-personal-vs-enterprise.md)
+[← 이전: 07 — 그래프 기초와 지식 그래프: 점과 선으로 관계를 저장한다](07-graph-basics.md) · [목차](README.md) · [다음: 09 — 개인 RAG와 기업 RAG: 파이프라인 아키텍처 비교](09-personal-vs-enterprise.md)
+
+<!-- learnstead:footer:end -->

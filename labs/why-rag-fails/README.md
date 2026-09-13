@@ -1,5 +1,9 @@
 # RAG는 왜 틀리는가
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 검색·청킹 실패: ① 검색 누락 · ② 잘못된 조각 · ②′ 불완전 답변 · ③ 관련 없는 문서 · ③′ 단어 겹침](01-retrieval-failures.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![RAG 파이프라인에서 빠진 조각, 잘못 검색한 조각, 답과 분리된 근거를 찾아 체크리스트와 도구로 고치는 손그림](assets/why-rag-fails-hero.webp)
 
 튜토리얼에서 만든 RAG로 다섯 가지 실패 — **검색 누락, 잘못된 조각, 관련 없는 문서, 근거 없는 답변, multi-hop** — 를 일부러 만들어
@@ -130,4 +134,10 @@ labs/
 - [핵심 정보의 1차 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**다음 →** [01 검색·청킹 실패](01-retrieval-failures.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 검색·청킹 실패: ① 검색 누락 · ② 잘못된 조각 · ②′ 불완전 답변 · ③ 관련 없는 문서 · ③′ 단어 겹침](01-retrieval-failures.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

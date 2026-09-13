@@ -1,5 +1,9 @@
 # VALIDATION
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 작성 환경
 
 | 항목 | 값 |
@@ -54,3 +58,11 @@
 - Codex 이름 충돌 시 호출 대상은 1회 관측.
 - 두 도구 모두 실제 API 비용이 든다. 작성 환경 기준 전 과정 Claude Code 약 20회, Codex 약 10회.
 - 충돌 재검증은 도구별 1회이며, 사용자 환경의 기존 skill은 실험 대상으로 사용하지 않았다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,8 +1,11 @@
 # 01 — 오리엔테이션: 로컬 실행의 전체 지도
 
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — 모델 해부: 파라미터·MoE·메모리 산식](02-model-anatomy.md)
+<!-- learnstead:nav:end -->
+
 **로컬 LLM이 애초에 무엇인지**부터 정의하고, 그것이 **구조적으로 무엇인지**, **언제 그럴 가치가 있는지**를 정리한다.
 
-← [README](README.md) · 다음 → [02 모델 해부](02-model-anatomy.md)
 
 ---
 
@@ -188,6 +191,10 @@ flowchart TD
 
 세 가지 문제 모두 **[02 메모리 산식](02-model-anatomy.md)을** 이해하면 원인이 같다는 것이 보인다. 다음 문서로 간다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [02 모델 해부 — 파라미터·MoE·메모리 산식](02-model-anatomy.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — 모델 해부: 파라미터·MoE·메모리 산식](02-model-anatomy.md)
+
+<!-- learnstead:footer:end -->

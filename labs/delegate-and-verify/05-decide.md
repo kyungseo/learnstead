@@ -1,6 +1,8 @@
 # 05. 판정 — 유지할 것과 되돌릴 것
 
-> [← 이전: 04. 검토](04-review.md) · [목차](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 검토 — 누가 보느냐, 무엇을 찾으라 하느냐](04-review.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -48,6 +50,10 @@ python3 scripts/summarize.py runs/main --md > ../results/my-summary.md
 
 reset: `rm -rf runs` (fixture/ 안에서)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 04. 검토](04-review.md) · [목차](README.md)
+[← 이전: 04. 검토 — 누가 보느냐, 무엇을 찾으라 하느냐](04-review.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

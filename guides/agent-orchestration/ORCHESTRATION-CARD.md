@@ -1,8 +1,11 @@
 # ORCHESTRATION-CARD — 내 오케스트레이션 카드
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **어떤 작업을 분담할지(Split), 각 역할에 어떤 자료를 전달할지(Isolate), 언제 실행을 멈출지(Stop)를** 한 장에 기록하는 양식입니다. 구성을 바꿀 때마다 복사해 씁니다.
 
-← [가이드 README](README.md) · 다음 → [01 왜 하나로는 안 되는가](01-why-more-than-one.md)
 
 ---
 
@@ -73,6 +76,10 @@
 | Prove | 정확도 동일, 토큰 −28%, 시간 +0.5초 → **유지** |
 | 비교 | 라우터는 8문항 중 4개 오분류(정확도 0.50) → **되돌림**. 폴백을 붙여도 평균 비용이 단일보다 큼 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 왜 하나로는 안 되는가](01-why-more-than-one.md)
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

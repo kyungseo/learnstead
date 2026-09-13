@@ -1,5 +1,9 @@
 # 내 문서와 대화하는 AI 이해하기 — RAG와 Graph
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01 — RAG·Graph 생태계 지도: 무엇이 어느 자리에 있는가](01-ecosystem-map.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![문서가 조각과 벡터로 바뀌어 검색되고, 관계 그래프를 거쳐 근거 번호가 붙은 답으로 이어지는 손그림](assets/local-rag-guide-hero.webp)
 
 로컬 LLM에게 "우리 회사 연차는 며칠까지 이월돼?"라고 물어보면, 모델은 실제 규정을 모른 채 그럴듯한 답을 만들 수 있습니다.
@@ -169,4 +173,10 @@ GraphRAG 도구는 특히 빠르게 바뀌므로 확인일이 오래됐다면 �
 - [핵심 정보의 1차 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**다음 →** [01 RAG·Graph 생태계 지도](01-ecosystem-map.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01 — RAG·Graph 생태계 지도: 무엇이 어느 자리에 있는가](01-ecosystem-map.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

@@ -1,10 +1,13 @@
 # 07 — 그래프 기초와 지식 그래프: 점과 선으로 관계를 저장한다
 
+<!-- learnstead:nav:start -->
+[← 이전: 06 — 생성과 근거 제시: 조각을 읽혀 답하게 하기](06-generation-and-grounding.md) · [목차](README.md) · [다음: 08 — GraphRAG: 언제 그래프가 필요한가](08-graphrag.md)
+<!-- learnstead:nav:end -->
+
 벡터 검색은 "비슷한 조각"을 찾지만, "A의 담당자가 속한 팀의 팀장"처럼 **관계를 따라가는** 질문에는 약합니다. 이 문서는
 그래프가 무엇인지, 지식 그래프가 문서를 어떻게 다르게 저장하는지, graph database가 vector store와 어디가 다른지를
 다룹니다.
 
-← [06 생성과 근거 제시](06-generation-and-grounding.md) · 다음 → [08 GraphRAG](08-graphrag.md)
 
 > **왜 읽나:** "검색 고도화 담당자가 속한 팀의 팀장은?" — 답은 세 문장에 흩어져 있고, 벡터 검색은 세 문장을 동시에 집어야 합니다. 그래프는 선을 따라갑니다.
 >
@@ -109,6 +112,10 @@ RETURN 팀장.이름
 
 그래서 실무의 결론은 "그래프 **대신**"이 아니라 "벡터 **+** 그래프"입니다. 다음 문서가 그 결합을 다룹니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [08 GraphRAG — 언제 그래프가 필요한가](08-graphrag.md)
+[← 이전: 06 — 생성과 근거 제시: 조각을 읽혀 답하게 하기](06-generation-and-grounding.md) · [목차](README.md) · [다음: 08 — GraphRAG: 언제 그래프가 필요한가](08-graphrag.md)
+
+<!-- learnstead:footer:end -->

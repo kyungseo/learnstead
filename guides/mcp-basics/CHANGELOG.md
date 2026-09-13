@@ -1,6 +1,15 @@
 # 변경 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **AI Agent에 내 도구를 연결하는 법 — MCP 기초** 가이드의 독자 대상 내용과 검증 범위를 기록합니다.
+
+## 2026-09-13 — 문서 형식 표준 적용
+
+- 소개·본문·출처·검증·변경 기록의 상하 탐색과 하단 구분선을 공통 형식으로 맞췄습니다. 본문의 실행 명령과 기존 검증 날짜는 유지했습니다.
+- 대표 표지의 종이 배경을 Git 가이드의 옅은 아이보리 기준에 맞췄습니다.
 
 ## 2026-09-03 — 초판
 
@@ -9,3 +18,11 @@
 - Claude Code와 Codex의 연결·확인·제거 절차를 직접 실행한 기록과 Gemini CLI·Cursor의 문서 확인 범위를 구분했습니다.
 - 서버 코드·annotation·host 승인으로 이어지는 권한 경계와 경로 탈출·주입 지시문·stdout 오염 같은 실패를 다룹니다.
 - 읽기 전용 노트 MCP 서버 실습과 Agent Skills·Context Engineering 가이드로 이어지는 경로를 연결했습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

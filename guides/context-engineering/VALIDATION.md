@@ -1,5 +1,9 @@
 # VALIDATION
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 작성 환경
 
 | 항목 | 값 |
@@ -47,3 +51,11 @@
 - Claude Code의 `defaultMode: "auto"`는 편집 승인을 생략해 턴 수에 영향을 줄 수 있습니다.
 - compaction·Codex local memory는 실행하지 않았습니다. 해당 내용은 문서 확인으로 구분했습니다.
 - 2026-09-03 재검증은 회귀 확인을 위한 대표 실행입니다. 기존 3회 실험의 결과표를 새 표본으로 대체하지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

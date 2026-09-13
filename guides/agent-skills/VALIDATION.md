@@ -1,5 +1,9 @@
 # VALIDATION
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 작성 환경
 
 | 항목 | 값 |
@@ -52,3 +56,11 @@
 - 모델·버전이 바뀌면 자동 호출 판단과 충돌 규칙이 달라질 수 있다. 표의 날짜를 확인한다.
 - Codex 실행에는 `codex_models_manager` 캐시 경고가 함께 출력됐으나 결과에 영향은 없었다.
 - 2026-09-03의 이름 충돌 재검증도 도구별 1회다. 선택 우선순위는 버전과 설정에 따라 달라질 수 있다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 02. description 실험 — 과호출과 끄기
 
-> 이전 ← [`01-first-skill.md`](01-first-skill.md) · 다음 → [`03-same-skill-in-codex.md`](03-same-skill-in-codex.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 첫 skill — 설치, 명시 호출, 자동 호출](01-first-skill.md) · [목차](README.md) · [다음: 03. 같은 skill을 Codex에서 — $name, 파일 읽기, 경로 탐침](03-same-skill-in-codex.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -79,3 +81,11 @@ rm .claude/settings.local.json
 | broad에서도 Skill 호출이 0회 | 모델·버전 차이. 또는 목록 예산에 밀려 description이 잘림 | `claude`에서 `/context`의 Skills 행 확인. 결과를 그대로 기록 |
 | 되돌린 뒤에도 넓은 description이 보임 | Claude Code가 파일 변경을 감지하기 전 | 새 프로세스(`claude -p`)는 매번 다시 읽으므로 대개 문제없음. `git diff`로 파일 확인 |
 | `settings.local.json` 때문에 다음 단계가 이상함 | 삭제를 잊음 | `rm .claude/settings.local.json` |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 01. 첫 skill — 설치, 명시 호출, 자동 호출](01-first-skill.md) · [목차](README.md) · [다음: 03. 같은 skill을 Codex에서 — $name, 파일 읽기, 경로 탐침](03-same-skill-in-codex.md)
+
+<!-- learnstead:footer:end -->

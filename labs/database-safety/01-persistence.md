@@ -1,6 +1,8 @@
 # 01. 저장 — 껐다 켜도 남는가
 
-[← 목차](README.md) · [전체 목차](README.md) · [02 규칙 →](02-constraints.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 규칙 — 잘못된 데이터가 들어오는가](02-constraints.md)
+<!-- learnstead:nav:end -->
 
 화면에서 한 줄이 보이는 상태와 다음 실행에도 남는 상태를 구분합니다. **계정 없이 가능한 SQLite 비교를 먼저 하고, 신청 앱에서도 다시 읽어 확인합니다.**
 
@@ -99,6 +101,10 @@ python3 code/sqlite_lab.py list --db practice.sqlite
 
 옵션 없는 자동 비교의 임시 DB는 실행이 끝나면 정리됩니다. 직접 만든 `practice.sqlite`는 남으므로 위의 `reset`으로 행을 비우거나 파일 자체를 정리합니다. 자동 비교를 다시 실행하면 처음부터 같은 조건으로 비교합니다. 신청 앱의 데이터를 비우려면 [튜토리얼의 초기화](../../tutorials/study-signup-db/01-prepare.md)를 사용합니다. **DB 초기화는 지속성 확인을 끝낸 뒤** 실행하세요. 초기화 때문에 사라진 데이터를 저장 실패로 판단하면 안 됩니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 목차](README.md) · [전체 목차](README.md) · [02 규칙 →](02-constraints.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 규칙 — 잘못된 데이터가 들어오는가](02-constraints.md)
+
+<!-- learnstead:footer:end -->

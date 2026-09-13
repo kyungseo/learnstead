@@ -1,6 +1,8 @@
 # 01 — 버전 관리란 무엇인가: "최종_진짜최종"에서 Git까지
 
-← [README](README.md) · 다음 → [02 Git과 GitHub는 다르다](02-git-vs-github.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — Git과 GitHub는 다르다: 도구와 서비스](02-git-vs-github.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** `보고서_최종.docx`, `보고서_최종_수정.docx`, `보고서_진짜최종.docx`를 만들어 본 적이 있다면 이미 버전 관리를 손으로
 > 하고 있었던 것입니다. Git은 그 일을 대신하는 도구이고, 코드가 아니라도 똑같이 씁니다.
@@ -76,6 +78,10 @@ AI와 코딩하면 변경 범위가 빠르게 커질 수 있습니다. 한 번�
 > 💬 **AI에게 이렇게 말하세요:** 개념을 확인하고 싶을 때 — "지금 이 프로젝트에 git 기록이 있어? 있으면 최근 저장 지점 5개를
 > 한 줄씩 보여 줘." (기록이 없다면 AI가 `git init`부터 제안할 것입니다 — [README 10분 경로](README.md))
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [02 Git과 GitHub는 다르다](02-git-vs-github.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — Git과 GitHub는 다르다: 도구와 서비스](02-git-vs-github.md)
+
+<!-- learnstead:footer:end -->

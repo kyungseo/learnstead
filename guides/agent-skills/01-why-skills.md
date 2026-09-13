@@ -1,6 +1,8 @@
 # 01. 왜 같은 프롬프트를 매번 다시 쓰는가
 
-> 이전 ← [`00-how-an-agent-works.md`](00-how-an-agent-works.md) · 다음 → [`02-anatomy.md`](02-anatomy.md)
+<!-- learnstead:nav:start -->
+[← 이전: 00. AI Agent는 어떻게 움직이는가](00-how-an-agent-works.md) · [목차](README.md) · [다음: 02. SKILL.md 해부](02-anatomy.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -73,3 +75,11 @@ skill을 이해하는 첫 번째 기준은 **로드 시점입니다.**
 - "skill은 필요할 때 로드되는 절차 파일"이라고 한 문장으로 말할 수 있습니다.
 - 항상 로드되는 지시문과 skill을 로드 시점에 따라 구분할 수 있습니다.
 - 반복되는 프롬프트 하나를 골라 skill 후보로 지목할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 00. AI Agent는 어떻게 움직이는가](00-how-an-agent-works.md) · [목차](README.md) · [다음: 02. SKILL.md 해부](02-anatomy.md)
+
+<!-- learnstead:footer:end -->

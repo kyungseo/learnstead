@@ -1,8 +1,11 @@
 # 13 — 용어집
 
+<!-- learnstead:nav:start -->
+[← 이전: 12 — AI에게 Git 작업을 지시하는 법: 상황별 문장과 위험 신호등](12-asking-ai.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 전 문서의 **참조 부록입니다.** 순서대로 읽는 문서가 아니라, 모르는 단어가 나왔을 때 여는 문서입니다.
 
-← [12 AI에게 Git 작업을 지시하는 법](12-asking-ai.md) · [README로](README.md)
 
 ---
 
@@ -100,6 +103,10 @@
 | **untracked vs modified** | Git이 모르는 새 파일 ↔ 알고 있는데 바뀐 파일 |
 | **커밋 전 비밀값 vs push 후 비밀값** | 지우면 끝 ↔ **키를 바꿔야 함** ([11 S10](11-scenarios-share.md)) |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**← [README로 돌아가기](README.md)**
+[← 이전: 12 — AI에게 Git 작업을 지시하는 법: 상황별 문장과 위험 신호등](12-asking-ai.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

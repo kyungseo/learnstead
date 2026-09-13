@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "path": "guides/agent-delegation",
+      "type": "guide",
+      "hero": "assets/agent-delegation-hero.webp",
+      "chapters": [
+        "01-why-split-a-session.md",
+        "02-layers-of-splitting.md",
+        "03-subagent-anatomy.md",
+        "04-parallel-and-worktrees.md",
+        "05-plan-execute-review.md",
+        "06-failure-map.md",
+        "07-when-not-to-split.md",
+        "08-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "DELEGATION-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "02-layers-of-splitting.md",
+        "asset": "diagrams/02-layers.svg"
+      }
+    },
+    {
+      "path": "guides/agent-orchestration",
+      "type": "guide",
+      "hero": "assets/agent-orchestration-hero.webp",
+      "chapters": [
+        "01-why-more-than-one.md",
+        "02-pattern-map.md",
+        "03-context-isolation.md",
+        "04-failure-modes.md",
+        "05-when-not-to.md",
+        "06-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "ORCHESTRATION-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/00-five-ways.svg"
+      }
+    },
+    {
+      "path": "guides/agent-skills",
+      "type": "guide",
+      "hero": "assets/agent-skills-hero.webp",
+      "chapters": [
+        "00-how-an-agent-works.md",
+        "01-why-skills.md",
+        "02-anatomy.md",
+        "03-same-thing-different-names.md",
+        "04-tool-differences.md",
+        "05-discovery-and-invocation.md",
+        "06-canonical-and-adapters.md",
+        "07-what-goes-wrong.md",
+        "08-sharing-and-boundaries.md",
+        "09-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SKILL-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "00-how-an-agent-works.md",
+        "asset": "diagrams/00-agent-runtime-map.svg"
+      }
+    },
+    {
+      "path": "guides/context-engineering",
+      "type": "guide",
+      "hero": "assets/context-engineering-hero.webp",
+      "chapters": [
+        "01-what-the-agent-reads.md",
+        "02-entry-instructions.md",
+        "03-always-vs-conditional.md",
+        "04-memory.md",
+        "05-budget-and-compaction.md",
+        "06-size-vs-adherence.md",
+        "07-what-not-to-put-in.md",
+        "08-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "CONTEXT-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "01-what-the-agent-reads.md",
+        "asset": "diagrams/01-four-layers.svg"
+      }
+    },
+    {
+      "path": "guides/database-for-vibe-coders",
+      "type": "guide",
+      "hero": "assets/database-guide-hero.webp",
+      "chapters": [
+        "01-where-data-lives.md",
+        "02-choose-a-database.md",
+        "03-model-your-data.md",
+        "04-talk-to-the-database.md",
+        "05-keep-data-consistent.md",
+        "06-permissions-and-keys.md",
+        "07-change-without-losing-data.md",
+        "08-operate-and-recover.md",
+        "09-ready-to-share.md",
+        "10-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "DATA-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "01-where-data-lives.md",
+        "asset": "diagrams/data-flow.svg"
+      }
+    },
+    {
+      "path": "guides/git-for-vibe-coders",
+      "type": "guide",
+      "hero": "assets/git-for-vibe-coders-hero.webp",
+      "chapters": [
+        "01-what-is-version-control.md",
+        "02-git-vs-github.md",
+        "03-setup-mac-windows.md",
+        "04-four-areas.md",
+        "05-commits-and-undo.md",
+        "06-branches.md",
+        "07-worktrees.md",
+        "08-commit-messages.md",
+        "09-github-and-pr.md",
+        "10-scenarios-solo.md",
+        "11-scenarios-share.md",
+        "12-asking-ai.md",
+        "13-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "GIT-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/00-ai-git-loop.svg"
+      }
+    },
+    {
+      "path": "guides/local-llm",
+      "type": "guide",
+      "hero": "assets/local-llm-guide-hero.webp",
+      "chapters": [
+        "01-orientation.md",
+        "02-model-anatomy.md",
+        "03-quantization.md",
+        "04-hardware-tiers.md",
+        "05-stack-map.md",
+        "06-setup-apple-silicon.md",
+        "07-setup-nvidia-workstation.md",
+        "08-setup-multi-gpu-server.md",
+        "09-model-landscape.md",
+        "10-operations.md",
+        "11-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "RUN-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "01-orientation.md",
+        "asset": "diagrams/01-public-local-hybrid.svg"
+      }
+    },
+    {
+      "path": "guides/local-llm-app-integration",
+      "type": "guide",
+      "hero": "assets/local-llm-app-integration-hero.webp",
+      "chapters": [
+        "01-integration-anatomy.md",
+        "02-openai-compatible-api.md",
+        "03-lab-chat-program.md",
+        "04-parameters-and-context.md",
+        "05-structured-output.md",
+        "06-tool-calling-workflow-agent.md",
+        "07-lab-readonly-agent.md",
+        "08-lab-prompt-injection.md",
+        "09-frameworks-and-architecture.md",
+        "10-reliability-and-operations.md",
+        "11-glossary.md"
+      ],
+      "support": [
+        "APP-CARD.md",
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/00-call-shape-guard.svg"
+      }
+    },
+    {
+      "path": "guides/local-rag",
+      "type": "guide",
+      "hero": "assets/local-rag-guide-hero.webp",
+      "chapters": [
+        "01-ecosystem-map.md",
+        "02-rag-vs-long-context-vs-finetuning.md",
+        "03-pipeline-anatomy.md",
+        "04-embeddings-and-vector-search.md",
+        "05-chunking-and-retrieval-quality.md",
+        "06-generation-and-grounding.md",
+        "07-graph-basics.md",
+        "08-graphrag.md",
+        "09-personal-vs-enterprise.md",
+        "10-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "RAG-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/03-two-phases.svg"
+      }
+    },
+    {
+      "path": "guides/mcp-basics",
+      "type": "guide",
+      "hero": "assets/mcp-basics-hero.webp",
+      "chapters": [
+        "01-the-problem-mcp-solves.md",
+        "02-what-a-server-offers.md",
+        "03-transports.md",
+        "04-connecting-to-tools.md",
+        "05-permission-boundaries.md",
+        "06-skills-and-mcp.md",
+        "07-what-goes-wrong.md",
+        "08-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "MCP-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "01-the-problem-mcp-solves.md",
+        "asset": "diagrams/01-m-times-n.svg"
+      }
+    },
+    {
+      "path": "guides/vibe-coding-practice",
+      "type": "guide",
+      "hero": "assets/vibe-coding-practice-hero.webp",
+      "chapters": [
+        "00-big-picture.md",
+        "01-decide-first.md",
+        "02-safety-net.md",
+        "03-how-to-ask.md",
+        "04-one-at-a-time.md",
+        "05-verify-without-reading.md",
+        "06-getting-unstuck.md",
+        "07-context-limits.md",
+        "08-before-sharing.md",
+        "09-when-to-stop.md",
+        "10-glossary.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "PROJECT-CARD.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "00-big-picture.md",
+        "asset": "diagrams/00-web-app-map.svg"
+      }
+    },
+    {
+      "path": "tutorials/local-rag-build",
+      "type": "tutorial",
+      "hero": "assets/local-rag-build-hero.webp",
+      "chapters": [
+        "01-build.md",
+        "02-chroma.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": null,
+      "diagram_note": "실행 단계와 판정표가 본문의 지도 역할을 한다. 개념 관계는 연결된 가이드의 SVG를 참고한다."
+    },
+    {
+      "path": "tutorials/study-signup-db",
+      "type": "tutorial",
+      "hero": "assets/study-signup-db-hero.webp",
+      "chapters": [
+        "01-prepare.md",
+        "02-model.md",
+        "03-connect.md",
+        "04-access.md",
+        "05-finish.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/app-map.svg"
+      }
+    },
+    {
+      "path": "labs/database-safety",
+      "type": "lab",
+      "hero": "assets/database-safety-hero.webp",
+      "chapters": [
+        "01-persistence.md",
+        "02-constraints.md",
+        "03-atomicity.md",
+        "04-authorization.md",
+        "05-migration.md",
+        "06-restore.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/verification-map.svg"
+      }
+    },
+    {
+      "path": "labs/delegate-and-verify",
+      "type": "lab",
+      "hero": "assets/delegate-and-verify-hero.webp",
+      "chapters": [
+        "01-baseline.md",
+        "02-delegate.md",
+        "03-parallel.md",
+        "04-review.md",
+        "05-decide.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": null,
+      "diagram_note": "실행 단계와 판정표가 본문의 지도 역할을 한다. 개념 관계는 연결된 가이드의 SVG를 참고한다."
+    },
+    {
+      "path": "labs/five-checks",
+      "type": "lab",
+      "hero": "assets/five-checks-hero.webp",
+      "chapters": [],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": null,
+      "diagram_note": "실행 단계와 판정표가 본문의 지도 역할을 한다. 개념 관계는 연결된 가이드의 SVG를 참고한다."
+    },
+    {
+      "path": "labs/instruction-budget",
+      "type": "lab",
+      "hero": "assets/instruction-budget-hero.webp",
+      "chapters": [
+        "01-inferable-baseline.md",
+        "02-short-vs-none.md",
+        "03-long-and-pointer.md",
+        "04-conditional.md",
+        "05-tokens.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": null,
+      "diagram_note": "실행 단계와 판정표가 본문의 지도 역할을 한다. 개념 관계는 연결된 가이드의 SVG를 참고한다."
+    },
+    {
+      "path": "labs/mcp-notes-server",
+      "type": "lab",
+      "hero": "assets/mcp-notes-server-hero.webp",
+      "chapters": [
+        "01-build-and-probe.md",
+        "02-connect-claude-code.md",
+        "03-connect-codex.md",
+        "04-break-it.md",
+        "05-skill-plus-mcp.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": null,
+      "diagram_note": "실행 단계와 판정표가 본문의 지도 역할을 한다. 개념 관계는 연결된 가이드의 SVG를 참고한다."
+    },
+    {
+      "path": "labs/skill-workshop",
+      "type": "lab",
+      "hero": "assets/skill-workshop-hero.webp",
+      "chapters": [
+        "01-first-skill.md",
+        "02-description-experiments.md",
+        "03-same-skill-in-codex.md",
+        "04-tighten-and-collide.md",
+        "05-skill-vs-prompt.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": null,
+      "diagram_note": "실행 단계와 판정표가 본문의 지도 역할을 한다. 개념 관계는 연결된 가이드의 SVG를 참고한다."
+    },
+    {
+      "path": "labs/when-splitting-fails",
+      "type": "lab",
+      "hero": "assets/when-splitting-fails-hero.webp",
+      "chapters": [
+        "01-pipeline-router.md",
+        "02-orchestrator-workers.md",
+        "03-evaluator-loop.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "02-orchestrator-workers.md",
+        "asset": "diagrams/02-orchestrator-workers.svg"
+      }
+    },
+    {
+      "path": "labs/why-rag-fails",
+      "type": "lab",
+      "hero": "assets/why-rag-fails-hero.webp",
+      "chapters": [
+        "01-retrieval-failures.md",
+        "02-generation-failure.md",
+        "03-multi-hop.md",
+        "04-golden-set.md"
+      ],
+      "support": [
+        "CHANGELOG.md",
+        "SOURCES.md",
+        "VALIDATION.md"
+      ],
+      "first_diagram": {
+        "page": "README.md",
+        "asset": "diagrams/08-failure-map.svg"
+      }
+    }
+  ]
+}

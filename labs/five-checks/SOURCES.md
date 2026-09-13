@@ -1,5 +1,9 @@
 # 출처
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **다섯 가지 확인 — 코드를 읽지 않고 세 판을 판정하기에서** 근거가 되는 자료를 연결합니다.
 
 - 마지막 확인일: 2026-08-30
@@ -25,3 +29,11 @@
 
 1. fixture의 동작이나 명령을 바꾸면 같은 commit에서 이 표와 VALIDATION을 갱신합니다.
 2. fixture는 특정 AI 도구의 출력이 아니라 저자가 만든 예제입니다 — "AI가 이렇게 만든다"는 주장이 아니라 "이런 결과를 다섯 확인이 잡는다"는 연습입니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

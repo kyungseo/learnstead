@@ -1,8 +1,11 @@
 # 05 — 스택 지도: 어떤 도구를 쓸 것인가
 
+<!-- learnstead:nav:start -->
+[← 이전: 04 — 하드웨어: GPU 종류와 등급 분류](04-hardware-tiers.md) · [목차](README.md) · [다음: 06 — 설정: Apple Silicon Mac](06-setup-apple-silicon.md)
+<!-- learnstead:nav:end -->
+
 Ollama·LM Studio·llama.cpp·MLX·vLLM·SGLang·TGI. **이름이 나란히 놓이지만 같은 층이 아니다.**
 
-← [04 하드웨어 등급](04-hardware-tiers.md) · 다음 → [06 Apple Silicon 셋업](06-setup-apple-silicon.md)
 
 ---
 
@@ -191,6 +194,10 @@ TTFT / decode tokens per second / p95 latency / total throughput:
 같은 조건을 만들 수 없다면 비교가 아니라 각 환경의 관측값으로 기록합니다. 구체적인 측정 방법은
 [10 §1](10-operations.md)에서 다룹니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [06 Apple Silicon 셋업](06-setup-apple-silicon.md)
+[← 이전: 04 — 하드웨어: GPU 종류와 등급 분류](04-hardware-tiers.md) · [목차](README.md) · [다음: 06 — 설정: Apple Silicon Mac](06-setup-apple-silicon.md)
+
+<!-- learnstead:footer:end -->

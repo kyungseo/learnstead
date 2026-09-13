@@ -1,8 +1,11 @@
 # AI와 함께 만드는 작은 신청 앱 — DB 연결부터 사용자별 접근까지
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 준비 — 내 컴퓨터 안에 연습용 DB 띄우기](01-prepare.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![AI와 함께 신청 앱 화면을 만들고 데이터베이스와 사용자별 기록을 연결하는 손그림](assets/study-signup-db-hero.webp)
 
-[01 준비부터 시작 →](01-prepare.md) · [개념 가이드](../../guides/database-for-vibe-coders/README.md) · [실패와 복원 실습](../../labs/database-safety/README.md)
 
 **내 컴퓨터에서 로그인하고 모임에 신청하는 작은 웹 앱을 실행하고, 데이터가 어디에 저장되며 누가 읽고 바꿀 수 있는지 확인합니다.** 화면 만들기는 AI에게 맡겨 본 적이 있지만 DB 연결·계정·권한이 낯선 분을 위한 튜토리얼입니다.
 
@@ -91,6 +94,12 @@ npm run dev
 - [실행 환경과 검증 결과](VALIDATION.md)
 - [독자에게 영향을 주는 변경](CHANGELOG.md)
 
+함께 읽기: [개념 가이드](../../guides/database-for-vibe-coders/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-[01 준비부터 시작 →](01-prepare.md) · [개념 가이드](../../guides/database-for-vibe-coders/README.md) · [실패와 복원 실습](../../labs/database-safety/README.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 준비 — 내 컴퓨터 안에 연습용 DB 띄우기](01-prepare.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

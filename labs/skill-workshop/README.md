@@ -1,5 +1,9 @@
 # Skill 워크숍 — 하나를 만들어 두 도구에서 관측하기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 첫 skill — 설치, 명시 호출, 자동 호출](01-first-skill.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![하나의 절차 카드를 두 AI 코딩 도구에서 실행하고 체크리스트 결과를 나란히 비교하는 손그림](assets/skill-workshop-hero.webp)
 
 > 회의록에서 액션 아이템을 뽑는 skill 하나를 만들고, Claude Code와 Codex에서 **명시 호출·자동 호출·과호출·경로 발견·이름 충돌·프롬프트 대비 비교를** 직접 관측한다. 가이드 [AI Agent에게 일을 가르치는 법 — Agent Skills 기초](../../guides/agent-skills/README.md)의 실습편이다.
@@ -101,3 +105,11 @@ rm -rf ~/.agents/skills/ws-probe-home-agents ~/.claude/skills/ws-probe-claude-on
 ## 버전
 
 [`CHANGELOG.md`](CHANGELOG.md) · 출처 [`SOURCES.md`](SOURCES.md)
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01. 첫 skill — 설치, 명시 호출, 자동 호출](01-first-skill.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

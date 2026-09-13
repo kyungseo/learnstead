@@ -1,6 +1,8 @@
 # 08 — 남에게 보여 주기 전 점검
 
-← [07 대화가 길어지면 생기는 일](07-context-limits.md) · 다음 → [09 멈춰야 할 때](09-when-to-stop.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07 — 대화가 길어지면 생기는 일](07-context-limits.md) · [목차](README.md) · [다음: 09 — 멈춰야 할 때](09-when-to-stop.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 내 컴퓨터에서 동작하는 것과 다른 사람에게 안전하게 공개할 수 있는 것은 다릅니다. 특히 Secret이 공개되면
 > 파일을 지우는 것 외에 키 폐기와 재발급까지 필요할 수 있습니다.
@@ -144,6 +146,10 @@ Public 상태에서 노출된 내용은 저장소를 Private으로 바꿔도 다
 □ hosting의 비용·Secret·데이터·코드 export를 확인했다            → 아니오면 §3
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [09 멈춰야 할 때](09-when-to-stop.md)
+[← 이전: 07 — 대화가 길어지면 생기는 일](07-context-limits.md) · [목차](README.md) · [다음: 09 — 멈춰야 할 때](09-when-to-stop.md)
+
+<!-- learnstead:footer:end -->

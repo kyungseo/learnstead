@@ -1,9 +1,12 @@
 # 04 — 하드웨어: GPU 종류와 등급 분류
 
+<!-- learnstead:nav:start -->
+[← 이전: 03 — 양자화: 무엇을 받아야 하는가](03-quantization.md) · [목차](README.md) · [다음: 05 — 스택 지도: 어떤 도구를 쓸 것인가](05-stack-map.md)
+<!-- learnstead:nav:end -->
+
 **내 장비에서 어느 크기의 model부터 시험할지** 정하는 문서입니다. 아래 표는 구매 추천이나 지원 보장이 아니라
 실행 전 memory budget을 잡는 출발점입니다.
 
-← [03 양자화](03-quantization.md) · 다음 → [05 스택 지도](05-stack-map.md)
 
 ---
 
@@ -182,6 +185,10 @@ flowchart TD
     class S,OK go
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [05 스택 지도 — 어떤 도구를 쓸 것인가](05-stack-map.md)
+[← 이전: 03 — 양자화: 무엇을 받아야 하는가](03-quantization.md) · [목차](README.md) · [다음: 05 — 스택 지도: 어떤 도구를 쓸 것인가](05-stack-map.md)
+
+<!-- learnstead:footer:end -->

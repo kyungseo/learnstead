@@ -1,6 +1,8 @@
 # 04. 본문 보강과 충돌 — v1.1로 수렴, 겹치는 description, 같은 이름
 
-> 이전 ← [`03-same-skill-in-codex.md`](03-same-skill-in-codex.md) · 다음 → [`05-skill-vs-prompt.md`](05-skill-vs-prompt.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 같은 skill을 Codex에서 — $name, 파일 읽기, 경로 탐침](03-same-skill-in-codex.md) · [목차](README.md) · [다음: 05. skill vs 프롬프트 직접 지시 — 3회씩 판정](05-skill-vs-prompt.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -106,3 +108,11 @@ Claude Code는 문서의 우선순위(개인 > 프로젝트)와 일치했다. Co
 | v1.1에서도 Codex가 5행 | 모델·버전 차이 | 규칙 1의 예를 더 구체적으로. 결과를 그대로 기록 |
 | ovl에서 매번 다른 skill | description 어휘가 요청과 반반 겹침 | 각 description에 "언제 안 쓴다"를 추가하고 재시험 |
 | dup 실험 후 다른 프로젝트에서 `ws-dup-meeting-actions`가 보임 | 실험용 사본을 안 지움 | 프로젝트와 홈의 `ws-dup-meeting-actions` 폴더만 지운다 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 03. 같은 skill을 Codex에서 — $name, 파일 읽기, 경로 탐침](03-same-skill-in-codex.md) · [목차](README.md) · [다음: 05. skill vs 프롬프트 직접 지시 — 3회씩 판정](05-skill-vs-prompt.md)
+
+<!-- learnstead:footer:end -->

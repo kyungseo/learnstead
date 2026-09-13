@@ -1,6 +1,8 @@
 # 06 — 브랜치: 시도를 가르는 법과 트렁크 기반 전략
 
-← [05 커밋과 되돌리기](05-commits-and-undo.md) · 다음 → [07 worktree](07-worktrees.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05 — 커밋과 되돌리기: 세이브 포인트와 안전한 복귀](05-commits-and-undo.md) · [목차](README.md) · [다음: 07 — worktree: 브랜치를 여러 작업 폴더에 동시에 펼치기](07-worktrees.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** "두 가지 디자인 중 뭐가 나은지 보고 싶다"를 폴더 복사로 하면 곧 어느 게 어느 건지 모르게 됩니다. 브랜치는 그
 > 일을 기록이 남는 별도 갈래로 나눕니다. 처음에는 단순한 branch 흐름 하나만 익혀도 충분합니다.
@@ -176,6 +178,10 @@ $ git log --oneline --graph
 - [ ] 충돌 표시 세 줄의 의미와 해결 3단계를 안다
 - [ ] 충돌에서 무엇을 살릴지는 사람이 정한다는 것을 안다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [07 worktree — 브랜치를 여러 작업 폴더에 동시에 펼치기](07-worktrees.md)
+[← 이전: 05 — 커밋과 되돌리기: 세이브 포인트와 안전한 복귀](05-commits-and-undo.md) · [목차](README.md) · [다음: 07 — worktree: 브랜치를 여러 작업 폴더에 동시에 펼치기](07-worktrees.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 03. Codex에 꽂기
 
-> 이전 ← [`02-connect-claude-code.md`](02-connect-claude-code.md) · 다음 → [`04-break-it.md`](04-break-it.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. Claude Code에 꽂기](02-connect-claude-code.md) · [목차](README.md) · [다음: 04. 깨뜨리기 — 권한 밖 쓰기 · 거짓 annotation · 주입 · stdout 오염](04-break-it.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -54,3 +56,11 @@ c0의 자기 보고는 틀렸습니다. 같은 서버가 c1에서 호출됐습�
 | `mcp:` 줄이 없고 답도 못 함 | 등록 실패 / startup timeout(기본 10초) | `codex mcp get notes`, `startup_timeout_sec` 상향 |
 | stdin 대기로 멈춤 | `< /dev/null` 누락 | `run-codex.sh` 사용 |
 | `$` 때문에 프롬프트가 깨짐 | 큰따옴표 | 작은따옴표 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 02. Claude Code에 꽂기](02-connect-claude-code.md) · [목차](README.md) · [다음: 04. 깨뜨리기 — 권한 밖 쓰기 · 거짓 annotation · 주입 · stdout 오염](04-break-it.md)
+
+<!-- learnstead:footer:end -->

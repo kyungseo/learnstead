@@ -1,6 +1,8 @@
 # AI로 만든 앱의 데이터, 이해하고 다루기 — 비개발자를 위한 데이터베이스
 
-[시작: 저장 위치](01-where-data-lives.md) · [직접 만들기](../../tutorials/study-signup-db/README.md) · [실패 확인 실습](../../labs/database-safety/README.md)
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
 
 ![앱 화면의 신청 기록을 데이터베이스에 저장하고 열쇠로 접근 권한을 살펴보는 손그림](assets/database-guide-hero.webp)
 
@@ -55,6 +57,10 @@ DB 관리자 자격 과정, 대규모 성능 튜닝, 결제 시스템, 개인정
 - [실습 — 저장됐다고 끝이 아니다](../../labs/database-safety/README.md): 고정된 정상·실패·복원 조건 판정하기
 - [출처](SOURCES.md) · [검증 기록](VALIDATION.md) · [변경 기록](CHANGELOG.md)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[시작: 01. 저장 위치](01-where-data-lives.md) · [다음 자료: 신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

@@ -1,5 +1,9 @@
 # AI Agent에 내 도구를 연결하는 법 — MCP 기초
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. MCP가 푸는 문제 — 도구를 한 번 만들어 여러 agent에 꽂기](01-the-problem-mcp-solves.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![AI Agent가 권한을 확인하는 연결 허브를 거쳐 문서와 데이터베이스와 도구를 사용하는 손그림](assets/mcp-basics-hero.webp)
 
 AI Agent가 내 노트·데이터베이스·사내 API를 사용하게 하려면 무엇을 연결해야 할까요? MCP(Model Context Protocol)는 이런 도구와
@@ -82,4 +86,10 @@ Python 함수를 읽을 수 있으면 실습까지 진행할 수 있습니다. [
   무엇을 얼마나 읽을지 설계합니다.
 - 이 가이드가 다루지 않는 것: 원격 HTTP 서버 배포와 OAuth, MCP Apps·Tasks 확장, host(client 쪽) 앱 개발, Gemini CLI·Cursor 연결.
 
-**시작 →** [01 MCP가 푸는 문제](01-the-problem-mcp-solves.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01. MCP가 푸는 문제 — 도구를 한 번 만들어 여러 agent에 꽂기](01-the-problem-mcp-solves.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

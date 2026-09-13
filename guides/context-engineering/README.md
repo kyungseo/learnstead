@@ -1,5 +1,9 @@
 # AI Agent가 놓치지 않게 정보 설계하기 — Context Engineering 기초
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. Agent가 판단할 때 보는 것](01-what-the-agent-reads.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![여러 출처의 정보 카드 가운데 필요한 것만 골라 순서를 정한 뒤 AI Agent의 컨텍스트로 보내는 손그림](assets/context-engineering-hero.webp)
 
 > 같은 모델을 써도 어떤 정보를 언제 보여 주느냐에 따라 답과 행동은 달라집니다. 코딩 에이전트가 읽는 지시문·Skills·MCP 결과·기억·작업 기록을 한 흐름으로 정리하고, 지시문의 크기와 위치가 실제 결과에 미친 영향도 살펴봅니다.
@@ -82,3 +86,11 @@ Context Engineering은 긴 프롬프트 하나를 잘 쓰는 일보다 넓습니
 
 - Anthropic, "Effective context engineering for AI agents" (2025-09-29) — 정의·주의 예산·just-in-time·compaction·note-taking
 - 이 가이드가 다루지 않는 것: RAG 구현(→ [rag-and-graph](../local-rag/README.md)), Skill 작성(→ [agent-skills](../agent-skills/README.md)), MCP 서버 구현(→ [mcp-basics](../mcp-basics/README.md)), Gemini CLI·Cursor 실측.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01. Agent가 판단할 때 보는 것](01-what-the-agent-reads.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

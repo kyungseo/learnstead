@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 최초 확인일은 2026-08-30이며, 설정·실행 스크립트와 핵심 공식 문서는 2026-09-02에 다시 확인했다.
 
 ## 1차 자료
@@ -16,3 +20,11 @@
 ## 2차 자료
 
 없음.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->
