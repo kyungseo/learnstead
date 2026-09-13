@@ -47,7 +47,7 @@ cat runs/main/claude-s03-samefile-worktree-r1/worktrees.txt
 | Codex | 없음 | | | | |
 | Codex | worktree 둘 | | | | |
 
-현재 runner의 Codex worktree 결과는 `tests-x.txt`·`tests-y.txt`에 각 폴더 검사, `integration_status.txt`에 통합 상태를 남깁니다. 편집·통합 시도·전체 시간은 각각 `wall_edit_seconds.txt`·`wall_integration_seconds.txt`·`wall_total_seconds.txt`입니다. 최종 `title`·`top` 기능은 직접 호출하거나 코드를 대조하세요. 충돌 후의 PASS를 통합 성공으로 읽지 않습니다.
+현재 runner의 Codex worktree 결과는 `tests-x.txt`·`tests-y.txt`에 각 폴더 검사, `integration_status.txt`에 통합 상태를 남깁니다. 편집·통합 시도·전체 시간은 각각 `wall_edit_seconds.txt`·`wall_integration_seconds.txt`·`wall_total_seconds.txt`입니다. 최종 `title`·`top` 기능은 직접 호출하거나 코드를 대조하세요. 충돌 뒤 테스트가 PASS여도 두 작업의 변경이 모두 반영됐는지는 별도로 확인해야 합니다.
 
 ## 작성 환경의 실제 결과
 

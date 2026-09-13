@@ -266,7 +266,7 @@ commit·merge, push, tag, 공개 범위, repository 설정, GitHub Release를 �
 tag·asset을 다시 확인해야 완료입니다.
 
 이 skill은 저장소를 처음 만드는 도구나 보안 감사의 대체물이 아닙니다. 민감 정보 scan도 발견 가능한 pattern을 찾는
-best-effort 점검이므로 "아무것도 안 나왔다"를 유출 가능성 0%의 증명으로 해석하지 않습니다. 저장소를 다시 Private으로
+best-effort 점검이므로, 아무것도 발견되지 않았더라도 놓친 민감 정보가 있을 수 있습니다. 저장소를 다시 Private으로
 바꿔도 이미 만들어진 clone·fork·cache·download를 회수할 수 없습니다.
 
 > 💬 **AI에게:** “`github-release-guide`를 Assess mode로 사용해서 이 기존 Private github.com 저장소를 처음 Public으로

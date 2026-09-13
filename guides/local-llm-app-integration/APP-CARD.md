@@ -73,7 +73,7 @@
 | Call | Ollama `/v1` · gemma3:4b(대화) / qwen3:4b(도구) · system 1줄 · 최근 20개 · stream · temperature 0.3/0 |
 | Shape | json_schema 5필드(회의 추출) · tools 4개(calculate·list_docs·read_doc·search_docs) |
 | Guard | 읽기 전용 · docs/ 경로 경계 · ast 계산기 · max_steps 6 · localhost |
-| Prove | 03 판정 4/4 · 05 스키마 ○/부탁 ✗/환각 confidence 0.9 · 08: ② 호출 없음·형식 누출, ③ 가짜 도구 실행 텍스트, ①④ 정상 · prompt 52→81 토큰 |
+| Prove | 03 판정 4/4 · 05 스키마 ○/프롬프트만 ✗/환각 confidence 0.9 · 08: ② 호출 없음·형식 누출, ③ 가짜 도구 실행 텍스트, ①④ 정상 · prompt 52→81 토큰 |
 | 경계 | 개인 PC의 실습 구성이며 동시 사용자·인증·쓰기 도구는 다루지 않음 |
 
 <!-- learnstead:footer:start -->

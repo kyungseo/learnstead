@@ -48,7 +48,7 @@
 | 03 `--max-tokens 30` 긴 답 | `finish=length · completion 30` | 잘림 감지 |
 | 03 `--base-url http://localhost:9/v1` | `[오류] APIConnectionError: Connection error.` 후 계속 | 오류 처리 |
 | 05 스키마 강제 | 5필드 JSON, confidence 0.95, 파싱 성공 | 형식 보장 |
-| 05 `--no-schema` | ```` ```json ```` 펜스 → `JSON 파싱 실패` | 부탁으로는 불충분 |
+| 05 `--no-schema` | ```` ```json ```` 펜스 → `JSON 파싱 실패` | 프롬프트 지시만으로는 형식을 지키지 못함 |
 | 05 "내일 점심 같이 먹자" | `title='회의'`, `when='내일'`, `where=''`, `attendees=[]`, **confidence 0.9** | 형식 ≠ 내용, 자기 평가 불신 |
 | 07 계산기 | `calculate("(15+5)*2") → 40`, 1회 호출 후 단위 없음을 되물음 | 호출 횟수도 모델이 결정 |
 | 07 문서 검색 | `search_docs("연차 이월") → 없음` → `list_docs` → `read_doc("휴가-규정.md")` → "최대 10일" | 실패 후 경로 선택 |

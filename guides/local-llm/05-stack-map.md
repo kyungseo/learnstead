@@ -86,8 +86,7 @@ Ollama의 편의성이 필요한지, MLX를 직접 제어해야 하는지가 선
 요청의 총 throughput은 다른 지표이므로 각각 측정합니다.
 
 > **판단 규칙:** 개인 사용이라면 설치·model 호환·latency를 먼저 보고, serving이라면 목표 concurrency에서 TTFT,
-> p95 latency와 throughput을 함께 측정합니다. “vLLM이 항상 빠르다” 또는 “한 명이면 같다”는 식으로 일반화하지
-> 않습니다. `[해석]`
+> p95 latency와 throughput을 함께 측정합니다. 어느 쪽이 빠른지는 model과 요청 수 등 실행 조건에 따라 달라집니다. `[해석]`
 
 > 🔧 **한 단계 더 — Ollama도 소규모 동시성은 처리한다.** `OLLAMA_NUM_PARALLEL`(모델당 동시 요청 수),
 > `OLLAMA_MAX_LOADED_MODELS`(동시 상주 모델 수)로 가족·소규모 팀 수준의 동시 사용은 Ollama로도

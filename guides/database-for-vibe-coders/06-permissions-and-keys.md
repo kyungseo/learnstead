@@ -42,7 +42,9 @@ Supabase의 publishable key는 공개 환경에 사용할 수 있는 키입니�
 
 Firestore를 사용한다면 같은 목적을 Security Rules 등 해당 제품의 권한 체계로 구현합니다. 서버용 라이브러리는 클라이언트 규칙과 다른 권한 경로를 사용하므로 브라우저 규칙만 점검하고 서버가 안전하다고 결론내리지 않습니다. `문서 확인 · 2026-09-13` — [Firestore Security Rules 시작](https://firebase.google.com/docs/firestore/security/get-started).
 
-## AI에게 부탁할 말
+<a id="ai에게-부탁할-말"></a>
+
+## AI에게 지시할 프롬프트
 
 > A, B, 비로그인 상태로 조회·등록·수정·삭제의 허용과 거절을 확인해 줘. 관리자 키를 사용하는 테스트와 실제 사용자 토큰 테스트를 구분해 줘. 화면 필터를 우회한 요청도 연습 환경에서 시험하고, 비밀값 없이 결과와 남은 데이터만 보고해 줘.
 
