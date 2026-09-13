@@ -1,9 +1,12 @@
 # 09 — 프레임워크와 앱 아키텍처
 
+<!-- learnstead:nav:start -->
+[← 이전: 08 — 실습: Prompt Injection과 도구 권한 경계](08-lab-prompt-injection.md) · [목차](README.md) · [다음: 10 — 신뢰성과 운영: 오류 · 재시도 · 로그 · 테스트 · 노출](10-reliability-and-operations.md)
+<!-- learnstead:nav:end -->
+
 여기까지는 `openai` SDK 하나로 모든 예제를 만들었습니다. 이 문서는 **언제 프레임워크로 넘어갈지** 판단하는 기준과, 모델 호출
 하나를 실제 **앱**으로 확장할 때 필요한 스트리밍 UI·동시성·캐시·백엔드 전환 구조를 다룹니다.
 
-← [08 실습: Prompt Injection](08-lab-prompt-injection.md) · 다음 → [10 신뢰성과 운영](10-reliability-and-operations.md)
 
 > **왜 읽나:** 프레임워크는 반복 구현을 줄여 주지만 실제 요청이 추상화 뒤에 가려질 수 있습니다. 챗 하나에 도구 몇 개라면 SDK로 충분하고, 호출 단계와 분기가 늘어나면 프레임워크가 도움이 됩니다.
 >
@@ -110,6 +113,10 @@ RAG는 이 가이드의 호출 앞에 **검색 단계**를 붙인 것입니다. 
 - [ ] `base_url`·`model`·키가 설정으로 분리돼 있다
 - [ ] 백엔드 전환 전후를 비교할 골든셋이 있다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [10 신뢰성과 운영](10-reliability-and-operations.md)
+[← 이전: 08 — 실습: Prompt Injection과 도구 권한 경계](08-lab-prompt-injection.md) · [목차](README.md) · [다음: 10 — 신뢰성과 운영: 오류 · 재시도 · 로그 · 테스트 · 노출](10-reliability-and-operations.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 01. 왜 하나로는 안 되는가
 
-> [목차](README.md) · [다음: 02. 패턴 지도 →](02-pattern-map.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 패턴 지도 — 대표적인 네 구성](02-pattern-map.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -80,6 +82,10 @@
 - 역할이나 단계를 늘려도 보장되지 않는 효과와 추가로 드는 비용을 구분할 수 있습니다.
 - 한 번의 호출로 구현한 뒤 한계를 확인하고, 패턴 하나를 추가해 기존 측정값과 비교하는 순서를 지킬 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [목차](README.md) · [다음: 02. 패턴 지도 →](02-pattern-map.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 패턴 지도 — 대표적인 네 구성](02-pattern-map.md)
+
+<!-- learnstead:footer:end -->

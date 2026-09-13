@@ -1,6 +1,8 @@
 # 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?
 
-[이전: 가이드 소개](README.md) · [목차](README.md) · [다음: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md)
+<!-- learnstead:nav:end -->
 
 스터디 신청 화면에 이름이 나타났습니다. 새로고침하면 사라질 수도 있고, 내 컴퓨터에서는 보이지만 다른 사람에게는 보이지 않을 수도 있습니다. 이 차이를 설명할 수 있으면 DB를 선택하기 전에 가장 중요한 질문 하나를 해결한 셈입니다.
 
@@ -48,6 +50,10 @@
 
 다음 장에서는 ‘DB를 붙여 줘’라고 요청하기 전에 무엇을 선택해야 하는지 살펴봅니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 가이드 소개](README.md) · [목차](README.md) · [다음: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 내 앱에는 어떤 DB가 필요할까?](02-choose-a-database.md)
+
+<!-- learnstead:footer:end -->

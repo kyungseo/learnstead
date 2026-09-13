@@ -1,6 +1,8 @@
 # 04. 조건부 로드 — Claude 경로 규칙 vs Codex 중첩 AGENTS.md
 
-> 이전 ← [`03-long-and-pointer.md`](03-long-and-pointer.md) · 다음 → [`05-tokens.md`](05-tokens.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 긴 지시문과 pointer — 희석과 간접 참조](03-long-and-pointer.md) · [목차](README.md) · [다음: 05. 집계와 토큰 — 무엇이 비용을 좌우했나](05-tokens.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -46,3 +48,11 @@ Codex 문서에 설명된 동작과 같습니다. 중첩 `AGENTS.md`는 **루트
 | --- | --- | --- |
 | Claude V4가 낮음 | `.py`를 읽기 전에 파일을 만듦(규칙이 늦게 로드) | 정상 범위. 3회 결과를 그대로 기록 |
 | Codex V4가 높음 | 모델이 읽은 파일을 지시로 취급 | 그대로 기록. transcript로 자동 로드 여부를 구분 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 03. 긴 지시문과 pointer — 희석과 간접 참조](03-long-and-pointer.md) · [목차](README.md) · [다음: 05. 집계와 토큰 — 무엇이 비용을 좌우했나](05-tokens.md)
+
+<!-- learnstead:footer:end -->

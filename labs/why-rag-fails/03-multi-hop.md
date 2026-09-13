@@ -1,10 +1,13 @@
 # 03 — multi-hop: 벡터가 막히고 그래프가 답할 때
 
+<!-- learnstead:nav:start -->
+[← 이전: 02 — 생성 실패와 진단표: ④ 근거 없는 답변](02-generation-failure.md) · [목차](README.md) · [다음: 04 — 골든셋으로 숫자 만들기: 검색 성공률과 점수 하한의 틈](04-golden-set.md)
+<!-- learnstead:nav:end -->
+
 "검색 고도화 프로젝트 담당자가 속한 팀의 팀장은?" — 답은 **세 파일에** 흩어져 있습니다. 담당자는 프로젝트 문서에, 소속은 팀 문서에,
 팀장도 팀 문서의 **다른 단락에.** 벡터 검색은 세 조각을 동시에 집어야 하고, 그래프는 선을 따라갑니다. 이 문서는 가장 작은
 GraphRAG를 만들어 그 차이를 실측하고, 그래프가 만드는 **새로운 실패**(오추출·틀린 인용)까지 봅니다.
 
-← [02 생성 실패와 진단표](02-generation-failure.md) · 다음 → [04 골든셋으로 숫자 만들기](04-golden-set.md)
 
 > **검증 상태:** 색인(약 16초)·질의·벡터 비교를 Apple M4 Pro·24GB Mac, Ollama 0.33.0, `gemma3:4b`, `networkx` 3.6.1에서 실행했습니다.
 > `[실행 검증 · 2026-08-30, 재실행 2026-08-31]` 같은 모델과 `temperature=0`을 사용해도 추출한 트리플, 답변과 인용은 실행마다
@@ -140,6 +143,10 @@ BM25에서도 앞서기 때문입니다.
 python3 graph_minimal.py --reset     # graph.json 삭제
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [04 골든셋으로 숫자 만들기](04-golden-set.md)
+[← 이전: 02 — 생성 실패와 진단표: ④ 근거 없는 답변](02-generation-failure.md) · [목차](README.md) · [다음: 04 — 골든셋으로 숫자 만들기: 검색 성공률과 점수 하한의 틈](04-golden-set.md)
+
+<!-- learnstead:footer:end -->

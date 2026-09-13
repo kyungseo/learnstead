@@ -1,6 +1,8 @@
 # 04. 도구별 연결 — Claude Code · Codex
 
-> 이전 ← [`03-transports.md`](03-transports.md) · 다음 → [`05-permission-boundaries.md`](05-permission-boundaries.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 연결 — stdio와 Streamable HTTP](03-transports.md) · [목차](README.md) · [다음: 05. 권한 경계 — 서버가 막고, host가 묻고, 사용자가 정한다](05-permission-boundaries.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -76,3 +78,11 @@ Claude Code의 `stream-json`에서 MCP 호출은 `tool_use` 이벤트의 `name: 
 - 두 도구에 stdio 서버를 등록·확인·제거하고, 설정 파일이 어디에 어떻게 남는지 설명할 수 있습니다.
 - `.mcp.json`의 환경 변수와 기본값 문법, `-p`의 무프롬프트 로드를 이해할 수 있습니다.
 - 연결 여부를 모델의 말이 아니라 로그로 판단합니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 03. 연결 — stdio와 Streamable HTTP](03-transports.md) · [목차](README.md) · [다음: 05. 권한 경계 — 서버가 막고, host가 묻고, 사용자가 정한다](05-permission-boundaries.md)
+
+<!-- learnstead:footer:end -->

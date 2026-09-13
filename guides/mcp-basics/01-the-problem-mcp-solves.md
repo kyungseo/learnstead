@@ -1,6 +1,8 @@
 # 01. MCP가 푸는 문제 — 도구를 한 번 만들어 여러 agent에 꽂기
 
-> 이 문서는 [`README.md`](README.md)의 1장입니다. 다음 → [`02-what-a-server-offers.md`](02-what-a-server-offers.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 서버가 주는 세 가지 — tools · resources · prompts](02-what-a-server-offers.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -85,3 +87,11 @@ No module named 'mcp.server.fastmcp'. This is mcp 2.x, where FastMCP was renamed
 
 - "MCP는 도구 서버와 host 사이의 표준 규약이고 내 코드는 서버 자리"라고 말할 수 있습니다.
 - 2026-07-28 개정판의 핵심 변화(stateless·서버→클라이언트 요청 폐지·SDK 2.x 개명)를 알고, v1 예제 오류를 보면 원인을 설명할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 서버가 주는 세 가지 — tools · resources · prompts](02-what-a-server-offers.md)
+
+<!-- learnstead:footer:end -->

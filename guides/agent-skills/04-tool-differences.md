@@ -1,6 +1,8 @@
 # 04. 도구별 차이 — Claude Code · Codex · Gemini CLI · Cursor
 
-> 이전 ← [`03-same-thing-different-names.md`](03-same-thing-different-names.md) · 다음 → [`05-discovery-and-invocation.md`](05-discovery-and-invocation.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 이름이 다른 같은 것들 — skill · command · plugin · rule · hook · MCP](03-same-thing-different-names.md) · [목차](README.md) · [다음: 05. 발견과 호출 — description이 하는 일](05-discovery-and-invocation.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -94,3 +96,11 @@ Claude Code에서 skill이 실제로 호출됐는지는 `stream-json` 출력의 
 - 네 도구의 skill 경로를 확인하고, `.agents/skills`가 왜 여러 도구의 공통 자리인지 설명할 수 있습니다.
 - Claude Code와 Codex의 충돌 규칙이 반대 방향임을 알 수 있습니다.
 - 내 환경에 어떤 skill이 로드됐는지 터미널에서 확인할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 03. 이름이 다른 같은 것들 — skill · command · plugin · rule · hook · MCP](03-same-thing-different-names.md) · [목차](README.md) · [다음: 05. 발견과 호출 — description이 하는 일](05-discovery-and-invocation.md)
+
+<!-- learnstead:footer:end -->

@@ -1,9 +1,12 @@
 # 03 — RAG 파이프라인 해부: 색인 시점과 질의 시점
 
+<!-- learnstead:nav:start -->
+[← 이전: 02 — 내 문서와 대화하는 AI 이해하기: RAG · Long Context · Fine-tuning](02-rag-vs-long-context-vs-finetuning.md) · [목차](README.md) · [다음: 04 — 임베딩과 벡터 검색: 의미를 숫자로 바꾸고 가까운 것을 찾는다](04-embeddings-and-vector-search.md)
+<!-- learnstead:nav:end -->
+
 RAG는 하나의 프로그램이 아니라 **두 시점에 따로 도는 두 파이프라인입니다**. 이 구분을 먼저 잡아야 "어디가 틀렸는가"를
 좁힐 수 있습니다.
 
-← [02 세 가지 방법](02-rag-vs-long-context-vs-finetuning.md) · 다음 → [04 임베딩과 벡터 검색](04-embeddings-and-vector-search.md)
 
 > **왜 읽나:** RAG가 틀렸을 때 모델을 바꾸는 것은 마지막 수단입니다. 그 전에 볼 곳이 일곱 군데 있습니다.
 >
@@ -84,6 +87,10 @@ embedding model이나 청킹 규칙을 바꾸면 전체 재색인이 필요합�
 그래프를 쓰면 색인 시점에 (3)과 나란히 **(3′) 개체·관계 추출이** 추가되고, 질의 시점에 (6)과 나란히 **(6′) 그래프
 탐색이** 추가됩니다. 둘 다 기존 파이프라인을 대체하지 않고 **옆에 붙습니다**. `[원리]` 상세는 [08](08-graphrag.md).
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [04 임베딩과 벡터 검색 — 의미를 숫자로](04-embeddings-and-vector-search.md)
+[← 이전: 02 — 내 문서와 대화하는 AI 이해하기: RAG · Long Context · Fine-tuning](02-rag-vs-long-context-vs-finetuning.md) · [목차](README.md) · [다음: 04 — 임베딩과 벡터 검색: 의미를 숫자로 바꾸고 가까운 것을 찾는다](04-embeddings-and-vector-search.md)
+
+<!-- learnstead:footer:end -->

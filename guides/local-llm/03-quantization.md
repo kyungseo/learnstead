@@ -1,8 +1,11 @@
 # 03 — 양자화: 무엇을 받아야 하는가
 
+<!-- learnstead:nav:start -->
+[← 이전: 02 — 모델 해부: 파라미터·MoE·메모리 산식](02-model-anatomy.md) · [목차](README.md) · [다음: 04 — 하드웨어: GPU 종류와 등급 분류](04-hardware-tiers.md)
+<!-- learnstead:nav:end -->
+
 `Q4_K_M`? `AWQ`? `MLX-4bit`? 모델 페이지에 파일이 20개씩 있을 때 **무엇을 받을지 결정하는 문서**다.
 
-← [02 모델 해부](02-model-anatomy.md) · 다음 → [04 하드웨어 등급](04-hardware-tiers.md)
 
 ---
 
@@ -248,6 +251,10 @@ quality를 함께 비교합니다. `[해석]`
 > 포함한 실제 prompt set으로 비교합니다. llama.cpp의 K/V cache type과 Flash Attention 관계는 version에 따라
 > 바뀔 수 있으므로 현재 `--help`와 공식 문서를 확인합니다. `[자료 확인 · 2026-08-10]`
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [04 하드웨어 등급 — 내 장비는 어느 티어인가](04-hardware-tiers.md)
+[← 이전: 02 — 모델 해부: 파라미터·MoE·메모리 산식](02-model-anatomy.md) · [목차](README.md) · [다음: 04 — 하드웨어: GPU 종류와 등급 분류](04-hardware-tiers.md)
+
+<!-- learnstead:footer:end -->

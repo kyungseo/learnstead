@@ -1,5 +1,9 @@
 # AI Agent에게 일을 가르치는 법 — Agent Skills 기초
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 00. AI Agent는 어떻게 움직이는가](00-how-an-agent-works.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![반복 절차 카드를 골라 실행하고 확인된 결과로 이어 가는 AI Agent와 작업대의 손그림](assets/agent-skills-hero.webp)
 
 AI Agent를 쓰다 보면 같은 설명을 되풀이하게 됩니다. "이 형식으로 정리해", "이 검사를 먼저 해", "여기까지는 건드리지 마"라고
@@ -81,4 +85,10 @@ AI Agent를 쓰다 보면 같은 설명을 되풀이하게 됩니다. "이 형�
 - 이어서 읽기: [Context Engineering 기초](../context-engineering/README.md) — 지시문·skill·도구 결과를 언제 얼마나 읽힐지 설계합니다.
 - 이 가이드가 다루지 않는 것: 특정 업무용 skill 전문, 각 도구의 설치·인증, MCP 서버 개발.
 
-**시작 →** [00 AI Agent는 어떻게 움직이는가](00-how-an-agent-works.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 00. AI Agent는 어떻게 움직이는가](00-how-an-agent-works.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

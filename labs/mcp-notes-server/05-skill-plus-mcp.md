@@ -1,6 +1,8 @@
 # 05. skill + MCP — 절차와 능력을 합치기
 
-> 이전 ← [`04-break-it.md`](04-break-it.md) · 처음 → [`README.md`](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 깨뜨리기 — 권한 밖 쓰기 · 거짓 annotation · 주입 · stdout 오염](04-break-it.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -52,3 +54,11 @@ cat logs/s1.out; cat logs/s2.out
 - 절차는 skill에, 능력은 MCP에 두고 skill에서 서버 쪽 도구 이름으로 가리킵니다.
 
 마지막으로 reset: `git checkout -- notes/` · `cp .mcp.json.example .mcp.json` · **`codex mcp remove notes`**.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 04. 깨뜨리기 — 권한 밖 쓰기 · 거짓 annotation · 주입 · stdout 오염](04-break-it.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

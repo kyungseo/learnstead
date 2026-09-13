@@ -1,8 +1,11 @@
 # 10 — 용어집
 
+<!-- learnstead:nav:start -->
+[← 이전: 09 — 멈춰야 할 때](09-when-to-stop.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 전 문서의 **참조 부록입니다**. 모르는 단어가 나왔을 때 여는 문서입니다.
 
-← [09 멈춰야 할 때](09-when-to-stop.md) · [README로](README.md)
 
 ---
 
@@ -69,6 +72,10 @@
 | **"일단 되니까" vs "안전하니까"** | 동작 ↔ 검증. 돈·개인정보·인증에서는 다릅니다 ([09 §1③](09-when-to-stop.md)) |
 | **요청이 크다 vs 목표가 크다** | 쪼개면 됨 ↔ 다섯 줄을 다시 봐야 함 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**← [README로 돌아가기](README.md)**
+[← 이전: 09 — 멈춰야 할 때](09-when-to-stop.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

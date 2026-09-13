@@ -1,5 +1,9 @@
 # 다섯 가지 확인 — 코드를 읽지 않고 세 판을 판정하기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![겉보기에는 비슷한 앱 세 판을 다섯 가지 확인으로 판정하는 실습](assets/five-checks-hero.webp)
 
 AI가 "완료했습니다"라고 한 결과물 세 판을 놓고, [가이드 05](../../guides/vibe-coding-practice/05-verify-without-reading.md)의 **다섯 가지 확인 — 직접 눌러 보기 · 일부러
@@ -185,4 +189,10 @@ git status --short   # 비어 있으면 끝
 - [핵심 정보의 1차 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**← [가이드로 돌아가기](../../guides/vibe-coding-practice/README.md)**
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

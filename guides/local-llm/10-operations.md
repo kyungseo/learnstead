@@ -1,8 +1,11 @@
 # 10 — 운영 실무
 
+<!-- learnstead:nav:start -->
+[← 이전: 09 — 내 장비에 맞는 모델 고르기](09-model-landscape.md) · [목차](README.md) · [다음: 11 — 용어집](11-glossary.md)
+<!-- learnstead:nav:end -->
+
 띄운 다음의 문제들: **제대로 도는지 어떻게 아는가, 느리면 왜 느린가, 앱에 어떻게 붙이는가.**
 
-← [09 모델 고르기](09-model-landscape.md) · 다음 → [11 용어집](11-glossary.md) · [README로](README.md)
 
 ---
 
@@ -211,6 +214,10 @@ error와 token accounting을 integration test로 확인합니다. `[원리]`
 | "오픈 모델이니 그냥 써도 되죠?" | 라이선스가 모델마다 다릅니다. 상업적 사용 조건을 모델 카드에서 확인해야 합니다 ([09 §4](09-model-landscape.md)) `[원리]` |
 | "왜 처음 응답이 느리죠?" | 프롬프트를 통째로 처리하는 prefill 단계입니다. 프롬프트가 길수록 커지며 정상 동작입니다 (§1) `[원리]` |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [11 용어집](11-glossary.md) · **← [README로 돌아가기](README.md)**
+[← 이전: 09 — 내 장비에 맞는 모델 고르기](09-model-landscape.md) · [목차](README.md) · [다음: 11 — 용어집](11-glossary.md)
+
+<!-- learnstead:footer:end -->

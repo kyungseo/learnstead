@@ -1,6 +1,8 @@
 # 09 — 멈춰야 할 때
 
-← [08 남에게 보여 주기 전 점검](08-before-sharing.md) · 다음 → [10 용어집](10-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 08 — 남에게 보여 주기 전 점검](08-before-sharing.md) · [목차](README.md) · [다음: 10 — 용어집](10-glossary.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 같은 시도를 계속할지, 접근을 바꿀지, 사람의 검토를 구할지 구분하지 않으면 변경과 불확실성만 쌓일 수 있습니다.
 > 이 장에서는 서로 다른 세 종류의 멈춤을 다룹니다.
@@ -99,6 +101,10 @@
 - **접기로 한 방법은 다시 하지 않습니다**
 - 다섯 줄([01](01-decide-first.md))을 다시 봅니다 — 목표가 바뀌었을 수도 있습니다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [10 용어집](10-glossary.md)
+[← 이전: 08 — 남에게 보여 주기 전 점검](08-before-sharing.md) · [목차](README.md) · [다음: 10 — 용어집](10-glossary.md)
+
+<!-- learnstead:footer:end -->

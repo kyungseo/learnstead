@@ -1,6 +1,8 @@
 # 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향
 
-> [목차](README.md) · [다음: 02. 일을 나누고 조정하는 네 가지 방식 →](02-layers-of-splitting.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 일을 나누고 조정하는 네 가지 방식](02-layers-of-splitting.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -53,6 +55,10 @@
 - 입력 자료와 작업 기록, 편집 폴더, 담당 역할을 별도로 정하는 이유를 설명할 수 있습니다.
 - 작업 분담 전에 기준선 네 항목을 기록하는 이유를 설명할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [목차](README.md) · [다음: 02. 일을 나누고 조정하는 네 가지 방식 →](02-layers-of-splitting.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 일을 나누고 조정하는 네 가지 방식](02-layers-of-splitting.md)
+
+<!-- learnstead:footer:end -->

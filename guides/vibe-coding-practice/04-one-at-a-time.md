@@ -1,6 +1,8 @@
 # 04 — 한 번에 하나만
 
-← [03 AI에게 말하는 법](03-how-to-ask.md) · 다음 → [05 코드를 몰라도 하는 확인](05-verify-without-reading.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03 — AI에게 말하는 법](03-how-to-ask.md) · [목차](README.md) · [다음: 05 — 코드를 몰라도 하는 확인](05-verify-without-reading.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 한 번에 여러 변화를 맡기면 결과가 잘못됐을 때 어느 변경이 원인인지 찾기 어렵습니다. 요청을 나누면 확인과
 > 되돌리기의 범위도 함께 작아집니다.
@@ -71,6 +73,10 @@
 > 💬 **AI에게:** 쪼개는 것도 시킬 수 있습니다 — "내가 하려는 건 (전체 목표)야. 이걸 한 번에 하나씩 확인할 수 있는 작은
 > 단계로 쪼개 줘. 각 단계마다 내가 뭘 보면 성공인지도 적어 줘. 아직 만들지는 말고."
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [05 코드를 몰라도 하는 확인](05-verify-without-reading.md)
+[← 이전: 03 — AI에게 말하는 법](03-how-to-ask.md) · [목차](README.md) · [다음: 05 — 코드를 몰라도 하는 확인](05-verify-without-reading.md)
+
+<!-- learnstead:footer:end -->

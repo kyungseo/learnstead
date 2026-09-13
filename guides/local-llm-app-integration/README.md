@@ -1,5 +1,9 @@
 # Local LLM을 내 프로그램에 연결하기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 연결의 해부: "LLM을 연결한다"는 무엇을 하는 일인가](01-integration-anatomy.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![노트북의 코드가 JSON을 거쳐 로컬 LLM으로 전달되고, 구조화된 체크리스트와 안전 방패를 가진 도구 실행으로 나뉘는 손그림](assets/local-llm-app-integration-hero.webp)
 
 모델을 내 코드에서 부르는 데는 **Python 네 줄**이면 됩니다. 하지만 실제 앱으로 만들려면 runtime이 기억하지 않는 대화 기록을
@@ -175,4 +179,10 @@ endpoint별 부가 기능(Tool Calling, Response Schema 등)이 같은 방식으
 - [핵심 정보의 1차 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**다음 →** [01 연결의 해부](01-integration-anatomy.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 연결의 해부: "LLM을 연결한다"는 무엇을 하는 일인가](01-integration-anatomy.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

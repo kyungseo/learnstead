@@ -1,6 +1,8 @@
 # 02. 짧은 지시문 vs 없음 — 코드가 규칙을 따르지 않을 때
 
-> 이전 ← [`01-inferable-baseline.md`](01-inferable-baseline.md) · 다음 → [`03-long-and-pointer.md`](03-long-and-pointer.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 추론 가능한 기준선 — 코드가 이미 규칙을 따를 때](01-inferable-baseline.md) · [목차](README.md) · [다음: 03. 긴 지시문과 pointer — 희석과 간접 참조](03-long-and-pointer.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -49,3 +51,11 @@ Claude V1-1의 파일을 보면 `slug.py`는 owner·한국어 docstring·타입 
 | --- | --- | --- |
 | V0에서 점수가 남 | 기존 코드가 일부 규칙을 따름 | `fixture/project`의 세 파일이 라운드 2 상태인지 확인 |
 | `check.py`가 `과제 자체 FAIL` | 모델이 다른 파일명을 씀 | 과제 문장의 경로를 그대로 두고 다시. 결과를 그대로 기록 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 01. 추론 가능한 기준선 — 코드가 이미 규칙을 따를 때](01-inferable-baseline.md) · [목차](README.md) · [다음: 03. 긴 지시문과 pointer — 희석과 간접 참조](03-long-and-pointer.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 05 — 코드를 몰라도 하는 확인
 
-← [04 한 번에 하나만](04-one-at-a-time.md) · 다음 → [06 막혔을 때 빠져나오기](06-getting-unstuck.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04 — 한 번에 하나만](04-one-at-a-time.md) · [목차](README.md) · [다음: 06 — 막혔을 때 빠져나오기](06-getting-unstuck.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** "AI가 다 만들었다는데 진짜 되는지 모르겠어요." 코드를 읽지 못해도 동작과 변경 범위를 확인할 수 있는
 > 다섯 가지 방법이 있습니다.
@@ -115,6 +117,10 @@ git diff --stat         # 얼마나 바뀌었나
 
 **"미확인"을 적는 것이** 요점입니다. 나중에 "이거 확인했었나?"를 여기서 봅니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [06 막혔을 때 빠져나오기](06-getting-unstuck.md)
+[← 이전: 04 — 한 번에 하나만](04-one-at-a-time.md) · [목차](README.md) · [다음: 06 — 막혔을 때 빠져나오기](06-getting-unstuck.md)
+
+<!-- learnstead:footer:end -->

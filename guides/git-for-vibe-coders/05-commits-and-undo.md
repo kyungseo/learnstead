@@ -1,6 +1,8 @@
 # 05 — 커밋과 되돌리기: 세이브 포인트와 안전한 복귀
 
-← [04 Git의 네 공간](04-four-areas.md) · 다음 → [06 브랜치](06-branches.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04 — Git의 네 공간: add·commit·push가 무엇을 옮기는가](04-four-areas.md) · [목차](README.md) · [다음: 06 — 브랜치: 시도를 가르는 법과 트렁크 기반 전략](06-branches.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** AI와 코딩할 때 Git이 필요한 이유의 90%가 이 문서에 있습니다. 그리고 되돌리기 명령 중 **하나는 되돌리기가 아니라
 > 삭제**입니다 — 실제로 지워 보며 확인했습니다.
@@ -175,6 +177,10 @@ $ git status --short
 - [ ] `reset --hard`가 커밋 안 된 작업을 영구 삭제한다는 것을 안다
 - [ ] AI가 위험 명령을 제안했을 때 되물을 문장을 안다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [06 브랜치 — 시도를 가르는 법](06-branches.md)
+[← 이전: 04 — Git의 네 공간: add·commit·push가 무엇을 옮기는가](04-four-areas.md) · [목차](README.md) · [다음: 06 — 브랜치: 시도를 가르는 법과 트렁크 기반 전략](06-branches.md)
+
+<!-- learnstead:footer:end -->

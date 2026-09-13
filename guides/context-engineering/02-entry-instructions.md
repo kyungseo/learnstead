@@ -1,6 +1,8 @@
 # 02. 진입 지시문 — CLAUDE.md · AGENTS.md의 계층과 발견
 
-> 이전 ← [`01-what-the-agent-reads.md`](01-what-the-agent-reads.md) · 다음 → [`03-always-vs-conditional.md`](03-always-vs-conditional.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. Agent가 판단할 때 보는 것](01-what-the-agent-reads.md) · [목차](README.md) · [다음: 03. 항상 vs 조건부 — 규칙·하위 지시문·skill·pointer](03-always-vs-conditional.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -65,3 +67,11 @@ Claude Code 문서의 기준 [문서 확인]: "매 세션 다시 설명해야 �
 - 두 도구의 지시문 발견 순서와 합치는 방식, 크기 한계를 말할 수 있습니다.
 - "로드됐는데 안 지킨다"를 강제 부재와 규칙의 모호함으로 나눠 봅니다.
 - 코드가 보여 주지 못하는 것만 적을 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 01. Agent가 판단할 때 보는 것](01-what-the-agent-reads.md) · [목차](README.md) · [다음: 03. 항상 vs 조건부 — 규칙·하위 지시문·skill·pointer](03-always-vs-conditional.md)
+
+<!-- learnstead:footer:end -->

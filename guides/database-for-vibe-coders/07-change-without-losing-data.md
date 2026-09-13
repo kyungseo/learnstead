@@ -1,6 +1,8 @@
 # 07. AI에게 DB 변경을 어떻게 맡길까?
 
-[이전: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md) · [목차](README.md) · [다음: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md) · [목차](README.md) · [다음: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md)
+<!-- learnstead:nav:end -->
 
 “신청 상태에 대기 중을 추가해 줘”라는 작은 요청도 이미 저장된 신청의 의미를 바꿀 수 있습니다. 비어 있는 새 DB에서 성공한 변경이 기존 데이터가 있는 DB에서도 성공하는지 확인해야 합니다.
 
@@ -48,6 +50,10 @@ Git에 migration 파일이 있어도 운영 DB 데이터의 백업은 아닙니�
 
 확인할 결과는 두 경로입니다. 처음 설치한 DB에서 완성 구조가 만들어지고, 이전 데이터가 있는 DB에서도 의도대로 변경되어야 합니다. 한쪽만 통과했다면 그 범위를 기록하고 공개 준비가 끝났다고 하지 않습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md) · [목차](README.md) · [다음: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md)
+[← 이전: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md) · [목차](README.md) · [다음: 08. 데이터가 늘거나 사라지면 어떻게 할까?](08-operate-and-recover.md)
+
+<!-- learnstead:footer:end -->

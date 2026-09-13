@@ -1,9 +1,12 @@
 # 05 — 청킹과 검색 품질: 자르기 · 섞기 · 재정렬
 
+<!-- learnstead:nav:start -->
+[← 이전: 04 — 임베딩과 벡터 검색: 의미를 숫자로 바꾸고 가까운 것을 찾는다](04-embeddings-and-vector-search.md) · [목차](README.md) · [다음: 06 — 생성과 근거 제시: 조각을 읽혀 답하게 하기](06-generation-and-grounding.md)
+<!-- learnstead:nav:end -->
+
 RAG의 실패는 생성 모델뿐 아니라 **검색에서도** 자주 시작됩니다. 검색 품질을 좌우하는 **어떻게 잘랐는가(청킹)**,
 **무엇으로 찾는가(dense·sparse·hybrid)**, **어떻게 다듬는가(reranker)를** 이 문서에서 다룹니다.
 
-← [04 임베딩과 벡터 검색](04-embeddings-and-vector-search.md) · 다음 → [06 생성과 근거 제시](06-generation-and-grounding.md)
 
 > **왜 읽나:** 실습에서 답이 "반만" 나온 이유는 모델이 아니라 조각 경계였습니다. 생성 모델을 바꾸기 전에 검색 결과와 조각 경계를 확인해야 하는 이유를 배웁니다.
 >
@@ -150,6 +153,10 @@ embedding 검색은 질문과 조각을 **따로** 벡터화해 비교합니다(
 - [ ] 점수 하한을 내 데이터로 정했는가 (실습 ③)
 - [ ] top-k × 조각 크기가 context 창의 절반 이하인가
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [06 생성과 근거 제시 — 조각을 읽혀 답하게 하기](06-generation-and-grounding.md)
+[← 이전: 04 — 임베딩과 벡터 검색: 의미를 숫자로 바꾸고 가까운 것을 찾는다](04-embeddings-and-vector-search.md) · [목차](README.md) · [다음: 06 — 생성과 근거 제시: 조각을 읽혀 답하게 하기](06-generation-and-grounding.md)
+
+<!-- learnstead:footer:end -->

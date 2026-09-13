@@ -1,6 +1,8 @@
 # 05. 틀린 데이터가 들어오면 누가 막을까?
 
-[이전: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md) · [목차](README.md) · [다음: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md) · [목차](README.md) · [다음: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md)
+<!-- learnstead:nav:end -->
 
 신청 버튼을 한 번 누른 것처럼 보여도 네트워크 재시도나 두 번 클릭으로 요청은 두 번 도착할 수 있습니다. 동시에 두 사람이 마지막 한 자리에 신청할 수도 있습니다. 데이터 규칙은 화면에서 시작해 DB까지 이어져야 합니다.
 
@@ -45,6 +47,10 @@
 
 확인할 것은 오류 메시지 유무만이 아닙니다. 정상 신청은 들어가고, 중복은 늘어나지 않으며, 중간 실패 후 값은 원상태이고, 정원 초과 기록은 없어야 합니다. 오류를 전부 무시해서 화면만 조용해진 상태는 성공이 아닙니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md) · [목차](README.md) · [다음: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md)
+[← 이전: 04. 앱은 DB에 어떻게 부탁할까?](04-talk-to-the-database.md) · [목차](README.md) · [다음: 06. 로그인하면 내 데이터만 보일까?](06-permissions-and-keys.md)
+
+<!-- learnstead:footer:end -->

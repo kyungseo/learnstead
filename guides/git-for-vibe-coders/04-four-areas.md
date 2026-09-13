@@ -1,6 +1,8 @@
 # 04 — Git의 네 공간: add·commit·push가 무엇을 옮기는가
 
-← [03 내 컴퓨터에 Git 준비하기](03-setup-mac-windows.md) · 다음 → [05 커밋과 되돌리기](05-commits-and-undo.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03 — 내 컴퓨터에 Git 준비하기: macOS와 Windows](03-setup-mac-windows.md) · [목차](README.md) · [다음: 05 — 커밋과 되돌리기: 세이브 포인트와 안전한 복귀](05-commits-and-undo.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** Git 명령이 어려운 게 아니라, **어디서 어디로 옮기는 명령인지** 몰라서 어렵습니다. 공간 네 개를 외우면 명령
 > 대부분이 "이 칸에서 저 칸으로"로 읽힙니다.
@@ -115,6 +117,10 @@ node_modules/       # 라이브러리 (용량만 큼, 다시 받으면 됨)
 - [ ] Untracked 파일은 `add` 없이는 절대 커밋되지 않는다는 것을 안다
 - [ ] `.gitignore`가 왜 필요한지 안다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [05 커밋과 되돌리기 — 세이브 포인트와 안전한 복귀](05-commits-and-undo.md)
+[← 이전: 03 — 내 컴퓨터에 Git 준비하기: macOS와 Windows](03-setup-mac-windows.md) · [목차](README.md) · [다음: 05 — 커밋과 되돌리기: 세이브 포인트와 안전한 복귀](05-commits-and-undo.md)
+
+<!-- learnstead:footer:end -->

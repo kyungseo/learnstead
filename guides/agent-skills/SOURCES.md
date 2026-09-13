@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 최초 확인일은 2026-08-30이며, 핵심 규격과 Claude Code·Codex 문서는 2026-09-02에 다시 확인했습니다.
 
 ## 1차 자료 — 규격·공식 문서
@@ -29,3 +33,11 @@
 - 2026-08-30에 관측한 `~/.codex/skills` 탐색은 현재 공식 문서에 없는 호환 동작이다.
 - Codex 이름 충돌 시 호출 대상은 1회 관측에 그친다.
 - Gemini CLI custom command(`.toml`)와 skill의 관계는 문서에서 직접 비교하지 않아 이 가이드도 단정하지 않았다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 07 — worktree: 브랜치를 여러 작업 폴더에 동시에 펼치기
 
-← [06 브랜치](06-branches.md) · 다음 → [08 커밋 메시지 쓰는 법](08-commit-messages.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06 — 브랜치: 시도를 가르는 법과 트렁크 기반 전략](06-branches.md) · [목차](README.md) · [다음: 08 — 커밋 메시지 쓰는 법: 미래의 나에게 보내는 쪽지](08-commit-messages.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 한 AI가 큰 기능을 만드는 동안 다른 오류를 고치거나, 두 구현안을 동시에 실행해 비교하려면 브랜치만으로는
 > 불편합니다. 브랜치를 바꿀 때마다 같은 폴더의 파일도 바뀌기 때문입니다.
@@ -186,6 +188,10 @@ Git은 변경이 남아 있는 worktree를 기본적으로 제거하지 않습�
 - [ ] 제거 전에 미커밋 변경과 merge 여부를 확인한다
 - [ ] worktree가 merge 충돌까지 없애 주는 것은 아니라는 점을 안다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [08 커밋 메시지 쓰는 법](08-commit-messages.md)
+[← 이전: 06 — 브랜치: 시도를 가르는 법과 트렁크 기반 전략](06-branches.md) · [목차](README.md) · [다음: 08 — 커밋 메시지 쓰는 법: 미래의 나에게 보내는 쪽지](08-commit-messages.md)
+
+<!-- learnstead:footer:end -->

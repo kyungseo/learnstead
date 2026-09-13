@@ -1,6 +1,8 @@
 # 05. 완성 — 확인하고 멈추고 다시 시작하기
 
-[← 04 권한](04-access.md) · [전체 목차](README.md) · [실습으로 →](../../labs/database-safety/README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 권한 — 다른 사용자로 확인하기](04-access.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 이제 내 컴퓨터에서 모임을 읽고, 로그인한 사용자가 신청하고, 다시 들어와 자기 신청을 확인하는 앱이 있습니다. 마지막으로 **완성의 근거와 다시 시작할 방법을 남깁니다.**
 
@@ -71,6 +73,10 @@ Supabase는 migration을 이용해 DB 구조 변경을 관리하는 경로를 �
 
 [저장됐다고 끝이 아니다](../../labs/database-safety/README.md)에서는 화면이 정상이어도 놓칠 수 있는 실패 여섯 가지를 확인합니다. 저장·제약조건·동시 요청·사용자별 접근·기존 데이터의 구조 변경·복원까지, 조건을 하나씩 바꿔 보고 결과로 판정합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 04 권한](04-access.md) · [전체 목차](README.md) · [실습으로 →](../../labs/database-safety/README.md)
+[← 이전: 04. 권한 — 다른 사용자로 확인하기](04-access.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

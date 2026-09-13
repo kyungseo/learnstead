@@ -1,6 +1,8 @@
 # 05. 집계와 토큰 — 무엇이 비용을 좌우했나
 
-> 이전 ← [`04-conditional.md`](04-conditional.md) · 처음 → [`README.md`](README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 조건부 로드 — Claude 경로 규칙 vs Codex 중첩 AGENTS.md](04-conditional.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -49,3 +51,11 @@ python3 $FIX/scripts/summarize.py results-round1.tsv    # 01을 돌렸다면
 - 규칙 문장의 포함 범위를 먼저 의심합니다.
 
 reset: `rm -rf ~/ctx-workshop/runs ~/ctx-workshop/results*.tsv`
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 04. 조건부 로드 — Claude 경로 규칙 vs Codex 중첩 AGENTS.md](04-conditional.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

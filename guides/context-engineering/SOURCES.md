@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 실행은 2026-08-30~31, 문서 재확인은 2026-09-02에 수행했다.
 
 ## 1차 자료 — 공식 문서·직접 실행
@@ -27,3 +31,11 @@
 - 200줄을 넘는 지시문에서의 희석 정도(V2는 176줄).
 - Claude Code에서 규칙 문장을 "테스트 함수 포함"으로 고쳤을 때의 점수(해석으로만 남김).
 - Gemini CLI·Cursor 실측.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

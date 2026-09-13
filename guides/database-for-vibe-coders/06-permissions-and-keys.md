@@ -1,6 +1,8 @@
 # 06. 로그인하면 내 데이터만 보일까?
 
-[이전: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md) · [목차](README.md) · [다음: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md) · [목차](README.md) · [다음: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md)
+<!-- learnstead:nav:end -->
 
 A의 화면에 A의 신청만 나타났습니다. 그런데 A가 요청에 들어가는 ID를 바꿔 B의 신청을 읽을 수 있다면 개인정보는 보호되지 않은 상태입니다. 화면 필터와 실제 접근 권한을 구분해야 합니다.
 
@@ -46,6 +48,10 @@ Firestore를 사용한다면 같은 목적을 Security Rules 등 해당 제품�
 
 [실습](../../labs/database-safety/README.md)에서는 의도적으로 구성한 실패와 수정 결과를 비교합니다. 교육용 실패 예제를 실제 AI가 만든 사고라고 해석하지 않습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md) · [목차](README.md) · [다음: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md)
+[← 이전: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md) · [목차](README.md) · [다음: 07. AI에게 DB 변경을 어떻게 맡길까?](07-change-without-losing-data.md)
+
+<!-- learnstead:footer:end -->

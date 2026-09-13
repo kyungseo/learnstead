@@ -169,3 +169,7 @@ Learnstead는 설명만 제시하지 않습니다. 독자가 근거와 검증 �
 ## 라이선스
 
 이 저장소의 문서와 원본 자료는 별도 표시가 없는 한 [Apache License 2.0](LICENSE)으로 배포합니다.
+
+## 자료를 작성하거나 정비하려면
+
+[작성 원칙](docs/AUTHORING.md)에서 시작해 [문서 구조](docs/STRUCTURE.md), [템플릿](docs/templates/README.md), [그림 기준](docs/VISUALS.md), [검증](docs/VALIDATION.md), [발행 절차](docs/PUBLISHING.md)를 확인하세요.

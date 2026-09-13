@@ -1,6 +1,8 @@
 # 02 — Git과 GitHub는 다르다: 도구와 서비스
 
-← [01 버전 관리란](01-what-is-version-control.md) · 다음 → [03 내 컴퓨터에 Git 준비하기](03-setup-mac-windows.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01 — 버전 관리란 무엇인가: "최종_진짜최종"에서 Git까지](01-what-is-version-control.md) · [목차](README.md) · [다음: 03 — 내 컴퓨터에 Git 준비하기: macOS와 Windows](03-setup-mac-windows.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** "GitHub 계정이 없어서 Git을 못 쓴다"는 사람이 많습니다. 반대입니다 — Git은 계정도 인터넷도 필요 없고, GitHub는
 > 그 위에 얹는 선택지입니다. 이 둘을 섞으면 AI에게 Git 작업을 지시할 때도 엉뚱한 요청을 하게 됩니다.
@@ -68,6 +70,10 @@
 > 💬 **AI에게 이렇게 말하세요:** 구분이 헷갈릴 때 — "이 프로젝트는 지금 git으로만 관리되는 거야, 아니면 GitHub 같은 데도
 > 올라가 있어? `git remote -v` 결과로 알려 줘." (결과가 비어 있으면 내 컴퓨터에만 있는 것입니다.)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [03 내 컴퓨터에 Git 준비하기 (macOS·Windows)](03-setup-mac-windows.md)
+[← 이전: 01 — 버전 관리란 무엇인가: "최종_진짜최종"에서 Git까지](01-what-is-version-control.md) · [목차](README.md) · [다음: 03 — 내 컴퓨터에 Git 준비하기: macOS와 Windows](03-setup-mac-windows.md)
+
+<!-- learnstead:footer:end -->

@@ -1,5 +1,9 @@
 # 출처
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **내 장비에서 LLM 직접 실행하기**에서 version에 따라 달라질 수 있는 핵심 정보와 그 근거가 되는 1차 자료를 연결합니다.
 
 - 마지막 확인일: 2026-08-10
@@ -55,3 +59,11 @@
 2. blog·community benchmark는 탐색에만 쓰고, 확정 claim은 official documentation·model card로 다시 확인합니다.
 3. 직접 실행한 결과는 이 문서가 아니라 [VALIDATION.md](VALIDATION.md)에 환경·command·result를 남깁니다.
 4. source가 서로 충돌하면 하나를 임의로 택하지 않고 본문 claim을 좁히거나 `자료 확인`으로 낮춥니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

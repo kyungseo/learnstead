@@ -1,6 +1,8 @@
 # 03. 같은 skill을 Codex에서 — `$name`, 파일 읽기, 경로 탐침
 
-> 이전 ← [`02-description-experiments.md`](02-description-experiments.md) · 다음 → [`04-tighten-and-collide.md`](04-tighten-and-collide.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. description 실험 — 과호출과 끄기](02-description-experiments.md) · [목차](README.md) · [다음: 04. 본문 보강과 충돌 — v1.1로 수렴, 겹치는 description, 같은 이름](04-tighten-and-collide.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -103,3 +105,11 @@ Codex 실행 토큰은 약 15,000(c1·c2), 목록 요청은 약 20,000이었다.
 | `codex_models_manager` ERROR 줄이 보임 | 모델 캐시 갱신 경고 | 결과에 영향 없음. 무시 |
 | Codex가 skill을 안 읽고 바로 답함 | 자동 호출 판단이 다름 | `$name`으로 명시 호출. 결과를 그대로 기록 |
 | 홈의 탐침을 지우는 것을 잊음 | — | README의 reset 절 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 02. description 실험 — 과호출과 끄기](02-description-experiments.md) · [목차](README.md) · [다음: 04. 본문 보강과 충돌 — v1.1로 수렴, 겹치는 description, 같은 이름](04-tighten-and-collide.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 02. 내 앱에는 어떤 DB가 필요할까?
 
-[이전: 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md) · [목차](README.md) · [다음: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md) · [목차](README.md) · [다음: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md)
+<!-- learnstead:nav:end -->
 
 AI가 “Supabase를 쓰겠습니다”라고 답했을 때 지금 결정된 것이 무엇인지 알아봅시다. DB 엔진만 고른 것일 수도 있고, 인증·API·파일 저장까지 제공하는 서비스에 앱을 연결하겠다는 뜻일 수도 있습니다.
 
@@ -51,6 +53,10 @@ MongoDB의 유연한 구조도 모델링을 없애 주지는 않습니다. 검�
 
 사람이 확인할 결과는 비교표의 승자가 아니라 **내가 맡을 운영 책임입니다**. 관리형 서비스가 백업 기능을 제공해도 우리 요금제에 포함되는지, 무엇을 복원할 수 있는지까지 확인해야 합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md) · [목차](README.md) · [다음: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md)
+[← 이전: 01. 저장 버튼을 눌렀는데, 어디에 저장됐을까?](01-where-data-lives.md) · [목차](README.md) · [다음: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md)
+
+<!-- learnstead:footer:end -->

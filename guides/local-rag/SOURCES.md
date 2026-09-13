@@ -1,5 +1,9 @@
 # 출처
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 **내 문서와 대화하는 AI 이해하기 — RAG와 Graph에서** version에 따라 달라질 수 있는 핵심 정보와 그 근거가 되는 자료를 연결합니다.
 
 - 마지막 확인일: 2026-08-30 (초안 조사 2026-08-23)
@@ -65,3 +69,11 @@ GraphRAG 변형 비교, 한국어 임베딩 선택) — 의 출처입니다. 전
 2. 블로그·비교 글은 탐색에만 쓰고, 확정 claim은 공식 문서·model card·논문으로 다시 확인합니다.
 3. 직접 실행한 결과는 이 문서가 아니라 [VALIDATION.md](VALIDATION.md)에 환경·명령·결과를 남깁니다.
 4. 자료가 서로 충돌하면 하나를 임의로 택하지 않고 본문 claim을 좁히거나 `자료 확인`으로 낮춥니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

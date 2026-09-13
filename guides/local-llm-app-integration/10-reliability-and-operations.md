@@ -1,9 +1,12 @@
 # 10 — 신뢰성과 운영: 오류 · 재시도 · 로그 · 테스트 · 노출
 
+<!-- learnstead:nav:start -->
+[← 이전: 09 — 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md) · [목차](README.md) · [다음: 11 — 용어집](11-glossary.md)
+<!-- learnstead:nav:end -->
+
 모델 호출은 느리고, 가끔 실패하고, 매번 조금 다릅니다. 보통의 API 호출보다 **실패 유형이 몇 가지 더** 있고, "성공했는데 틀린"
 경우가 있습니다. 이 문서는 앱이 갖춰야 할 최소한의 방어와 운영 습관을 다룹니다.
 
-← [09 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md) · 다음 → [11 용어집](11-glossary.md)
 
 > **왜 읽나:** HTTP 200은 "맞다"를 뜻하지 않습니다. LLM 앱에는 보통의 API에 없는 실패가 두 종류 더 있고, 둘 다 예외를 던지지 않습니다.
 >
@@ -120,6 +123,10 @@ def call_with_retry(fn, attempts=3):
 - [ ] 로그 항목과 개인정보 정책을 정했다
 - [ ] 도구 단위 테스트 + 모킹 + 골든셋 중 최소 둘이 있다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [11 용어집](11-glossary.md)
+[← 이전: 09 — 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md) · [목차](README.md) · [다음: 11 — 용어집](11-glossary.md)
+
+<!-- learnstead:footer:end -->

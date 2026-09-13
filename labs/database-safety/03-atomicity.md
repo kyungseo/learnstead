@@ -1,6 +1,8 @@
 # 03. 동시 변경 — 마지막 자리를 둘이 차지하는가
 
-[← 02 규칙](02-constraints.md) · [전체 목차](README.md) · [04 접근 →](04-authorization.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 규칙 — 잘못된 데이터가 들어오는가](02-constraints.md) · [목차](README.md) · [다음: 04. 접근 — 다른 사람의 데이터도 바꿀 수 있는가](04-authorization.md)
+<!-- learnstead:nav:end -->
 
 마지막 한 자리를 A와 B가 동시에 신청합니다. 두 화면 모두 잠시 “자리 있음”을 봤더라도 **완료된 신청은 한 건이어야 합니다.** 또 신청 과정이 실패하면 중간 변경만 남아서는 안 됩니다.
 
@@ -51,6 +53,10 @@
 
 다음은 정원 안에 들어온 사용자가 **다른 사람의 신청까지 바꿀 수 있는지** 확인하는 단계입니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 02 규칙](02-constraints.md) · [전체 목차](README.md) · [04 접근 →](04-authorization.md)
+[← 이전: 02. 규칙 — 잘못된 데이터가 들어오는가](02-constraints.md) · [목차](README.md) · [다음: 04. 접근 — 다른 사람의 데이터도 바꿀 수 있는가](04-authorization.md)
+
+<!-- learnstead:footer:end -->

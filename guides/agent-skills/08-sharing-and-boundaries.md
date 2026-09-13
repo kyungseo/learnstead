@@ -1,6 +1,8 @@
 # 08. 배포·공유·버전·공개 경계
 
-> 이전 ← [`07-what-goes-wrong.md`](07-what-goes-wrong.md) · 다음 → [`09-glossary.md`](09-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 07. 잘못되는 방식 — 실패 지도](07-what-goes-wrong.md) · [목차](README.md) · [다음: 09. 용어집](09-glossary.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -81,3 +83,11 @@ my-plugin/
 - 개인·프로젝트·조직·공개 네 범위의 저장 위치와 우선순위 함정을 알 수 있습니다.
 - 버전을 `metadata.version`과 plugin 버전 중 어디에 적을지, 올릴 때 무엇을 재검증할지 판단할 수 있습니다.
 - 공개 전 검사 항목 7개를 grep으로 확인할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 07. 잘못되는 방식 — 실패 지도](07-what-goes-wrong.md) · [목차](README.md) · [다음: 09. 용어집](09-glossary.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 나눴더니 틀렸다 — 패턴별 실측과 실패 재현
 
-> [시작: 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다 →](01-pipeline-router.md)
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다](01-pipeline-router.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
 
 ![단일 기준선과 여러 단계의 결과를 대조해 잘못 전달된 내용을 찾는 손그림](assets/when-splitting-fails-hero.webp)
 
@@ -127,6 +129,10 @@ python3 -m unittest discover -p 'test_*.py' -v
 - 예산 중단은 종료 코드 1입니다. 배치가 중단되면 전체 정확도를 출력하지 않습니다. 사용량 누락은 별도로 표시하며, 예산이 켜져 있으면 중단합니다.
 - 라운드 상한으로 반환한 마지막 초안은 평가를 다시 거치지 않았을 수 있습니다. 평가자의 통과와 사람의 최종 승인은 따로 판단합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [시작: 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다 →](01-pipeline-router.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다](01-pipeline-router.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

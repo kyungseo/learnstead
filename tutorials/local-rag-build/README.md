@@ -1,5 +1,9 @@
 # 내 문서에 답하는 Local RAG 만들기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 단계별로 만들기: 색인 → 검색 → 근거 있는 답변](01-build.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![문서 폴더와 노트북의 로컬 모델에서 조각·벡터·검색을 거쳐 근거 번호가 붙은 답을 만드는 손그림](assets/local-rag-build-hero.webp)
 
 가상의 사내 규정 4편을 대상으로 **검색 → 프롬프트 조립 → 근거를 포함한 답변까지** 한 경로로 완성하는 튜토리얼입니다. 외부 서비스
@@ -108,4 +112,10 @@ RAG가 된다는 것, 그리고 답이 나왔을 때 **근거가 답을 정말 �
 - [핵심 정보의 1차 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**다음 →** [01 단계별로 만들기](01-build.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 단계별로 만들기: 색인 → 검색 → 근거 있는 답변](01-build.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

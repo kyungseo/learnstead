@@ -1,6 +1,8 @@
 # 11 — 시나리오: 올리고 공개할 때
 
-← [10 시나리오: 혼자 만들 때](10-scenarios-solo.md) · 다음 → [12 AI에게 Git 작업을 지시하는 법](12-asking-ai.md)
+<!-- learnstead:nav:start -->
+[← 이전: 10 — 시나리오: 혼자 만들 때](10-scenarios-solo.md) · [목차](README.md) · [다음: 12 — AI에게 Git 작업을 지시하는 법: 상황별 문장과 위험 신호등](12-asking-ai.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** commit 기록이 한 장비에만 있으면 장비 손상과 함께 잃을 수 있습니다. 그리고 **비밀번호를 커밋에 넣는 실수는**
 > 올리기 전과 후의 대응이 완전히 다릅니다 — 그 경계를 실제로 만들어 확인했습니다.
@@ -282,6 +284,10 @@ best-effort 점검이므로 "아무것도 안 나왔다"를 유출 가능성 0%�
 - [ ] Public 전환과 version release 전에 file·history·문서·설정·release 결과를 나눠 확인한다 (S11)
 - [ ] `github-release-guide`의 Assess와 Guided, 점검과 승인, 공개와 사후 검증을 구분한다 (S11)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [12 AI에게 Git 작업을 지시하는 법](12-asking-ai.md)
+[← 이전: 10 — 시나리오: 혼자 만들 때](10-scenarios-solo.md) · [목차](README.md) · [다음: 12 — AI에게 Git 작업을 지시하는 법: 상황별 문장과 위험 신호등](12-asking-ai.md)
+
+<!-- learnstead:footer:end -->

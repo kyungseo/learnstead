@@ -1,6 +1,8 @@
 # 06 — 막혔을 때 빠져나오기
 
-← [05 코드를 몰라도 하는 확인](05-verify-without-reading.md) · 다음 → [07 대화가 길어지면 생기는 일](07-context-limits.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05 — 코드를 몰라도 하는 확인](05-verify-without-reading.md) · [목차](README.md) · [다음: 07 — 대화가 길어지면 생기는 일](07-context-limits.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 같은 오류와 비슷한 수정이 반복되는데도 나아지지 않는다면, 지시를 한 번 더 반복하기보다 접근을 바꿔야 합니다.
 >
@@ -110,6 +112,10 @@
             배운 것: 서버 설정 문제였는데 코드만 고치고 있었음
 ```
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [07 대화가 길어지면 생기는 일](07-context-limits.md)
+[← 이전: 05 — 코드를 몰라도 하는 확인](05-verify-without-reading.md) · [목차](README.md) · [다음: 07 — 대화가 길어지면 생기는 일](07-context-limits.md)
+
+<!-- learnstead:footer:end -->

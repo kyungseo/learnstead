@@ -1,6 +1,8 @@
 # 05. 예산과 compaction — 컨텍스트가 찰 때 무엇이 남는가
 
-> 이전 ← [`04-memory.md`](04-memory.md) · 다음 → [`06-size-vs-adherence.md`](06-size-vs-adherence.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. memory — 세션을 넘어 남는 것](04-memory.md) · [목차](README.md) · [다음: 06. 지시문 크기 vs 준수율 — 실측](06-size-vs-adherence.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -83,3 +85,11 @@ Anthropic 글의 표현으로는 **just-in-time retrieval**입니다. 전부 미
 - 세션 비용을 좌우하는 것이 지시문 크기보다 탐색 턴임을 실측으로 설명할 수 있습니다.
 - 압축 후 각 층의 운명을 표로 말할 수 있습니다.
 - 대화로만 준 지시를 지시문 파일로 옮겨야 하는 이유를 설명할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 04. memory — 세션을 넘어 남는 것](04-memory.md) · [목차](README.md) · [다음: 06. 지시문 크기 vs 준수율 — 실측](06-size-vs-adherence.md)
+
+<!-- learnstead:footer:end -->

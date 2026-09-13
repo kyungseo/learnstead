@@ -1,6 +1,8 @@
 # 01. 서버 만들고 LLM 없이 호출하기
 
-> 다음 → [`02-connect-claude-code.md`](02-connect-claude-code.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. Claude Code에 꽂기](02-connect-claude-code.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -80,3 +82,11 @@ cat notes_server.py
 | `No module named 'mcp.server.mcpserver'` | SDK 1.x 설치 | `pip install "mcp==2.1.1"` |
 | `No module named 'mcp'` | 다른 python | `setup.sh`에 준 python 경로로 실행 |
 | probe가 멈춤 | 서버가 stdout에 무언가 씀 / import 오류 | 터미널에서 `"$MCP_NOTES_PYTHON" notes_server.py`를 직접 띄워 stderr 확인, Ctrl-C |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. Claude Code에 꽂기](02-connect-claude-code.md)
+
+<!-- learnstead:footer:end -->

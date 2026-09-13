@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 핵심 주장의 1차 출처와 확인일입니다. 도구 사실은 전부 공식 문서를 2026-09-06에 확인했고, 실측은 실습 [`VALIDATION.md`](../../labs/delegate-and-verify/VALIDATION.md)에 있습니다.
 
 ## 1차 자료 — Claude Code (2.1.263 기준, 2026-09-06 확인)
@@ -50,3 +54,11 @@
 - Codex subagent의 중첩 깊이 한도, 대화 이력 상속의 기본값(문서에 명시 없음. 실측에서 `fork_turns: "all"`이 관측됐으나 기본 동작인지는 확인하지 못함).
 - agent teams·dynamic workflows·agent view의 실제 동작. 문서로만 확인했고 실행하지 않았습니다.
 - Claude Code 데스크톱 앱과 Codex 데스크톱 앱의 worktree 동작. CLI만 실측했습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

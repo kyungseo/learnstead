@@ -1,5 +1,9 @@
 # 노트 MCP 서버 — 만들고, 꽂고, 깨뜨리기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 서버 만들고 LLM 없이 호출하기](01-build-and-probe.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![두 AI 코딩 도구가 읽기 전용 노트 서버에 연결되고 쓰기와 경로 이탈은 차단되는 손그림](assets/mcp-notes-server-hero.webp)
 
 > Python 80줄짜리 읽기 전용 노트 서버를 만들어 LLM 없이 호출하고, Claude Code와 Codex에 꽂고, **권한 밖 호출·거짓 annotation·주입 지시문·stdout 오염을** 재현한 뒤 skill과 결합합니다. 가이드 [AI Agent에 내 도구를 연결하는 법 — MCP 기초](../../guides/mcp-basics/README.md)의 실습편.
@@ -95,3 +99,11 @@ Codex 등록은 `~/.codex/config.toml`(전역)에 남습니다. **실습이 끝�
 ## 버전
 
 [`CHANGELOG.md`](CHANGELOG.md) · 출처 [`SOURCES.md`](SOURCES.md)
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01. 서버 만들고 LLM 없이 호출하기](01-build-and-probe.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

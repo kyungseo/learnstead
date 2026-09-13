@@ -1,6 +1,8 @@
 # 05. 구조 변경 — 예전 데이터도 살아남는가
 
-[← 04 접근](04-authorization.md) · [전체 목차](README.md) · [06 복원 →](06-restore.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 접근 — 다른 사람의 데이터도 바꿀 수 있는가](04-authorization.md) · [목차](README.md) · [다음: 06. 복원 — 백업에서 정말 되살릴 수 있는가](06-restore.md)
+<!-- learnstead:nav:end -->
 
 앱을 쓰던 중 “신청할 때 메모도 남기고 싶다”는 요청이 생겼습니다. 새 DB에서는 잘 동작하지만 **이미 신청한 사람들의 데이터에도 변경을 적용할 수 있는지** 확인합니다.
 
@@ -50,6 +52,10 @@
 
 격리된 검증 DB는 검증 도구가 만든 범위에서 정리합니다. 튜토리얼 DB를 처음부터 다시 만들려면 별도의 [초기화 명령](../../tutorials/study-signup-db/01-prepare.md)을 사용합니다. 그것은 기존 데이터를 보존하는 migration이 아니라 **연습 데이터를 버리는 재시작**이라는 점을 구분하세요.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 04 접근](04-authorization.md) · [전체 목차](README.md) · [06 복원 →](06-restore.md)
+[← 이전: 04. 접근 — 다른 사람의 데이터도 바꿀 수 있는가](04-authorization.md) · [목차](README.md) · [다음: 06. 복원 — 백업에서 정말 되살릴 수 있는가](06-restore.md)
+
+<!-- learnstead:footer:end -->

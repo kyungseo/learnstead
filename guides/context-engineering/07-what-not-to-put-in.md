@@ -1,6 +1,8 @@
 # 07. 무엇을 넣지 말 것인가
 
-> 이전 ← [`06-size-vs-adherence.md`](06-size-vs-adherence.md) · 다음 → [`08-glossary.md`](08-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06. 지시문 크기 vs 준수율 — 실측](06-size-vs-adherence.md) · [목차](README.md) · [다음: 08. 용어집](08-glossary.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -48,3 +50,11 @@
 - 넣지 말아야 할 12가지와 각각의 대체 자리를 설명할 수 있습니다.
 - 지시문 감사를 7단계로 돌릴 수 있습니다.
 - 빠지기 쉬운 네 가지(하지 말 것·왜·명령·새 관례)를 확인할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 06. 지시문 크기 vs 준수율 — 실측](06-size-vs-adherence.md) · [목차](README.md) · [다음: 08. 용어집](08-glossary.md)
+
+<!-- learnstead:footer:end -->

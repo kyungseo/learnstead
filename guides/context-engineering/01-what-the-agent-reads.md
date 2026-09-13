@@ -1,6 +1,8 @@
 # 01. Agent가 판단할 때 보는 것
 
-> 이 문서는 [`README.md`](README.md)의 1장입니다. 다음 → [`02-entry-instructions.md`](02-entry-instructions.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 진입 지시문 — CLAUDE.md · AGENTS.md의 계층과 발견](02-entry-instructions.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -55,3 +57,11 @@ Anthropic의 정의를 빌리면, Context Engineering은 추론 시점에 모델
 - 세션 시작 시 컨텍스트에 무엇이 어떤 순서로 들어가는지 말할 수 있습니다.
 - 네 출처(진입·조건부·memory·동적)를 구분합니다.
 - "코드에서 추론 가능한가"를 지시문 작성의 첫 질문으로 둡니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 진입 지시문 — CLAUDE.md · AGENTS.md의 계층과 발견](02-entry-instructions.md)
+
+<!-- learnstead:footer:end -->

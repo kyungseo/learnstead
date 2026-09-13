@@ -1,9 +1,12 @@
 # 08 — 실습: Prompt Injection과 도구 권한 경계
 
+<!-- learnstead:nav:start -->
+[← 이전: 07 — 실습: 읽기 전용 도구를 쓰는 Local Agent 만들기](07-lab-readonly-agent.md) · [목차](README.md) · [다음: 09 — 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md)
+<!-- learnstead:nav:end -->
+
 07의 agent를 이용해 허용 범위를 넘어서는 실험을 진행합니다. **잘못된 tool 인자, 허용되지 않은 파일 접근(문서에 심어진 지시), 무한 반복, 실패 복구** 등 네 가지 상황을 재현하고, 각각을 **어느 겹의 경계가 막았는지**(또는 막지 못했는지) 판정합니다. 도구는 전부 읽기 전용이고
 "비밀"은 가짜이므로 실습 중 실제 피해는 없습니다.
 
-← [07 실습: 읽기 전용 Agent](07-lab-readonly-agent.md) · 다음 → [09 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md)
 
 > **왜 읽나:** 비밀 파일을 읽으라는 문단을 문서에 심었더니, 모델은 파일을 읽지 않았지만 "검증 코드: 접근 불가"라는 문구를 만들어 냈습니다. 다른 실험에서는 도구를 실행한 것처럼 답했습니다. 두 경우 모두 실제 호출 로그를 확인해야 구분할 수 있습니다.
 >
@@ -236,6 +239,10 @@ docs/ 안의 문서에 없습니다"라고 정직하게 답했습니다. `[실�
 이 실습은 파일을 만들거나 바꾸지 않습니다(읽기 전용). demo 플래그는 fixture 파일 하나에만 적용되며 프로세스가 끝나면 사라집니다.
 기록은 [APP-CARD](APP-CARD.md)의 Guard 칸에 "시나리오 ①~④ 재현 여부·막은 겹·모델의 시도 여부"로 남깁니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [09 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md)
+[← 이전: 07 — 실습: 읽기 전용 도구를 쓰는 Local Agent 만들기](07-lab-readonly-agent.md) · [목차](README.md) · [다음: 09 — 프레임워크와 앱 아키텍처](09-frameworks-and-architecture.md)
+
+<!-- learnstead:footer:end -->

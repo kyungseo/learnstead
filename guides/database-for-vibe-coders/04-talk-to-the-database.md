@@ -1,6 +1,8 @@
 # 04. 앱은 DB에 어떻게 부탁할까?
 
-[이전: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md) · [목차](README.md) · [다음: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md) · [목차](README.md) · [다음: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md)
+<!-- learnstead:nav:end -->
 
 신청 버튼을 누르면 무엇이 DB까지 전달될까요? AI가 API·SDK·SQL·ORM을 섞어 말해도 각각 맡은 일을 구분하면 요청의 경로를 읽을 수 있습니다.
 
@@ -63,6 +65,10 @@ ORDER BY e.id;
 
 직접 볼 결과는 ‘정상 동작’ 한 문장보다 구체적입니다. 입력 ID, 조회 조건, 반환한 행 수, 변경된 행 수가 의도와 맞는지 확인합니다. 단, 로그에 비밀키나 실제 개인정보를 남기지는 않습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[이전: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md) · [목차](README.md) · [다음: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md)
+[← 이전: 03. 데이터를 어떤 모양으로 나눌까?](03-model-your-data.md) · [목차](README.md) · [다음: 05. 틀린 데이터가 들어오면 누가 막을까?](05-keep-data-consistent.md)
+
+<!-- learnstead:footer:end -->

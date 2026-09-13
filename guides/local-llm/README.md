@@ -1,5 +1,9 @@
 # 내 장비에서 LLM 직접 실행하기
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 오리엔테이션: 로컬 실행의 전체 지도](01-orientation.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 [![Learnstead Local LLM 가이드. Qwen, Gemma, DeepSeek가 화살표를 따라 노트북 안의 Llama와 대화 아이콘으로 이동하는 삽화](assets/local-llm-guide-hero.webp)](#10분-안에-첫-응답-받기)
 
 노트북, NVIDIA GPU가 있는 PC, 여러 GPU를 갖춘 서버에서 open-weight LLM을 직접 실행하기 위한
@@ -224,4 +228,10 @@ prompt가 내 장비에서 처리되더라도 다음 상황에서는 data가 net
 - [핵심 정보의 1차 출처](SOURCES.md)
 - [환경별 실행 검증 기록](VALIDATION.md)
 
-**다음 →** [01 오리엔테이션 — 로컬 실행의 전체 지도](01-orientation.md)
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01 — 오리엔테이션: 로컬 실행의 전체 지도](01-orientation.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

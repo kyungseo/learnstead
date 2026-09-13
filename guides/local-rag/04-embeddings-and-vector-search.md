@@ -1,9 +1,12 @@
 # 04 — 임베딩과 벡터 검색: 의미를 숫자로 바꾸고 가까운 것을 찾는다
 
+<!-- learnstead:nav:start -->
+[← 이전: 03 — RAG 파이프라인 해부: 색인 시점과 질의 시점](03-pipeline-anatomy.md) · [목차](README.md) · [다음: 05 — 청킹과 검색 품질: 자르기 · 섞기 · 재정렬](05-chunking-and-retrieval-quality.md)
+<!-- learnstead:nav:end -->
+
 검색이 "단어가 같은 문서"가 아니라 "뜻이 비슷한 문서"를 찾을 수 있는 이유는 **임베딩(embedding)** 때문입니다. 이
 문서는 임베딩이 무엇인지, 유사도를 어떻게 재는지, embedding model과 vector store를 어떻게 고르는지 다룹니다.
 
-← [03 파이프라인 해부](03-pipeline-anatomy.md) · 다음 → [05 청킹과 검색 품질](05-chunking-and-retrieval-quality.md)
 
 > **왜 읽나:** "휴가 넘기기"와 "연차 이월"은 단어가 하나도 안 겹치는데 검색이 됩니다. 반대로 "EQ-2291"은 글자가 똑같은데 흐려집니다.
 >
@@ -155,6 +158,10 @@ print(len(vectors), len(vectors[0]))
 
 벡터만 저장하면 검색 결과를 사람이 읽을 수도, 출처를 붙일 수도 없습니다. `[원리]`
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [05 청킹과 검색 품질 — 자르기·섞기·재정렬](05-chunking-and-retrieval-quality.md)
+[← 이전: 03 — RAG 파이프라인 해부: 색인 시점과 질의 시점](03-pipeline-anatomy.md) · [목차](README.md) · [다음: 05 — 청킹과 검색 품질: 자르기 · 섞기 · 재정렬](05-chunking-and-retrieval-quality.md)
+
+<!-- learnstead:footer:end -->

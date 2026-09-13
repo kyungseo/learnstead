@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 [가이드 목차](README.md)
 
 ## 문서 확인 · 2026-09-13
@@ -32,4 +36,12 @@
 
 ---
 
-[가이드 목차](README.md) · [출처](SOURCES.md)
+함께 보기: [출처](SOURCES.md)
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,9 +1,12 @@
 # 02 — 선택: 저장소를 Chroma로 바꾸기
 
+<!-- learnstead:nav:start -->
+[← 이전: 01 — 단계별로 만들기: 색인 → 검색 → 근거 있는 답변](01-build.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 조각이 수만 개가 되면 매번 전부 임베딩하고 비교할 수 없습니다. 색인을 파일에 저장하고 가까운 것만 찾아 주는 vector store를
 붙입니다. `rag_chroma.py`는 `rag_skeleton.py`의 함수를 그대로 가져다 쓰고 **저장소만** 바꿉니다.
 
-← [01 단계별로 만들기](01-build.md) · [README](README.md)
 
 > **검증 상태:** 색인 → 질의 → 초기화 전 경로를 Apple M4 Pro·24GB Mac, Ollama 0.33.0, `chromadb` 1.5.9에서 실행했습니다.
 > `[실행 검증 · 2026-08-30]`
@@ -45,6 +48,12 @@ python3 rag_chroma.py --reset     # ./chroma_db 삭제
 
 `색인을 삭제했습니다.`가 출력되면 01을 시작하기 전 상태로 돌아간 것입니다. `[실행 검증 · 2026-08-30]`
 
+함께 읽기: [실습: RAG는 왜 틀리는가](../../labs/why-rag-fails/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [실습: RAG는 왜 틀리는가](../../labs/why-rag-fails/README.md) — 같은 스크립트로 다섯 가지 실패를 일부러 만들어 봅니다.
+[← 이전: 01 — 단계별로 만들기: 색인 → 검색 → 근거 있는 답변](01-build.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

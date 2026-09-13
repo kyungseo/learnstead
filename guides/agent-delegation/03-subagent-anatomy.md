@@ -1,6 +1,8 @@
 # 03. Subagent 해부 — 무엇을 보고 무엇을 못 보는가
 
-> [← 이전: 02. 일을 나누고 조정하는 네 가지 방식](02-layers-of-splitting.md) · [목차](README.md) · [다음: 04. 병렬은 언제 실제로 빠른가 →](04-parallel-and-worktrees.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 일을 나누고 조정하는 네 가지 방식](02-layers-of-splitting.md) · [목차](README.md) · [다음: 04. 병렬은 언제 실제로 빠른가 — worktree와 파일 소유권](04-parallel-and-worktrees.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -121,6 +123,10 @@ Claude Code에서는 두 조건의 입력량·시간 중앙값이 비슷했지�
 - Claude Code의 비-fork subagent가 대화 이력과 memory를 받지 않고, Codex는 `fork_turns`로 넘길 수 있다는 차이에서 위임 프롬프트 작성 규칙을 끌어낼 수 있습니다.
 - 마지막 컨텍스트 크기와 누적 입력량을 구분하고, 자기 과제에서 위임 효과를 비교할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 02. 일을 나누고 조정하는 네 가지 방식](02-layers-of-splitting.md) · [목차](README.md) · [다음: 04. 병렬은 언제 실제로 빠른가 →](04-parallel-and-worktrees.md)
+[← 이전: 02. 일을 나누고 조정하는 네 가지 방식](02-layers-of-splitting.md) · [목차](README.md) · [다음: 04. 병렬은 언제 실제로 빠른가 — worktree와 파일 소유권](04-parallel-and-worktrees.md)
+
+<!-- learnstead:footer:end -->

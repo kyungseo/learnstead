@@ -1,6 +1,8 @@
 # 04. 깨뜨리기 — 권한 밖 쓰기 · 거짓 annotation · 주입 · stdout 오염
 
-> 이전 ← [`03-connect-codex.md`](03-connect-codex.md) · 다음 → [`05-skill-plus-mcp.md`](05-skill-plus-mcp.md)
+<!-- learnstead:nav:start -->
+[← 이전: 03. Codex에 꽂기](03-connect-codex.md) · [목차](README.md) · [다음: 05. skill + MCP — 절차와 능력을 합치기](05-skill-plus-mcp.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -106,3 +108,11 @@ mv .mcp.json.bak .mcp.json; rm notes_server_bad.py
 | 실험 후 `장보기.md`가 다름 | checkout 누락 | `git checkout -- notes/` |
 
 다음 단계로 가기 전에 Claude Code 설정은 `cp .mcp.json.example .mcp.json`으로 되돌립니다. Codex 설정은 05의 읽기 전용 등록 명령으로 교체합니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 03. Codex에 꽂기](03-connect-codex.md) · [목차](README.md) · [다음: 05. skill + MCP — 절차와 능력을 합치기](05-skill-plus-mcp.md)
+
+<!-- learnstead:footer:end -->

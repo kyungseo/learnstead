@@ -1,6 +1,8 @@
 # 01. 추론 가능한 기준선 — 코드가 이미 규칙을 따를 때
 
-> 다음 → [`02-short-vs-none.md`](02-short-vs-none.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 짧은 지시문 vs 없음 — 코드가 규칙을 따르지 않을 때](02-short-vs-none.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -57,3 +59,11 @@ python3 $FIX/scripts/summarize.py results.tsv
 | V0에서 낮은 점수 | 기존 파일이 규칙을 다 따르지 않음 | 세 파일을 다시 확인 |
 | `claude -p`가 편집 권한을 물어 멈춤 | permission mode | `--permission-mode acceptEdits`를 `run-variant.sh`에 추가 |
 | Codex가 파일을 못 씀 | sandbox read-only | 스크립트의 `-s workspace-write` 확인 |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 짧은 지시문 vs 없음 — 코드가 규칙을 따르지 않을 때](02-short-vs-none.md)
+
+<!-- learnstead:footer:end -->

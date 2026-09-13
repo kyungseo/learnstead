@@ -1,6 +1,8 @@
 # 06. 복원 — 백업에서 정말 되살릴 수 있는가
 
-[← 05 구조 변경](05-migration.md) · [전체 목차](README.md) · [가이드로 →](../../guides/database-for-vibe-coders/README.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05. 구조 변경 — 예전 데이터도 살아남는가](05-migration.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
 
 백업 파일이 만들어졌다는 보고를 받았습니다. 이제 **다른 DB에 복원한 뒤 행·관계·접근 규칙을 확인해** 실제로 되살릴 수 있는지 판정합니다.
 
@@ -60,6 +62,12 @@ Supabase의 DB 백업에는 Storage API로 저장한 파일 본체가 포함되�
 
 여섯 실습의 기록을 모으면 “저장됐다”라는 한 문장을 저장 위치·데이터 규칙·동시 변경·권한·구조 변경·복원이라는 여섯 근거로 설명할 수 있습니다. 실제 앱에서 AI에게 맡길 다음 변경에도 이 기록을 출발점으로 사용하세요.
 
+함께 읽기: [가이드로](../../guides/database-for-vibe-coders/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 05 구조 변경](05-migration.md) · [전체 목차](README.md) · [가이드로 →](../../guides/database-for-vibe-coders/README.md)
+[← 이전: 05. 구조 변경 — 예전 데이터도 살아남는가](05-migration.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

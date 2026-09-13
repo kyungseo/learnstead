@@ -1,6 +1,8 @@
 # 02. Claude Code에 꽂기
 
-> 이전 ← [`01-build-and-probe.md`](01-build-and-probe.md) · 다음 → [`03-connect-codex.md`](03-connect-codex.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 서버 만들고 LLM 없이 호출하기](01-build-and-probe.md) · [목차](README.md) · [다음: 03. Codex에 꽂기](03-connect-codex.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -59,3 +61,11 @@ e1 토큰: 캐시 읽기 69,605 · 출력 687. `--allowedTools` 없이 돌린 �
 | `mcp=[('notes','failed')]` | 명령이 바로 죽음 | `.mcp.json`의 `command`·`args`를 터미널에서 그대로 실행 |
 | `needs-auth`인 다른 서버가 보임 | 계정에 연결된 커넥터 | 무관. 무시 |
 | 이미 Claude Code 세션 안 | 중첩 실행 제한 | 별도 터미널 또는 `env -u CLAUDECODE` |
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 01. 서버 만들고 LLM 없이 호출하기](01-build-and-probe.md) · [목차](README.md) · [다음: 03. Codex에 꽂기](03-connect-codex.md)
+
+<!-- learnstead:footer:end -->

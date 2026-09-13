@@ -1,5 +1,9 @@
 # 지시문 예산 — 크기·위치·형태가 준수율을 얼마나 바꾸나
 
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 추론 가능한 기준선 — 코드가 이미 규칙을 따를 때](01-inferable-baseline.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
+
 ![크기와 위치가 다른 지시문을 두 AI Agent에 넣고 체크리스트와 저울로 결과를 비교하는 손그림](assets/instruction-budget-hero.webp)
 
 > 작은 Python 프로젝트에 검사 가능한 규칙 5개를 정하고, 지시문을 **없음 · 짧게 · 길게 · pointer · import · 조건부** 여섯 가지로 두어 같은 과제를 Claude Code와 Codex에서 3회씩 돌립니다. 판정은 스크립트가 합니다. 가이드 [AI Agent가 놓치지 않게 정보 설계하기 — Context Engineering 기초](../../guides/context-engineering/README.md)의 실습편.
@@ -98,3 +102,11 @@ fixture와 홈 디렉터리는 바뀌지 않습니다. 사용자 레벨 `~/.clau
 ## 버전
 
 [`CHANGELOG.md`](CHANGELOG.md) · 출처 [`SOURCES.md`](SOURCES.md)
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 학습 자료 목록](../../README.md) · [시작: 01. 추론 가능한 기준선 — 코드가 이미 규칙을 따를 때](01-inferable-baseline.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 02. 오케스트레이터-워커 — 입력 경계·병렬 시간·취합 결과를 따로 본다
 
-> [← 이전: 01. 파이프라인과 라우터](01-pipeline-router.md) · [목차](README.md) · [다음: 03. 평가-개선 루프 →](03-evaluator-loop.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다](01-pipeline-router.md) · [목차](README.md) · [다음: 03. 평가-개선 루프 — 통과 기준과 중단 조건을 확인한다](03-evaluator-loop.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -178,6 +180,10 @@ Ollama는 `OLLAMA_NUM_PARALLEL`을 지정하지 않으면 메모리에 따라 �
 - [ ] 병렬과 순차의 벽시계를 대조 측정했다
 - [ ] 단일 호출 기준선과 토큰을 비교했다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 01. 파이프라인과 라우터](01-pipeline-router.md) · [목차](README.md) · [다음: 03. 평가-개선 루프 →](03-evaluator-loop.md)
+[← 이전: 01. 파이프라인과 라우터 — 격리로 토큰이 줄고, 분류가 틀리면 전부 틀린다](01-pipeline-router.md) · [목차](README.md) · [다음: 03. 평가-개선 루프 — 통과 기준과 중단 조건을 확인한다](03-evaluator-loop.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # AI Agent에게 일을 나눠 맡기는 법 — Subagent·병렬·검토 기초
 
-> [시작: 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향 →](01-why-split-a-session.md)
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향](01-why-split-a-session.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
 
 ![사람이 세 로봇에게 문서 검토·코드·검사 작업을 나누고 결과를 모으는 손그림](assets/agent-delegation-hero.webp)
 
@@ -95,6 +97,10 @@
 - 출처: [`SOURCES.md`](SOURCES.md) · 변경: [`CHANGELOG.md`](CHANGELOG.md)
 - 이 가이드가 다루지 않는 것: agent teams·dynamic workflows·agent view의 실측(위치와 비용 경고만 옮김) · 오케스트레이션 프레임워크 · 여러 사용자를 받는 agent 서비스 · 쓰기 권한 subagent의 자율 커밋·배포 · 코드로 여러 호출을 엮는 패턴(→ [여러 AI를 엮어 일하게 하기](../../guides/agent-orchestration/README.md))
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [시작: 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향 →](01-why-split-a-session.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 한 세션이 막히는 세 가지 이유 — 컨텍스트·시간·편향](01-why-split-a-session.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

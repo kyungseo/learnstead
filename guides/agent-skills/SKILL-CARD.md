@@ -1,5 +1,9 @@
 # SKILL-CARD — 한 장 요약
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 > 가이드 전체의 압축판. 세부는 각 장으로.
 
 ## skill 한 문장
@@ -65,3 +69,11 @@ command = 사람만 부르는 skill · rule = 경로 조건 붙은 skill/지시�
 ## 공개 전
 
 홈 절대 경로 · 내부 ID · Secret · 넓은 `allowed-tools` · 동적 명령 · 도구 전용 필드 · `license`
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

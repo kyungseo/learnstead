@@ -1,9 +1,12 @@
 # 09 — 내 장비에 맞는 모델 고르기
 
+<!-- learnstead:nav:start -->
+[← 이전: 08 — 셋업: 멀티 GPU · 사내 서버](08-setup-multi-gpu-server.md) · [목차](README.md) · [다음: 10 — 운영 실무](10-operations.md)
+<!-- learnstead:nav:end -->
+
 model 목록은 빠르게 낡습니다. 이 장은 순위표 대신 **후보를 안전하게 줄이는 방법**을 설명하고, 마지막에
 2026-08-10 기준의 작은 snapshot만 둡니다.
 
-← [08 멀티 GPU·서버](08-setup-multi-gpu-server.md) · 다음 → [10 운영](10-operations.md)
 
 > **검증 상태:** model 이름·tag·license·runtime 지원은 모두 변할 수 있습니다. 내려받기 전에 model card와
 > runtime library를 다시 확인하고, 확인한 URL과 날짜를 기록하세요. 이 장의 근거는 [출처](SOURCES.md),
@@ -138,6 +141,10 @@ model을 추가할 때는 “좋다”는 평가보다 **정확한 식별자·�
 개정할 때는 본문 날짜, [SOURCES.md](SOURCES.md), [VALIDATION.md](VALIDATION.md), item
 [CHANGELOG.md](CHANGELOG.md)를 함께 갱신합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [10 운영](10-operations.md)
+[← 이전: 08 — 셋업: 멀티 GPU · 사내 서버](08-setup-multi-gpu-server.md) · [목차](README.md) · [다음: 10 — 운영 실무](10-operations.md)
+
+<!-- learnstead:footer:end -->

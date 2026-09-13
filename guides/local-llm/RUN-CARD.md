@@ -1,9 +1,12 @@
 # 내 Local LLM 실행 카드
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 model을 실행했다는 사실만이 아니라 **장비에 맞았는지(Fit), 어떻게 실행했는지(Run), 무엇으로 확인했는지(Prove)를**
 한 장에 남기는 기록 양식입니다. 새 model이나 runtime을 시험할 때 아래 template을 복사해 사용하세요.
 
-← [가이드 README](README.md) · 다음 → [01 오리엔테이션](01-orientation.md)
 
 ---
 
@@ -73,6 +76,10 @@ model을 실행했다는 사실만이 아니라 **장비에 맞았는지(Fit), �
 세부 근거와 명령은 [검증 기록](VALIDATION.md), 성능을 비교하는 방법은 [10 운영과 문제 해결](10-operations.md)을
 참고하세요.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 오리엔테이션 — 로컬 실행의 전체 지도](01-orientation.md)
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

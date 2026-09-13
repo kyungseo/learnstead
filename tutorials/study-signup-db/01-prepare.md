@@ -1,6 +1,8 @@
 # 01. 준비 — 내 컴퓨터 안에 연습용 DB 띄우기
 
-[← 목차](README.md) · [전체 목차](README.md) · [02 구조 →](02-model.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 구조 — 모임과 신청 내역 나누기](02-model.md)
+<!-- learnstead:nav:end -->
 
 이 단계의 결과는 **내 컴퓨터에서만 사용하는 연습용 DB가 준비된 상태입니다.** 아직 신청 버튼을 만들지 않습니다. 먼저 명령을 어디에서 실행하는지, 데이터가 어디에 생기는지 확인합니다.
 
@@ -90,6 +92,10 @@ npm run db:reset -- --confirm-local-reset
 
 이 요청문은 AI가 따라야 할 작업 지침입니다. 실제 접근을 막아 주는 장치는 연결 대상 제한·DB 권한·격리된 연습 환경입니다. 요청문을 보냈다는 사실만으로 안전이 보장되지는 않습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 목차](README.md) · [전체 목차](README.md) · [02 구조 →](02-model.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 구조 — 모임과 신청 내역 나누기](02-model.md)
+
+<!-- learnstead:footer:end -->

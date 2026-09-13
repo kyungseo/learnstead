@@ -1,9 +1,12 @@
 # 내 연결 카드
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 응답이 왔다는 사실만 기록하지 않습니다. **무엇을 호출했는지(Call), 출력을 어떻게 고정했는지(Shape), 무엇을 막았는지(Guard)를**
 한 장에 함께 남기는 양식입니다. 모델·파라미터·도구를 바꿀 때마다 아래 template을 복사해 사용하세요.
 
-← [가이드 README](README.md) · 다음 → [01 연결의 해부](01-integration-anatomy.md)
 
 ---
 
@@ -73,6 +76,10 @@
 | Prove | 03 판정 4/4 · 05 스키마 ○/부탁 ✗/환각 confidence 0.9 · 08: ② 호출 없음·형식 누출, ③ 가짜 도구 실행 텍스트, ①④ 정상 · prompt 52→81 토큰 |
 | 경계 | 개인 PC의 실습 구성이며 동시 사용자·인증·쓰기 도구는 다루지 않음 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [01 연결의 해부](01-integration-anatomy.md)
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

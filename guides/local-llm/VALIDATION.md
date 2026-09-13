@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **내 장비에서 LLM 직접 실행하기**의 명령을 어디까지 실제로 확인했는지 기록합니다. 공식 문서를 확인한
 것과 명령을 직접 실행한 것은 구분합니다.
 
@@ -110,3 +114,11 @@ python3 tools/validate.py --public
 
 2026-08-11 공개 전 `python3 tools/validate.py`와 `python3 tools/validate.py --public`을 실행해 통과했습니다.
 정적 검증 통과는 런타임 명령의 실행 성공을 대신하지 않습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

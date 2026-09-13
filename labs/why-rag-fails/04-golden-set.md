@@ -1,9 +1,12 @@
 # 04 — 골든셋으로 숫자 만들기: 검색 성공률과 점수 하한의 틈
 
+<!-- learnstead:nav:start -->
+[← 이전: 03 — multi-hop: 벡터가 막히고 그래프가 답할 때](03-multi-hop.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 01~03에서 한 판정은 전부 눈으로 했습니다. 이 문서는 그 판정을 **반복 가능한 숫자로** 바꿉니다 — 질문 20개와 정답을 적어 두고, 검색만
 20번 돌려 정답이 top-k에 들어왔는지 셉니다. 모델(생성)은 부르지 않으므로 1~2초면 끝나고, 설정을 바꿀 때마다 다시 잴 수 있습니다.
 
-← [03 multi-hop](03-multi-hop.md) · [README](README.md)
 
 > **검증 상태:** 아래 네 설정을 Apple M4 Pro·24GB Mac, Ollama 0.33.0, `bge-m3`에서 실행했습니다. `[실행 검증 · 2026-08-30]`
 > 결과는 예상과 달랐습니다 — 청킹을 바꿔도 recall이 떨어지지 않았고, 대신 **점수 하한이 들어갈 틈이 없다는 것이** 드러났습니다.
@@ -81,6 +84,12 @@ python3 rag_minimal.py "EQ-2291 장비는 어떻게 처리되나요?" --top-k 3 
 
 `recall.py`는 파일을 만들지 않습니다. 골든셋을 고쳤다면 `git diff labs/goldenset.json`으로 무엇을 바꿨는지 남겨 두세요.
 
+함께 읽기: [가이드](../../guides/local-rag/README.md)
+
+<!-- learnstead:footer:start -->
+
 ---
 
-**← [README로 돌아가기](README.md)** · 시리즈의 원리 부분은 [가이드](../../guides/local-rag/README.md)
+[← 이전: 03 — multi-hop: 벡터가 막히고 그래프가 답할 때](03-multi-hop.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

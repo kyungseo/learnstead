@@ -1,6 +1,8 @@
 # 03. 컨텍스트 격리가 핵심이다
 
-> [← 이전: 02. 패턴 지도](02-pattern-map.md) · [목차](README.md) · [다음: 04. 실패 모드와 멈추는 법 →](04-failure-modes.md)
+<!-- learnstead:nav:start -->
+[← 이전: 02. 패턴 지도 — 대표적인 네 구성](02-pattern-map.md) · [목차](README.md) · [다음: 04. 실패 모드와 멈추는 법](04-failure-modes.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -94,6 +96,10 @@
 - 상위의 원문 재검증이 워커 입력 경계와 전체 비용에 어떤 영향을 주는지 설명할 수 있습니다.
 - 입력 자료 선택·요약 결과 전달·필요한 기록만 전달하는 방법을 적용하고 토큰 절감 효과를 확인할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 02. 패턴 지도](02-pattern-map.md) · [목차](README.md) · [다음: 04. 실패 모드와 멈추는 법 →](04-failure-modes.md)
+[← 이전: 02. 패턴 지도 — 대표적인 네 구성](02-pattern-map.md) · [목차](README.md) · [다음: 04. 실패 모드와 멈추는 법](04-failure-modes.md)
+
+<!-- learnstead:footer:end -->

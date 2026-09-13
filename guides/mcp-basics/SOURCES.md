@@ -1,5 +1,9 @@
 # SOURCES
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 초판 실행은 2026-08-30, 문서 재확인은 2026-09-02에 수행했다.
 
 ## 1차 자료 — 규격·공식 문서·직접 실행
@@ -27,3 +31,11 @@
 - 이전 판 클라이언트나 다른 host가 stdout 오염을 어떻게 처리하는지.
 - Codex의 `default_tools_approval_mode`가 annotation 외에 무엇을 보는지(관측은 `auto` 기본값에서 정직/거짓 annotation 각 1회).
 - Codex에서 서버 `instructions`가 모델에게 어떻게 전달되는지.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

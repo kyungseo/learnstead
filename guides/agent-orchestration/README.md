@@ -1,6 +1,8 @@
 # 여러 AI를 엮어 일하게 하기 — Agent와 오케스트레이션
 
-> [시작: 01. 왜 하나로는 안 되는가 →](01-why-more-than-one.md)
+<!-- learnstead:nav:start -->
+[← 학습 자료 목록](../../README.md) · [시작: 01. 왜 하나로는 안 되는가](01-why-more-than-one.md) · [검증 기록](VALIDATION.md)
+<!-- learnstead:nav:end -->
 
 ![사람이 순서·분기·검토를 나타내는 카드로 로봇들의 작업 흐름을 구성하는 손그림](assets/agent-orchestration-hero.webp)
 
@@ -92,6 +94,10 @@ python3 patterns.py all "관리자는 연차를 며칠까지 이월할 수 있�
 - 출처: [`SOURCES.md`](SOURCES.md) · 변경: [`CHANGELOG.md`](CHANGELOG.md)
 - 이 가이드가 다루지 않는 것: 오케스트레이션 프레임워크(LangGraph·CrewAI·Microsoft Agent Framework·OpenAI Agents SDK 등)의 사용법과 비교 · 장기 기억·계획(planning) 알고리즘·자율 목표 설정 · 여러 사용자를 받는 agent 서비스의 인프라·큐·상태 관리 · 쓰기·실행 권한을 가진 agent의 안전 설계([앱 연결 06 §3](../../guides/local-llm-app-integration/06-tool-calling-workflow-agent.md)의 경계 원칙까지만) · 품질을 수치로 재는 평가 체계(→ 평가와 관측 가이드) · 코딩 에이전트 안의 subagent·worktree·검토(→ [나눠 맡기는 법](../../guides/agent-delegation/README.md))
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [시작: 01. 왜 하나로는 안 되는가 →](01-why-more-than-one.md)
+[← 학습 자료 목록](../../README.md) · [시작: 01. 왜 하나로는 안 되는가](01-why-more-than-one.md) · [검증 기록](VALIDATION.md)
+
+<!-- learnstead:footer:end -->

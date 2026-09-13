@@ -1,9 +1,12 @@
 # 02 — 내 문서와 대화하는 AI 이해하기: RAG · Long Context · Fine-tuning
 
+<!-- learnstead:nav:start -->
+[← 이전: 01 — RAG·Graph 생태계 지도: 무엇이 어느 자리에 있는가](01-ecosystem-map.md) · [목차](README.md) · [다음: 03 — RAG 파이프라인 해부: 색인 시점과 질의 시점](03-pipeline-anatomy.md)
+<!-- learnstead:nav:end -->
+
 "내 문서를 AI에게 읽히고 싶다"는 한 문장에는 세 가지 다른 방법이 숨어 있습니다. 이 문서는 LLM이 **왜 내 문서를
 모르는지에서** 출발해, 세 방법의 차이와 선택 기준을 정리합니다.
 
-← [01 생태계 지도](01-ecosystem-map.md) · 다음 → [03 RAG 파이프라인 해부](03-pipeline-anatomy.md)
 
 > **왜 읽나:** "문서를 AI에 학습시키자"는 표현만으로는 RAG·Long Context·Fine-tuning 중 무엇이 필요한지 알 수 없습니다. 문서가 적다면 별도 검색 시스템 없이 통째로 넣는 편이 더 단순할 수 있습니다.
 >
@@ -109,6 +112,10 @@ fine-tuning을 다루지 않습니다. `[해석]`
 이 가이드는 **RAG를** 본문으로 다루고, Long Context는 RAG의 대안이자 RAG 안에서의 예산 문제로([06 §3](06-generation-and-grounding.md)),
 Fine-tuning은 범위 밖으로 둡니다. 다음 문서부터는 RAG 파이프라인을 색인 시점과 질의 시점으로 나눠 해부합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [03 RAG 파이프라인 해부 — 색인 시점과 질의 시점](03-pipeline-anatomy.md)
+[← 이전: 01 — RAG·Graph 생태계 지도: 무엇이 어느 자리에 있는가](01-ecosystem-map.md) · [목차](README.md) · [다음: 03 — RAG 파이프라인 해부: 색인 시점과 질의 시점](03-pipeline-anatomy.md)
+
+<!-- learnstead:footer:end -->

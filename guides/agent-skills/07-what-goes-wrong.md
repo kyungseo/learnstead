@@ -1,6 +1,8 @@
 # 07. 잘못되는 방식 — 실패 지도
 
-> 이전 ← [`06-canonical-and-adapters.md`](06-canonical-and-adapters.md) · 다음 → [`08-sharing-and-boundaries.md`](08-sharing-and-boundaries.md)
+<!-- learnstead:nav:start -->
+[← 이전: 06. 한 절차를 여러 도구에 — canonical + adapter](06-canonical-and-adapters.md) · [목차](README.md) · [다음: 08. 배포·공유·버전·공개 경계](08-sharing-and-boundaries.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -65,3 +67,11 @@ skill은 지시문이며, 저장소에 들어온 skill은 **다른 사람이 쓴
 - 실패를 발견·로드·준수 세 층으로 나눠 위에서부터 확인할 수 있습니다.
 - 각 층의 대표 증상과 첫 확인 명령을 알 수 있습니다.
 - 저장소에 들어온 skill을 열어 볼 때 `allowed-tools`와 동적 명령을 먼저 확인할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 06. 한 절차를 여러 도구에 — canonical + adapter](06-canonical-and-adapters.md) · [목차](README.md) · [다음: 08. 배포·공유·버전·공개 경계](08-sharing-and-boundaries.md)
+
+<!-- learnstead:footer:end -->

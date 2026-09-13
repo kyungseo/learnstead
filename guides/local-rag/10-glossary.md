@@ -1,9 +1,12 @@
 # 10 — 용어집
 
+<!-- learnstead:nav:start -->
+[← 이전: 09 — 개인 RAG와 기업 RAG: 파이프라인 아키텍처 비교](09-personal-vs-enterprise.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 전 문서의 **참조 부록입니다**. 순서대로 읽는 문서가 아니라, 모르는 용어가 나왔을 때 여는 문서입니다. 정의는 이 가이드의
 서술 기준을 따르며, 상세 설명이 있는 본문 위치를 함께 적었습니다.
 
-← [09 개인 RAG와 기업 RAG](09-personal-vs-enterprise.md) · [README로](README.md)
 
 ---
 
@@ -99,6 +102,10 @@
 | **모델이 선언한 context vs runtime이 적용한 context** | 상한 ↔ 이번 실행의 실제 값. 후자를 넘기면 runtime이 입력 일부를 제외할 수 있음 |
 | **검색 전 필터 vs 검색 후 필터** | 권한은 반드시 전자. 후자는 품질 저하 + 누락 위험 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**← [README로 돌아가기](README.md)**
+[← 이전: 09 — 개인 RAG와 기업 RAG: 파이프라인 아키텍처 비교](09-personal-vs-enterprise.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **RAG는 왜 틀리는가의** 시나리오를 어디까지 실제로 실행했는지 기록합니다.
 
 ## 현재 요약
@@ -79,3 +83,11 @@ Ollama와 모델 ID, `temperature=0`을 그대로 두고 ⑤를 다시 실행했
 위 표는 한 장비·한 모델 조합에서 관찰한 실행 결과입니다. 특히 ③′·⑤의 환각과 오추출은 다른 모델뿐 아니라 같은 모델과
 `temperature=0`에서도 답변·인용의 구체적인 형태가 달라질 수 있습니다. 재현 가능한 issue를 만들려면 OS·Python·패키지 버전,
 Ollama 버전과 모델 ID, `ollama ps`의 CONTEXT, 실행한 명령과 근거 목록(점수 포함), 답변 원문과 판정(①~⑤ 중 무엇인지)을 함께 적습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

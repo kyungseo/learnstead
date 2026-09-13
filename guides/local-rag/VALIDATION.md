@@ -1,5 +1,9 @@
 # 검증 기록
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 이 문서는 **내 문서와 대화하는 AI 이해하기 — RAG와 Graph**(가이드)의 명령과 주장을 어디까지 실제로 확인했는지 기록합니다. 튜토리얼과
 실습의 실행 기록은 각 자료의 `VALIDATION.md`에 따로 있습니다.
 
@@ -46,3 +50,11 @@ PNG는 검증용으로만 생성했고 저장소에는 SVG 원본만 둡니다.
 - 내부 링크·이미지 경로: Markdown 링크·이미지 대상을 파일 존재 여부로 전수 검사
 - SVG: XML parsing + 전용 lint
 - 한국어 강조 표기: 닫는 `**` 직후에 조사가 붙지 않도록 검사하고 GFM 호환 parser로 render 확인
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

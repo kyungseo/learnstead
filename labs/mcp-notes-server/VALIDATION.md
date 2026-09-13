@@ -1,5 +1,9 @@
 # VALIDATION
 
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
 ## 2026-09-02 재검증
 
 - 비어 있지 않은 대상 디렉터리를 `setup.sh`가 변경 전에 거부했습니다.
@@ -51,3 +55,11 @@
 - 반복 1~3회. Codex 거짓 annotation·주입은 각 1회.
 - 두 도구 모두 실제 API 비용. Claude Code 약 15회, Codex 약 8회.
 - Codex 등록은 전역 설정을 바꿉니다. 원복 후 TOML 재기록 흔적이 남습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

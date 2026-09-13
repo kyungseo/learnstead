@@ -1,6 +1,8 @@
 # 02. 서버가 주는 세 가지 — tools · resources · prompts
 
-> 이전 ← [`01-the-problem-mcp-solves.md`](01-the-problem-mcp-solves.md) · 다음 → [`03-transports.md`](03-transports.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. MCP가 푸는 문제 — 도구를 한 번 만들어 여러 agent에 꽂기](01-the-problem-mcp-solves.md) · [목차](README.md) · [다음: 03. 연결 — stdio와 Streamable HTTP](03-transports.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -101,3 +103,11 @@ tools/call read_note {"name": "../notes_server.py"}
 - tool 정의의 필수 필드(`name`·`inputSchema`)와 모델이 보는 것(`description`)을 설명할 수 있습니다.
 - `isError` 실행 오류에 다음 행동을 적어 모델이 자기 교정하게 만듭니다.
 - resources·prompts를 언제 사용하지 않아도 되는지 판단할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 01. MCP가 푸는 문제 — 도구를 한 번 만들어 여러 agent에 꽂기](01-the-problem-mcp-solves.md) · [목차](README.md) · [다음: 03. 연결 — stdio와 Streamable HTTP](03-transports.md)
+
+<!-- learnstead:footer:end -->

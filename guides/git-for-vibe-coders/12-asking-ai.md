@@ -1,6 +1,8 @@
 # 12 — AI에게 Git 작업을 지시하는 법: 상황별 문장과 위험 신호등
 
-← [11 시나리오: 올리고 공개할 때](11-scenarios-share.md) · 다음 → [13 용어집](13-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 11 — 시나리오: 올리고 공개할 때](11-scenarios-share.md) · [목차](README.md) · [다음: 13 — 용어집](13-glossary.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 이 가이드의 전제가 여기 모입니다 — **명령어를 외우는 대신 작업을 정확히 지시하고, 위험한 제안을 알아채는 것.** 작업 지시문
 > 모음과, AI가 제안했을 때 확인하거나 멈춰야 할 명령 목록입니다.
@@ -149,6 +151,10 @@ git show --stat HEAD        # 마지막 커밋에 무슨 파일이 들어갔나
 `[해석]` — 그래서 이 가이드가 개념을 설명한 것입니다. **실행은 AI에게 맡길 수 있지만, 범위와 결과의 결정권은 사용자가
 유지합니다.**
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [13 용어집](13-glossary.md)
+[← 이전: 11 — 시나리오: 올리고 공개할 때](11-scenarios-share.md) · [목차](README.md) · [다음: 13 — 용어집](13-glossary.md)
+
+<!-- learnstead:footer:end -->

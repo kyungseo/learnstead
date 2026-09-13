@@ -1,6 +1,8 @@
 # 01. 기준선 — 한 세션이 하는 만큼
 
-> [목차](README.md) · [다음: 02. 위임 →](02-delegate.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 위임 — 메인 컨텍스트는 줄었는가](02-delegate.md)
+<!-- learnstead:nav:end -->
 
 ## 목표
 
@@ -53,6 +55,10 @@ Codex 검토 총 경과 시간은 첫 배치 값(18.6·22.9·28.5초)입니다. 
 | Codex가 `Reading additional input from stdin...` 후 멈춤 | stdin이 열려 있음 | 스크립트는 `</dev/null`을 붙입니다. 직접 실행할 때도 붙이세요 |
 | 적중 0, `parsed: false` | 답이 JSON 형식이 아님 | `answer_excerpt`를 보고 프롬프트의 출력 형식 문장을 유지 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [목차](README.md) · [다음: 02. 위임 →](02-delegate.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02. 위임 — 메인 컨텍스트는 줄었는가](02-delegate.md)
+
+<!-- learnstead:footer:end -->

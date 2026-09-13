@@ -20,6 +20,10 @@ ROOT_REQUIRED = (
     "docs/AUTHORING.md",
     "docs/VALIDATION.md",
     "docs/VISUALS.md",
+    "docs/STRUCTURE.md",
+    "docs/PUBLISHING.md",
+    "docs/content-index.json",
+    "docs/templates/README.md",
 )
 ITEM_REQUIRED = ("README.md", "CHANGELOG.md", "SOURCES.md", "VALIDATION.md")
 CONTENT_ROOTS = ("guides", "tutorials", "labs")
@@ -87,7 +91,8 @@ def validate_text(errors: list[str], public: bool) -> None:
 def validate_links(errors: list[str]) -> None:
     for path in ROOT.rglob("*.md"):
         content = path.read_text(encoding="utf-8")
-        for raw_target in LINK_RE.findall(content):
+        html_targets = re.findall(r'\b(?:href|src)=["\']([^"\']+)["\']', content)
+        for raw_target in LINK_RE.findall(content) + html_targets:
             target = raw_target.strip().split()[0].strip("<>")
             if target.startswith(("http://", "https://", "mailto:", "#")):
                 continue
@@ -122,6 +127,12 @@ def main() -> int:
     validate_text(errors, args.public)
     validate_links(errors)
     validate_svg(errors)
+    from structure import run
+    try:
+        structure_errors, _ = run(ROOT)
+        errors.extend(structure_errors)
+    except (ValueError, KeyError, OSError, TypeError) as error:
+        errors.append(f"문서 구조: {error}")
 
     if errors:
         for error in errors:

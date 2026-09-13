@@ -1,6 +1,8 @@
 # 06. 지시문 크기 vs 준수율 — 실측
 
-> 이전 ← [`05-budget-and-compaction.md`](05-budget-and-compaction.md) · 다음 → [`07-what-not-to-put-in.md`](07-what-not-to-put-in.md)
+<!-- learnstead:nav:start -->
+[← 이전: 05. 예산과 compaction — 컨텍스트가 찰 때 무엇이 남는가](05-budget-and-compaction.md) · [목차](README.md) · [다음: 07. 무엇을 넣지 말 것인가](07-what-not-to-put-in.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -75,3 +77,11 @@ Claude Code의 경로 규칙(V4)은 13으로 import와 같았습니다. `.py` �
 - 지시문 크기·위치·형태가 준수율에 미친 영향을 수치로 말할 수 있습니다.
 - 준수율이 낮을 때 길이보다 문장의 모호함을 먼저 의심합니다.
 - 조건부 로드를 도구의 기제로만 구현합니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 05. 예산과 compaction — 컨텍스트가 찰 때 무엇이 남는가](05-budget-and-compaction.md) · [목차](README.md) · [다음: 07. 무엇을 넣지 말 것인가](07-what-not-to-put-in.md)
+
+<!-- learnstead:footer:end -->

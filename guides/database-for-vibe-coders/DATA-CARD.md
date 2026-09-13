@@ -1,6 +1,10 @@
 # 데이터 관리 카드
 
-[가이드 목차](README.md) · [공개 전 확인](09-ready-to-share.md)
+<!-- learnstead:nav:start -->
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+<!-- learnstead:nav:end -->
+
+함께 보기: [공개 전 확인](09-ready-to-share.md)
 
 자신의 앱에 맞춰 복사해 사용하는 기록 양식입니다. 아래의 빈칸은 독자가 채우는 항목이며 예제의 검증 결과가 아닙니다. 비밀번호·키·실제 사용자 데이터는 적지 않습니다.
 
@@ -51,4 +55,12 @@
 
 ---
 
-[가이드 목차](README.md) · [다음: 신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)
+함께 보기: [다음: 신청 앱 튜토리얼](../../tutorials/study-signup-db/README.md)
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 자료 소개](README.md) · [학습 자료 목록](../../README.md)
+
+<!-- learnstead:footer:end -->

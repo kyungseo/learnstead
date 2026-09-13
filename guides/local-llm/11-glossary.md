@@ -1,9 +1,12 @@
 # 11 — 용어집
 
+<!-- learnstead:nav:start -->
+[← 이전: 10 — 운영 실무](10-operations.md) · [목차](README.md)
+<!-- learnstead:nav:end -->
+
 전 문서의 **참조 부록**이다. 순서대로 읽는 문서가 아니라, 모르는 용어가 나왔을 때 여는 문서다.
 정의는 이 가이드의 서술 기준을 따르며, 상세 설명이 있는 본문 위치를 함께 적었다.
 
-← [10 운영](10-operations.md) · [README로](README.md)
 
 ---
 
@@ -108,6 +111,10 @@
 | **스펙상 컨텍스트 vs 실제 컨텍스트** | 아키텍처 상한 ↔ 남은 메모리가 정하는 상한 |
 | **오프로딩 vs 스왑** | GPU→RAM ↔ RAM→디스크. 둘 다 급격히 느려진다 |
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**← [README로 돌아가기](README.md)**
+[← 이전: 10 — 운영 실무](10-operations.md) · [목차](README.md)
+
+<!-- learnstead:footer:end -->

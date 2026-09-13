@@ -1,9 +1,12 @@
 # 01 — 연결의 해부: "LLM을 연결한다"는 무엇을 하는 일인가
 
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — OpenAI 호환 API 읽기: endpoint · 요청 · 응답 해부](02-openai-compatible-api.md)
+<!-- learnstead:nav:end -->
+
 "내 프로그램에 AI를 붙인다"는 말은 거창하게 들리지만, 코드 수준에서는 **HTTP 요청 하나를 보내고 응답 하나를 받는 일**입니다.
 이 문서는 그 요청이 어디를 거쳐 어디로 가는지, 연결 방식에는 무엇이 있는지, 앱용 모델을 무엇으로 고르는지 정리합니다.
 
-← [README](README.md) · 다음 → [02 OpenAI 호환 API 읽기](02-openai-compatible-api.md)
 
 > **왜 읽나:** "AI를 붙인다"는 말이 거창하게 들리지만, 코드에서는 날씨 API를 부르는 것과 같습니다 — 느리고, 길고, 매번 조금 다르다는 점만 빼면.
 >
@@ -91,6 +94,10 @@ Mistral 계열 등이 있으며, Gemma 3는 Ollama에서 tool 템플릿을 제�
 
 `[해석]` 외부 라이브러리는 `openai` 하나만 씁니다. Java·JS 예시는 [02 §5](02-openai-compatible-api.md)에 최소 형태로만 둡니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [02 OpenAI 호환 API 읽기 — endpoint·요청·응답 해부](02-openai-compatible-api.md)
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 02 — OpenAI 호환 API 읽기: endpoint · 요청 · 응답 해부](02-openai-compatible-api.md)
+
+<!-- learnstead:footer:end -->

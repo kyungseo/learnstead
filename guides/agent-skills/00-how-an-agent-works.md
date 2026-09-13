@@ -1,6 +1,8 @@
 # 00. AI Agent는 어떻게 움직이는가
 
-> 이 문서는 [`README.md`](README.md)의 0장입니다. 다음 → [`01-why-skills.md`](01-why-skills.md)
+<!-- learnstead:nav:start -->
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 01. 왜 같은 프롬프트를 매번 다시 쓰는가](01-why-skills.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -71,3 +73,11 @@
 - 모델의 제안과 실제 도구 실행을 구분할 수 있습니다.
 - 지시문·skill·MCP·hook을 각각 배치할 수 있습니다.
 - 중요한 권한 경계를 모델 바깥에서 강제해야 하는 이유를 설명할 수 있습니다.
+
+<!-- learnstead:footer:start -->
+
+---
+
+[← 이전: 자료 소개](README.md) · [목차](README.md) · [다음: 01. 왜 같은 프롬프트를 매번 다시 쓰는가](01-why-skills.md)
+
+<!-- learnstead:footer:end -->

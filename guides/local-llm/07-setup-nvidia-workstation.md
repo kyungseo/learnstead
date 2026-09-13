@@ -1,8 +1,11 @@
 # 07 — 셋업: NVIDIA 단일 GPU 워크스테이션
 
+<!-- learnstead:nav:start -->
+[← 이전: 06 — 설정: Apple Silicon Mac](06-setup-apple-silicon.md) · [목차](README.md) · [다음: 08 — 셋업: 멀티 GPU · 사내 서버](08-setup-multi-gpu-server.md)
+<!-- learnstead:nav:end -->
+
 GPU를 붙인 데스크톱·워크스테이션(Linux 또는 Windows+WSL2)에서 모델을 띄우는 절차.
 
-← [06 Apple Silicon 셋업](06-setup-apple-silicon.md) · 다음 → [08 멀티 GPU·서버](08-setup-multi-gpu-server.md)
 
 > **검증 상태:** 공식 문서를 대조했지만 **이 가이드 작성 환경에서는 실행하지 않았다.** 설치 전
 > [검증 기록](VALIDATION.md)에서 runtime·driver별 확인 범위를 먼저 확인한다. `[문서 확인 · 2026-08-10]`
@@ -265,6 +268,10 @@ docker run --gpus all \
 - [ ] OpenAI 호환 엔드포인트가 응답한다
 - [ ] 실사용 컨텍스트 길이로 테스트했다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [08 멀티 GPU·사내 서버](08-setup-multi-gpu-server.md)
+[← 이전: 06 — 설정: Apple Silicon Mac](06-setup-apple-silicon.md) · [목차](README.md) · [다음: 08 — 셋업: 멀티 GPU · 사내 서버](08-setup-multi-gpu-server.md)
+
+<!-- learnstead:footer:end -->

@@ -1,6 +1,8 @@
 # 05. 여러 역할과 단계가 필요한가 — 선택 기준
 
-> [← 이전: 04. 실패 모드와 멈추는 법](04-failure-modes.md) · [목차](README.md) · [다음: 06. 용어집 →](06-glossary.md)
+<!-- learnstead:nav:start -->
+[← 이전: 04. 실패 모드와 멈추는 법](04-failure-modes.md) · [목차](README.md) · [다음: 06. 용어집](06-glossary.md)
+<!-- learnstead:nav:end -->
 
 ## 이 장에서 답하는 질문
 
@@ -93,6 +95,10 @@ flowchart TD
 - 현재 방식을 유지하거나 먼저 보완해야 할 신호 여섯을 알아볼 수 있습니다.
 - 구성 변경 후 확인표로 새 방식을 유지할지 이전 방식으로 되돌릴지 판단할 수 있습니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-> [← 이전: 04. 실패 모드와 멈추는 법](04-failure-modes.md) · [목차](README.md) · [다음: 06. 용어집 →](06-glossary.md)
+[← 이전: 04. 실패 모드와 멈추는 법](04-failure-modes.md) · [목차](README.md) · [다음: 06. 용어집](06-glossary.md)
+
+<!-- learnstead:footer:end -->

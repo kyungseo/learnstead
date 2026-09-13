@@ -1,6 +1,8 @@
 # 09 — GitHub에 올리기와 PR: 원격 복사본, 공유, 검토
 
-← [08 커밋 메시지 쓰는 법](08-commit-messages.md) · 다음 → [10 시나리오: 혼자 만들 때](10-scenarios-solo.md)
+<!-- learnstead:nav:start -->
+[← 이전: 08 — 커밋 메시지 쓰는 법: 미래의 나에게 보내는 쪽지](08-commit-messages.md) · [목차](README.md) · [다음: 10 — 시나리오: 혼자 만들 때](10-scenarios-solo.md)
+<!-- learnstead:nav:end -->
 
 > **왜 읽나:** 내 컴퓨터에만 있는 commit 기록은 장비와 함께 잃을 수 있습니다. 원격에 push하면 복사본을 둘 수 있습니다.
 > 그리고 PR은 "회사에서 쓰는 어려운 것"이 아니라 **혼자서도 쓸모 있는 검토 화면입니다.**
@@ -148,6 +150,10 @@ git branch -d fix-login      # 로컬 브랜치도 정리
 - [ ] PR이 요청서 겸 검토 화면이라는 것을 안다
 - [ ] PR 설명에 "확인 방법"을 넣는다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [10 시나리오: 혼자 만들 때](10-scenarios-solo.md)
+[← 이전: 08 — 커밋 메시지 쓰는 법: 미래의 나에게 보내는 쪽지](08-commit-messages.md) · [목차](README.md) · [다음: 10 — 시나리오: 혼자 만들 때](10-scenarios-solo.md)
+
+<!-- learnstead:footer:end -->

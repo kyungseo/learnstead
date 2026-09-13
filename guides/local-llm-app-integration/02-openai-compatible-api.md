@@ -1,9 +1,12 @@
 # 02 — OpenAI 호환 API 읽기: endpoint · 요청 · 응답 해부
 
+<!-- learnstead:nav:start -->
+[← 이전: 01 — 연결의 해부: "LLM을 연결한다"는 무엇을 하는 일인가](01-integration-anatomy.md) · [목차](README.md) · [다음: 03 — 실습: 작은 Python 대화 프로그램 만들기](03-lab-chat-program.md)
+<!-- learnstead:nav:end -->
+
 SDK가 숨기는 JSON을 한 번은 눈으로 봐야 합니다. 그래야 오류 메시지를 읽을 수 있고, 다른 언어에서도 같은 일을 할 수 있으며,
 runtime마다 무엇이 다른지 알 수 있습니다. 이 문서는 `curl`로 요청과 응답을 직접 보고, 필드를 하나씩 읽습니다.
 
-← [01 연결의 해부](01-integration-anatomy.md) · 다음 → [03 실습: 작은 Python 대화 프로그램](03-lab-chat-program.md)
 
 > **왜 읽나:** SDK가 숨기는 JSON을 한 번도 본 적 없다면, 첫 오류 메시지를 읽지 못합니다.
 >
@@ -178,6 +181,10 @@ class ChatController {
 - [ ] `finish_reason`이 `length`일 때 무엇을 할지 정했다
 - [ ] 내 runtime의 세부 부가 기능(구조화 출력·tool calling·context 설정) 사용 방법을 §4에서 찾았다
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [03 실습: 작은 Python 대화 프로그램 만들기](03-lab-chat-program.md)
+[← 이전: 01 — 연결의 해부: "LLM을 연결한다"는 무엇을 하는 일인가](01-integration-anatomy.md) · [목차](README.md) · [다음: 03 — 실습: 작은 Python 대화 프로그램 만들기](03-lab-chat-program.md)
+
+<!-- learnstead:footer:end -->

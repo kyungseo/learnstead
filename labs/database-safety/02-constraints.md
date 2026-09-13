@@ -1,6 +1,8 @@
 # 02. 규칙 — 잘못된 데이터가 들어오는가
 
-[← 01 저장](01-persistence.md) · [전체 목차](README.md) · [03 동시 변경 →](03-atomicity.md)
+<!-- learnstead:nav:start -->
+[← 이전: 01. 저장 — 껐다 켜도 남는가](01-persistence.md) · [목차](README.md) · [다음: 03. 동시 변경 — 마지막 자리를 둘이 차지하는가](03-atomicity.md)
+<!-- learnstead:nav:end -->
 
 입력칸이 잘못된 값을 막더라도 API로 직접 보낸 요청이 DB에 들어갈 수 있습니다. 이번에는 **화면을 거치지 않는 잘못된 입력을 DB가 거절하는지** 확인합니다.
 
@@ -47,6 +49,10 @@
 
 공통 검증을 다시 실행하면 같은 fixture를 기준으로 반복합니다. 직접 만든 연습 데이터를 모두 비우려면 [튜토리얼 초기화](../../tutorials/study-signup-db/01-prepare.md)를 사용합니다. 실제 서비스에서 제약조건을 추가하기 전에는 기존 데이터가 그 규칙을 어기는지도 먼저 조사해야 합니다.
 
+<!-- learnstead:footer:start -->
+
 ---
 
-[← 01 저장](01-persistence.md) · [전체 목차](README.md) · [03 동시 변경 →](03-atomicity.md)
+[← 이전: 01. 저장 — 껐다 켜도 남는가](01-persistence.md) · [목차](README.md) · [다음: 03. 동시 변경 — 마지막 자리를 둘이 차지하는가](03-atomicity.md)
+
+<!-- learnstead:footer:end -->

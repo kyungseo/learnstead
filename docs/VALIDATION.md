@@ -27,6 +27,17 @@
 API key, token, 내부 hostname과 개인 경로는 기록하지 않습니다. 파괴적이거나 비용을 일으키는 명령은 실행 전 영향과
 복구 방법을 먼저 설명합니다.
 
+## 구조 검사
+
+```bash
+python3 tools/structure.py check
+python3 tools/validate.py --public
+python3 -m unittest discover -s tools -p 'test_*.py'
+git diff --check
+```
+
+상하 탐색·목록·표지 검사는 형식을 확인합니다. GFM 호환 파서로 읽기 문서를 렌더해 코드 밖에 문자 그대로 남은 `**`가 없는지 확인하고, 실제 페이지에서 소개·첫 장·마지막 장·지원 문서의 링크와 가로 구분선을 확인합니다.
+
 ## 공개 전 검사
 
 - 내부 링크와 이미지 경로가 모두 존재하는가

@@ -1,8 +1,11 @@
 # 08 — 셋업: 멀티 GPU · 사내 서버
 
+<!-- learnstead:nav:start -->
+[← 이전: 07 — 셋업: NVIDIA 단일 GPU 워크스테이션](07-setup-nvidia-workstation.md) · [목차](README.md) · [다음: 09 — 내 장비에 맞는 모델 고르기](09-model-landscape.md)
+<!-- learnstead:nav:end -->
+
 카드 여러 장 또는 서버에서 모델을 띄우는 절차. **기동까지가 이 문서의 범위**다.
 
-← [07 NVIDIA 워크스테이션](07-setup-nvidia-workstation.md) · 다음 → [09 모델 현황](09-model-landscape.md)
 
 > ### 이 문서의 경계 ★
 > 여기서 다루는 것은 **"여러 장에 모델을 올려 기동하는 법"이다.**
@@ -229,6 +232,10 @@ curl http://localhost:8000/metrics            # vLLM 메트릭 (Prometheus 형�
 - [ ] OpenAI 호환 엔드포인트가 응답한다
 - [ ] 목표 동시성으로 부하를 걸어 `/metrics`의 대기 큐·KV 사용률을 확인했다 (§6 팁)
 
+<!-- learnstead:footer:start -->
+
 ---
 
-**다음 →** [09 모델 현황](09-model-landscape.md)
+[← 이전: 07 — 셋업: NVIDIA 단일 GPU 워크스테이션](07-setup-nvidia-workstation.md) · [목차](README.md) · [다음: 09 — 내 장비에 맞는 모델 고르기](09-model-landscape.md)
+
+<!-- learnstead:footer:end -->
